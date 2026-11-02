@@ -6,25 +6,27 @@
 <link rel="icon" type="image/svg+xml" href="../shared/favicon.svg">
 <link rel="stylesheet" href="../shared/style.css">
 <link rel="alternate" hreflang="en" href="../en/04-components.html">
-<script>document.documentElement.classList.add('js');window.STUDY_COPY={"noResults": "没有找到结果。试试字体、页面类型或模式名称。", "results": "条结果", "patterns": "种模式", "copied": "已复制", "copyFailed": "请选中色值并复制。", "enlarge": "放大图片"};</script>
+<script>document.documentElement.classList.add('js');window.STUDY_COPY={"noResults": "没有找到结果。试试字体、页面类型或模式名称。", "results": "条结果", "patterns": "种模式", "copied": "已复制", "copyFailed": "请选中色值并复制。", "enlarge": "放大图片", "copyPage": "复制页面", "pageCopied": "页面已复制", "pageCopyFailed": "复制未成功，可打开 Markdown 源文档。", "viewSource": "查看 Markdown"};</script>
+<script id="page-source" type="application/json">"# 04 二十类组件与布局模式\n\n**中文** · [English](en/04-components.md)\n\n[返回总览](../README.zh-CN.md) · [上一章：页面模式](03-page-patterns.md) · [下一章：UX 与响应式](05-ux-and-responsive.md)\n\n## 按任务组织组件\n\n本章将可复用的组件与局部布局归为五组，每组四类：导航、检索与切换、内容展示、比较与步骤、学习与阅读辅助。每种模式都对应一个具体任务，例如卡片网格组织内容浏览，套餐卡片组织方案比较。\n\n## 导航模式\n\n| 编号 | 模式 | 样本中的表现 | 解决的问题 |\n|---|---|---|---|\n| P01 | 顶部下拉导航 | 主导航按产品、开发者、资源等组织入口 | 从全站范围选择方向 |\n| P02 | 二级分类栏 | Resources 中的文章、指南、视频等入口 | 在当前内容区切换类别 |\n| P03 | 面包屑 | 课程与文档显示上层位置 | 理解所在层级并返回 |\n| P04 | 侧边导航与目录 | 文档导航树、页内目录、课程章节 | 在长内容中定位并跳转 |\n\n证据：[资源中心 S04](https://claude.com/resources)、[课程 S06](https://academy.claude.com/courses/ai-fluency-framework-foundations/introduction-to-ai-fluency)、[文档 S07](https://code.claude.com/docs/en/overview)。\n\nP01、P02 和 P04 分别处理全站方向、当前分类和文章内部的位置。顶部、分类栏与侧边区域将这些导航分开，让不同范围的定位任务各有入口。\n\n## 检索与内容切换\n\n| 编号 | 模式 | 样本中的表现 | 解决的问题 |\n|---|---|---|---|\n| P05 | 站内搜索 | 资源、帮助中心与文档的搜索入口 | 直接寻找目标内容 |\n| P06 | 分类筛选 | 开发者博客按主题筛选文章 | 缩小候选范围 |\n| P07 | 标签页与分段选择 | 定价人群、代码平台或语言切换 | 在同一上下文切换相关内容 |\n| P08 | 展开与收起 | 常见问题、分组导航等按需展开 | 控制信息密度 |\n\n证据：[定价 S03](https://claude.com/pricing)、[Code Docs S07](https://code.claude.com/docs/en/overview)、[博客 S10](https://claude.dev/)。P06 与 P07 的实际状态变化见[交互记录](../data/interaction-checks.json)。\n\n搜索、筛选和标签页的外观可能都很紧凑，但行为不同：搜索接受开放式问题，筛选约束内容集合，标签页切换预先组织的内容。复用样式时应保留这些行为差异。\n\n## 内容展示\n\n| 编号 | 模式 | 样本中的表现 | 解决的问题 |\n|---|---|---|---|\n| P09 | 大标题首屏 | 标题、简短说明和主要动作集中 | 建立页面主题 |\n| P10 | 卡片网格 | 课程、产品入口和资源卡片 | 浏览一组并列选择 |\n| P11 | 文章行列表 | 博客的日期、标题与阅读时间按行排列 | 快速扫描与比较 |\n| P12 | 产品演示区 | 场景、任务或成果的视觉展示 | 解释抽象能力如何使用 |\n\n证据：[产品 S02](https://claude.com/product/overview)、[资源 S04](https://claude.com/resources)、[Academy S05](https://academy.claude.com/)、[博客 S10](https://claude.dev/)。\n\n![Academy 首页的产品学习入口卡片](../assets/screenshots/academy-home.png)\n\n*图 9 · [S05](https://academy.claude.com/) · 卡片同时包含主题名称、说明与配图，辅助选择学习方向。*\n\n卡片适合每项都有独立说明或图像的集合；行列表适合字段相似、需要连续扫描的内容。选择方式取决于内容结构和读者的比较任务。\n\n## 比较与步骤引导\n\n| 编号 | 模式 | 样本中的表现 | 解决的问题 |\n|---|---|---|---|\n| P13 | 套餐卡片 | 方案名称、价格、动作与特性组成一个单元 | 建立方案的整体印象 |\n| P14 | 功能比较表 | 同一功能横向比较多个方案 | 支持细节判断 |\n| P15 | 编号步骤 | 文档用步骤序号连接配置和操作 | 显示执行顺序 |\n| P16 | 下一课或下一步链接 | 课程结尾指向后续内容 | 减少完成当前内容后的停顿 |\n\n证据：[定价 S03](https://claude.com/pricing)、[课程 S06](https://academy.claude.com/courses/ai-fluency-framework-foundations/introduction-to-ai-fluency)、[Platform S08](https://platform.claude.com/docs/en/get-started)。\n\n完整的步骤需要连接前提、操作与结果；有效的比较表需要突出与选择有关的差异。序号和表格分别为这两种信息关系提供了稳定结构。\n\n## 学习与阅读辅助\n\n| 编号 | 模式 | 样本中的表现 | 解决的问题 |\n|---|---|---|---|\n| P17 | 视频与文字内容切换 | 课程提供总结或文字稿入口 | 支持不同阅读方式 |\n| P18 | 重点提示框 | 学习目标或必要说明单独成组 | 提前建立阅读预期 |\n| P19 | 代码块与复制 | 命令或代码与复制入口相邻 | 减少执行时的转录工作 |\n| P20 | 课时与位置提示 | 课程序号、时长或章节位置标签 | 帮助判断投入与当前位置 |\n\n证据：[课程 S06](https://academy.claude.com/courses/ai-fluency-framework-foundations/introduction-to-ai-fluency)、[Code Docs S07](https://code.claude.com/docs/en/overview)、[Platform S08](https://platform.claude.com/docs/en/get-started)。\n\n课时说明学习投入，章节提示当前阅读位置；代码与复制入口相邻，将阅读内容与执行准备连接起来。这些辅助信息贴近正文，方便在需要时取用。\n\n## 跨站一致与局部差异\n\n| 较一致的表达 | 会随任务变化的表达 |\n|---|---|\n| 深色主要动作、浅色次级背景 | 按钮和卡片的圆角、尺寸、排列 |\n| 标题与正文具有不同视觉层级 | 标题是否采用衬线或等宽字体 |\n| 导航与正文通过空间或分隔线区分 | 导航在顶部、侧边还是折叠菜单中 |\n| 代码与自然语言有明显区别 | 代码字体、语言切换方式与代码框细节 |\n\n共同的文字层级、明暗关系和空间分区建立品牌一致性，圆角、尺寸、字体与导航位置则随页面任务变化。\n\n[下一章：UX 与响应式观察](05-ux-and-responsive.md)\n"</script>
 <script src="../shared/search-zh.js" defer></script><script src="../shared/app.js" defer></script>
 </head><body class="chapter-page" data-language="zh">
 <a class="skip-link" href="#main">跳至正文</a>
 <header class="site-header">
-<a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">a/c</span><span>Anthropic &amp; Claude<small>DESIGN FIELDNOTES</small></span></a>
+<a class="brand" href="index.html"><span class="brand-name">Anthropic</span><span class="brand-context">设计研究</span></a>
+<nav class="top-nav" aria-label="设计研究"><a href="index.html" aria-current="true">设计手册</a><a href="explore.html">对照研究</a><a href="07-methodology-and-sources.html">来源</a></nav>
 <div class="header-actions"><button class="menu-toggle" type="button" aria-label="目录" aria-controls="chapter-nav" aria-expanded="false"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14"/></svg><span>目录</span></button>
-<button class="search-trigger" type="button" aria-label="搜索研究内容" data-open-search><svg class="search-icon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg><span>搜索研究内容</span><kbd>/</kbd></button>
+<button class="search-trigger" type="button" aria-label="搜索研究内容" data-open-search><svg class="search-icon" width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg><span>搜索研究内容</span><kbd>Ctrl K</kbd></button>
 <a class="language-switch" lang="en" href="../en/04-components.html">English</a>
 <a class="github-link" href="https://github.com/aotushi/anthropic-design-study">GitHub ↗</a></div>
-<div class="reading-progress" aria-hidden="true"><span></span></div></header>
+</header>
 <nav id="chapter-nav" class="chapter-nav" aria-label="章节目录">
-<p class="nav-label">关于本研究</p><a href="index.html"><span>研究总览</span></a><a href="explore.html"><span>图像与数据</span></a>
-<p class="nav-label chapters-label">章节目录</p><a href="01-visual-language.html"><span class="nav-number">01</span><span>视觉语言</span></a><a href="02-typography.html"><span class="nav-number">02</span><span>字体与排版</span></a><a href="03-page-patterns.html"><span class="nav-number">03</span><span>八类页面模式</span></a><a href="04-components.html" aria-current="page"><span class="nav-number">04</span><span>二十类可复用模式</span></a><a href="05-ux-and-responsive.html"><span class="nav-number">05</span><span>UX 与响应式</span></a><a href="06-gallery.html"><span class="nav-number">06</span><span>截图图库</span></a><a href="07-methodology-and-sources.html"><span class="nav-number">07</span><span>方法与证据</span></a><a href="08-application-guide.html"><span class="nav-number">08</span><span>应用指南</span></a><a href="09-page-anatomy.html"><span class="nav-number">09</span><span>页面拆解</span></a><a href="10-cross-site-matrix.html"><span class="nav-number">10</span><span>跨站设计矩阵</span></a>
-<div class="nav-foot"><span class="edition-date">2026-11-02</span><p>10 个章节 · 15 张截图 · 中英文双语</p><a href="https://github.com/aotushi/anthropic-design-study/archive/refs/heads/main.zip">下载离线阅读 ↗</a></div></nav>
+<div class="nav-group"><p class="nav-label">开始阅读</p><a href="index.html"><span>研究总览</span></a><a href="explore.html"><span>图像与数据</span></a></div>
+<div class="nav-group"><p class="nav-label">设计基础</p><a href="01-visual-language.html"><span class="nav-number">01</span><span>视觉语言</span></a><a href="02-typography.html"><span class="nav-number">02</span><span>字体与排版</span></a></div><div class="nav-group"><p class="nav-label">模式与体验</p><a href="03-page-patterns.html"><span class="nav-number">03</span><span>八类页面模式</span></a><a href="04-components.html" aria-current="page"><span class="nav-number">04</span><span>二十类可复用模式</span></a><a href="05-ux-and-responsive.html"><span class="nav-number">05</span><span>UX 与响应式</span></a></div><div class="nav-group"><p class="nav-label">研究资料</p><a href="06-gallery.html"><span class="nav-number">06</span><span>截图图库</span></a><a href="07-methodology-and-sources.html"><span class="nav-number">07</span><span>方法与证据</span></a><a href="08-application-guide.html"><span class="nav-number">08</span><span>应用指南</span></a></div><div class="nav-group"><p class="nav-label">页面分析</p><a href="09-page-anatomy.html"><span class="nav-number">09</span><span>页面拆解</span></a><a href="10-cross-site-matrix.html"><span class="nav-number">10</span><span>跨站设计矩阵</span></a></div>
+<div class="nav-foot"><p>10 个章节 · 15 张截图 · 中英文双语</p><a href="https://github.com/aotushi/anthropic-design-study/archive/refs/heads/main.zip">下载离线阅读 ↗</a></div></nav>
 <div class="nav-scrim" data-close-menu></div>
-<div class="site-body"><main id="main" tabindex="-1"><header class="article-header"><p class="eyebrow">CHAPTER 04 / 10</p><h1>二十类可复用模式</h1><p>导航、检索、展示、比较与学习的组件分工。</p></header><details class="inline-toc"><summary>本页内容</summary><div><a href="#按任务组织组件">按任务组织组件</a><a href="#导航模式">导航模式</a><a href="#检索与内容切换">检索与内容切换</a><a href="#内容展示">内容展示</a><a href="#比较与步骤引导">比较与步骤引导</a><a href="#学习与阅读辅助">学习与阅读辅助</a><a href="#跨站一致与局部差异">跨站一致与局部差异</a></div></details><article class="prose"><h2 id="按任务组织组件">按任务组织组件</h2>
+<div class="site-body"><div class="document-grid"><main id="main" tabindex="-1"><header class="article-header"><div class="breadcrumb"><a href="index.html">设计手册</a><span aria-hidden="true">›</span><span>模式与体验</span></div><div class="page-title-row"><h1>二十类可复用模式</h1><button class="copy-page" type="button" data-copy-page><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M12 7V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h3"/></svg><span>复制页面</span></button></div><p class="page-description">导航、检索、展示、比较与学习的组件分工。</p><p id="page-copy-status" class="sr-only" role="status"></p></header><details class="inline-toc"><summary>本页内容</summary><div><a href="#按任务组织组件">按任务组织组件</a><a href="#导航模式">导航模式</a><a href="#检索与内容切换">检索与内容切换</a><a href="#内容展示">内容展示</a><a href="#比较与步骤引导">比较与步骤引导</a><a href="#学习与阅读辅助">学习与阅读辅助</a><a href="#跨站一致与局部差异">跨站一致与局部差异</a></div></details><article class="prose"><h2 id="按任务组织组件">按任务组织组件<a class="heading-anchor" href="#按任务组织组件" aria-label="链接到本节: 按任务组织组件">#</a></h2>
 <p>本章将可复用的组件与局部布局归为五组，每组四类：导航、检索与切换、内容展示、比较与步骤、学习与阅读辅助。每种模式都对应一个具体任务，例如卡片网格组织内容浏览，套餐卡片组织方案比较。</p>
-<h2 id="导航模式">导航模式</h2>
+<h2 id="导航模式">导航模式<a class="heading-anchor" href="#导航模式" aria-label="链接到本节: 导航模式">#</a></h2>
 <div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
 <thead>
 <tr>
@@ -63,7 +65,7 @@
 </table></div>
 <p>证据：<a href="https://claude.com/resources">资源中心 S04</a>、<a href="https://academy.claude.com/courses/ai-fluency-framework-foundations/introduction-to-ai-fluency">课程 S06</a>、<a href="https://code.claude.com/docs/en/overview">文档 S07</a>。</p>
 <p>P01、P02 和 P04 分别处理全站方向、当前分类和文章内部的位置。顶部、分类栏与侧边区域将这些导航分开，让不同范围的定位任务各有入口。</p>
-<h2 id="检索与内容切换">检索与内容切换</h2>
+<h2 id="检索与内容切换">检索与内容切换<a class="heading-anchor" href="#检索与内容切换" aria-label="链接到本节: 检索与内容切换">#</a></h2>
 <div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
 <thead>
 <tr>
@@ -102,7 +104,7 @@
 </table></div>
 <p>证据：<a href="https://claude.com/pricing">定价 S03</a>、<a href="https://code.claude.com/docs/en/overview">Code Docs S07</a>、<a href="https://claude.dev/">博客 S10</a>。P06 与 P07 的实际状态变化见<a href="../../data/interaction-checks.json">交互记录</a>。</p>
 <p>搜索、筛选和标签页的外观可能都很紧凑，但行为不同：搜索接受开放式问题，筛选约束内容集合，标签页切换预先组织的内容。复用样式时应保留这些行为差异。</p>
-<h2 id="内容展示">内容展示</h2>
+<h2 id="内容展示">内容展示<a class="heading-anchor" href="#内容展示" aria-label="链接到本节: 内容展示">#</a></h2>
 <div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
 <thead>
 <tr>
@@ -143,7 +145,7 @@
 <p><button class="figure-button" type="button" data-zoom aria-label="放大图片: Academy 首页的产品学习入口卡片"><img src="../../assets/screenshots/academy-home.png" alt="Academy 首页的产品学习入口卡片" width="1440" height="1000" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true">放大图片 ↗</span></button></p>
 <p><em>图 9 · <a href="https://academy.claude.com/">S05</a> · 卡片同时包含主题名称、说明与配图，辅助选择学习方向。</em></p>
 <p>卡片适合每项都有独立说明或图像的集合；行列表适合字段相似、需要连续扫描的内容。选择方式取决于内容结构和读者的比较任务。</p>
-<h2 id="比较与步骤引导">比较与步骤引导</h2>
+<h2 id="比较与步骤引导">比较与步骤引导<a class="heading-anchor" href="#比较与步骤引导" aria-label="链接到本节: 比较与步骤引导">#</a></h2>
 <div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
 <thead>
 <tr>
@@ -182,7 +184,7 @@
 </table></div>
 <p>证据：<a href="https://claude.com/pricing">定价 S03</a>、<a href="https://academy.claude.com/courses/ai-fluency-framework-foundations/introduction-to-ai-fluency">课程 S06</a>、<a href="https://platform.claude.com/docs/en/get-started">Platform S08</a>。</p>
 <p>完整的步骤需要连接前提、操作与结果；有效的比较表需要突出与选择有关的差异。序号和表格分别为这两种信息关系提供了稳定结构。</p>
-<h2 id="学习与阅读辅助">学习与阅读辅助</h2>
+<h2 id="学习与阅读辅助">学习与阅读辅助<a class="heading-anchor" href="#学习与阅读辅助" aria-label="链接到本节: 学习与阅读辅助">#</a></h2>
 <div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
 <thead>
 <tr>
@@ -221,7 +223,7 @@
 </table></div>
 <p>证据：<a href="https://academy.claude.com/courses/ai-fluency-framework-foundations/introduction-to-ai-fluency">课程 S06</a>、<a href="https://code.claude.com/docs/en/overview">Code Docs S07</a>、<a href="https://platform.claude.com/docs/en/get-started">Platform S08</a>。</p>
 <p>课时说明学习投入，章节提示当前阅读位置；代码与复制入口相邻，将阅读内容与执行准备连接起来。这些辅助信息贴近正文，方便在需要时取用。</p>
-<h2 id="跨站一致与局部差异">跨站一致与局部差异</h2>
+<h2 id="跨站一致与局部差异">跨站一致与局部差异<a class="heading-anchor" href="#跨站一致与局部差异" aria-label="链接到本节: 跨站一致与局部差异">#</a></h2>
 <div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
 <thead>
 <tr>
@@ -249,7 +251,7 @@
 </tbody>
 </table></div>
 <p>共同的文字层级、明暗关系和空间分区建立品牌一致性，圆角、尺寸、字体与导航位置则随页面任务变化。</p>
-</article><nav class="chapter-pager" aria-label="Chapter navigation"><a href="03-page-patterns.html"><small>上一章</small><span>八类页面模式 </span></a><a href="05-ux-and-responsive.html"><small>下一章</small><span>UX 与响应式 →</span></a></nav></main><aside class="page-toc"><p class="eyebrow">本页内容</p><a class="toc-h2" href="#按任务组织组件">按任务组织组件</a><a class="toc-h2" href="#导航模式">导航模式</a><a class="toc-h2" href="#检索与内容切换">检索与内容切换</a><a class="toc-h2" href="#内容展示">内容展示</a><a class="toc-h2" href="#比较与步骤引导">比较与步骤引导</a><a class="toc-h2" href="#学习与阅读辅助">学习与阅读辅助</a><a class="toc-h2" href="#跨站一致与局部差异">跨站一致与局部差异</a></aside>
+</article><div class="article-source"><a href="../../docs/04-components.md">查看 Markdown ↗</a><span>04 / 10</span></div><nav class="chapter-pager" aria-label="Chapter navigation"><a href="03-page-patterns.html"><small>上一章</small><span>八类页面模式 </span></a><a href="05-ux-and-responsive.html"><small>下一章</small><span>UX 与响应式 →</span></a></nav></main><aside class="page-toc"><nav aria-label="本页内容"><p class="toc-label">本页内容</p><a class="toc-h2" href="#按任务组织组件">按任务组织组件</a><a class="toc-h2" href="#导航模式">导航模式</a><a class="toc-h2" href="#检索与内容切换">检索与内容切换</a><a class="toc-h2" href="#内容展示">内容展示</a><a class="toc-h2" href="#比较与步骤引导">比较与步骤引导</a><a class="toc-h2" href="#学习与阅读辅助">学习与阅读辅助</a><a class="toc-h2" href="#跨站一致与局部差异">跨站一致与局部差异</a></nav></aside></div>
 <footer class="site-footer"><p>一份关于公开网站的图文设计研究。<br><span>观察日期: 2026-11-02</span></p><div><a href="07-methodology-and-sources.html">方法与来源</a><button type="button" data-print>打印 ↗</button><a href="../../NOTICE.md">CC BY 4.0 / Credits</a></div></footer></div>
 <dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title"><div class="dialog-head"><h2 id="search-title">搜索研究内容</h2><button type="button" data-close-dialog>关闭 <kbd>Esc</kbd></button></div><label class="sr-only" for="study-search">搜索研究内容</label><input id="study-search" type="search" placeholder="字体、布局、设计模式…" autocomplete="off"><p id="search-status" class="search-status" role="status">搜索本语言版本的全部十个章节。</p><div id="search-results"></div></dialog>
 <dialog id="image-dialog" class="image-dialog" aria-label="放大图片"><div class="dialog-head"><p id="image-caption"></p><button type="button" data-close-dialog>关闭 <kbd>Esc</kbd></button></div><div class="image-canvas"><img id="enlarged-image" alt=""></div><a id="original-image" href="#" target="_blank" rel="noopener">打开原始图片 ↗</a></dialog>

@@ -22,16 +22,21 @@ DATE = MANIFEST["observedDate"]
 
 COPY = {
     "en": {
-        "title": "Anthropic & Claude — Design Fieldnotes", "home": "Overview", "explore": "Explore the evidence",
+        "title": "Anthropic & Claude Design Study", "home": "Overview", "explore": "Explore the evidence",
+        "study": "Design study", "handbook": "Handbook", "compareNav": "Compare", "sourcesNav": "Sources",
+        "start": "Start here", "navGroups": ["Design foundations", "Patterns & experience", "Study resources", "Page analysis"],
+        "copyPage": "Copy page", "pageCopied": "Page copied", "pageCopyFailed": "Could not copy. Open the Markdown source instead.",
+        "viewSource": "View Markdown", "sectionLink": "Link to this section", "findings": "At a glance",
+        "scope": "Seven official sites, ten representative pages, and two additional narrow-screen samples.",
         "chapters": "The chapters", "contents": "On this page", "search": "Search the study", "searchHint": "Fonts, layouts, patterns…",
         "searchHelp": "Search all ten chapters in this edition.", "noResults": "No results. Try a font, page type, or pattern name.",
         "results": "results", "close": "Close", "menu": "Chapters", "skip": "Skip to content", "print": "Print",
         "enlarge": "Enlarge image", "original": "Open original image", "previous": "Previous", "next": "Next",
         "source": "Source", "record": "Measurements", "date": "Observed", "all": "All patterns", "patterns": "patterns",
-        "read": "Start reading", "heroTitle": "One brand.<br>Many ways to read.",
+        "read": "Start reading", "heroTitle": "Anthropic & Claude website design",
         "heroText": "A visual study of how Anthropic and Claude use type, space, and structure across company pages, product stories, documentation, and courses.",
         "heroCaption": "S04 / Resources — a heading, a search, a world of content.",
-        "voices": "Three expressions. A shared foundation.", "voicesIntro": "Follow the same brand from editorial storytelling to focused reading and developer culture.",
+        "voices": "Three visual directions", "voicesIntro": "Follow the same brand from editorial storytelling to focused reading and developer culture.",
         "chapterIntro": "Read in order, or follow the question that brought you here.",
         "counts": ["official sites", "sample pages", "page patterns", "component patterns", "principal fonts"],
         "directions": ["Warm editorial", "Focused knowledge", "Retro developer"],
@@ -48,15 +53,20 @@ COPY = {
     },
     "zh": {
         "title": "Anthropic 与 Claude · 网站设计手册", "home": "研究总览", "explore": "图像与数据",
+        "study": "设计研究", "handbook": "设计手册", "compareNav": "对照研究", "sourcesNav": "来源",
+        "start": "开始阅读", "navGroups": ["设计基础", "模式与体验", "研究资料", "页面分析"],
+        "copyPage": "复制页面", "pageCopied": "页面已复制", "pageCopyFailed": "复制未成功，可打开 Markdown 源文档。",
+        "viewSource": "查看 Markdown", "sectionLink": "链接到本节", "findings": "研究概览",
+        "scope": "七个官方站点、十个代表页面，以及两个补充窄屏样本。",
         "chapters": "章节目录", "contents": "本页内容", "search": "搜索研究内容", "searchHint": "字体、布局、设计模式…",
         "searchHelp": "搜索本语言版本的全部十个章节。", "noResults": "没有找到结果。试试字体、页面类型或模式名称。",
         "results": "条结果", "close": "关闭", "menu": "目录", "skip": "跳至正文", "print": "打印",
         "enlarge": "放大图片", "original": "打开原始图片", "previous": "上一章", "next": "下一章",
         "source": "原站", "record": "测量记录", "date": "观察日期", "all": "全部模式", "patterns": "种模式",
-        "read": "开始阅读", "heroTitle": "同一品牌，<br>不同的阅读方式。",
+        "read": "开始阅读", "heroTitle": "Anthropic 与 Claude 网站设计",
         "heroText": "从公司官网、产品介绍到技术文档与课程，观察 Anthropic 与 Claude 如何用字体、空间和信息结构安排每一次阅读。",
         "heroCaption": "S04 / 资源中心：从标题、搜索进入丰富的内容。",
-        "voices": "三种表达，共享一套基础。", "voicesIntro": "沿着编辑式叙事、知识阅读与开发者文化，理解品牌怎样随任务变化。",
+        "voices": "三种视觉表达", "voicesIntro": "沿着编辑式叙事、知识阅读与开发者文化，理解品牌怎样随任务变化。",
         "chapterIntro": "按顺序阅读，或从你关心的问题开始。",
         "counts": ["个官方站点", "个代表页面", "类页面模式", "类组件模式", "个主要字体名称"],
         "directions": ["温暖的编辑式表达", "克制的知识界面", "复古开发者表达"],
@@ -184,6 +194,11 @@ def render_chapter(lang, chapter):
         return figure(src, alt, lang, width, height)
 
     rendered = re.sub(r"<img\b[^>]*>", enhance_image, rendered)
+    def heading_link(match):
+        tag, anchor, text = match.groups()
+        label = COPY[lang]["sectionLink"] + ': ' + strip_markup(text)
+        return f'<{tag} id="{anchor}">{text}<a class="heading-anchor" href="#{anchor}" aria-label="{esc(label)}">#</a></{tag}>'
+    rendered = re.sub(r'<(h[23]) id="([^"]+)">(.*?)</\1>', heading_link, rendered, flags=re.DOTALL)
     label = "Scrollable data table" if lang == "en" else "可横向滚动的数据表"
     rendered = rendered.replace("<table>", f'<div class="table-wrap" tabindex="0" role="region" aria-label="{label}"><table>')
     rendered = rendered.replace("</table>", "</table></div>")
@@ -196,12 +211,27 @@ def nav_link(slug, title, current, number=""):
     return f'<a href="{slug}.html"{active}>{num}<span>{esc(title)}</span></a>'
 
 
+NAV_GROUPS = [CHAPTERS[:2], CHAPTERS[2:5], CHAPTERS[5:8], CHAPTERS[8:]]
+
+
+def article_header(lang, title, summary, section, copy_page=False):
+    copy = COPY[lang]
+    control = ''
+    if copy_page:
+        control = f'<button class="copy-page" type="button" data-copy-page><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M12 7V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h3"/></svg><span>{copy["copyPage"]}</span></button>'
+    return f'<header class="article-header"><div class="breadcrumb"><a href="index.html">{copy["handbook"]}</a><span aria-hidden="true">›</span><span>{esc(section)}</span></div><div class="page-title-row"><h1>{esc(title)}</h1>{control}</div><p class="page-description">{esc(summary)}</p><p id="page-copy-status" class="sr-only" role="status"></p></header>'
+
+
 def shell(lang, slug, title, content, headings=(), chapter=None):
     copy = COPY[lang]
     other = "zh" if lang == "en" else "en"
-    chapter_nav = "".join(nav_link(c["slug"], c[lang], slug, f"{i + 1:02}") for i, c in enumerate(CHAPTERS))
+    chapter_nav = "".join('<div class="nav-group"><p class="nav-label">' + copy["navGroups"][i] + '</p>' + ''.join(nav_link(c["slug"], c[lang], slug, f'{CHAPTERS.index(c) + 1:02}') for c in group) + '</div>' for i, group in enumerate(NAV_GROUPS))
     toc_links = "".join(f'<a class="toc-{tag}" href="#{esc(anchor)}">{esc(text)}</a>' for tag, text, anchor in headings)
-    toc = f'<aside class="page-toc"><p class="eyebrow">{copy["contents"]}</p>{toc_links}</aside>' if headings else ""
+    toc = f'<aside class="page-toc"><nav aria-label="{copy["contents"]}"><p class="toc-label">{copy["contents"]}</p>{toc_links}</nav></aside>' if headings else ""
+    if headings:
+        section_links = "".join(f'<a href="#{esc(anchor)}">{esc(text)}</a>' for tag, text, anchor in headings if tag == "h2")
+        inline_toc = f'<details class="inline-toc"><summary>{copy["contents"]}</summary><div>{section_links}</div></details>'
+        content = content.replace('</header>', '</header>' + inline_toc, 1)
     body_class = "chapter-page" if chapter else "overview-page"
     lang_label = "中文" if other == "zh" else "English"
     pager = ""
@@ -216,7 +246,12 @@ def shell(lang, slug, title, content, headings=(), chapter=None):
             else:
                 items.append(f'<a href="index.html"><small>{label}</small><span>{copy["home"]}</span></a>')
         pager = '<nav class="chapter-pager" aria-label="Chapter navigation">' + "".join(items) + "</nav>"
-    js_copy = json.dumps({k: copy[k] for k in ["noResults", "results", "patterns", "copied", "copyFailed", "enlarge"]}, ensure_ascii=False).replace("<", "\\u003c")
+    js_copy = json.dumps({k: copy[k] for k in ["noResults", "results", "patterns", "copied", "copyFailed", "enlarge", "copyPage", "pageCopied", "pageCopyFailed", "viewSource"]}, ensure_ascii=False).replace("<", "\\u003c")
+    page_source = ''
+    if chapter:
+        markdown = json.dumps(source_file(lang, chapter).read_text(encoding='utf-8'), ensure_ascii=False).replace('<', '\\u003c')
+        page_source = f'<script id="page-source" type="application/json">{markdown}</script>'
+    primary_nav = ''.join(f'<a href="{target}.html"{" aria-current=\"true\"" if active else ""}>{copy[label]}</a>' for target, label, active in [('index', 'handbook', slug != 'explore' and slug != '07-methodology-and-sources'), ('explore', 'compareNav', slug == 'explore'), ('07-methodology-and-sources', 'sourcesNav', slug == '07-methodology-and-sources')])
     description = chapter["summary"][lang] if chapter else copy["heroText"]
     return f'''<!doctype html>
 <html lang="{"zh-CN" if lang == "zh" else "en"}">
@@ -227,22 +262,24 @@ def shell(lang, slug, title, content, headings=(), chapter=None):
 <link rel="stylesheet" href="../shared/style.css">
 <link rel="alternate" hreflang="{other}" href="../{other}/{slug}.html">
 <script>document.documentElement.classList.add('js');window.STUDY_COPY={js_copy};</script>
+{page_source}
 <script src="../shared/search-{lang}.js" defer></script><script src="../shared/app.js" defer></script>
 </head><body class="{body_class}" data-language="{lang}">
 <a class="skip-link" href="#main">{copy["skip"]}</a>
 <header class="site-header">
-<a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">a/c</span><span>Anthropic &amp; Claude<small>DESIGN FIELDNOTES</small></span></a>
+<a class="brand" href="index.html"><span class="brand-name">Anthropic</span><span class="brand-context">{copy["study"]}</span></a>
+<nav class="top-nav" aria-label="{copy["study"]}">{primary_nav}</nav>
 <div class="header-actions"><button class="menu-toggle" type="button" aria-label="{copy["menu"]}" aria-controls="chapter-nav" aria-expanded="false"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14"/></svg><span>{copy["menu"]}</span></button>
-<button class="search-trigger" type="button" aria-label="{copy["search"]}" data-open-search><svg class="search-icon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg><span>{copy["search"]}</span><kbd>/</kbd></button>
+<button class="search-trigger" type="button" aria-label="{copy["search"]}" data-open-search><svg class="search-icon" width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg><span>{copy["search"]}</span><kbd>Ctrl K</kbd></button>
 <a class="language-switch" lang="{"zh-CN" if other == "zh" else "en"}" href="../{other}/{slug}.html">{lang_label}</a>
 <a class="github-link" href="{REPO}">GitHub ↗</a></div>
-<div class="reading-progress" aria-hidden="true"><span></span></div></header>
+</header>
 <nav id="chapter-nav" class="chapter-nav" aria-label="{copy["chapters"]}">
-<p class="nav-label">{copy["about"]}</p>{nav_link("index",copy["home"],slug)}{nav_link("explore",copy["explore"],slug)}
-<p class="nav-label chapters-label">{copy["chapters"]}</p>{chapter_nav}
-<div class="nav-foot"><span class="edition-date">{DATE}</span><p>{copy["aboutText"]}</p><a href="{REPO}/archive/refs/heads/main.zip">{copy["download"]} ↗</a></div></nav>
+<div class="nav-group"><p class="nav-label">{copy["start"]}</p>{nav_link("index",copy["home"],slug)}{nav_link("explore",copy["explore"],slug)}</div>
+{chapter_nav}
+<div class="nav-foot"><p>{copy["aboutText"]}</p><a href="{REPO}/archive/refs/heads/main.zip">{copy["download"]} ↗</a></div></nav>
 <div class="nav-scrim" data-close-menu></div>
-<div class="site-body"><main id="main" tabindex="-1">{content}{pager}</main>{toc}
+<div class="site-body"><div class="document-grid"><main id="main" tabindex="-1">{content}{pager}</main>{toc}</div>
 <footer class="site-footer"><p>{copy["footer"]}<br><span>{copy["date"]}: {DATE}</span></p><div><a href="07-methodology-and-sources.html">{copy["methods"]}</a><button type="button" data-print>{copy["print"]} ↗</button><a href="../../NOTICE.md">CC BY 4.0 / Credits</a></div></footer></div>
 <dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title"><div class="dialog-head"><h2 id="search-title">{copy["search"]}</h2><button type="button" data-close-dialog>{copy["close"]} <kbd>Esc</kbd></button></div><label class="sr-only" for="study-search">{copy["search"]}</label><input id="study-search" type="search" placeholder="{copy["searchHint"]}" autocomplete="off"><p id="search-status" class="search-status" role="status">{copy["searchHelp"]}</p><div id="search-results"></div></dialog>
 <dialog id="image-dialog" class="image-dialog" aria-label="{copy["enlarge"]}"><div class="dialog-head"><p id="image-caption"></p><button type="button" data-close-dialog>{copy["close"]} <kbd>Esc</kbd></button></div><div class="image-canvas"><img id="enlarged-image" alt=""></div><a id="original-image" href="#" target="_blank" rel="noopener">{copy["original"]} ↗</a></dialog>
@@ -256,14 +293,15 @@ def home(lang):
     voices = []
     for i, slug in enumerate(["claude-resources", "platform-docs", "developer-blog"]):
         sample = next(p for p in MANIFEST["pages"] if p["slug"] == slug)
-        voices.append(f'<article class="voice"><div class="voice-image">{figure("../../assets/screenshots/" + slug + ".png", CONTENT["pages"][sample["id"]][lang],lang)}</div><p class="eyebrow">0{i + 1} / {sample["id"]}</p><h3>{copy["directions"][i]}</h3><p>{copy["directionText"][i]}</p><a href="{sample["url"]}">{copy["source"]} ↗</a></article>')
+        voices.append(f'<article class="voice"><div class="voice-image">{figure("../../assets/screenshots/" + slug + ".png", CONTENT["pages"][sample["id"]][lang],lang)}</div><h3>{copy["directions"][i]}</h3><p>{copy["directionText"][i]}</p><a href="{sample["url"]}">{sample["id"]} · {copy["source"]} ↗</a></article>')
     chapters = "".join(f'<a class="chapter-entry" href="{c["slug"]}.html"><span class="entry-number">{i + 1:02}</span><div><h3>{esc(c[lang])}</h3><p>{esc(c["summary"][lang])}</p></div><span aria-hidden="true">↗</span></a>' for i, c in enumerate(CHAPTERS))
-    html_content = f'''<section class="cover"><div class="cover-copy"><p class="eyebrow"><span class="accent-dot"></span> WEBSITE DESIGN STUDY / 2026</p><h1>{copy["heroTitle"]}</h1><p class="cover-intro">{copy["heroText"]}</p><div class="cover-actions"><a class="primary-link" href="01-visual-language.html">{copy["read"]} →</a><a class="text-link" href="explore.html">{copy["explore"]} ↗</a></div></div><figure class="cover-figure"><div class="window-label"><span></span><span></span><span></span><small>claude.com/resources</small></div>{figure("../../assets/screenshots/claude-resources.png",CONTENT["pages"]["S04"][lang],lang,eager=True)}<figcaption>{copy["heroCaption"]}</figcaption></figure></section>
-<section class="study-counts" aria-label="Study counts">{stats}</section>
-<section class="home-section"><div class="section-heading"><p class="eyebrow">01 / VISUAL DIRECTIONS</p><h2>{copy["voices"]}</h2><p>{copy["voicesIntro"]}</p></div><div class="voices">{"".join(voices)}</div></section>
-<section class="home-section"><div class="section-heading"><p class="eyebrow">02 / THE HANDBOOK</p><h2>{copy["chapters"]}</h2><p>{copy["chapterIntro"]}</p></div><div class="chapter-index">{chapters}</div></section>
-<section class="explore-banner"><div><p class="eyebrow">03 / LOOK CLOSER</p><h2>{copy["explore"]}</h2><p>{copy["compareIntro"]}</p></div><a class="primary-link" href="explore.html">{copy["explore"]} →</a></section>'''
-    return shell(lang, "index", copy["home"], html_content)
+    html_content = article_header(lang, copy["heroTitle"], copy["heroText"], copy["home"])
+    html_content += f'''<section class="home-section" id="findings"><div class="section-heading"><h2>{copy["findings"]}</h2><p>{copy["scope"]}</p></div><div class="study-counts">{stats}</div><p class="scope-note">{copy["date"]}: {DATE} · <a href="07-methodology-and-sources.html">{copy["methods"]}</a></p><div class="intro-actions"><a class="primary-link" href="01-visual-language.html">{copy["read"]} <span aria-hidden="true">→</span></a><a class="text-link" href="explore.html">{copy["explore"]} <span aria-hidden="true">→</span></a></div></section>
+<section class="home-section" id="visual-directions"><div class="section-heading"><h2>{copy["voices"]}</h2><p>{copy["voicesIntro"]}</p></div><div class="voices">{"".join(voices)}</div></section>
+<section class="home-section" id="chapters"><div class="section-heading"><h2>{copy["chapters"]}</h2><p>{copy["chapterIntro"]}</p></div><div class="chapter-index">{chapters}</div></section>
+<section class="explore-banner" id="compare"><div><h2>{copy["explore"]}</h2><p>{copy["compareIntro"]}</p></div><a class="text-link" href="explore.html">{copy["explore"]} →</a></section>'''
+    headings = [("h2",copy["findings"],"findings"),("h2",copy["voices"],"visual-directions"),("h2",copy["chapters"],"chapters"),("h2",copy["explore"],"compare")]
+    return shell(lang, "index", copy["home"], html_content, headings)
 
 
 def pattern_rows(lang):
@@ -315,12 +353,13 @@ def explorer(lang):
         bars.append(f'<div class="type-row"><a href="../../data/pages/{p["slug"]}.json">{esc(CONTENT["pages"][p["id"]][lang])}<small>{p["id"]}</small></a><div class="type-track"><span style="width:{size / 72 * 100:.4f}%"></span></div><strong>{size:g}<small>px</small></strong></div>')
     colors = ["#FAF9F5", "#141413", "#30302E", "#FCFCFB", "#0B0B0B", "#52514E"]
     swatches = "".join(f'<button class="swatch" type="button" data-copy-color="{color}" aria-label="{esc(copy["colorNames"][i])}: {color}"><span class="swatch-color" style="background:{color}"></span><strong>{color}</strong><span>{copy["colorNames"][i]}</span><small>{["S01 / S04", "S01 / S04", "S04", "S08", "S08", "S08"][i]}</small></button>' for i, color in enumerate(colors))
-    content = f'''<header class="article-header"><p class="eyebrow">VISUAL ATLAS / {DATE}</p><h1>{copy["explore"]}</h1><p>{copy["compareIntro"]}</p></header>
-<section class="atlas-section" id="comparison"><div class="section-heading"><p class="eyebrow">01 / COMPARE</p><h2>{copy["compare"]}</h2></div><div class="comparison-grid">{comparison_panel(lang,"left","S04")}{comparison_panel(lang,"right","S08")}</div></section>
-<section class="atlas-section" id="type-scale"><div class="section-heading"><p class="eyebrow">02 / TYPOGRAPHY</p><h2>{copy["typeChart"]}</h2><p>{copy["typeIntro"]}</p></div><div class="type-chart">{"".join(bars)}</div><a class="text-link" href="02-typography.html">{CHAPTERS[1][lang]} ↗</a></section>
-<section class="atlas-section" id="colors"><div class="section-heading"><p class="eyebrow">03 / COLOR</p><h2>{copy["colorTitle"]}</h2><p>{copy["colorText"]}</p></div><div class="swatches">{swatches}</div><p id="copy-status" role="status"></p><a class="text-link" href="01-visual-language.html">{CHAPTERS[0][lang]} ↗</a></section>
-<section class="atlas-section" id="patterns"><div class="section-heading"><p class="eyebrow">04 / PATTERNS</p><h2>{copy["catalog"]}</h2><p>{copy["catalogIntro"]}</p></div><div class="pattern-filters" role="group" aria-label="{copy["catalog"]}">{filters}</div><p class="pattern-count" role="status">20 {copy["patterns"]}</p><div class="pattern-grid">{"".join(cards)}</div></section>'''
-    return shell(lang, "explore", copy["explore"], content)
+    content = article_header(lang, copy["explore"], copy["compareIntro"], copy["compareNav"])
+    content += f'''<section class="atlas-section" id="comparison"><div class="section-heading"><h2>{copy["compare"]}</h2></div><div class="comparison-grid">{comparison_panel(lang,"left","S04")}{comparison_panel(lang,"right","S08")}</div></section>
+<section class="atlas-section" id="type-scale"><div class="section-heading"><h2>{copy["typeChart"]}</h2><p>{copy["typeIntro"]}</p></div><div class="type-chart">{"".join(bars)}</div><a class="text-link" href="02-typography.html">{CHAPTERS[1][lang]} ↗</a></section>
+<section class="atlas-section" id="colors"><div class="section-heading"><h2>{copy["colorTitle"]}</h2><p>{copy["colorText"]}</p></div><div class="swatches">{swatches}</div><p id="copy-status" role="status"></p><a class="text-link" href="01-visual-language.html">{CHAPTERS[0][lang]} ↗</a></section>
+<section class="atlas-section" id="patterns"><div class="section-heading"><h2>{copy["catalog"]}</h2><p>{copy["catalogIntro"]}</p></div><div class="pattern-filters" role="group" aria-label="{copy["catalog"]}">{filters}</div><p class="pattern-count" role="status">20 {copy["patterns"]}</p><div class="pattern-grid">{"".join(cards)}</div></section>'''
+    headings = [("h2",copy[label],anchor) for label,anchor in [("compare","comparison"),("typeChart","type-scale"),("colorTitle","colors"),("catalog","patterns")]]
+    return shell(lang, "explore", copy["explore"], content, headings)
 
 
 def main():
@@ -331,10 +370,10 @@ def main():
         for i, chapter in enumerate(CHAPTERS):
             body, headings, records = render_chapter(lang, chapter)
             search.extend(records)
-            header = f'<header class="article-header"><p class="eyebrow">CHAPTER {i + 1:02} / 10</p><h1>{esc(chapter[lang])}</h1><p>{esc(chapter["summary"][lang])}</p></header>'
-            section_links = "".join(f'<a href="#{esc(anchor)}">{esc(text)}</a>' for tag, text, anchor in headings if tag == "h2")
-            contents = f'<details class="inline-toc"><summary>{COPY[lang]["contents"]}</summary><div>{section_links}</div></details>'
-            article = header + contents + '<article class="prose">' + body + '</article>'
+            group = next(j for j, chapters in enumerate(NAV_GROUPS) if chapter in chapters)
+            header = article_header(lang, chapter[lang], chapter["summary"][lang], COPY[lang]["navGroups"][group], copy_page=True)
+            source_link = f'<div class="article-source"><a href="{relative(source_file(lang, chapter), html_file(lang, chapter["slug"]))}">{COPY[lang]["viewSource"]} ↗</a><span>{i + 1:02} / 10</span></div>'
+            article = header + '<article class="prose">' + body + '</article>' + source_link
             write(html_file(lang, chapter["slug"]), shell(lang, chapter["slug"], chapter[lang], article, headings, chapter))
         search_json = json.dumps(search, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
         write(OUT / "shared" / f"search-{lang}.js", "window.STUDY_SEARCH=" + search_json + ";\n")

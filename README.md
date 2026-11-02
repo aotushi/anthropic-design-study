@@ -14,7 +14,7 @@ Explore how typography, color, space, imagery, and information structure connect
 
 | Format | Best for | Entry |
 |---|---|---|
-| HTML handbook | Chapter navigation, search, enlarged screenshots, print layouts | [English](https://aotushi.github.io/anthropic-design-study/html/en/index.html) · [中文](https://aotushi.github.io/anthropic-design-study/html/zh/index.html) |
+| HTML handbook | Anthropic-style documentation layout, section navigation, search, copy, images, and print | [English](https://aotushi.github.io/anthropic-design-study/html/en/index.html) · [中文](https://aotushi.github.io/anthropic-design-study/html/zh/index.html) |
 | Interactive explorer | Side-by-side pages, measured heading sizes, filtered patterns | [Explore the evidence](https://aotushi.github.io/anthropic-design-study/html/en/explore.html) |
 | GitHub documents | Reading source text, following records, reviewing changes | The chapter list below |
 | Downloaded HTML | Reading and searching without a server | [Download repository ZIP](https://github.com/aotushi/anthropic-design-study/archive/refs/heads/main.zip), then open `html/en/index.html` |

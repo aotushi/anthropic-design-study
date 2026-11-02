@@ -11,6 +11,9 @@
   const navigation = document.querySelector('#chapter-nav');
   const bodyContent = document.querySelector('.site-body');
   const dialogOrigins = new WeakMap();
+  if (/Mac|iPhone|iPad/.test(navigator.platform)) {
+    document.querySelector('.search-trigger kbd').textContent = '⌘ K';
+  }
 
   function setMenu(open, restore = false) {
     document.body.classList.toggle('menu-open', open);
@@ -115,7 +118,8 @@
     if (!document.body.classList.contains('menu-open')) return;
     if (event.key === 'Escape') { setMenu(false, true); return; }
     if (event.key === 'Tab') {
-      const items = [menuButton, ...navigation.querySelectorAll('a')];
+      const items = [...document.querySelectorAll('.site-header a, .site-header button, #chapter-nav a')]
+        .filter(item => item.getClientRects().length && getComputedStyle(item).visibility !== 'hidden');
       const first = items[0], last = items[items.length - 1];
       if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
       else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
@@ -152,6 +156,31 @@
     });
   });
 
+  const copyPage = document.querySelector('[data-copy-page]');
+  if (copyPage) {
+    let resetLabel;
+    copyPage.addEventListener('click', async () => {
+      const status = document.querySelector('#page-copy-status');
+      try {
+        await navigator.clipboard.writeText(JSON.parse(document.querySelector('#page-source').textContent));
+        copyPage.querySelector('span').textContent = copy.pageCopied;
+        status.classList.add('sr-only');
+        status.textContent = copy.pageCopied;
+        clearTimeout(resetLabel);
+        resetLabel = setTimeout(() => { copyPage.querySelector('span').textContent = copy.copyPage; }, 2000);
+      } catch {
+        clearTimeout(resetLabel);
+        copyPage.querySelector('span').textContent = copy.copyPage;
+        status.classList.remove('sr-only');
+        status.textContent = copy.pageCopyFailed + ' ';
+        const source = document.createElement('a');
+        source.href = document.querySelector('.article-source a').href;
+        source.textContent = copy.viewSource;
+        status.append(source);
+      }
+    });
+  }
+
   let originalDetails = [];
   let originalCards = [];
   window.addEventListener('beforeprint', () => {
@@ -166,28 +195,28 @@
   });
   document.querySelector('[data-print]').addEventListener('click', () => window.print());
 
-  const progress = document.querySelector('.reading-progress span');
+  const tocLinks = [...document.querySelectorAll('.page-toc a, .inline-toc a')];
+  const sections = [...document.querySelectorAll('.page-toc a')]
+    .map(link => document.getElementById(decodeURIComponent(link.hash.slice(1)))).filter(Boolean);
+  let currentSection;
   let scheduled = false;
-  function updateProgress() {
-    const distance = document.documentElement.scrollHeight - innerHeight;
-    progress.style.width = `${distance > 0 ? Math.min(100, scrollY / distance * 100) : 0}%`;
+  function updateContents() {
+    const offset = document.querySelector('.site-header').getBoundingClientRect().bottom + 36;
+    const above = sections.filter(section => section.getBoundingClientRect().top <= offset);
+    const active = above.at(-1) || sections[0];
+    if (active && active.id !== currentSection) {
+      currentSection = active.id;
+      tocLinks.forEach(link => {
+        if (decodeURIComponent(link.hash.slice(1)) === currentSection) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+    }
     scheduled = false;
   }
   window.addEventListener('scroll', () => {
-    if (!scheduled) { scheduled = true; requestAnimationFrame(updateProgress); }
+    if (!scheduled) { scheduled = true; requestAnimationFrame(updateContents); }
   }, { passive: true });
-  window.addEventListener('resize', updateProgress);
-  updateProgress();
-  const sections = [...document.querySelectorAll('.prose h2[id], .prose h3[id]')];
-  if ('IntersectionObserver' in window && sections.length) {
-    const observer = new IntersectionObserver(entries => {
-      const visible = entries.find(entry => entry.isIntersecting);
-      if (!visible) return;
-      document.querySelectorAll('.page-toc a').forEach(link => {
-        if (decodeURIComponent(link.hash.slice(1)) === visible.target.id) link.setAttribute('aria-current', 'location');
-        else link.removeAttribute('aria-current');
-      });
-    }, { rootMargin: '-90px 0px -60% 0px' });
-    sections.forEach(section => observer.observe(section));
-  }
+  window.addEventListener('resize', updateContents);
+  window.addEventListener('load', updateContents);
+  updateContents();
 })();

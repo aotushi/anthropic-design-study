@@ -15,7 +15,7 @@
 
 | 形式 | 适合做什么 | 入口 |
 |---|---|---|
-| HTML 手册 | 章节导航、搜索、图片放大与打印阅读 | [中文](https://aotushi.github.io/anthropic-design-study/html/zh/index.html) · [English](https://aotushi.github.io/anthropic-design-study/html/en/index.html) |
+| HTML 手册 | Anthropic 文档式布局、章节与页内导航、搜索、复制、图片放大与打印 | [中文](https://aotushi.github.io/anthropic-design-study/html/zh/index.html) · [English](https://aotushi.github.io/anthropic-design-study/html/en/index.html) |
 | 交互对照 | 页面并排比较、字号图表与模式筛选 | [浏览图像与数据](https://aotushi.github.io/anthropic-design-study/html/zh/explore.html) |
 | GitHub 文档 | 阅读原文、查看证据与追踪修改 | 下方章节目录 |
 | 离线 HTML | 下载后直接阅读与搜索 | [下载仓库 ZIP](https://github.com/aotushi/anthropic-design-study/archive/refs/heads/main.zip)，打开 `html/zh/index.html` |

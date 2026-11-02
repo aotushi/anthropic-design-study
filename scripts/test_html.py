@@ -30,6 +30,36 @@ async def check_layout(page):
     assert not result["broken"], (page.url, result)
 
 
+async def check_document_controls(page, context, base):
+    await context.grant_permissions(["clipboard-read", "clipboard-write"])
+    for lang in ["en", "zh"]:
+        await page.goto(f"{base}/html/{lang}/02-typography.html")
+        await expect(page.locator(".page-toc")).to_be_visible()
+        await expect(page.locator(".inline-toc")).not_to_be_visible()
+        article = await page.locator("main").bounding_box()
+        toc = await page.locator(".page-toc").bounding_box()
+        assert article["x"] + article["width"] < toc["x"], (article, toc)
+        await page.locator("[data-copy-page]").click()
+        await expect(page.locator("#page-copy-status")).to_have_text("Page copied" if lang == "en" else "页面已复制")
+        source = ROOT / "docs" / ("en" if lang == "en" else "") / "02-typography.md"
+        copied = await page.evaluate("navigator.clipboard.readText()")
+        assert copied.replace("\r\n", "\n") == source.read_text(encoding="utf-8")
+        section = page.locator(".page-toc a").nth(1)
+        anchor = await section.get_attribute("href")
+        await section.click()
+        await expect(section).to_have_attribute("aria-current", "location")
+        target = page.locator(anchor)
+        bounds = await target.bounding_box()
+        header = await page.locator(".site-header").bounding_box()
+        assert bounds["y"] >= header["height"] - 1, (bounds, header)
+        await expect(target.locator(".heading-anchor")).to_have_attribute("href", anchor)
+    await page.evaluate("Object.defineProperty(navigator.clipboard,'writeText',{configurable:true,value:async()=>{throw new Error('Clipboard unavailable')}})")
+    await page.locator("[data-copy-page]").click()
+    await expect(page.locator("#page-copy-status")).to_be_visible()
+    assert await page.locator("#page-copy-status a").evaluate("link => link.href") == f"{base}/docs/02-typography.md"
+    await page.evaluate("delete navigator.clipboard.writeText")
+
+
 async def run(base, channel):
     SCREENSHOTS.mkdir(parents=True, exist_ok=True)
     failures = []
@@ -52,6 +82,7 @@ async def run(base, channel):
                 if file.stem in {"index", "explore", "02-typography"}:
                     await page.screenshot(path=str(SCREENSHOTS / f"{lang}-{file.stem}-desktop.png"))
 
+        await check_document_controls(page, context, base)
         await page.goto(f"{base}/html/en/02-typography.html")
         await page.locator(".language-switch").click()
         await page.wait_for_url("**/zh/02-typography.html")
@@ -116,18 +147,29 @@ async def run(base, channel):
         await expect(page.locator("#copy-status")).to_have_text("Copied: #FAF9F5")
         assert await page.evaluate("navigator.clipboard.readText()") == "#FAF9F5"
 
-        for width in [375, 390, 768, 1024]:
+        for width in [375, 390, 768, 1024, 1239, 1240]:
             await page.set_viewport_size({"width": width, "height": 844})
             for lang in ["en", "zh"]:
                 for slug in ["index", "02-typography", "09-page-anatomy", "explore"]:
                     await page.goto(f"{base}/html/{lang}/{slug}.html")
                     await check_layout(page)
-                    if width == 390 and slug in {"index", "explore"}:
+                    if width >= 1240:
+                        await expect(page.locator(".page-toc")).to_be_visible()
+                        await expect(page.locator(".inline-toc")).not_to_be_visible()
+                    else:
+                        await expect(page.locator(".page-toc")).not_to_be_visible()
+                        await expect(page.locator(".inline-toc")).to_be_visible()
+                    if width == 390 and slug in {"index", "explore", "02-typography"}:
                         await page.screenshot(path=str(SCREENSHOTS / f"{lang}-{slug}-mobile.png"))
         await page.set_viewport_size({"width": 390, "height": 844})
         await page.goto(f"{base}/html/en/index.html")
         await page.locator(".menu-toggle").click()
         await expect(page.locator(".menu-toggle")).to_have_attribute("aria-expanded", "true")
+        await page.locator("#chapter-nav a").last.focus()
+        await page.keyboard.press("Tab")
+        await expect(page.locator(".brand")).to_be_focused()
+        await page.keyboard.press("Shift+Tab")
+        await expect(page.locator("#chapter-nav a").last).to_be_focused()
         await page.locator('#chapter-nav a[href="04-components.html"]').click()
         await page.wait_for_url("**/en/04-components.html")
         await expect(page.locator(".menu-toggle")).to_have_attribute("aria-expanded", "false")
@@ -153,7 +195,7 @@ async def run(base, channel):
         assert not remote_requests, remote_requests
         assert not failures, failures
         await browser.close()
-    print(json.dumps({"pagesChecked": len(visited), "widths": [1440, 1024, 768, 390, 375], "interactions": "passed", "offline": "passed", "consoleErrors": failures}, ensure_ascii=False))
+    print(json.dumps({"pagesChecked": len(visited), "widths": [1440, 1240, 1239, 1024, 768, 390, 375], "interactions": "passed", "copyAndSectionNavigation": "passed", "offline": "passed", "consoleErrors": failures}, ensure_ascii=False))
 
 
 def main():
