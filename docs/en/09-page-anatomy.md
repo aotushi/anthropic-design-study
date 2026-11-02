@@ -2,7 +2,7 @@
 
 [中文](../09-page-anatomy.md) · **English**
 
-[Overview](../../README.en.md) · [Previous: Application guide](08-application-guide.md) · [Next: Cross-site matrix](10-cross-site-matrix.md)
+[Overview](../../README.md) · [Previous: Application guide](08-application-guide.md) · [Next: Cross-site matrix](10-cross-site-matrix.md)
 
 Dividing a page into regions reveals how typography, spacing, and components organize reading together. These resource, documentation, and course examples follow three questions: what appears first, how readers orient themselves, and what they can do next.
 

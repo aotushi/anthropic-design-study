@@ -33,7 +33,8 @@ def anchors(text):
 
 
 def main():
-    markdown = [ROOT / "README.md", ROOT / "README.en.md", *sorted((ROOT / "docs").rglob("*.md")), ROOT / "NOTICE.md", ROOT / "CONTRIBUTING.md", ROOT / "CHANGELOG.md", ROOT / "web/README.md"]
+    markdown = [ROOT / "README.md", ROOT / "README.en.md", ROOT / "README.zh-CN.md", *sorted((ROOT / "docs").rglob("*.md")), ROOT / "NOTICE.md", ROOT / "CONTRIBUTING.md", ROOT / "CHANGELOG.md", ROOT / "web/README.md"]
+    check((ROOT / "README.md").read_text(encoding="utf-8").startswith("# Anthropic & Claude"), "Default README must be English")
     references = 0
     for file in markdown:
         text = file.read_text(encoding="utf-8")

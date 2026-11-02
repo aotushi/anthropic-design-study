@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="五个字体名称、使用职责与实测排版层级。"><meta name="color-scheme" content="light">
+<title>字体与排版 · Anthropic 与 Claude · 网站设计手册</title>
+<link rel="icon" type="image/svg+xml" href="../shared/favicon.svg">
+<link rel="stylesheet" href="../shared/style.css">
+<link rel="alternate" hreflang="en" href="../en/02-typography.html">
+<script>document.documentElement.classList.add('js');window.STUDY_COPY={"noResults": "没有找到结果。试试字体、页面类型或模式名称。", "results": "条结果", "patterns": "种模式", "copied": "已复制", "copyFailed": "请选中色值并复制。", "enlarge": "放大图片"};</script>
+<script src="../shared/search-zh.js" defer></script><script src="../shared/app.js" defer></script>
+</head><body class="chapter-page" data-language="zh">
+<a class="skip-link" href="#main">跳至正文</a>
+<header class="site-header">
+<a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">a/c</span><span>Anthropic &amp; Claude<small>DESIGN FIELDNOTES</small></span></a>
+<div class="header-actions"><button class="menu-toggle" type="button" aria-label="目录" aria-controls="chapter-nav" aria-expanded="false"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14"/></svg><span>目录</span></button>
+<button class="search-trigger" type="button" aria-label="搜索研究内容" data-open-search><svg class="search-icon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg><span>搜索研究内容</span><kbd>/</kbd></button>
+<a class="language-switch" lang="en" href="../en/02-typography.html">English</a>
+<a class="github-link" href="https://github.com/aotushi/anthropic-design-study">GitHub ↗</a></div>
+<div class="reading-progress" aria-hidden="true"><span></span></div></header>
+<nav id="chapter-nav" class="chapter-nav" aria-label="章节目录">
+<p class="nav-label">关于本研究</p><a href="index.html"><span>研究总览</span></a><a href="explore.html"><span>图像与数据</span></a>
+<p class="nav-label chapters-label">章节目录</p><a href="01-visual-language.html"><span class="nav-number">01</span><span>视觉语言</span></a><a href="02-typography.html" aria-current="page"><span class="nav-number">02</span><span>字体与排版</span></a><a href="03-page-patterns.html"><span class="nav-number">03</span><span>八类页面模式</span></a><a href="04-components.html"><span class="nav-number">04</span><span>二十类可复用模式</span></a><a href="05-ux-and-responsive.html"><span class="nav-number">05</span><span>UX 与响应式</span></a><a href="06-gallery.html"><span class="nav-number">06</span><span>截图图库</span></a><a href="07-methodology-and-sources.html"><span class="nav-number">07</span><span>方法与证据</span></a><a href="08-application-guide.html"><span class="nav-number">08</span><span>应用指南</span></a><a href="09-page-anatomy.html"><span class="nav-number">09</span><span>页面拆解</span></a><a href="10-cross-site-matrix.html"><span class="nav-number">10</span><span>跨站设计矩阵</span></a>
+<div class="nav-foot"><span class="edition-date">2026-11-02</span><p>10 个章节 · 15 张截图 · 中英文双语</p><a href="https://github.com/aotushi/anthropic-design-study/archive/refs/heads/main.zip">下载离线阅读 ↗</a></div></nav>
+<div class="nav-scrim" data-close-menu></div>
+<div class="site-body"><main id="main" tabindex="-1"><header class="article-header"><p class="eyebrow">CHAPTER 02 / 10</p><h1>字体与排版</h1><p>五个字体名称、使用职责与实测排版层级。</p></header><details class="inline-toc"><summary>本页内容</summary><div><a href="#五个主要名称与四个核心家族">五个主要名称与四个核心家族</a><a href="#字体的三种职责">字体的三种职责</a><a href="#真实页面中的字号层级">真实页面中的字号层级</a><a href="#两个文档站的等宽字体并不相同">两个文档站的等宽字体并不相同</a><a href="#声明加载与实际渲染">声明加载与实际渲染</a><a href="#字体别名与非文字字库">字体别名与非文字字库</a><a href="#将排版用于中文">将排版用于中文</a></div></details><article class="prose"><h2 id="五个主要名称与四个核心家族">五个主要名称与四个核心家族</h2>
+<p>主要文字字体如下表，名称由页面字体设置、加载记录与抽样文字的实际渲染共同核对。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>字体类别</th>
+<th>主要角色</th>
+<th>证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Anthropic Sans</strong></td>
+<td>无衬线</td>
+<td>正文、导航、按钮、卡片说明</td>
+<td><a href="../../data/pages/claude-resources.json">S04</a>、<a href="../../data/pages/academy-home.json">S05</a>、<a href="../../data/pages/platform-docs.json">S08</a></td>
+</tr>
+<tr>
+<td><strong>Anthropic Serif</strong></td>
+<td>衬线</td>
+<td>品牌标题、页面标题、部分卡片标题</td>
+<td><a href="../../data/pages/anthropic-home.json">S01</a>、<a href="../../data/pages/claude-resources.json">S04</a>、<a href="../../data/pages/academy-home.json">S05</a></td>
+</tr>
+<tr>
+<td><strong>Anthropic Serif Display</strong></td>
+<td>衬线展示变体</td>
+<td>Claude Code 文档标题</td>
+<td><a href="../../data/pages/code-docs.json">S07</a></td>
+</tr>
+<tr>
+<td><strong>Anthropic Mono</strong></td>
+<td>等宽</td>
+<td>Platform 代码、开发者博客标题及标签</td>
+<td><a href="../../data/pages/platform-docs.json">S08</a>、<a href="../../data/pages/developer-blog.json">S10</a></td>
+</tr>
+<tr>
+<td><strong>Paper Mono</strong></td>
+<td>等宽</td>
+<td>Claude Code 文档代码块</td>
+<td><a href="../../data/pages/code-docs.json">S07</a>、<a href="../../data/interaction-checks.json">代码区进一步核验</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>按页面中的主要字体名称计为 <strong>5 个</strong>；将 Serif Display 作为 Serif 的展示变体归并，则为 <strong>4 个核心家族</strong>。这个口径不把同一字体的粗体、斜体、变量版本或备用名称重复计算。</p>
+<h2 id="字体的三种职责">字体的三种职责</h2>
+<p><strong>标题营造语气，正文保持易读，等宽文字表达技术结构。</strong> 同一类字体也能跨越不同角色，例如公司首页用无衬线与衬线文字共同组成主标题，开发者博客则用等宽字体呈现站名。</p>
+<p><button class="figure-button" type="button" data-zoom aria-label="放大图片: Anthropic 公司首页，一段大标题混合无衬线与衬线文字"><img src="../../assets/screenshots/anthropic-home.png" alt="Anthropic 公司首页，一段大标题混合无衬线与衬线文字" width="1440" height="1000" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true">放大图片 ↗</span></button></p>
+<p><em>图 3 · <a href="https://www.anthropic.com/">Anthropic 公司首页 S01</a> · 同一段主标题的开头使用无衬线字体，后续说明使用衬线字体。下方内容为该时刻的动态展示帧。</em></p>
+<p>公司首页通过字形与字重的变化，把简短的主张与较长的说明放在同一段视觉结构中。浏览器的渲染记录同时识别到 Sans 和 Serif，对应标题内部两种不同的表达。</p>
+<p>开发者博客的站名标题使用 Anthropic Mono，将等宽字形带入站点识别，并与分类、日期等技术性标签呼应。</p>
+<h2 id="真实页面中的字号层级">真实页面中的字号层级</h2>
+<p>以下为 <strong>1440 × 1000</strong> 桌面视口下的测量值，字号与行高均以像素表示。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>页面与文字角色</th>
+<th style="text-align:right">字号</th>
+<th style="text-align:right">行高</th>
+<th style="text-align:right">字重</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Resources 主标题</td>
+<td style="text-align:right">72</td>
+<td style="text-align:right">79.2</td>
+<td style="text-align:right">500</td>
+<td><a href="../../data/pages/claude-resources.json">S04</a></td>
+</tr>
+<tr>
+<td>Resources 首屏说明</td>
+<td style="text-align:right">23</td>
+<td style="text-align:right">34.5</td>
+<td style="text-align:right">400</td>
+<td><a href="../../data/pages/claude-resources.json">S04</a></td>
+</tr>
+<tr>
+<td>Pricing 主标题</td>
+<td style="text-align:right">64</td>
+<td style="text-align:right">70.4</td>
+<td style="text-align:right">500</td>
+<td><a href="../../data/pages/claude-pricing.json">S03</a></td>
+</tr>
+<tr>
+<td>Academy 首页主标题</td>
+<td style="text-align:right">48</td>
+<td style="text-align:right">52.8</td>
+<td style="text-align:right">400</td>
+<td><a href="../../data/pages/academy-home.json">S05</a></td>
+</tr>
+<tr>
+<td>Academy 首页说明</td>
+<td style="text-align:right">18</td>
+<td style="text-align:right">28</td>
+<td style="text-align:right">400</td>
+<td><a href="../../data/pages/academy-home.json">S05</a></td>
+</tr>
+<tr>
+<td>Academy 课程内页主标题</td>
+<td style="text-align:right">36</td>
+<td style="text-align:right">54</td>
+<td style="text-align:right">400</td>
+<td><a href="../../data/pages/academy-lesson.json">S06</a></td>
+</tr>
+<tr>
+<td>Code Docs 主标题</td>
+<td style="text-align:right">36</td>
+<td style="text-align:right">40</td>
+<td style="text-align:right">400</td>
+<td><a href="../../data/pages/code-docs.json">S07</a></td>
+</tr>
+<tr>
+<td>Code Docs 介绍段落</td>
+<td style="text-align:right">16</td>
+<td style="text-align:right">26.4</td>
+<td style="text-align:right">400</td>
+<td><a href="../../data/pages/code-docs.json">S07</a></td>
+</tr>
+<tr>
+<td>Code Docs 代码</td>
+<td style="text-align:right">14</td>
+<td style="text-align:right">24</td>
+<td style="text-align:right">400</td>
+<td><a href="../../data/pages/code-docs.json">S07</a></td>
+</tr>
+<tr>
+<td>Platform 文档主标题</td>
+<td style="text-align:right">26.25</td>
+<td style="text-align:right">32.8125</td>
+<td style="text-align:right">520</td>
+<td><a href="../../data/pages/platform-docs.json">S08</a></td>
+</tr>
+<tr>
+<td>开发者博客站名</td>
+<td style="text-align:right">31.5</td>
+<td style="text-align:right">34.65</td>
+<td style="text-align:right">400</td>
+<td><a href="../../data/pages/developer-blog.json">S10</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>营销和资源入口使用较大的标题，文档用更紧凑的标题为正文留出空间：Resources 主标题为 72px，Platform 文档主标题为 26.25px。表中保留变量字体的实际字重，例如 Platform 标题的 520，以呈现页面真实的排版差异。</p>
+<h2 id="两个文档站的等宽字体并不相同">两个文档站的等宽字体并不相同</h2>
+<p><button class="figure-button" type="button" data-zoom aria-label="放大图片: Claude Code 文档代码区，命令、复制按钮、安装方式切换与说明并列"><img src="../../assets/screenshots/code-example.png" alt="Claude Code 文档代码区，命令、复制按钮、安装方式切换与说明并列" width="1440" height="1000" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true">放大图片 ↗</span></button></p>
+<p><em>图 4 · <a href="https://code.claude.com/docs/en/overview">Claude Code 文档 S07</a> · 代码区的 Paper Mono 与 Platform 文档的 Anthropic Mono 是不同的字体选择。</em></p>
+<p>两站共享“正文与代码区分开”的阅读逻辑，但使用不同的等宽字体。对设计复用而言，更值得保留的是代码和自然语言之间的清晰边界，以及复制、平台切换等操作与内容的接近程度。</p>
+<h2 id="声明加载与实际渲染">声明加载与实际渲染</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>层次</th>
+<th>核对内容</th>
+<th>对应证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>页面声明</td>
+<td>文字元素设置的首选与备用字体</td>
+<td>元素样式与字体规则</td>
+</tr>
+<tr>
+<td>字体加载</td>
+<td>浏览器已加载的字体资源</td>
+<td>字体加载记录</td>
+</tr>
+<tr>
+<td>实际渲染</td>
+<td>抽样文字的字形来源</td>
+<td>浏览器返回的元素字体记录</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>帮助中心的字体声明与实际渲染存在差异。</strong> 页面声明了 Anthropic Sans、Anthropic Serif 的站点别名，并为快捷键提示指定 JetBrains Mono；本次采集的正文和标题却回退到 Times New Roman，快捷键回退到 Consolas。截图呈现的是这一回退状态。</p>
+<p>因此，JetBrains Mono 作为局部声明单独记录，Times New Roman 与 Consolas 作为回退字体记录，均不加入上表的核心字体计数。具体字段见 <a href="../../data/pages/support-home.json">S09 的 renderedFonts 与 fontRuleSources</a>。</p>
+<h2 id="字体别名与非文字字库">字体别名与非文字字库</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>样本中出现的名称</th>
+<th>研究中的归并</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>anthropicSans</code>、<code>anthropic-sans</code>、<code>Anthropic Sans</code></td>
+<td>Anthropic Sans</td>
+</tr>
+<tr>
+<td><code>anthropicSerif</code>、<code>anthropic-serif</code></td>
+<td>Anthropic Serif</td>
+</tr>
+<tr>
+<td><code>anthropicMono</code>、<code>Anthropic Mono</code></td>
+<td>Anthropic Mono</td>
+</tr>
+<tr>
+<td>含 Fallback 的名称，以及 Arial、Georgia 等后备项</td>
+<td>不独立计为核心品牌字体</td>
+</tr>
+<tr>
+<td><code>Anthropicons-Variable</code></td>
+<td>图标字库，不计入文字字体</td>
+</tr>
+<tr>
+<td>字体文件中的 Text、Web、Variable、Light 等描述</td>
+<td>保留在原始证据中，不自动视为新的设计家族</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="将排版用于中文">将排版用于中文</h2>
+<p>原站样本主要是英文。中文排版需要另行确认字体的字符覆盖，并用真实中文内容检查标点、字重、中英文混排和换行。这样才能保留标题与正文的层级，同时适应不同的字面密度和阅读节奏。</p>
+</article><nav class="chapter-pager" aria-label="Chapter navigation"><a href="01-visual-language.html"><small>上一章</small><span>视觉语言 </span></a><a href="03-page-patterns.html"><small>下一章</small><span>八类页面模式 →</span></a></nav></main><aside class="page-toc"><p class="eyebrow">本页内容</p><a class="toc-h2" href="#五个主要名称与四个核心家族">五个主要名称与四个核心家族</a><a class="toc-h2" href="#字体的三种职责">字体的三种职责</a><a class="toc-h2" href="#真实页面中的字号层级">真实页面中的字号层级</a><a class="toc-h2" href="#两个文档站的等宽字体并不相同">两个文档站的等宽字体并不相同</a><a class="toc-h2" href="#声明加载与实际渲染">声明加载与实际渲染</a><a class="toc-h2" href="#字体别名与非文字字库">字体别名与非文字字库</a><a class="toc-h2" href="#将排版用于中文">将排版用于中文</a></aside>
+<footer class="site-footer"><p>一份关于公开网站的图文设计研究。<br><span>观察日期: 2026-11-02</span></p><div><a href="07-methodology-and-sources.html">方法与来源</a><button type="button" data-print>打印 ↗</button><a href="../../NOTICE.md">CC BY 4.0 / Credits</a></div></footer></div>
+<dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title"><div class="dialog-head"><h2 id="search-title">搜索研究内容</h2><button type="button" data-close-dialog>关闭 <kbd>Esc</kbd></button></div><label class="sr-only" for="study-search">搜索研究内容</label><input id="study-search" type="search" placeholder="字体、布局、设计模式…" autocomplete="off"><p id="search-status" class="search-status" role="status">搜索本语言版本的全部十个章节。</p><div id="search-results"></div></dialog>
+<dialog id="image-dialog" class="image-dialog" aria-label="放大图片"><div class="dialog-head"><p id="image-caption"></p><button type="button" data-close-dialog>关闭 <kbd>Esc</kbd></button></div><div class="image-canvas"><img id="enlarged-image" alt=""></div><a id="original-image" href="#" target="_blank" rel="noopener">打开原始图片 ↗</a></dialog>
+<noscript><p class="no-script">全部章节与图片可直接阅读。启用 JavaScript 后可使用搜索、筛选与图片放大。</p></noscript>
+</body></html>

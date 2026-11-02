@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Five font names, their roles, and measured type hierarchies."><meta name="color-scheme" content="light">
+<title>Typography · Anthropic &amp; Claude — Design Fieldnotes</title>
+<link rel="icon" type="image/svg+xml" href="../shared/favicon.svg">
+<link rel="stylesheet" href="../shared/style.css">
+<link rel="alternate" hreflang="zh" href="../zh/02-typography.html">
+<script>document.documentElement.classList.add('js');window.STUDY_COPY={"noResults": "No results. Try a font, page type, or pattern name.", "results": "results", "patterns": "patterns", "copied": "Copied", "copyFailed": "Select and copy the color value.", "enlarge": "Enlarge image"};</script>
+<script src="../shared/search-en.js" defer></script><script src="../shared/app.js" defer></script>
+</head><body class="chapter-page" data-language="en">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">a/c</span><span>Anthropic &amp; Claude<small>DESIGN FIELDNOTES</small></span></a>
+<div class="header-actions"><button class="menu-toggle" type="button" aria-label="Chapters" aria-controls="chapter-nav" aria-expanded="false"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14"/></svg><span>Chapters</span></button>
+<button class="search-trigger" type="button" aria-label="Search the study" data-open-search><svg class="search-icon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg><span>Search the study</span><kbd>/</kbd></button>
+<a class="language-switch" lang="zh-CN" href="../zh/02-typography.html">中文</a>
+<a class="github-link" href="https://github.com/aotushi/anthropic-design-study">GitHub ↗</a></div>
+<div class="reading-progress" aria-hidden="true"><span></span></div></header>
+<nav id="chapter-nav" class="chapter-nav" aria-label="The chapters">
+<p class="nav-label">About this study</p><a href="index.html"><span>Overview</span></a><a href="explore.html"><span>Explore the evidence</span></a>
+<p class="nav-label chapters-label">The chapters</p><a href="01-visual-language.html"><span class="nav-number">01</span><span>Visual language</span></a><a href="02-typography.html" aria-current="page"><span class="nav-number">02</span><span>Typography</span></a><a href="03-page-patterns.html"><span class="nav-number">03</span><span>Eight page patterns</span></a><a href="04-components.html"><span class="nav-number">04</span><span>Twenty reusable patterns</span></a><a href="05-ux-and-responsive.html"><span class="nav-number">05</span><span>UX &amp; responsive layouts</span></a><a href="06-gallery.html"><span class="nav-number">06</span><span>Screenshot gallery</span></a><a href="07-methodology-and-sources.html"><span class="nav-number">07</span><span>Methods &amp; evidence</span></a><a href="08-application-guide.html"><span class="nav-number">08</span><span>Application guide</span></a><a href="09-page-anatomy.html"><span class="nav-number">09</span><span>Page anatomy</span></a><a href="10-cross-site-matrix.html"><span class="nav-number">10</span><span>Cross-site matrix</span></a>
+<div class="nav-foot"><span class="edition-date">2026-11-02</span><p>10 chapters · 15 screenshots · Chinese & English</p><a href="https://github.com/aotushi/anthropic-design-study/archive/refs/heads/main.zip">Download for offline reading ↗</a></div></nav>
+<div class="nav-scrim" data-close-menu></div>
+<div class="site-body"><main id="main" tabindex="-1"><header class="article-header"><p class="eyebrow">CHAPTER 02 / 10</p><h1>Typography</h1><p>Five font names, their roles, and measured type hierarchies.</p></header><details class="inline-toc"><summary>On this page</summary><div><a href="#five-principal-names-four-core-families">Five principal names, four core families</a><a href="#three-typographic-roles">Three typographic roles</a><a href="#measured-type-hierarchy">Measured type hierarchy</a><a href="#two-documentation-sites-two-code-fonts">Two documentation sites, two code fonts</a><a href="#declared-loaded-and-rendered-fonts">Declared, loaded, and rendered fonts</a><a href="#aliases-and-non-text-fonts">Aliases and non-text fonts</a><a href="#applying-the-typography-to-chinese">Applying the typography to Chinese</a></div></details><article class="prose"><h2 id="five-principal-names-four-core-families">Five principal names, four core families</h2>
+<p>The principal text fonts below were checked against page styles, loaded font records, and the fonts actually rendering sampled text.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable data table"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Category</th>
+<th>Main role</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Anthropic Sans</strong></td>
+<td>Sans serif</td>
+<td>Body text, navigation, buttons, card descriptions</td>
+<td><a href="../../data/pages/claude-resources.json">S04</a>, <a href="../../data/pages/academy-home.json">S05</a>, <a href="../../data/pages/platform-docs.json">S08</a></td>
+</tr>
+<tr>
+<td><strong>Anthropic Serif</strong></td>
+<td>Serif</td>
+<td>Brand headings, page headings, some card titles</td>
+<td><a href="../../data/pages/anthropic-home.json">S01</a>, <a href="../../data/pages/claude-resources.json">S04</a>, <a href="../../data/pages/academy-home.json">S05</a></td>
+</tr>
+<tr>
+<td><strong>Anthropic Serif Display</strong></td>
+<td>Display serif variant</td>
+<td>Claude Code documentation headings</td>
+<td><a href="../../data/pages/code-docs.json">S07</a></td>
+</tr>
+<tr>
+<td><strong>Anthropic Mono</strong></td>
+<td>Monospace</td>
+<td>Platform code, developer blog name and metadata</td>
+<td><a href="../../data/pages/platform-docs.json">S08</a>, <a href="../../data/pages/developer-blog.json">S10</a></td>
+</tr>
+<tr>
+<td><strong>Paper Mono</strong></td>
+<td>Monospace</td>
+<td>Code blocks in Claude Code documentation</td>
+<td><a href="../../data/pages/code-docs.json">S07</a>, <a href="../../data/interaction-checks.json">code verification</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>This gives <strong>five principal names</strong>, or <strong>four core families</strong> when Serif Display is grouped with Serif. Weights, italics, variable versions, and fallback aliases are grouped with their corresponding families.</p>
+<h2 id="three-typographic-roles">Three typographic roles</h2>
+<p><strong>Headings establish tone, body text supports reading, and monospace text expresses technical structure.</strong> A type category can also cross roles: the company homepage combines sans and serif text in one heading, while the developer blog uses monospace for its name.</p>
+<p><button class="figure-button" type="button" data-zoom aria-label="Enlarge image: The company homepage mixes sans-serif and serif text within its main statement"><img src="../../assets/screenshots/anthropic-home.png" alt="The company homepage mixes sans-serif and serif text within its main statement" width="1440" height="1000" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true">Enlarge image ↗</span></button></p>
+<p><em>Figure 3 · <a href="https://www.anthropic.com/">Company homepage S01</a>. The opening of the main statement uses sans serif; the longer continuation uses serif. The area below shows one frame of a dynamic presentation.</em></p>
+<p>Changes in letterform and weight bring a short claim and a longer explanation into one composition. The browser's rendering records identify both Sans and Serif within that heading.</p>
+<p>The developer blog uses Anthropic Mono for its name, connecting the site's identity with the technical tone of its categories and dates.</p>
+<h2 id="measured-type-hierarchy">Measured type hierarchy</h2>
+<p>These measurements use a <strong>1440 × 1000</strong> desktop viewport. Size and line height are in CSS pixels.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable data table"><table>
+<thead>
+<tr>
+<th>Page and role</th>
+<th style="text-align:right">Size</th>
+<th style="text-align:right">Line height</th>
+<th style="text-align:right">Weight</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Resources main heading</td>
+<td style="text-align:right">72</td>
+<td style="text-align:right">79.2</td>
+<td style="text-align:right">500</td>
+<td><a href="../../data/pages/claude-resources.json">S04</a></td>
+</tr>
+<tr>
+<td>Resources hero description</td>
+<td style="text-align:right">23</td>
+<td style="text-align:right">34.5</td>
+<td style="text-align:right">400</td>
+<td><a href="../../data/pages/claude-resources.json">S04</a></td>
+</tr>
+<tr>
+<td>Pricing main heading</td>
+<td style="text-align:right">64</td>
+<td style="text-align:right">70.4</td>
+<td style="text-align:right">500</td>
+<td><a href="../../data/pages/claude-pricing.json">S03</a></td>
+</tr>
+<tr>
+<td>Academy home main heading</td>
+<td style="text-align:right">48</td>
+<td style="text-align:right">52.8</td>
+<td style="text-align:right">400</td>
+<td><a href="../../data/pages/academy-home.json">S05</a></td>
+</tr>
+<tr>
+<td>Academy home description</td>
+<td style="text-align:right">18</td>
+<td style="text-align:right">28</td>
+<td style="text-align:right">400</td>
+<td><a href="../../data/pages/academy-home.json">S05</a></td>
+</tr>
+<tr>
+<td>Academy lesson heading</td>
+<td style="text-align:right">36</td>
+<td style="text-align:right">54</td>
+<td style="text-align:right">400</td>
+<td><a href="../../data/pages/academy-lesson.json">S06</a></td>
+</tr>
+<tr>
+<td>Code Docs main heading</td>
+<td style="text-align:right">36</td>
+<td style="text-align:right">40</td>
+<td style="text-align:right">400</td>
+<td><a href="../../data/pages/code-docs.json">S07</a></td>
+</tr>
+<tr>
+<td>Code Docs introduction</td>
+<td style="text-align:right">16</td>
+<td style="text-align:right">26.4</td>
+<td style="text-align:right">400</td>
+<td><a href="../../data/pages/code-docs.json">S07</a></td>
+</tr>
+<tr>
+<td>Code Docs code</td>
+<td style="text-align:right">14</td>
+<td style="text-align:right">24</td>
+<td style="text-align:right">400</td>
+<td><a href="../../data/pages/code-docs.json">S07</a></td>
+</tr>
+<tr>
+<td>Platform documentation heading</td>
+<td style="text-align:right">26.25</td>
+<td style="text-align:right">32.8125</td>
+<td style="text-align:right">520</td>
+<td><a href="../../data/pages/platform-docs.json">S08</a></td>
+</tr>
+<tr>
+<td>Developer blog name</td>
+<td style="text-align:right">31.5</td>
+<td style="text-align:right">34.65</td>
+<td style="text-align:right">400</td>
+<td><a href="../../data/pages/developer-blog.json">S10</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>Marketing and resource entrances use larger headings; documentation makes more room for continuous text. Resources uses a 72px heading, compared with 26.25px on the sampled Platform page. The table retains actual variable-font weights, including 520, to preserve these differences.</p>
+<h2 id="two-documentation-sites-two-code-fonts">Two documentation sites, two code fonts</h2>
+<p><button class="figure-button" type="button" data-zoom aria-label="Enlarge image: Claude Code commands with copy controls and installation tabs"><img src="../../assets/screenshots/code-example.png" alt="Claude Code commands with copy controls and installation tabs" width="1440" height="1000" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true">Enlarge image ↗</span></button></p>
+<p><em>Figure 4 · <a href="https://code.claude.com/docs/en/overview">Code Docs S07</a>. Paper Mono in this code area differs from Anthropic Mono in Platform documentation.</em></p>
+<p>Both sites separate natural language from code. The transferable pattern is the clear boundary between the two, with copy controls and platform choices close to the content they affect.</p>
+<h2 id="declared-loaded-and-rendered-fonts">Declared, loaded, and rendered fonts</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable data table"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>What is checked</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Declaration</td>
+<td>Preferred and fallback fonts assigned to an element</td>
+<td>Element styles and font rules</td>
+</tr>
+<tr>
+<td>Loading</td>
+<td>Font resources loaded by the browser</td>
+<td>Font loading records</td>
+</tr>
+<tr>
+<td>Rendering</td>
+<td>The source of the glyphs in sampled text</td>
+<td>Browser font records for the element</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The support center's declaration differs from its captured rendering.</strong> It declares aliases for Anthropic Sans and Anthropic Serif, plus JetBrains Mono for a keyboard hint. In the captured sample, headings and body text fell back to Times New Roman, and the hint fell back to Consolas. The screenshot shows this fallback state.</p>
+<p>JetBrains Mono is therefore recorded as a local declaration, and Times New Roman and Consolas as fallback fonts. They are separate from the core-font count above. See <code>renderedFonts</code> and <code>fontRuleSources</code> in <a href="../../data/pages/support-home.json">S09</a>.</p>
+<h2 id="aliases-and-non-text-fonts">Aliases and non-text fonts</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable data table"><table>
+<thead>
+<tr>
+<th>Name in the sample</th>
+<th>Treatment in the study</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>anthropicSans</code>, <code>anthropic-sans</code>, <code>Anthropic Sans</code></td>
+<td>Anthropic Sans</td>
+</tr>
+<tr>
+<td><code>anthropicSerif</code>, <code>anthropic-serif</code></td>
+<td>Anthropic Serif</td>
+</tr>
+<tr>
+<td><code>anthropicMono</code>, <code>Anthropic Mono</code></td>
+<td>Anthropic Mono</td>
+</tr>
+<tr>
+<td>Names containing Fallback, and backup fonts such as Arial or Georgia</td>
+<td>Separate from core brand-font counts</td>
+</tr>
+<tr>
+<td><code>Anthropicons-Variable</code></td>
+<td>Icon font, separate from text fonts</td>
+</tr>
+<tr>
+<td>Text, Web, Variable, Light, and similar file descriptors</td>
+<td>Retained in evidence and grouped with the corresponding family</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="applying-the-typography-to-chinese">Applying the typography to Chinese</h2>
+<p>The source samples are predominantly English. Chinese typography needs its own character-coverage check and real content to assess punctuation, weight, mixed scripts, and line breaks. This preserves hierarchy while adapting to different character density and reading rhythms.</p>
+</article><nav class="chapter-pager" aria-label="Chapter navigation"><a href="01-visual-language.html"><small>Previous</small><span>Visual language </span></a><a href="03-page-patterns.html"><small>Next</small><span>Eight page patterns →</span></a></nav></main><aside class="page-toc"><p class="eyebrow">On this page</p><a class="toc-h2" href="#five-principal-names-four-core-families">Five principal names, four core families</a><a class="toc-h2" href="#three-typographic-roles">Three typographic roles</a><a class="toc-h2" href="#measured-type-hierarchy">Measured type hierarchy</a><a class="toc-h2" href="#two-documentation-sites-two-code-fonts">Two documentation sites, two code fonts</a><a class="toc-h2" href="#declared-loaded-and-rendered-fonts">Declared, loaded, and rendered fonts</a><a class="toc-h2" href="#aliases-and-non-text-fonts">Aliases and non-text fonts</a><a class="toc-h2" href="#applying-the-typography-to-chinese">Applying the typography to Chinese</a></aside>
+<footer class="site-footer"><p>An illustrated study of public websites.<br><span>Observed: 2026-11-02</span></p><div><a href="07-methodology-and-sources.html">Methods & sources</a><button type="button" data-print>Print ↗</button><a href="../../NOTICE.md">CC BY 4.0 / Credits</a></div></footer></div>
+<dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title"><div class="dialog-head"><h2 id="search-title">Search the study</h2><button type="button" data-close-dialog>Close <kbd>Esc</kbd></button></div><label class="sr-only" for="study-search">Search the study</label><input id="study-search" type="search" placeholder="Fonts, layouts, patterns…" autocomplete="off"><p id="search-status" class="search-status" role="status">Search all ten chapters in this edition.</p><div id="search-results"></div></dialog>
+<dialog id="image-dialog" class="image-dialog" aria-label="Enlarge image"><div class="dialog-head"><p id="image-caption"></p><button type="button" data-close-dialog>Close <kbd>Esc</kbd></button></div><div class="image-canvas"><img id="enlarged-image" alt=""></div><a id="original-image" href="#" target="_blank" rel="noopener">Open original image ↗</a></dialog>
+<noscript><p class="no-script">All chapters and images are readable without JavaScript. Enable it for search, filtering, and image enlargement.</p></noscript>
+</body></html>

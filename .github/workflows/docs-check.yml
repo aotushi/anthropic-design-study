@@ -16,9 +16,21 @@ jobs:
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
           python-version: '3.12'
+      - name: Install document and browser tools
+        run: python -m pip install -r requirements-test.txt
+      - name: Rebuild both HTML editions
+        run: |
+          python scripts/build_html.py
+          git diff --exit-code -- html index.html .nojekyll
       - name: Check links, images, source evidence, and counts
-        run: python scripts/validate.py
+        run: |
+          python scripts/validate.py
+          python scripts/validate_html.py
       - name: Recalculate limited contrast and viewport checks
         run: |
           python scripts/analyze.py
           git diff --exit-code -- data/derived-checks.json
+      - name: Install browser
+        run: python -m playwright install --with-deps chromium
+      - name: Check reading, interactions, responsive layouts, and offline use
+        run: python scripts/test_html.py --channel chromium

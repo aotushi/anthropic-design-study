@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="沿着视线与行动，逐区理解页面结构。"><meta name="color-scheme" content="light">
+<title>页面拆解 · Anthropic 与 Claude · 网站设计手册</title>
+<link rel="icon" type="image/svg+xml" href="../shared/favicon.svg">
+<link rel="stylesheet" href="../shared/style.css">
+<link rel="alternate" hreflang="en" href="../en/09-page-anatomy.html">
+<script>document.documentElement.classList.add('js');window.STUDY_COPY={"noResults": "没有找到结果。试试字体、页面类型或模式名称。", "results": "条结果", "patterns": "种模式", "copied": "已复制", "copyFailed": "请选中色值并复制。", "enlarge": "放大图片"};</script>
+<script src="../shared/search-zh.js" defer></script><script src="../shared/app.js" defer></script>
+</head><body class="chapter-page" data-language="zh">
+<a class="skip-link" href="#main">跳至正文</a>
+<header class="site-header">
+<a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">a/c</span><span>Anthropic &amp; Claude<small>DESIGN FIELDNOTES</small></span></a>
+<div class="header-actions"><button class="menu-toggle" type="button" aria-label="目录" aria-controls="chapter-nav" aria-expanded="false"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14"/></svg><span>目录</span></button>
+<button class="search-trigger" type="button" aria-label="搜索研究内容" data-open-search><svg class="search-icon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg><span>搜索研究内容</span><kbd>/</kbd></button>
+<a class="language-switch" lang="en" href="../en/09-page-anatomy.html">English</a>
+<a class="github-link" href="https://github.com/aotushi/anthropic-design-study">GitHub ↗</a></div>
+<div class="reading-progress" aria-hidden="true"><span></span></div></header>
+<nav id="chapter-nav" class="chapter-nav" aria-label="章节目录">
+<p class="nav-label">关于本研究</p><a href="index.html"><span>研究总览</span></a><a href="explore.html"><span>图像与数据</span></a>
+<p class="nav-label chapters-label">章节目录</p><a href="01-visual-language.html"><span class="nav-number">01</span><span>视觉语言</span></a><a href="02-typography.html"><span class="nav-number">02</span><span>字体与排版</span></a><a href="03-page-patterns.html"><span class="nav-number">03</span><span>八类页面模式</span></a><a href="04-components.html"><span class="nav-number">04</span><span>二十类可复用模式</span></a><a href="05-ux-and-responsive.html"><span class="nav-number">05</span><span>UX 与响应式</span></a><a href="06-gallery.html"><span class="nav-number">06</span><span>截图图库</span></a><a href="07-methodology-and-sources.html"><span class="nav-number">07</span><span>方法与证据</span></a><a href="08-application-guide.html"><span class="nav-number">08</span><span>应用指南</span></a><a href="09-page-anatomy.html" aria-current="page"><span class="nav-number">09</span><span>页面拆解</span></a><a href="10-cross-site-matrix.html"><span class="nav-number">10</span><span>跨站设计矩阵</span></a>
+<div class="nav-foot"><span class="edition-date">2026-11-02</span><p>10 个章节 · 15 张截图 · 中英文双语</p><a href="https://github.com/aotushi/anthropic-design-study/archive/refs/heads/main.zip">下载离线阅读 ↗</a></div></nav>
+<div class="nav-scrim" data-close-menu></div>
+<div class="site-body"><main id="main" tabindex="-1"><header class="article-header"><p class="eyebrow">CHAPTER 09 / 10</p><h1>页面拆解</h1><p>沿着视线与行动，逐区理解页面结构。</p></header><details class="inline-toc"><summary>本页内容</summary><div><a href="#资源中心从内容印象进入检索">资源中心：从内容印象进入检索</a><a href="#技术文档同时回答三个位置问题">技术文档：同时回答三个位置问题</a><a href="#课程内页先建立学习预期">课程内页：先建立学习预期</a><a href="#三种页面的注意力分配">三种页面的注意力分配</a></div></details><article class="prose"><p>把一页拆成区域，可以看见字体、留白与组件怎样共同安排阅读。下面选择资源中心、技术文档与课程三个场景，沿着“先看什么—怎样定位—接下来做什么”逐步分析。</p>
+<h2 id="资源中心从内容印象进入检索">资源中心：从内容印象进入检索</h2>
+<p><button class="figure-button" type="button" data-zoom aria-label="放大图片: 资源中心首屏的分类导航、外围文章、中央标题与搜索"><img src="../../assets/screenshots/claude-resources.png" alt="资源中心首屏的分类导航、外围文章、中央标题与搜索" width="1440" height="1000" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true">放大图片 ↗</span></button></p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>区域</th>
+<th>画面中的处理</th>
+<th>阅读与操作的关系</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 顶部两层导航</td>
+<td>第一层是产品与公司入口，第二层是资源类型</td>
+<td>全站去向与当前内容分类分别占据一层</td>
+</tr>
+<tr>
+<td>② 外围文章卡片</td>
+<td>卡片带有标题、类型、日期或主题，部分延伸到面板边缘</td>
+<td>进入搜索前先展示内容范围，给浏览型读者提供线索</td>
+</tr>
+<tr>
+<td>③ 中央标题与说明</td>
+<td>72px 衬线标题配合 23px 说明，周围保留空白</td>
+<td>页面主题形成明显的视觉中心</td>
+</tr>
+<tr>
+<td>④ 标题下方搜索</td>
+<td>输入框与快捷键提示放在说明之后</td>
+<td>从了解页面用途自然进入查找内容</td>
+</tr>
+<tr>
+<td>⑤ 浅网格与边框</td>
+<td>面板底色 #F5F4ED，分隔线对比度较轻</td>
+<td>把卡片、标题和搜索放在共同的视觉背景上</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>阅读顺序：</strong> 识别资源中心 → 理解内容范围 → 浏览文章或进入搜索。中央内容与外围卡片支持两条路径：带着问题来的读者可以直接查找，探索型读者可以先扫描标题。</p>
+<p><strong>可复用的组合：</strong> P02 分类栏 + P05 搜索 + P09 大标题首屏 + P10 卡片网格。用于自己的资源库时，先确定分类与检索入口，再决定外围内容需要多少视觉分量。</p>
+<p><a href="https://claude.com/resources">原站 S04</a> · <a href="../../data/pages/claude-resources.json">字体、尺寸与色值</a></p>
+<h2 id="技术文档同时回答三个位置问题">技术文档：同时回答三个位置问题</h2>
+<p><button class="figure-button" type="button" data-zoom aria-label="放大图片: Code Docs 的左侧导航、中央正文和右侧目录"><img src="../../assets/screenshots/code-docs.png" alt="Code Docs 的左侧导航、中央正文和右侧目录" width="1440" height="1000" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true">放大图片 ↗</span></button></p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>区域</th>
+<th>画面中的处理</th>
+<th>对应问题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 顶部工具区</td>
+<td>搜索、文档分类与站点入口并列</td>
+<td>我该进入哪一类文档？</td>
+</tr>
+<tr>
+<td>② 左侧导航树</td>
+<td>分组标题和文章入口，当前 Overview 行有底色</td>
+<td>我在整个文档体系的哪里？</td>
+</tr>
+<tr>
+<td>③ 中央正文</td>
+<td>标题、介绍、Get started 和安装选项顺序展开</td>
+<td>当前任务怎样开始？</td>
+</tr>
+<tr>
+<td>④ 右侧页内目录</td>
+<td>列出当前文章的小节</td>
+<td>这篇文章有哪些部分？</td>
+</tr>
+<tr>
+<td>⑤ 平台与安装方式切换</td>
+<td>Terminal、VS Code 等平台选项位于对应说明之前</td>
+<td>哪段内容适用于我的环境？</td>
+</tr>
+</tbody>
+</table></div>
+<p>这里的标题为 36px，正文为 16px。标题建立层级，正文提供连续阅读空间，左右两侧则承担不同尺度的定位。窄屏中主标题变为 30px，正文仍为 16px，导航改为紧凑入口。</p>
+<h3 id="与-platform-文档并排看">与 Platform 文档并排看</h3>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>Claude Code 文档</th>
+<th>Claude Platform 文档</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>桌面结构</td>
+<td>导航树、正文、页内目录</td>
+<td>导航树、正文、页内目录</td>
+</tr>
+<tr>
+<td>抽样主标题</td>
+<td>36px / 40px 行高</td>
+<td>26.25px / 32.8125px 行高</td>
+</tr>
+<tr>
+<td>标题字体</td>
+<td>Anthropic Serif Display</td>
+<td>Anthropic Serif</td>
+</tr>
+<tr>
+<td>代码字体</td>
+<td>Paper Mono</td>
+<td>Anthropic Mono</td>
+</tr>
+<tr>
+<td>起步内容的组织</td>
+<td>平台及安装方式切换</td>
+<td>编号步骤与代码示例</td>
+</tr>
+<tr>
+<td>共同的设计逻辑</td>
+<td>将定位、说明与执行入口放在相邻区域</td>
+<td>将定位、说明与执行入口放在相邻区域</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>可复用的组合：</strong> P04 侧边导航与目录 + P07 内容切换 + P19 代码块与复制。Platform 进一步使用 P15 编号步骤组织起步流程。</p>
+<p><a href="https://code.claude.com/docs/en/overview">Code Docs S07</a> · <a href="https://platform.claude.com/docs/en/get-started">Platform S08</a> · <a href="../../data/pages/code-docs.json">Code 测量</a> · <a href="../../data/pages/platform-docs.json">Platform 测量</a></p>
+<h2 id="课程内页先建立学习预期">课程内页：先建立学习预期</h2>
+<p><button class="figure-button" type="button" data-zoom aria-label="放大图片: Academy 课程的面包屑、标题、课时、目标框与章节目录"><img src="../../assets/screenshots/academy-lesson.png" alt="Academy 课程的面包屑、标题、课时、目标框与章节目录" width="1440" height="1000" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true">放大图片 ↗</span></button></p>
+<p><em>采集时下方视频区域尚未显示内容，标题、学习目标和章节目录可见。</em></p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>区域</th>
+<th>画面中的处理</th>
+<th>对学习的支持</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 面包屑</td>
+<td>Academy、Courses 与课程名按层级连接</td>
+<td>将单节内容放回课程体系</td>
+</tr>
+<tr>
+<td>② 标题与课时</td>
+<td>衬线标题下方显示 Lesson 1 和 15 min</td>
+<td>同时说明主题、位置与预计投入</td>
+</tr>
+<tr>
+<td>③ 学习目标框</td>
+<td>“In this lesson” 单独成组，目标逐条排列</td>
+<td>在进入主体前建立阅读预期</td>
+</tr>
+<tr>
+<td>④ 右侧章节</td>
+<td>当前课标题、要点、练习与下一步</td>
+<td>显示本课的内容顺序</td>
+</tr>
+<tr>
+<td>⑤ 内容形式</td>
+<td>视频区域与文字稿切换</td>
+<td>为观看和文字阅读提供入口</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>阅读顺序：</strong> 确认课程位置 → 看本课目标与投入 → 学习内容 → 查看要点与练习 → 进入后续内容。课时与目标使页面一开始就回答“这节课是否适合现在学”。</p>
+<p><strong>可复用的组合：</strong> P03 面包屑 + P18 重点提示框 + P20 课时与位置提示，再由 P17 内容形式切换与 P16 下一课链接连接学习过程。</p>
+<p><a href="https://academy.claude.com/courses/ai-fluency-framework-foundations/introduction-to-ai-fluency">原站 S06</a> · <a href="../../data/pages/academy-lesson.json">页面测量</a> · <a href="../../data/interaction-checks.json">文字稿切换记录</a></p>
+<h2 id="三种页面的注意力分配">三种页面的注意力分配</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>页面</th>
+<th>首先建立什么</th>
+<th>如何定位</th>
+<th>接下来做什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>资源中心</td>
+<td>内容范围与主题印象</td>
+<td>分类、搜索、文章卡片</td>
+<td>选择一篇内容</td>
+</tr>
+<tr>
+<td>技术文档</td>
+<td>当前技术任务</td>
+<td>导航树、页内目录、平台选项</td>
+<td>阅读步骤并使用代码</td>
+</tr>
+<tr>
+<td>课程内页</td>
+<td>学习目标与投入</td>
+<td>课程层级、章节位置</td>
+<td>学习、练习、继续下一节</td>
+</tr>
+</tbody>
+</table></div>
+<p>相同的字体与底色进入这三种结构后，会产生不同的阅读节奏。设计复用时，可先选择需要支持的路径，再搭配合适的标题比例、导航层级和操作入口。</p>
+</article><nav class="chapter-pager" aria-label="Chapter navigation"><a href="08-application-guide.html"><small>上一章</small><span>应用指南 </span></a><a href="10-cross-site-matrix.html"><small>下一章</small><span>跨站设计矩阵 →</span></a></nav></main><aside class="page-toc"><p class="eyebrow">本页内容</p><a class="toc-h2" href="#资源中心从内容印象进入检索">资源中心：从内容印象进入检索</a><a class="toc-h2" href="#技术文档同时回答三个位置问题">技术文档：同时回答三个位置问题</a><a class="toc-h3" href="#与-platform-文档并排看">与 Platform 文档并排看</a><a class="toc-h2" href="#课程内页先建立学习预期">课程内页：先建立学习预期</a><a class="toc-h2" href="#三种页面的注意力分配">三种页面的注意力分配</a></aside>
+<footer class="site-footer"><p>一份关于公开网站的图文设计研究。<br><span>观察日期: 2026-11-02</span></p><div><a href="07-methodology-and-sources.html">方法与来源</a><button type="button" data-print>打印 ↗</button><a href="../../NOTICE.md">CC BY 4.0 / Credits</a></div></footer></div>
+<dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title"><div class="dialog-head"><h2 id="search-title">搜索研究内容</h2><button type="button" data-close-dialog>关闭 <kbd>Esc</kbd></button></div><label class="sr-only" for="study-search">搜索研究内容</label><input id="study-search" type="search" placeholder="字体、布局、设计模式…" autocomplete="off"><p id="search-status" class="search-status" role="status">搜索本语言版本的全部十个章节。</p><div id="search-results"></div></dialog>
+<dialog id="image-dialog" class="image-dialog" aria-label="放大图片"><div class="dialog-head"><p id="image-caption"></p><button type="button" data-close-dialog>关闭 <kbd>Esc</kbd></button></div><div class="image-canvas"><img id="enlarged-image" alt=""></div><a id="original-image" href="#" target="_blank" rel="noopener">打开原始图片 ↗</a></dialog>
+<noscript><p class="no-script">全部章节与图片可直接阅读。启用 JavaScript 后可使用搜索、筛选与图片放大。</p></noscript>
+</body></html>

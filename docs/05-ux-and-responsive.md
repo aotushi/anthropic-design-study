@@ -2,7 +2,7 @@
 
 **中文** · [English](en/05-ux-and-responsive.md)
 
-[返回总览](../README.md) · [上一章：组件](04-components.md) · [下一章：截图图库](06-gallery.md)
+[返回总览](../README.zh-CN.md) · [上一章：组件](04-components.md) · [下一章：截图图库](06-gallery.md)
 
 ## 页面如何帮助用户继续行动
 

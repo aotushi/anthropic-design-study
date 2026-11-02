@@ -1,0 +1,26 @@
+{
+  "chapters": [
+    {"slug":"01-visual-language","en":"Visual language","zh":"视觉语言","summary":{"en":"Color, space, imagery, and the three visual directions.","zh":"从色彩、留白与图像理解三种视觉方向。"}},
+    {"slug":"02-typography","en":"Typography","zh":"字体与排版","summary":{"en":"Five font names, their roles, and measured type hierarchies.","zh":"五个字体名称、使用职责与实测排版层级。"}},
+    {"slug":"03-page-patterns","en":"Eight page patterns","zh":"八类页面模式","summary":{"en":"How the reader’s task shapes the page.","zh":"官网、定价、教程和文档怎样围绕任务组织。"}},
+    {"slug":"04-components","en":"Twenty reusable patterns","zh":"二十类可复用模式","summary":{"en":"Navigation, retrieval, presentation, comparison, and learning.","zh":"导航、检索、展示、比较与学习的组件分工。"}},
+    {"slug":"05-ux-and-responsive","en":"UX & responsive layouts","zh":"UX 与响应式","summary":{"en":"Observed interactions, narrow layouts, and text contrast.","zh":"实际交互、窄屏变化与文字对比度。"}},
+    {"slug":"06-gallery","en":"Screenshot gallery","zh":"截图图库","summary":{"en":"Fifteen original captures, with source and state notes.","zh":"十五张原始截图，附来源与状态说明。"}},
+    {"slug":"07-methodology-and-sources","en":"Methods & evidence","zh":"方法与证据","summary":{"en":"The source index, counting method, and measurement scope.","zh":"页面来源、统计口径与测量范围。"}},
+    {"slug":"08-application-guide","en":"Application guide","zh":"应用指南","summary":{"en":"Choose patterns for your own content and reader tasks.","zh":"为自己的内容与用户任务选择设计组合。"}},
+    {"slug":"09-page-anatomy","en":"Page anatomy","zh":"页面拆解","summary":{"en":"Follow attention from the first impression to the next action.","zh":"沿着视线与行动，逐区理解页面结构。"}},
+    {"slug":"10-cross-site-matrix","en":"Cross-site matrix","zh":"跨站设计矩阵","summary":{"en":"Compare tasks, typographic roles, and recorded patterns.","zh":"对照十个页面的任务、字体与模式分布。"}}
+  ],
+  "pages": {
+    "S01":{"en":"Anthropic company","zh":"Anthropic 公司官网","task":{"en":"Understand the company’s focus","zh":"理解公司的关注点"},"structure":{"en":"A large mixed-type statement followed by selected content and articles.","zh":"混合字形的大段主张，连接重点内容与文章入口。"},"fonts":"Anthropic Sans · Anthropic Serif"},
+    "S02":{"en":"Claude product","zh":"Claude 产品介绍","task":{"en":"Recognize product uses","zh":"认识产品用途"},"structure":{"en":"Heading, primary actions, and demonstrations connect tasks to outcomes.","zh":"标题、主要动作与场景演示连接任务和成果。"},"fonts":"Anthropic Sans · Anthropic Serif"},
+    "S03":{"en":"Claude pricing","zh":"Claude 定价","task":{"en":"Compare suitable plans","zh":"比较适合的方案"},"structure":{"en":"Audience selection, parallel plan cards, and detailed feature comparison.","zh":"人群切换、并列套餐卡片与详细功能比较。"},"fonts":"Anthropic Sans · Anthropic Serif"},
+    "S04":{"en":"Claude Resources","zh":"Claude 资源中心","task":{"en":"Browse or find content","zh":"浏览或寻找内容"},"structure":{"en":"Peripheral article cards frame a central heading and search entrance.","zh":"外围文章卡片围绕中央标题与搜索入口展开。"},"fonts":"Anthropic Sans · Anthropic Serif"},
+    "S05":{"en":"Academy home","zh":"Academy 首页","task":{"en":"Choose a learning route","zh":"选择学习方向"},"structure":{"en":"A clear introduction leads to illustrated learning-route cards.","zh":"简洁介绍连接带配图的学习方向卡片。"},"fonts":"Anthropic Sans · Anthropic Serif"},
+    "S06":{"en":"Academy lesson","zh":"Academy 课程内页","task":{"en":"Learn in sequence","zh":"按顺序学习"},"structure":{"en":"Breadcrumbs, duration, goals, lesson content, and section navigation.","zh":"面包屑、课时、学习目标、正文与章节定位。"},"fonts":"Anthropic Sans · Anthropic Serif","note":{"en":"Video content had not appeared during capture; the text was available.","zh":"采集时视频尚未显示内容，文字内容可用。"}},
+    "S07":{"en":"Claude Code Docs","zh":"Claude Code 文档","task":{"en":"Start using a developer tool","zh":"开始使用开发工具"},"structure":{"en":"Navigation tree, central instructions, and page contents; platform choices sit near code.","zh":"导航树、中央说明与页内目录并列，平台选项贴近代码。"},"fonts":"Anthropic Sans · Anthropic Serif Display · Paper Mono"},
+    "S08":{"en":"Claude Platform Docs","zh":"Claude Platform 文档","task":{"en":"Complete technical setup","zh":"完成技术起步步骤"},"structure":{"en":"Three reading columns with compact headings, numbered steps, and code.","zh":"三栏阅读，配合紧凑标题、编号步骤与代码。"},"fonts":"Anthropic Sans · Anthropic Serif · Anthropic Mono"},
+    "S09":{"en":"Claude help center","zh":"Claude 帮助中心","task":{"en":"Resolve a specific problem","zh":"解决具体问题"},"structure":{"en":"Search, topic collections, and common questions offer direct entrances.","zh":"搜索、主题集合与常见问题提供直接入口。"},"fonts":"Times New Roman · Consolas","note":{"en":"Captured fallback fonts. The page declares Anthropic Sans, Anthropic Serif, and local JetBrains Mono.","zh":"图中为回退字体。页面声明 Anthropic Sans、Anthropic Serif 与局部 JetBrains Mono。"}},
+    "S10":{"en":"Claude developer blog","zh":"Claude 开发者博客","task":{"en":"Scan technical articles","zh":"扫描技术文章"},"structure":{"en":"Topic filters and article rows pair monospace metadata with pixel imagery.","zh":"主题筛选与文章行，配合等宽元信息和像素图形。"},"fonts":"Anthropic Sans · Anthropic Mono"}
+  }
+}

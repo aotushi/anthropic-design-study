@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="从色彩、留白与图像理解三种视觉方向。"><meta name="color-scheme" content="light">
+<title>视觉语言 · Anthropic 与 Claude · 网站设计手册</title>
+<link rel="icon" type="image/svg+xml" href="../shared/favicon.svg">
+<link rel="stylesheet" href="../shared/style.css">
+<link rel="alternate" hreflang="en" href="../en/01-visual-language.html">
+<script>document.documentElement.classList.add('js');window.STUDY_COPY={"noResults": "没有找到结果。试试字体、页面类型或模式名称。", "results": "条结果", "patterns": "种模式", "copied": "已复制", "copyFailed": "请选中色值并复制。", "enlarge": "放大图片"};</script>
+<script src="../shared/search-zh.js" defer></script><script src="../shared/app.js" defer></script>
+</head><body class="chapter-page" data-language="zh">
+<a class="skip-link" href="#main">跳至正文</a>
+<header class="site-header">
+<a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">a/c</span><span>Anthropic &amp; Claude<small>DESIGN FIELDNOTES</small></span></a>
+<div class="header-actions"><button class="menu-toggle" type="button" aria-label="目录" aria-controls="chapter-nav" aria-expanded="false"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14"/></svg><span>目录</span></button>
+<button class="search-trigger" type="button" aria-label="搜索研究内容" data-open-search><svg class="search-icon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg><span>搜索研究内容</span><kbd>/</kbd></button>
+<a class="language-switch" lang="en" href="../en/01-visual-language.html">English</a>
+<a class="github-link" href="https://github.com/aotushi/anthropic-design-study">GitHub ↗</a></div>
+<div class="reading-progress" aria-hidden="true"><span></span></div></header>
+<nav id="chapter-nav" class="chapter-nav" aria-label="章节目录">
+<p class="nav-label">关于本研究</p><a href="index.html"><span>研究总览</span></a><a href="explore.html"><span>图像与数据</span></a>
+<p class="nav-label chapters-label">章节目录</p><a href="01-visual-language.html" aria-current="page"><span class="nav-number">01</span><span>视觉语言</span></a><a href="02-typography.html"><span class="nav-number">02</span><span>字体与排版</span></a><a href="03-page-patterns.html"><span class="nav-number">03</span><span>八类页面模式</span></a><a href="04-components.html"><span class="nav-number">04</span><span>二十类可复用模式</span></a><a href="05-ux-and-responsive.html"><span class="nav-number">05</span><span>UX 与响应式</span></a><a href="06-gallery.html"><span class="nav-number">06</span><span>截图图库</span></a><a href="07-methodology-and-sources.html"><span class="nav-number">07</span><span>方法与证据</span></a><a href="08-application-guide.html"><span class="nav-number">08</span><span>应用指南</span></a><a href="09-page-anatomy.html"><span class="nav-number">09</span><span>页面拆解</span></a><a href="10-cross-site-matrix.html"><span class="nav-number">10</span><span>跨站设计矩阵</span></a>
+<div class="nav-foot"><span class="edition-date">2026-11-02</span><p>10 个章节 · 15 张截图 · 中英文双语</p><a href="https://github.com/aotushi/anthropic-design-study/archive/refs/heads/main.zip">下载离线阅读 ↗</a></div></nav>
+<div class="nav-scrim" data-close-menu></div>
+<div class="site-body"><main id="main" tabindex="-1"><header class="article-header"><p class="eyebrow">CHAPTER 01 / 10</p><h1>视觉语言</h1><p>从色彩、留白与图像理解三种视觉方向。</p></header><details class="inline-toc"><summary>本页内容</summary><div><a href="#统一感来自哪些地方">统一感来自哪些地方</a><a href="#三种视觉方向">三种视觉方向</a><a href="#色彩的职责">色彩的职责</a><a href="#留白与视觉节奏">留白与视觉节奏</a><a href="#插画图标与图像">插画、图标与图像</a><a href="#边界圆角与阴影">边界、圆角与阴影</a></div></details><article class="prose"><h2 id="统一感来自哪些地方">统一感来自哪些地方</h2>
+<p>Anthropic 的公开网站反复出现浅色背景、深色文字、衬线标题和简洁控件。米白背景、衬线字形与充足留白，共同形成接近杂志与书籍的视觉气质。</p>
+<p>这套基础进入不同页面后，会随内容任务改变密度与装饰程度：官网重视叙事与图像，文档突出正文与定位，开发者博客则通过等宽文字和像素图形形成自己的语气。</p>
+<h2 id="三种视觉方向">三种视觉方向</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>方向</th>
+<th>可见特征</th>
+<th>主要样本</th>
+<th>设计解读</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>温暖的编辑式表达</td>
+<td>米白背景、较大的衬线字、宽松段落、插画与图文编排</td>
+<td>公司官网、产品、资源中心</td>
+<td>把技术产品介绍组织得更接近出版物，适合建立第一印象和阅读叙事</td>
+</tr>
+<tr>
+<td>克制的知识界面</td>
+<td>中性色、细分隔线、稳定的导航区、较紧凑的控件</td>
+<td>Platform、Code Docs、Academy、帮助中心</td>
+<td>让查找、阅读和执行下一步成为视觉中心</td>
+</tr>
+<tr>
+<td>复古开发者表达</td>
+<td>等宽标签、像素图形、方形或较直的边角、文章行列表</td>
+<td>claude.dev</td>
+<td>为开发者内容建立更鲜明的识别，与主品牌共享底色和部分字体</td>
+</tr>
+</tbody>
+</table></div>
+<p>依据：<a href="https://www.anthropic.com/">公司官网 S01</a>、<a href="https://claude.com/resources">资源中心 S04</a>、<a href="https://platform.claude.com/docs/en/get-started">平台文档 S08</a>、<a href="https://claude.dev/">开发者博客 S10</a>。</p>
+<h2 id="色彩的职责">色彩的职责</h2>
+<p><button class="figure-button" type="button" data-zoom aria-label="放大图片: 样本色彩：官网背景、正文、次级文字和文档背景"><img src="../../assets/diagrams/color-samples.svg" alt="样本色彩：官网背景、正文、次级文字和文档背景" width="1200" height="350" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true">放大图片 ↗</span></button></p>
+<p><em>图中整理了公司官网、资源中心与 Platform 文档的背景和文字色值，对应元素见下表。</em></p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>页面与元素</th>
+<th>测量值</th>
+<th>所承担的职责</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>公司官网与 Claude 资源中心的页面背景</td>
+<td><code>#FAF9F5</code></td>
+<td>让大面积空白带有轻微暖色</td>
+</tr>
+<tr>
+<td>上述页面的基础文字</td>
+<td><code>#141413</code></td>
+<td>保持正文和主要信息的清晰度</td>
+</tr>
+<tr>
+<td>资源中心首屏说明文字</td>
+<td><code>#30302E</code></td>
+<td>与标题形成轻微强弱差异</td>
+</tr>
+<tr>
+<td>Platform 文档页面背景</td>
+<td><code>#FCFCFB</code></td>
+<td>接近白色，支撑密集阅读</td>
+</tr>
+<tr>
+<td>Platform 文档基础文字</td>
+<td><code>#0B0B0B</code></td>
+<td>正文与控件的主要深色</td>
+</tr>
+<tr>
+<td>Platform 文档首屏说明文字</td>
+<td><code>#52514E</code></td>
+<td>将说明与标题层级分开</td>
+</tr>
+</tbody>
+</table></div>
+<p>证据：<a href="../../data/pages/anthropic-home.json">S01 测量</a>、<a href="../../data/pages/claude-resources.json">S04 测量</a>、<a href="../../data/pages/platform-docs.json">S08 测量</a>。</p>
+<p>色彩还承担不同层次的职责：橙褐色的品牌标志提供识别线索，插画中的浅粉与浅绿丰富内容，代码中的语法颜色帮助识别结构。</p>
+<h2 id="留白与视觉节奏">留白与视觉节奏</h2>
+<p><button class="figure-button" type="button" data-zoom aria-label="放大图片: 资源中心首屏，标题被内容卡片环绕，中央保留说明和搜索入口"><img src="../../assets/screenshots/claude-resources.png" alt="资源中心首屏，标题被内容卡片环绕，中央保留说明和搜索入口" width="1440" height="1000" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true">放大图片 ↗</span></button></p>
+<p><em>图 1 · Claude Resources · 1440 × 1000 · <a href="https://claude.com/resources">原站 S04</a>。</em></p>
+<p>这个首屏有三层节奏：外围文章卡片展示内容的丰富性，中间的标题与说明建立页面主题，搜索入口把视觉注意力转成一个可执行动作。浅网格提供位置感，但颜色较轻，避免抢过正文。</p>
+<p>文档页把更多空间交给目录、文章和代码，形成更紧凑、连续的阅读节奏。<strong>留白随页面任务分配</strong>：资源首屏用空间突出主题，文档用空间区分导航、正文与辅助工具。</p>
+<h2 id="插画图标与图像">插画、图标与图像</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>形式</th>
+<th>样本中可见的处理</th>
+<th>在阅读中的作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>线描插画</td>
+<td>资源卡片上的书、人物或对象轮廓，局部填充柔和颜色</td>
+<td>区分内容并降低大面积文字的单调感</td>
+</tr>
+<tr>
+<td>像素图形</td>
+<td>开发者博客的角色与文章图形</td>
+<td>形成该站点的技术与游戏化视觉语气</td>
+</tr>
+<tr>
+<td>产品演示</td>
+<td>产品页展示任务与成果场景</td>
+<td>将抽象的能力说明转化为具体使用情境</td>
+</tr>
+<tr>
+<td>小尺寸界面图标</td>
+<td>搜索、复制、目录和箭头</td>
+<td>支持操作识别；部分站点由 Anthropicons 字库绘制</td>
+</tr>
+</tbody>
+</table></div>
+<p><button class="figure-button" type="button" data-zoom aria-label="放大图片: 开发者博客的文章列表、像素图形与等宽标签"><img src="../../assets/screenshots/developer-blog.png" alt="开发者博客的文章列表、像素图形与等宽标签" width="1440" height="1000" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true">放大图片 ↗</span></button></p>
+<p><em>图 2 · claude.dev · <a href="https://claude.dev/">原站 S10</a>。像素图形与等宽标签共同构成开发者博客的视觉识别。</em></p>
+<h2 id="边界圆角与阴影">边界、圆角与阴影</h2>
+<p>卡片常以浅边框和轻微背景差分区，主要按钮使用深色实心填充。资源卡片、定价卡片、文档代码框与博客控件采用不同的圆角和尺寸，分别适应内容展示、方案比较、代码阅读与列表操作。</p>
+<p>这些细节形成了清晰的分工：<strong>用边框表达分组，用填充表达操作优先级，用空间表达段落关系。</strong></p>
+</article><nav class="chapter-pager" aria-label="Chapter navigation"><a href="index.html"><small>上一章</small><span>研究总览</span></a><a href="02-typography.html"><small>下一章</small><span>字体与排版 →</span></a></nav></main><aside class="page-toc"><p class="eyebrow">本页内容</p><a class="toc-h2" href="#统一感来自哪些地方">统一感来自哪些地方</a><a class="toc-h2" href="#三种视觉方向">三种视觉方向</a><a class="toc-h2" href="#色彩的职责">色彩的职责</a><a class="toc-h2" href="#留白与视觉节奏">留白与视觉节奏</a><a class="toc-h2" href="#插画图标与图像">插画、图标与图像</a><a class="toc-h2" href="#边界圆角与阴影">边界、圆角与阴影</a></aside>
+<footer class="site-footer"><p>一份关于公开网站的图文设计研究。<br><span>观察日期: 2026-11-02</span></p><div><a href="07-methodology-and-sources.html">方法与来源</a><button type="button" data-print>打印 ↗</button><a href="../../NOTICE.md">CC BY 4.0 / Credits</a></div></footer></div>
+<dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title"><div class="dialog-head"><h2 id="search-title">搜索研究内容</h2><button type="button" data-close-dialog>关闭 <kbd>Esc</kbd></button></div><label class="sr-only" for="study-search">搜索研究内容</label><input id="study-search" type="search" placeholder="字体、布局、设计模式…" autocomplete="off"><p id="search-status" class="search-status" role="status">搜索本语言版本的全部十个章节。</p><div id="search-results"></div></dialog>
+<dialog id="image-dialog" class="image-dialog" aria-label="放大图片"><div class="dialog-head"><p id="image-caption"></p><button type="button" data-close-dialog>关闭 <kbd>Esc</kbd></button></div><div class="image-canvas"><img id="enlarged-image" alt=""></div><a id="original-image" href="#" target="_blank" rel="noopener">打开原始图片 ↗</a></dialog>
+<noscript><p class="no-script">全部章节与图片可直接阅读。启用 JavaScript 后可使用搜索、筛选与图片放大。</p></noscript>
+</body></html>

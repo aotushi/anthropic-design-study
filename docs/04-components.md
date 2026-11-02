@@ -2,7 +2,7 @@
 
 **中文** · [English](en/04-components.md)
 
-[返回总览](../README.md) · [上一章：页面模式](03-page-patterns.md) · [下一章：UX 与响应式](05-ux-and-responsive.md)
+[返回总览](../README.zh-CN.md) · [上一章：页面模式](03-page-patterns.md) · [下一章：UX 与响应式](05-ux-and-responsive.md)
 
 ## 按任务组织组件
 

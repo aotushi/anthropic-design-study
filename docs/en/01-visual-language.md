@@ -2,7 +2,7 @@
 
 [中文](../01-visual-language.md) · **English**
 
-[Overview](../../README.en.md) · [Next: Typography](02-typography.md)
+[Overview](../../README.md) · [Next: Typography](02-typography.md)
 
 ## What creates a shared identity
 

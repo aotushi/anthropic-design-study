@@ -2,7 +2,7 @@
 
 [中文](../07-methodology-and-sources.md) · **English**
 
-[Overview](../../README.en.md) · [Screenshot gallery](06-gallery.md)
+[Overview](../../README.md) · [Screenshot gallery](06-gallery.md)
 
 ## Scope and date
 

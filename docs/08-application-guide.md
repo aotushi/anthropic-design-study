@@ -2,7 +2,7 @@
 
 **中文** · [English](en/08-application-guide.md)
 
-[返回总览](../README.md) · [查看方法与证据](07-methodology-and-sources.md)
+[返回总览](../README.zh-CN.md) · [查看方法与证据](07-methodology-and-sources.md)
 
 ## 先学习职责，再选择外观
 

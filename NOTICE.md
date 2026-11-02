@@ -6,7 +6,7 @@
 
 正文分析、分类框架和 `assets/diagrams/` 中的解释性示意图由本项目创作，按 [CC BY 4.0](LICENSE) 提供。图中的文字使用系统字体，并未嵌入品牌专用字体。
 
-`scripts/` 中的实用脚本按 [MIT License](LICENSE-CODE) 提供。
+`scripts/` 中的实用脚本、`web/` 中的界面代码及其生成副本按 [MIT License](LICENSE-CODE) 提供。
 
 ## 第三方材料
 

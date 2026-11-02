@@ -2,7 +2,7 @@
 
 [中文](../03-page-patterns.md) · **English**
 
-[Overview](../../README.en.md) · [Previous: Typography](02-typography.md) · [Next: Components](04-components.md)
+[Overview](../../README.md) · [Previous: Typography](02-typography.md) · [Next: Components](04-components.md)
 
 ## Grouping pages by task
 

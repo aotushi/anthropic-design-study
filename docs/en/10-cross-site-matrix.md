@@ -2,7 +2,7 @@
 
 [中文](../10-cross-site-matrix.md) · **English**
 
-[Overview](../../README.en.md) · [Previous: Page anatomy](09-page-anatomy.md)
+[Overview](../../README.md) · [Previous: Page anatomy](09-page-anatomy.md)
 
 Comparing sites separates the elements that maintain identity from those that change with the task. This chapter compares reading tasks, typographic roles, and recorded pattern distribution.
 

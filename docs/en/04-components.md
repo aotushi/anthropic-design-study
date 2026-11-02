@@ -2,7 +2,7 @@
 
 [中文](../04-components.md) · **English**
 
-[Overview](../../README.en.md) · [Previous: Page patterns](03-page-patterns.md) · [Next: UX and responsive layouts](05-ux-and-responsive.md)
+[Overview](../../README.md) · [Previous: Page patterns](03-page-patterns.md) · [Next: UX and responsive layouts](05-ux-and-responsive.md)
 
 ## Organizing components by task
 

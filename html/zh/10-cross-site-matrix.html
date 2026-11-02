@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="对照十个页面的任务、字体与模式分布。"><meta name="color-scheme" content="light">
+<title>跨站设计矩阵 · Anthropic 与 Claude · 网站设计手册</title>
+<link rel="icon" type="image/svg+xml" href="../shared/favicon.svg">
+<link rel="stylesheet" href="../shared/style.css">
+<link rel="alternate" hreflang="en" href="../en/10-cross-site-matrix.html">
+<script>document.documentElement.classList.add('js');window.STUDY_COPY={"noResults": "没有找到结果。试试字体、页面类型或模式名称。", "results": "条结果", "patterns": "种模式", "copied": "已复制", "copyFailed": "请选中色值并复制。", "enlarge": "放大图片"};</script>
+<script src="../shared/search-zh.js" defer></script><script src="../shared/app.js" defer></script>
+</head><body class="chapter-page" data-language="zh">
+<a class="skip-link" href="#main">跳至正文</a>
+<header class="site-header">
+<a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">a/c</span><span>Anthropic &amp; Claude<small>DESIGN FIELDNOTES</small></span></a>
+<div class="header-actions"><button class="menu-toggle" type="button" aria-label="目录" aria-controls="chapter-nav" aria-expanded="false"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14"/></svg><span>目录</span></button>
+<button class="search-trigger" type="button" aria-label="搜索研究内容" data-open-search><svg class="search-icon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg><span>搜索研究内容</span><kbd>/</kbd></button>
+<a class="language-switch" lang="en" href="../en/10-cross-site-matrix.html">English</a>
+<a class="github-link" href="https://github.com/aotushi/anthropic-design-study">GitHub ↗</a></div>
+<div class="reading-progress" aria-hidden="true"><span></span></div></header>
+<nav id="chapter-nav" class="chapter-nav" aria-label="章节目录">
+<p class="nav-label">关于本研究</p><a href="index.html"><span>研究总览</span></a><a href="explore.html"><span>图像与数据</span></a>
+<p class="nav-label chapters-label">章节目录</p><a href="01-visual-language.html"><span class="nav-number">01</span><span>视觉语言</span></a><a href="02-typography.html"><span class="nav-number">02</span><span>字体与排版</span></a><a href="03-page-patterns.html"><span class="nav-number">03</span><span>八类页面模式</span></a><a href="04-components.html"><span class="nav-number">04</span><span>二十类可复用模式</span></a><a href="05-ux-and-responsive.html"><span class="nav-number">05</span><span>UX 与响应式</span></a><a href="06-gallery.html"><span class="nav-number">06</span><span>截图图库</span></a><a href="07-methodology-and-sources.html"><span class="nav-number">07</span><span>方法与证据</span></a><a href="08-application-guide.html"><span class="nav-number">08</span><span>应用指南</span></a><a href="09-page-anatomy.html"><span class="nav-number">09</span><span>页面拆解</span></a><a href="10-cross-site-matrix.html" aria-current="page"><span class="nav-number">10</span><span>跨站设计矩阵</span></a>
+<div class="nav-foot"><span class="edition-date">2026-11-02</span><p>10 个章节 · 15 张截图 · 中英文双语</p><a href="https://github.com/aotushi/anthropic-design-study/archive/refs/heads/main.zip">下载离线阅读 ↗</a></div></nav>
+<div class="nav-scrim" data-close-menu></div>
+<div class="site-body"><main id="main" tabindex="-1"><header class="article-header"><p class="eyebrow">CHAPTER 10 / 10</p><h1>跨站设计矩阵</h1><p>对照十个页面的任务、字体与模式分布。</p></header><details class="inline-toc"><summary>本页内容</summary><div><a href="#十个样本的阅读任务">十个样本的阅读任务</a><a href="#字体角色对照">字体角色对照</a><a href="#已记录的模式分布">已记录的模式分布</a><a href="#选择适合自己页面的组合">选择适合自己页面的组合</a></div></details><article class="prose"><p>把站点放在一起看，可以分清哪些元素维持品牌一致性，哪些元素随任务变化。本章从阅读任务、字体角色和组件分布三个层次进行对照。</p>
+<h2 id="十个样本的阅读任务">十个样本的阅读任务</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>样本</th>
+<th>首要任务</th>
+<th>主要空间组织</th>
+<th>识别线索</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S01 公司官网</td>
+<td>理解公司的关注点</td>
+<td>大段主张与重点内容</td>
+<td>Sans 与 Serif 混排标题</td>
+</tr>
+<tr>
+<td>S02 产品介绍</td>
+<td>认识产品用途</td>
+<td>标题、主要动作与场景演示</td>
+<td>产品任务与成果图像</td>
+</tr>
+<tr>
+<td>S03 定价</td>
+<td>选择适合的方案</td>
+<td>人群切换、套餐卡片与比较表</td>
+<td>并列方案与明确的行动入口</td>
+</tr>
+<tr>
+<td>S04 资源中心</td>
+<td>浏览或寻找内容</td>
+<td>分类导航、搜索与卡片</td>
+<td>浅网格、衬线大标题、线描插画</td>
+</tr>
+<tr>
+<td>S05 Academy 首页</td>
+<td>选择学习方向</td>
+<td>学习主题与卡片入口</td>
+<td>产品配图与课程名称</td>
+</tr>
+<tr>
+<td>S06 课程内页</td>
+<td>完成一节学习</td>
+<td>目标、内容、章节与后续链接</td>
+<td>课时标签与学习目标框</td>
+</tr>
+<tr>
+<td>S07 Code Docs</td>
+<td>开始使用开发工具</td>
+<td>三栏阅读与安装选项</td>
+<td>Serif Display 标题、Paper Mono 代码</td>
+</tr>
+<tr>
+<td>S08 Platform Docs</td>
+<td>完成技术起步步骤</td>
+<td>三栏阅读、编号步骤与代码</td>
+<td>更紧凑的标题与 Anthropic Mono</td>
+</tr>
+<tr>
+<td>S09 帮助中心</td>
+<td>解决当前问题</td>
+<td>搜索、主题集合与常见问题</td>
+<td>问题导向的入口组织</td>
+</tr>
+<tr>
+<td>S10 开发者博客</td>
+<td>扫描技术文章</td>
+<td>主题筛选与文章行</td>
+<td>等宽标签和像素图形</td>
+</tr>
+</tbody>
+</table></div>
+<p>页面地址与证据文件见<a href="07-methodology-and-sources.html#%E9%A1%B5%E9%9D%A2%E6%9D%A5%E6%BA%90%E7%B4%A2%E5%BC%95">来源索引</a>。</p>
+<h2 id="字体角色对照">字体角色对照</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>场景</th>
+<th>标题或标识</th>
+<th>阅读与操作</th>
+<th>技术内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>公司官网</td>
+<td>Sans 与 Serif 混排主标题</td>
+<td>Anthropic Sans</td>
+<td>以品牌叙事为主</td>
+</tr>
+<tr>
+<td>Claude 资源中心</td>
+<td>Anthropic Serif</td>
+<td>Anthropic Sans</td>
+<td>卡片元信息与检索控件</td>
+</tr>
+<tr>
+<td>Academy</td>
+<td>Anthropic Serif</td>
+<td>Anthropic Sans</td>
+<td>课时、章节和学习提示</td>
+</tr>
+<tr>
+<td>Code Docs</td>
+<td>Anthropic Serif Display</td>
+<td>Anthropic Sans</td>
+<td>Paper Mono 代码</td>
+</tr>
+<tr>
+<td>Platform Docs</td>
+<td>Anthropic Serif</td>
+<td>Anthropic Sans</td>
+<td>Anthropic Mono 代码</td>
+</tr>
+<tr>
+<td>开发者博客</td>
+<td>Anthropic Mono 站名</td>
+<td>Anthropic Sans 文章标题与正文</td>
+<td>Anthropic Mono 元信息</td>
+</tr>
+</tbody>
+</table></div>
+<p>帮助中心单独记录：页面声明 Anthropic Sans、Anthropic Serif 和局部 JetBrains Mono；本次抽样发生 Times New Roman 与 Consolas 回退。详见<a href="02-typography.html#%E5%A3%B0%E6%98%8E%E5%8A%A0%E8%BD%BD%E4%B8%8E%E5%AE%9E%E9%99%85%E6%B8%B2%E6%9F%93">字体章节</a>。</p>
+<h2 id="已记录的模式分布">已记录的模式分布</h2>
+<p>表中列出每种模式已确认的代表样本，同一个模式可以出现在多个页面。HTML 版提供按任务分组的筛选入口。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>模式</th>
+<th>代表样本</th>
+<th>组合时的关注点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P01 顶部下拉导航</td>
+<td>S01、S04</td>
+<td>全站入口分组</td>
+</tr>
+<tr>
+<td>P02 二级分类栏</td>
+<td>S04</td>
+<td>当前内容范围</td>
+</tr>
+<tr>
+<td>P03 面包屑</td>
+<td>S06、S08</td>
+<td>层级与返回路径</td>
+</tr>
+<tr>
+<td>P04 侧边导航与目录</td>
+<td>S06、S07、S08</td>
+<td>全局位置与文章位置</td>
+</tr>
+<tr>
+<td>P05 站内搜索</td>
+<td>S04、S07、S09</td>
+<td>直接定位目标内容</td>
+</tr>
+<tr>
+<td>P06 分类筛选</td>
+<td>S10</td>
+<td>限定文章集合</td>
+</tr>
+<tr>
+<td>P07 标签页与分段选择</td>
+<td>S03、S07、S08</td>
+<td>当前选择与内容对应</td>
+</tr>
+<tr>
+<td>P08 展开与收起</td>
+<td>S03、S07</td>
+<td>按需展示细节</td>
+</tr>
+<tr>
+<td>P09 大标题首屏</td>
+<td>S01、S02、S04</td>
+<td>页面主题与首要动作</td>
+</tr>
+<tr>
+<td>P10 卡片网格</td>
+<td>S04、S05</td>
+<td>并列内容的可扫描性</td>
+</tr>
+<tr>
+<td>P11 文章行列表</td>
+<td>S10</td>
+<td>标题与元信息对齐</td>
+</tr>
+<tr>
+<td>P12 产品演示区</td>
+<td>S02</td>
+<td>场景与用途的联系</td>
+</tr>
+<tr>
+<td>P13 套餐卡片</td>
+<td>S03</td>
+<td>一组方案的整体印象</td>
+</tr>
+<tr>
+<td>P14 功能比较表</td>
+<td>S03</td>
+<td>跨方案的差异</td>
+</tr>
+<tr>
+<td>P15 编号步骤</td>
+<td>S08</td>
+<td>前提、动作与结果</td>
+</tr>
+<tr>
+<td>P16 下一课或下一步链接</td>
+<td>S06</td>
+<td>当前内容与后续路径</td>
+</tr>
+<tr>
+<td>P17 视频与文字内容切换</td>
+<td>S06</td>
+<td>学习形式的可选择性</td>
+</tr>
+<tr>
+<td>P18 重点提示框</td>
+<td>S06</td>
+<td>目标与关键条件</td>
+</tr>
+<tr>
+<td>P19 代码块与复制</td>
+<td>S07、S08</td>
+<td>说明与执行对象相邻</td>
+</tr>
+<tr>
+<td>P20 课时与位置提示</td>
+<td>S05、S06</td>
+<td>学习投入与当前位置</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：<a href="../../data/taxonomy.json">分类记录</a> · <a href="04-components.html">组件详细说明</a>。</p>
+<h2 id="选择适合自己页面的组合">选择适合自己页面的组合</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>内容条件</th>
+<th>可采用的组合</th>
+<th>内容准备</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>内容多，读者目的不同</td>
+<td>分类栏 + 搜索 + 卡片或文章行</td>
+<td>清晰的类型、标题与摘要</td>
+</tr>
+<tr>
+<td>操作有前后依赖</td>
+<td>目录 + 编号步骤 + 代码复制</td>
+<td>环境前提、操作结果与排错入口</td>
+</tr>
+<tr>
+<td>需要比较几个方案</td>
+<td>人群切换 + 套餐卡片 + 比较表</td>
+<td>使用范围、差异与选择条件</td>
+</tr>
+<tr>
+<td>需要循序学习</td>
+<td>目标框 + 课时 + 章节 + 下一课</td>
+<td>学习目标、练习与完成后的路径</td>
+</tr>
+</tbody>
+</table></div>
+<p>先选择任务组合，再调整字体、色彩与密度，能把研究转化为有明确用途的界面方案。</p>
+</article><nav class="chapter-pager" aria-label="Chapter navigation"><a href="09-page-anatomy.html"><small>上一章</small><span>页面拆解 </span></a><a href="index.html"><small>下一章</small><span>研究总览</span></a></nav></main><aside class="page-toc"><p class="eyebrow">本页内容</p><a class="toc-h2" href="#十个样本的阅读任务">十个样本的阅读任务</a><a class="toc-h2" href="#字体角色对照">字体角色对照</a><a class="toc-h2" href="#已记录的模式分布">已记录的模式分布</a><a class="toc-h2" href="#选择适合自己页面的组合">选择适合自己页面的组合</a></aside>
+<footer class="site-footer"><p>一份关于公开网站的图文设计研究。<br><span>观察日期: 2026-11-02</span></p><div><a href="07-methodology-and-sources.html">方法与来源</a><button type="button" data-print>打印 ↗</button><a href="../../NOTICE.md">CC BY 4.0 / Credits</a></div></footer></div>
+<dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title"><div class="dialog-head"><h2 id="search-title">搜索研究内容</h2><button type="button" data-close-dialog>关闭 <kbd>Esc</kbd></button></div><label class="sr-only" for="study-search">搜索研究内容</label><input id="study-search" type="search" placeholder="字体、布局、设计模式…" autocomplete="off"><p id="search-status" class="search-status" role="status">搜索本语言版本的全部十个章节。</p><div id="search-results"></div></dialog>
+<dialog id="image-dialog" class="image-dialog" aria-label="放大图片"><div class="dialog-head"><p id="image-caption"></p><button type="button" data-close-dialog>关闭 <kbd>Esc</kbd></button></div><div class="image-canvas"><img id="enlarged-image" alt=""></div><a id="original-image" href="#" target="_blank" rel="noopener">打开原始图片 ↗</a></dialog>
+<noscript><p class="no-script">全部章节与图片可直接阅读。启用 JavaScript 后可使用搜索、筛选与图片放大。</p></noscript>
+</body></html>

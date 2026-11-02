@@ -2,7 +2,7 @@
 
 **中文** · [English](en/06-gallery.md)
 
-[返回总览](../README.md) · [上一章：UX 与响应式](05-ux-and-responsive.md) · [下一章：方法与证据](07-methodology-and-sources.md)
+[返回总览](../README.zh-CN.md) · [上一章：UX 与响应式](05-ux-and-responsive.md) · [下一章：方法与证据](07-methodology-and-sources.md)
 
 所有截图采集于 **2026-11-02**。桌面视口为 **1440 × 1000**，窄屏为 **390 × 844**。点击条目展开，再点击图片查看原始大小。加载与动画状态标注在对应图注中。
 

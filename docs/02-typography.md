@@ -2,7 +2,7 @@
 
 **中文** · [English](en/02-typography.md)
 
-[返回总览](../README.md) · [上一章：视觉语言](01-visual-language.md) · [下一章：页面模式](03-page-patterns.md)
+[返回总览](../README.zh-CN.md) · [上一章：视觉语言](01-visual-language.md) · [下一章：页面模式](03-page-patterns.md)
 
 ## 五个主要名称与四个核心家族
 

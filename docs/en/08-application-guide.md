@@ -2,7 +2,7 @@
 
 [中文](../08-application-guide.md) · **English**
 
-[Overview](../../README.en.md) · [Methods and evidence](07-methodology-and-sources.md) · [Next: Page anatomy](09-page-anatomy.md)
+[Overview](../../README.md) · [Methods and evidence](07-methodology-and-sources.md) · [Next: Page anatomy](09-page-anatomy.md)
 
 ## Start with roles, then choose appearance
 

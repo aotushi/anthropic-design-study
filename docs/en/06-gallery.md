@@ -2,7 +2,7 @@
 
 [中文](../06-gallery.md) · **English**
 
-[Overview](../../README.en.md) · [Previous: UX and responsive layouts](05-ux-and-responsive.md) · [Next: Methods and evidence](07-methodology-and-sources.md)
+[Overview](../../README.md) · [Previous: UX and responsive layouts](05-ux-and-responsive.md) · [Next: Methods and evidence](07-methodology-and-sources.md)
 
 All screenshots were captured on **2026-11-02**. Desktop viewports are **1440 × 1000**, and narrow viewports are **390 × 844**. Expand an entry, then select its image to inspect the original size. Loading and animation states are described with the relevant figure.
 

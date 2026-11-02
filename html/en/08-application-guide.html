@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Choose patterns for your own content and reader tasks."><meta name="color-scheme" content="light">
+<title>Application guide · Anthropic &amp; Claude — Design Fieldnotes</title>
+<link rel="icon" type="image/svg+xml" href="../shared/favicon.svg">
+<link rel="stylesheet" href="../shared/style.css">
+<link rel="alternate" hreflang="zh" href="../zh/08-application-guide.html">
+<script>document.documentElement.classList.add('js');window.STUDY_COPY={"noResults": "No results. Try a font, page type, or pattern name.", "results": "results", "patterns": "patterns", "copied": "Copied", "copyFailed": "Select and copy the color value.", "enlarge": "Enlarge image"};</script>
+<script src="../shared/search-en.js" defer></script><script src="../shared/app.js" defer></script>
+</head><body class="chapter-page" data-language="en">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">a/c</span><span>Anthropic &amp; Claude<small>DESIGN FIELDNOTES</small></span></a>
+<div class="header-actions"><button class="menu-toggle" type="button" aria-label="Chapters" aria-controls="chapter-nav" aria-expanded="false"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14"/></svg><span>Chapters</span></button>
+<button class="search-trigger" type="button" aria-label="Search the study" data-open-search><svg class="search-icon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg><span>Search the study</span><kbd>/</kbd></button>
+<a class="language-switch" lang="zh-CN" href="../zh/08-application-guide.html">中文</a>
+<a class="github-link" href="https://github.com/aotushi/anthropic-design-study">GitHub ↗</a></div>
+<div class="reading-progress" aria-hidden="true"><span></span></div></header>
+<nav id="chapter-nav" class="chapter-nav" aria-label="The chapters">
+<p class="nav-label">About this study</p><a href="index.html"><span>Overview</span></a><a href="explore.html"><span>Explore the evidence</span></a>
+<p class="nav-label chapters-label">The chapters</p><a href="01-visual-language.html"><span class="nav-number">01</span><span>Visual language</span></a><a href="02-typography.html"><span class="nav-number">02</span><span>Typography</span></a><a href="03-page-patterns.html"><span class="nav-number">03</span><span>Eight page patterns</span></a><a href="04-components.html"><span class="nav-number">04</span><span>Twenty reusable patterns</span></a><a href="05-ux-and-responsive.html"><span class="nav-number">05</span><span>UX &amp; responsive layouts</span></a><a href="06-gallery.html"><span class="nav-number">06</span><span>Screenshot gallery</span></a><a href="07-methodology-and-sources.html"><span class="nav-number">07</span><span>Methods &amp; evidence</span></a><a href="08-application-guide.html" aria-current="page"><span class="nav-number">08</span><span>Application guide</span></a><a href="09-page-anatomy.html"><span class="nav-number">09</span><span>Page anatomy</span></a><a href="10-cross-site-matrix.html"><span class="nav-number">10</span><span>Cross-site matrix</span></a>
+<div class="nav-foot"><span class="edition-date">2026-11-02</span><p>10 chapters · 15 screenshots · Chinese & English</p><a href="https://github.com/aotushi/anthropic-design-study/archive/refs/heads/main.zip">Download for offline reading ↗</a></div></nav>
+<div class="nav-scrim" data-close-menu></div>
+<div class="site-body"><main id="main" tabindex="-1"><header class="article-header"><p class="eyebrow">CHAPTER 08 / 10</p><h1>Application guide</h1><p>Choose patterns for your own content and reader tasks.</p></header><details class="inline-toc"><summary>On this page</summary><div><a href="#start-with-roles-then-choose-appearance">Start with roles, then choose appearance</a><a href="#match-the-combination-to-the-task">Match the combination to the task</a><a href="#define-your-own-typographic-roles">Define your own typographic roles</a><a href="#let-color-express-hierarchy">Let color express hierarchy</a><a href="#let-the-task-determine-density">Let the task determine density</a><a href="#review-in-a-useful-order">Review in a useful order</a></div></details><article class="prose"><h2 id="start-with-roles-then-choose-appearance">Start with roles, then choose appearance</h2>
+<p>Build around a division of information: headings establish topics, body text explains value, contents help orientation, controls support action, and code or examples support execution. Then choose colors, typography, and decoration for the content and brand.</p>
+<h2 id="match-the-combination-to-the-task">Match the combination to the task</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable data table"><table>
+<thead>
+<tr>
+<th>Your page</th>
+<th>Useful combination</th>
+<th>Decisions to make for your project</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Company introduction</td>
+<td>Clear statement, selected content, open composition</td>
+<td>Narrative tone, imagery, distinctive information</td>
+</tr>
+<tr>
+<td>Product introduction</td>
+<td>Clear heading, scenarios, prioritized main action</td>
+<td>Credible demonstrations, signed-out and signed-in routes, trial or purchase requirements</td>
+</tr>
+<tr>
+<td>Resource library</td>
+<td>Categories, search, topic labels, reading time</td>
+<td>Categories matching how readers seek content</td>
+</tr>
+<tr>
+<td>Technical docs</td>
+<td>Navigation tree, article, contents, code copying, steps</td>
+<td>Versions, runnable examples, error recovery, migrations</td>
+</tr>
+<tr>
+<td>Course</td>
+<td>Goals, duration, video and text, next step</td>
+<td>Exercises, progress, completion conditions, text alternatives</td>
+</tr>
+<tr>
+<td>Developer blog</td>
+<td>Compact rows, dates, categories, technical labels</td>
+<td>Whether retro imagery suits the audience and remains readable</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="define-your-own-typographic-roles">Define your own typographic roles</h2>
+<p>Choose the roles before deciding how many fonts you need:</p>
+<ol>
+<li><strong>Display and headings.</strong> Give them identity while supporting real title lengths and the target language.</li>
+<li><strong>Reading and controls.</strong> Prioritize clear, stable body text, navigation, and buttons with suitable language coverage.</li>
+<li><strong>Code and structured information.</strong> Use monospace for code, commands, and content requiring alignment.</li>
+</ol>
+<p>Check font licensing, loading cost, and character coverage together. See the <a href="../../NOTICE.md">materials notice</a> for this project's asset scope.</p>
+<p>For Chinese headings, use real content to choose size: check length and character density, then refine line breaks, line height, and narrow layouts so headings remain proportionate to the body.</p>
+<h2 id="let-color-express-hierarchy">Let color express hierarchy</h2>
+<p>Use a small number of background levels, high-contrast primary text, and distinct roles for emphasis, states, and syntax. Links, warnings, decoration, and selection convey different meanings; color choices should make those meanings distinguishable.</p>
+<p>Check body text, secondary text, fine borders, and controls together, including hover, focus, and disabled states.</p>
+<h2 id="let-the-task-determine-density">Let the task determine density</h2>
+<p>Marketing pages can give a large area to one message. Knowledge pages need continuing orientation and a next step. Action-heavy tools need space for parallel information and repeated operations. Density should match task complexity.</p>
+<p>Sketch the reader's task sequence before assigning space:</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable data table"><table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Information to show first</th>
+<th>Useful support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Understand a product</td>
+<td>What it does and who it serves</td>
+<td>One or two credible examples</td>
+</tr>
+<tr>
+<td>Evaluate a plan</td>
+<td>Price and applicable scope</td>
+<td>Differences and conditions</td>
+</tr>
+<tr>
+<td>Complete installation</td>
+<td>Prerequisites and steps</td>
+<td>Platform choices and troubleshooting</td>
+</tr>
+<tr>
+<td>Learn a concept</td>
+<td>Goals and central explanation</td>
+<td>Examples, practice, next lesson</td>
+</tr>
+<tr>
+<td>Resolve a problem</td>
+<td>Search and topic categories</td>
+<td>Related questions and return routes</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="review-in-a-useful-order">Review in a useful order</h2>
+<ul>
+<li><strong>Content:</strong> Does the heading describe the page's purpose, and does the text explain necessary conditions?</li>
+<li><strong>Structure:</strong> Do site navigation, categories, and article contents have distinct roles?</li>
+<li><strong>Visual hierarchy:</strong> Do typography, spacing, borders, and color communicate clear levels?</li>
+<li><strong>Interaction:</strong> Do search, switching, and expansion show state changes, with natural ways back?</li>
+<li><strong>Narrow layouts:</strong> Is content ordered well, and do long headings or code crowd the page?</li>
+<li><strong>Accessibility:</strong> Can the main flows be completed with a keyboard, with visible focus and clear text and controls?</li>
+<li><strong>Reliability:</strong> Is content understandable when fonts, images, or video have not loaded?</li>
+</ul>
+<p>After the first draft, walk through the main tasks using real content. Check whether hierarchy, navigation, and state feedback support each step.</p>
+</article><nav class="chapter-pager" aria-label="Chapter navigation"><a href="07-methodology-and-sources.html"><small>Previous</small><span>Methods &amp; evidence </span></a><a href="09-page-anatomy.html"><small>Next</small><span>Page anatomy →</span></a></nav></main><aside class="page-toc"><p class="eyebrow">On this page</p><a class="toc-h2" href="#start-with-roles-then-choose-appearance">Start with roles, then choose appearance</a><a class="toc-h2" href="#match-the-combination-to-the-task">Match the combination to the task</a><a class="toc-h2" href="#define-your-own-typographic-roles">Define your own typographic roles</a><a class="toc-h2" href="#let-color-express-hierarchy">Let color express hierarchy</a><a class="toc-h2" href="#let-the-task-determine-density">Let the task determine density</a><a class="toc-h2" href="#review-in-a-useful-order">Review in a useful order</a></aside>
+<footer class="site-footer"><p>An illustrated study of public websites.<br><span>Observed: 2026-11-02</span></p><div><a href="07-methodology-and-sources.html">Methods & sources</a><button type="button" data-print>Print ↗</button><a href="../../NOTICE.md">CC BY 4.0 / Credits</a></div></footer></div>
+<dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title"><div class="dialog-head"><h2 id="search-title">Search the study</h2><button type="button" data-close-dialog>Close <kbd>Esc</kbd></button></div><label class="sr-only" for="study-search">Search the study</label><input id="study-search" type="search" placeholder="Fonts, layouts, patterns…" autocomplete="off"><p id="search-status" class="search-status" role="status">Search all ten chapters in this edition.</p><div id="search-results"></div></dialog>
+<dialog id="image-dialog" class="image-dialog" aria-label="Enlarge image"><div class="dialog-head"><p id="image-caption"></p><button type="button" data-close-dialog>Close <kbd>Esc</kbd></button></div><div class="image-canvas"><img id="enlarged-image" alt=""></div><a id="original-image" href="#" target="_blank" rel="noopener">Open original image ↗</a></dialog>
+<noscript><p class="no-script">All chapters and images are readable without JavaScript. Enable it for search, filtering, and image enlargement.</p></noscript>
+</body></html>

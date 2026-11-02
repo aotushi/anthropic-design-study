@@ -2,7 +2,7 @@
 
 [中文](../02-typography.md) · **English**
 
-[Overview](../../README.en.md) · [Previous: Visual language](01-visual-language.md) · [Next: Page patterns](03-page-patterns.md)
+[Overview](../../README.md) · [Previous: Visual language](01-visual-language.md) · [Next: Page patterns](03-page-patterns.md)
 
 ## Five principal names, four core families
 

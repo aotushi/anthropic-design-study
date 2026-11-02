@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="页面来源、统计口径与测量范围。"><meta name="color-scheme" content="light">
+<title>方法与证据 · Anthropic 与 Claude · 网站设计手册</title>
+<link rel="icon" type="image/svg+xml" href="../shared/favicon.svg">
+<link rel="stylesheet" href="../shared/style.css">
+<link rel="alternate" hreflang="en" href="../en/07-methodology-and-sources.html">
+<script>document.documentElement.classList.add('js');window.STUDY_COPY={"noResults": "没有找到结果。试试字体、页面类型或模式名称。", "results": "条结果", "patterns": "种模式", "copied": "已复制", "copyFailed": "请选中色值并复制。", "enlarge": "放大图片"};</script>
+<script src="../shared/search-zh.js" defer></script><script src="../shared/app.js" defer></script>
+</head><body class="chapter-page" data-language="zh">
+<a class="skip-link" href="#main">跳至正文</a>
+<header class="site-header">
+<a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">a/c</span><span>Anthropic &amp; Claude<small>DESIGN FIELDNOTES</small></span></a>
+<div class="header-actions"><button class="menu-toggle" type="button" aria-label="目录" aria-controls="chapter-nav" aria-expanded="false"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14"/></svg><span>目录</span></button>
+<button class="search-trigger" type="button" aria-label="搜索研究内容" data-open-search><svg class="search-icon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg><span>搜索研究内容</span><kbd>/</kbd></button>
+<a class="language-switch" lang="en" href="../en/07-methodology-and-sources.html">English</a>
+<a class="github-link" href="https://github.com/aotushi/anthropic-design-study">GitHub ↗</a></div>
+<div class="reading-progress" aria-hidden="true"><span></span></div></header>
+<nav id="chapter-nav" class="chapter-nav" aria-label="章节目录">
+<p class="nav-label">关于本研究</p><a href="index.html"><span>研究总览</span></a><a href="explore.html"><span>图像与数据</span></a>
+<p class="nav-label chapters-label">章节目录</p><a href="01-visual-language.html"><span class="nav-number">01</span><span>视觉语言</span></a><a href="02-typography.html"><span class="nav-number">02</span><span>字体与排版</span></a><a href="03-page-patterns.html"><span class="nav-number">03</span><span>八类页面模式</span></a><a href="04-components.html"><span class="nav-number">04</span><span>二十类可复用模式</span></a><a href="05-ux-and-responsive.html"><span class="nav-number">05</span><span>UX 与响应式</span></a><a href="06-gallery.html"><span class="nav-number">06</span><span>截图图库</span></a><a href="07-methodology-and-sources.html" aria-current="page"><span class="nav-number">07</span><span>方法与证据</span></a><a href="08-application-guide.html"><span class="nav-number">08</span><span>应用指南</span></a><a href="09-page-anatomy.html"><span class="nav-number">09</span><span>页面拆解</span></a><a href="10-cross-site-matrix.html"><span class="nav-number">10</span><span>跨站设计矩阵</span></a>
+<div class="nav-foot"><span class="edition-date">2026-11-02</span><p>10 个章节 · 15 张截图 · 中英文双语</p><a href="https://github.com/aotushi/anthropic-design-study/archive/refs/heads/main.zip">下载离线阅读 ↗</a></div></nav>
+<div class="nav-scrim" data-close-menu></div>
+<div class="site-body"><main id="main" tabindex="-1"><header class="article-header"><p class="eyebrow">CHAPTER 07 / 10</p><h1>方法与证据</h1><p>页面来源、统计口径与测量范围。</p></header><details class="inline-toc"><summary>本页内容</summary><div><a href="#范围和时间">范围和时间</a><a href="#页面来源索引">页面来源索引</a><a href="#研究口径与证据">研究口径与证据</a><a href="#测量和采集环境">测量和采集环境</a><a href="#验证范围与采集状态">验证范围与采集状态</a><a href="#辅助标准">辅助标准</a><a href="#如何更新研究">如何更新研究</a></div></details><article class="prose"><h2 id="范围和时间">范围和时间</h2>
+<p>观察日期为 <strong>2026-11-02，Asia/Shanghai</strong>。样本包含 7 个官方站点上的 10 个代表页面。Academy 首页与 Claude Code 文档另采集窄屏版本；重复视口与交互状态不增加页面总数。</p>
+<p>范围为公开的官网、产品介绍、官方教程与文档，未纳入 Claude 对话界面、登录后页面、第三方教程站及其他语言或历史版本。采集工具阻止对 <code>claude.ai</code> 的访问。</p>
+<h2 id="页面来源索引">页面来源索引</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>编号</th>
+<th>样本</th>
+<th>原站</th>
+<th>原始测量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S01</td>
+<td>Anthropic 公司首页</td>
+<td><a href="https://www.anthropic.com/">访问</a></td>
+<td><a href="../../data/pages/anthropic-home.json">JSON</a></td>
+</tr>
+<tr>
+<td>S02</td>
+<td>Claude 产品介绍</td>
+<td><a href="https://claude.com/product/overview">访问</a></td>
+<td><a href="../../data/pages/claude-product.json">JSON</a></td>
+</tr>
+<tr>
+<td>S03</td>
+<td>定价与比较</td>
+<td><a href="https://claude.com/pricing">访问</a></td>
+<td><a href="../../data/pages/claude-pricing.json">JSON</a></td>
+</tr>
+<tr>
+<td>S04</td>
+<td>资源中心</td>
+<td><a href="https://claude.com/resources">访问</a></td>
+<td><a href="../../data/pages/claude-resources.json">JSON</a></td>
+</tr>
+<tr>
+<td>S05</td>
+<td>Academy 首页</td>
+<td><a href="https://academy.claude.com/">访问</a></td>
+<td><a href="../../data/pages/academy-home.json">JSON</a></td>
+</tr>
+<tr>
+<td>S06</td>
+<td>Academy 课程内页</td>
+<td><a href="https://academy.claude.com/courses/ai-fluency-framework-foundations/introduction-to-ai-fluency">访问</a></td>
+<td><a href="../../data/pages/academy-lesson.json">JSON</a></td>
+</tr>
+<tr>
+<td>S07</td>
+<td>Claude Code 文档</td>
+<td><a href="https://code.claude.com/docs/en/overview">访问</a></td>
+<td><a href="../../data/pages/code-docs.json">JSON</a></td>
+</tr>
+<tr>
+<td>S08</td>
+<td>Claude Platform 文档</td>
+<td><a href="https://platform.claude.com/docs/en/get-started">访问</a></td>
+<td><a href="../../data/pages/platform-docs.json">JSON</a></td>
+</tr>
+<tr>
+<td>S09</td>
+<td>帮助中心</td>
+<td><a href="https://support.claude.com/en/">访问</a></td>
+<td><a href="../../data/pages/support-home.json">JSON</a></td>
+</tr>
+<tr>
+<td>S10</td>
+<td>开发者博客</td>
+<td><a href="https://claude.dev/">访问</a></td>
+<td><a href="../../data/pages/developer-blog.json">JSON</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>截图中的页面内容、价格和产品名称保留观察日期的状态；当前信息请查阅对应原站。</p>
+<h2 id="研究口径与证据">研究口径与证据</h2>
+<p>本手册是一份基于公开页面的独立设计分析。风格命名与模式分类由本研究归纳，字体、色彩、尺寸及交互描述对应下列证据。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>内容</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>页面事实</td>
+<td>字体、颜色、结构、尺寸与操作后的状态</td>
+<td>原始截图、浏览器测量、交互记录</td>
+</tr>
+<tr>
+<td>设计解读</td>
+<td>视觉形式与阅读任务之间的关系</td>
+<td>对页面事实的比较与分析</td>
+</tr>
+<tr>
+<td>应用建议</td>
+<td>为其他项目选择布局、字体与交互方式</td>
+<td>应用指南中基于任务提出的设计建议</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>3 类视觉方向、8 类页面模式、20 类组件模式与字体数量分别描述不同层级，独立计数。</strong> 分类范围为已检查的代表页面。组件按任务去重：普通卡片网格用于浏览内容，套餐卡片用于比较方案，分别计数；同一模式出现在多个站点时合并。该数量统计的是可见界面模式，不是源代码组件数量。</p>
+<h2 id="测量和采集环境">测量和采集环境</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>口径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>桌面</td>
+<td>1440 × 1000 CSS 像素，设备像素比例 1，浅色模式</td>
+</tr>
+<tr>
+<td>窄屏</td>
+<td>390 × 844 CSS 像素，设备像素比例 1；通过桌面浏览器缩窄视口采集</td>
+</tr>
+<tr>
+<td>页面状态</td>
+<td>公开页面，无账户登录；英文内容；正常动态效果偏好</td>
+</tr>
+<tr>
+<td>截图与示意图</td>
+<td>截图由浏览器直接输出 PNG，保留原始画面；SVG 为本项目绘制的结构或色彩说明图</td>
+</tr>
+<tr>
+<td>字体设置</td>
+<td>读取元素的字体、大小、字重和行高，并记录字体声明及加载状态</td>
+</tr>
+<tr>
+<td>字形渲染</td>
+<td>读取浏览器在选定文字元素上实际使用的字体</td>
+</tr>
+<tr>
+<td>颜色</td>
+<td>读取元素的页面样式；透明背景需结合祖先背景理解</td>
+</tr>
+<tr>
+<td>尺寸</td>
+<td>记录具体页面、元素和视口下的测量值</td>
+</tr>
+</tbody>
+</table></div>
+<p>字体家族会有变量版本、静态版本、大小写与连接符不同的名称。研究按可辨识的家族归并，同时保留原始名称。图标字体、备用字体和字重不混入核心文字字体数量。</p>
+<h2 id="验证范围与采集状态">验证范围与采集状态</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>已检查</th>
+<th>尚未验证</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>交互</td>
+<td>定价人群、博客分类、课程文字稿的切换与状态反馈</td>
+<td>购买和登录流程、视频播放、学习进度与测验、搜索结果质量；未执行代码示例</td>
+</tr>
+<tr>
+<td>响应式</td>
+<td>Academy 与 Code Docs 的两组宽窄视口、正文尺寸与页面横向溢出</td>
+<td>真实手机触控、其他设备与断点、全部浮层和展开状态</td>
+</tr>
+<tr>
+<td>可访问性</td>
+<td>四组文字与背景的对比度、Resources 首次键盘焦点</td>
+<td>全页键盘流程、控件目标尺寸、完整状态对比度与全站 WCAG 审计</td>
+</tr>
+<tr>
+<td>动态与效果</td>
+<td>首屏动态画面、页面结构与任务的关系</td>
+<td>动画时长与触发细节、降低动态效果偏好、用户效率、转化及性能实验</td>
+</tr>
+</tbody>
+</table></div>
+<p>两种采集状态会影响截图解读，因此同时标注在对应章节和图注中：帮助中心的抽样文字发生系统字体回退；课程视频区域在采集时尚未显示内容，文字内容可用。字体与色值记录保留具体元素和当时的浏览器状态。</p>
+<h2 id="辅助标准">辅助标准</h2>
+<p>文字对比度计算参照 W3C 的 <a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html">文字对比度说明</a>：普通文字的最低值为 4.5 : 1，符合条件的大字为 3 : 1，规范另列有例外。计算使用抽样文字颜色与最近的不透明祖先背景。</p>
+<p>如进一步检查控件，WCAG 2.2 AA 的<a href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html">目标尺寸条款</a>以 24 × 24 CSS 像素为基准，并包含间距等例外。本手册的实际检查范围列于上表。</p>
+<h2 id="如何更新研究">如何更新研究</h2>
+<ol>
+<li>安装 Python 和 Playwright；本次使用 Playwright 1.58.0 与 Chrome。</li>
+<li>在仓库根目录运行 <code>python scripts/capture.py --channel chrome</code> 更新桌面样本。</li>
+<li>运行 <code>python scripts/capture.py --mobile --ids S05 S07 --channel chrome</code> 更新两个窄屏样本。</li>
+<li>运行 <code>python scripts/check-interactions.py</code> 重新记录本手册覆盖的交互。</li>
+<li>逐张检查截图完整性与加载状态，核对实际字体，再同步修改中英文正文。</li>
+<li>运行 <code>python scripts/analyze.py</code>、<code>python scripts/build_html.py</code>、<code>python scripts/validate.py</code> 和 <code>python scripts/validate_html.py</code>；证据变化时更新观察日期与变化记录。</li>
+</ol>
+<p>更新会覆盖对应的证据文件；请在独立分支中执行。网站改版可能使采集步骤不再适用，需要先调整定位方式，再解释新结果。</p>
+<p>HTML 版的构建与交互维护见<a href="../../web/README.md">构建说明</a>。</p>
+</article><nav class="chapter-pager" aria-label="Chapter navigation"><a href="06-gallery.html"><small>上一章</small><span>截图图库 </span></a><a href="08-application-guide.html"><small>下一章</small><span>应用指南 →</span></a></nav></main><aside class="page-toc"><p class="eyebrow">本页内容</p><a class="toc-h2" href="#范围和时间">范围和时间</a><a class="toc-h2" href="#页面来源索引">页面来源索引</a><a class="toc-h2" href="#研究口径与证据">研究口径与证据</a><a class="toc-h2" href="#测量和采集环境">测量和采集环境</a><a class="toc-h2" href="#验证范围与采集状态">验证范围与采集状态</a><a class="toc-h2" href="#辅助标准">辅助标准</a><a class="toc-h2" href="#如何更新研究">如何更新研究</a></aside>
+<footer class="site-footer"><p>一份关于公开网站的图文设计研究。<br><span>观察日期: 2026-11-02</span></p><div><a href="07-methodology-and-sources.html">方法与来源</a><button type="button" data-print>打印 ↗</button><a href="../../NOTICE.md">CC BY 4.0 / Credits</a></div></footer></div>
+<dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title"><div class="dialog-head"><h2 id="search-title">搜索研究内容</h2><button type="button" data-close-dialog>关闭 <kbd>Esc</kbd></button></div><label class="sr-only" for="study-search">搜索研究内容</label><input id="study-search" type="search" placeholder="字体、布局、设计模式…" autocomplete="off"><p id="search-status" class="search-status" role="status">搜索本语言版本的全部十个章节。</p><div id="search-results"></div></dialog>
+<dialog id="image-dialog" class="image-dialog" aria-label="放大图片"><div class="dialog-head"><p id="image-caption"></p><button type="button" data-close-dialog>关闭 <kbd>Esc</kbd></button></div><div class="image-canvas"><img id="enlarged-image" alt=""></div><a id="original-image" href="#" target="_blank" rel="noopener">打开原始图片 ↗</a></dialog>
+<noscript><p class="no-script">全部章节与图片可直接阅读。启用 JavaScript 后可使用搜索、筛选与图片放大。</p></noscript>
+</body></html>

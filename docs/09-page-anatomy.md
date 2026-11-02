@@ -2,7 +2,7 @@
 
 **中文** · [English](en/09-page-anatomy.md)
 
-[返回总览](../README.md) · [上一章：应用指南](08-application-guide.md) · [下一章：跨站矩阵](10-cross-site-matrix.md)
+[返回总览](../README.zh-CN.md) · [上一章：应用指南](08-application-guide.md) · [下一章：跨站矩阵](10-cross-site-matrix.md)
 
 把一页拆成区域，可以看见字体、留白与组件怎样共同安排阅读。下面选择资源中心、技术文档与课程三个场景，沿着“先看什么—怎样定位—接下来做什么”逐步分析。
 

@@ -2,7 +2,7 @@
 
 [中文](../05-ux-and-responsive.md) · **English**
 
-[Overview](../../README.en.md) · [Previous: Components](04-components.md) · [Next: Screenshot gallery](06-gallery.md)
+[Overview](../../README.md) · [Previous: Components](04-components.md) · [Next: Screenshot gallery](06-gallery.md)
 
 ## Helping readers take the next step
 

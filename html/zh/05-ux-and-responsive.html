@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="实际交互、窄屏变化与文字对比度。"><meta name="color-scheme" content="light">
+<title>UX 与响应式 · Anthropic 与 Claude · 网站设计手册</title>
+<link rel="icon" type="image/svg+xml" href="../shared/favicon.svg">
+<link rel="stylesheet" href="../shared/style.css">
+<link rel="alternate" hreflang="en" href="../en/05-ux-and-responsive.html">
+<script>document.documentElement.classList.add('js');window.STUDY_COPY={"noResults": "没有找到结果。试试字体、页面类型或模式名称。", "results": "条结果", "patterns": "种模式", "copied": "已复制", "copyFailed": "请选中色值并复制。", "enlarge": "放大图片"};</script>
+<script src="../shared/search-zh.js" defer></script><script src="../shared/app.js" defer></script>
+</head><body class="chapter-page" data-language="zh">
+<a class="skip-link" href="#main">跳至正文</a>
+<header class="site-header">
+<a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">a/c</span><span>Anthropic &amp; Claude<small>DESIGN FIELDNOTES</small></span></a>
+<div class="header-actions"><button class="menu-toggle" type="button" aria-label="目录" aria-controls="chapter-nav" aria-expanded="false"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14"/></svg><span>目录</span></button>
+<button class="search-trigger" type="button" aria-label="搜索研究内容" data-open-search><svg class="search-icon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg><span>搜索研究内容</span><kbd>/</kbd></button>
+<a class="language-switch" lang="en" href="../en/05-ux-and-responsive.html">English</a>
+<a class="github-link" href="https://github.com/aotushi/anthropic-design-study">GitHub ↗</a></div>
+<div class="reading-progress" aria-hidden="true"><span></span></div></header>
+<nav id="chapter-nav" class="chapter-nav" aria-label="章节目录">
+<p class="nav-label">关于本研究</p><a href="index.html"><span>研究总览</span></a><a href="explore.html"><span>图像与数据</span></a>
+<p class="nav-label chapters-label">章节目录</p><a href="01-visual-language.html"><span class="nav-number">01</span><span>视觉语言</span></a><a href="02-typography.html"><span class="nav-number">02</span><span>字体与排版</span></a><a href="03-page-patterns.html"><span class="nav-number">03</span><span>八类页面模式</span></a><a href="04-components.html"><span class="nav-number">04</span><span>二十类可复用模式</span></a><a href="05-ux-and-responsive.html" aria-current="page"><span class="nav-number">05</span><span>UX 与响应式</span></a><a href="06-gallery.html"><span class="nav-number">06</span><span>截图图库</span></a><a href="07-methodology-and-sources.html"><span class="nav-number">07</span><span>方法与证据</span></a><a href="08-application-guide.html"><span class="nav-number">08</span><span>应用指南</span></a><a href="09-page-anatomy.html"><span class="nav-number">09</span><span>页面拆解</span></a><a href="10-cross-site-matrix.html"><span class="nav-number">10</span><span>跨站设计矩阵</span></a>
+<div class="nav-foot"><span class="edition-date">2026-11-02</span><p>10 个章节 · 15 张截图 · 中英文双语</p><a href="https://github.com/aotushi/anthropic-design-study/archive/refs/heads/main.zip">下载离线阅读 ↗</a></div></nav>
+<div class="nav-scrim" data-close-menu></div>
+<div class="site-body"><main id="main" tabindex="-1"><header class="article-header"><p class="eyebrow">CHAPTER 05 / 10</p><h1>UX 与响应式</h1><p>实际交互、窄屏变化与文字对比度。</p></header><details class="inline-toc"><summary>本页内容</summary><div><a href="#页面如何帮助用户继续行动">页面如何帮助用户继续行动</a><a href="#已操作核验的交互">已操作核验的交互</a><a href="#桌面与窄屏对照">桌面与窄屏对照</a><a href="#四组文字对比度检查">四组文字对比度检查</a><a href="#将观察转化为设计判断">将观察转化为设计判断</a></div></details><article class="prose"><h2 id="页面如何帮助用户继续行动">页面如何帮助用户继续行动</h2>
+<p>视觉层级和信息结构需要一起看。一个大标题能够吸引注意，但用户还需要知道下一步；一份长文内容充分，也需要有定位和返回路径。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>使用情境</th>
+<th>样本中的辅助方式</th>
+<th>设计解读</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>初次了解产品</td>
+<td>简短说明、场景、突出主要动作</td>
+<td>先建立用途，再引导行动</td>
+</tr>
+<tr>
+<td>比较方案</td>
+<td>人群切换、套餐卡片、详细比较表</td>
+<td>把快速判断与细节核对分层</td>
+</tr>
+<tr>
+<td>查找技术内容</td>
+<td>导航树、搜索、页内目录</td>
+<td>同时支持浏览与定向定位</td>
+</tr>
+<tr>
+<td>逐步执行</td>
+<td>编号步骤、代码区、相邻复制入口</td>
+<td>将说明与执行对象放在一起</td>
+</tr>
+<tr>
+<td>顺序学习</td>
+<td>学习目标、课时信息、下一课</td>
+<td>为阅读提供起点与后续方向</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="已操作核验的交互">已操作核验的交互</h2>
+<p>以下结果来自公开页面的实际操作，原始记录见 <a href="../../data/interaction-checks.json">interaction-checks.json</a>。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>检查</th>
+<th>本次观察结果</th>
+<th>观察对象</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>定价的人群切换</td>
+<td>Individual 切换为 Team &amp; Enterprise，显示对应套餐</td>
+<td>标签选中状态与套餐标题</td>
+</tr>
+<tr>
+<td>博客的主题筛选</td>
+<td>列表由 10 项变成 1 项，恢复 ALL 后回到 10 项</td>
+<td>分类选择与可见文章数量</td>
+</tr>
+<tr>
+<td>课程的文字稿切换</td>
+<td>Transcript 被选中，选中状态正确更新</td>
+<td>内容切换控件的选中状态</td>
+</tr>
+<tr>
+<td>文档代码字体</td>
+<td>代码文字实际由 Paper Mono 渲染</td>
+<td>代码区抽样文字</td>
+</tr>
+<tr>
+<td>资源页首次键盘焦点</td>
+<td>首次 Tab 到达 Skip to main content 链接</td>
+<td>跳过导航的键盘入口</td>
+</tr>
+</tbody>
+</table></div>
+<p><button class="figure-button" type="button" data-zoom aria-label="放大图片: 课程切换为文字稿后的内容区，右侧仍保留章节定位"><img src="../../assets/screenshots/academy-transcript.png" alt="课程切换为文字稿后的内容区，右侧仍保留章节定位" width="1440" height="1000" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true">放大图片 ↗</span></button></p>
+<p><em>图 10 · <a href="https://academy.claude.com/courses/ai-fluency-framework-foundations/introduction-to-ai-fluency">课程 S06</a> · 顶部视频区域在采集时为空白加载状态，文字稿切换与下方文字可用。</em></p>
+<p>在这节课程中，视频与文字提供了两种学习方式。视频资源尚未就绪时，文字内容与章节目录仍然可用。</p>
+<h2 id="桌面与窄屏对照">桌面与窄屏对照</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<tr><th>Academy：390 × 844</th><th>Code Docs：390 × 844</th></tr>
+<tr>
+<td><button class="figure-button" type="button" data-zoom aria-label="放大图片: Academy 窄屏首页，标题换行，导航收缩，学习入口改成单列"><img src="../../assets/screenshots/academy-home-mobile.png" alt="Academy 窄屏首页，标题换行，导航收缩，学习入口改成单列" width="390" height="844" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true">放大图片 ↗</span></button></td>
+<td><button class="figure-button" type="button" data-zoom aria-label="放大图片: Code Docs 窄屏，侧边导航收进菜单，正文占据主要宽度"><img src="../../assets/screenshots/code-docs-mobile.png" alt="Code Docs 窄屏，侧边导航收进菜单，正文占据主要宽度" width="390" height="844" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true">放大图片 ↗</span></button></td>
+</tr>
+</table></div>
+<p><em>图 11–12 · 两页均在桌面浏览器中以 390 × 844 视口采集。</em></p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>观察点</th>
+<th>桌面 1440px 宽</th>
+<th>窄屏 390px 宽</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Academy 主标题</td>
+<td>48px，行高 52.8px</td>
+<td>44px，行高 48.4px；标题分行</td>
+</tr>
+<tr>
+<td>Academy 首页说明</td>
+<td>18px，行高 28px</td>
+<td>保持 18px、28px</td>
+</tr>
+<tr>
+<td>Academy 内容入口</td>
+<td>多列卡片</td>
+<td>纵向单列，局部图文关系调整</td>
+</tr>
+<tr>
+<td>Code Docs 主标题</td>
+<td>36px，行高 40px</td>
+<td>30px，行高 36px</td>
+</tr>
+<tr>
+<td>Code Docs 介绍段落</td>
+<td>16px，行高 26.4px</td>
+<td>保持 16px、26.4px</td>
+</tr>
+<tr>
+<td>Code Docs 导航</td>
+<td>左侧导航、中央正文、右侧目录</td>
+<td>主阅读区单列，导航以紧凑入口呈现</td>
+</tr>
+<tr>
+<td>整个文档的横向溢出</td>
+<td>两个样本均未检测到</td>
+<td>两个样本均未检测到</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：<a href="../../data/pages/academy-home.json">Academy 桌面</a>、<a href="../../data/pages/academy-home-mobile.json">Academy 窄屏</a>、<a href="../../data/pages/code-docs.json">Code Docs 桌面</a>、<a href="../../data/pages/code-docs-mobile.json">Code Docs 窄屏</a>。</p>
+<p>窄屏布局通过<strong>重新分配空间</strong>适应阅读：部分标题缩小，正文保持字号，导航收进紧凑入口，卡片转为单列。内容的优先顺序因此比桌面布局的原始比例更重要。</p>
+<h2 id="四组文字对比度检查">四组文字对比度检查</h2>
+<p>以选定文字颜色和最近的不透明祖先背景进行计算，结果如下。资源中心首屏文字位于 <code>#F5F4ED</code> 面板上，外层页面背景则为 <code>#FAF9F5</code>；对比度使用文字所在面板的颜色。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>抽样位置</th>
+<th>文字</th>
+<th>背景</th>
+<th style="text-align:right">对比度，约</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resources 标题</td>
+<td>#141413</td>
+<td>#F5F4ED</td>
+<td style="text-align:right">16.72 : 1</td>
+</tr>
+<tr>
+<td>Resources 首屏说明</td>
+<td>#30302E</td>
+<td>#F5F4ED</td>
+<td style="text-align:right">11.99 : 1</td>
+</tr>
+<tr>
+<td>Platform 标题</td>
+<td>#0B0B0B</td>
+<td>#FCFCFB</td>
+<td style="text-align:right">19.17 : 1</td>
+</tr>
+<tr>
+<td>Platform 首屏说明</td>
+<td>#52514E</td>
+<td>#FCFCFB</td>
+<td style="text-align:right">7.73 : 1</td>
+</tr>
+</tbody>
+</table></div>
+<p>W3C 对普通文字的最低对比度要求为 4.5 : 1，符合条件的大字为 3 : 1；存在规范规定的例外。<a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html">W3C 对比度说明</a></p>
+<p>上述四组均高于普通文字阈值。两页通过深色标题与稍浅的说明文字建立层级，同时让说明文字保持较高对比度。<a href="../../data/derived-checks.json">计算数据</a> · <a href="../../scripts/analyze.py">计算脚本</a></p>
+<h2 id="将观察转化为设计判断">将观察转化为设计判断</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的数据表"><table>
+<thead>
+<tr>
+<th>设计要点</th>
+<th>页面中的具体做法</th>
+<th>应用时关注什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>状态与内容对应</td>
+<td>定价标签切换时更新对应套餐</td>
+<td>选中样式和当前内容保持一致</td>
+</tr>
+<tr>
+<td>学习方式可选择</td>
+<td>课程提供文字稿入口</td>
+<td>让替代内容与主内容一样容易找到</td>
+</tr>
+<tr>
+<td>窄屏保留阅读优先级</td>
+<td>正文字号保持，导航收起，卡片变为单列</td>
+<td>先安排内容顺序，再调整尺寸</td>
+</tr>
+<tr>
+<td>键盘入口贴近主要任务</td>
+<td>Resources 首次焦点是跳过导航链接</td>
+<td>让键盘用户能迅速进入主体内容</td>
+</tr>
+<tr>
+<td>层级与清晰度并存</td>
+<td>说明文字比标题稍浅，仍保持较高对比度</td>
+<td>同时检查信息层级和阅读清晰度</td>
+</tr>
+</tbody>
+</table></div>
+</article><nav class="chapter-pager" aria-label="Chapter navigation"><a href="04-components.html"><small>上一章</small><span>二十类可复用模式 </span></a><a href="06-gallery.html"><small>下一章</small><span>截图图库 →</span></a></nav></main><aside class="page-toc"><p class="eyebrow">本页内容</p><a class="toc-h2" href="#页面如何帮助用户继续行动">页面如何帮助用户继续行动</a><a class="toc-h2" href="#已操作核验的交互">已操作核验的交互</a><a class="toc-h2" href="#桌面与窄屏对照">桌面与窄屏对照</a><a class="toc-h2" href="#四组文字对比度检查">四组文字对比度检查</a><a class="toc-h2" href="#将观察转化为设计判断">将观察转化为设计判断</a></aside>
+<footer class="site-footer"><p>一份关于公开网站的图文设计研究。<br><span>观察日期: 2026-11-02</span></p><div><a href="07-methodology-and-sources.html">方法与来源</a><button type="button" data-print>打印 ↗</button><a href="../../NOTICE.md">CC BY 4.0 / Credits</a></div></footer></div>
+<dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title"><div class="dialog-head"><h2 id="search-title">搜索研究内容</h2><button type="button" data-close-dialog>关闭 <kbd>Esc</kbd></button></div><label class="sr-only" for="study-search">搜索研究内容</label><input id="study-search" type="search" placeholder="字体、布局、设计模式…" autocomplete="off"><p id="search-status" class="search-status" role="status">搜索本语言版本的全部十个章节。</p><div id="search-results"></div></dialog>
+<dialog id="image-dialog" class="image-dialog" aria-label="放大图片"><div class="dialog-head"><p id="image-caption"></p><button type="button" data-close-dialog>关闭 <kbd>Esc</kbd></button></div><div class="image-canvas"><img id="enlarged-image" alt=""></div><a id="original-image" href="#" target="_blank" rel="noopener">打开原始图片 ↗</a></dialog>
+<noscript><p class="no-script">全部章节与图片可直接阅读。启用 JavaScript 后可使用搜索、筛选与图片放大。</p></noscript>
+</body></html>

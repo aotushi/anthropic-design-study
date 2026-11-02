@@ -2,7 +2,7 @@
 
 **中文** · [English](en/07-methodology-and-sources.md)
 
-[返回总览](../README.md) · [查看截图图库](06-gallery.md)
+[返回总览](../README.zh-CN.md) · [查看截图图库](06-gallery.md)
 
 ## 范围和时间
 

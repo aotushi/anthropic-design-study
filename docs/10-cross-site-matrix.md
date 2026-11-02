@@ -2,7 +2,7 @@
 
 **中文** · [English](en/10-cross-site-matrix.md)
 
-[返回总览](../README.md) · [上一章：页面拆解](09-page-anatomy.md)
+[返回总览](../README.zh-CN.md) · [上一章：页面拆解](09-page-anatomy.md)
 
 把站点放在一起看，可以分清哪些元素维持品牌一致性，哪些元素随任务变化。本章从阅读任务、字体角色和组件分布三个层次进行对照。
 
