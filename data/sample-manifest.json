@@ -1,0 +1,79 @@
+{
+  "observedDate": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "desktopViewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "mobileViewport": {
+    "width": 390,
+    "height": 844
+  },
+  "exclusions": [
+    "claude.ai conversation interface",
+    "authenticated account content",
+    "third-party tutorial websites"
+  ],
+  "pages": [
+    {
+      "id": "S01",
+      "slug": "anthropic-home",
+      "url": "https://www.anthropic.com/",
+      "name": "Anthropic 公司官网"
+    },
+    {
+      "id": "S02",
+      "slug": "claude-product",
+      "url": "https://claude.com/product/overview",
+      "name": "Claude 产品介绍"
+    },
+    {
+      "id": "S03",
+      "slug": "claude-pricing",
+      "url": "https://claude.com/pricing",
+      "name": "Claude 定价"
+    },
+    {
+      "id": "S04",
+      "slug": "claude-resources",
+      "url": "https://claude.com/resources",
+      "name": "Claude 资源中心"
+    },
+    {
+      "id": "S05",
+      "slug": "academy-home",
+      "url": "https://academy.claude.com/",
+      "name": "Claude Academy 首页"
+    },
+    {
+      "id": "S06",
+      "slug": "academy-lesson",
+      "url": "https://academy.claude.com/courses/ai-fluency-framework-foundations/introduction-to-ai-fluency",
+      "name": "Academy 课程内页"
+    },
+    {
+      "id": "S07",
+      "slug": "code-docs",
+      "url": "https://code.claude.com/docs/en/overview",
+      "name": "Claude Code 文档"
+    },
+    {
+      "id": "S08",
+      "slug": "platform-docs",
+      "url": "https://platform.claude.com/docs/en/get-started",
+      "name": "Claude Platform 文档"
+    },
+    {
+      "id": "S09",
+      "slug": "support-home",
+      "url": "https://support.claude.com/en/",
+      "name": "Claude 帮助中心"
+    },
+    {
+      "id": "S10",
+      "slug": "developer-blog",
+      "url": "https://claude.dev/",
+      "name": "Claude 开发者博客"
+    }
+  ]
+}

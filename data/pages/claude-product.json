@@ -1,0 +1,543 @@
+{
+  "url": "https://claude.com/product/overview",
+  "title": "Claude | The AI assistant for work",
+  "samples": [
+    {
+      "selector": "body",
+      "text": "Skip to main content\nLatest news\n\nIntroducing Claude Duet\n\nA new app and proactive way to ",
+      "font": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "size": "15px",
+      "weight": "400",
+      "line": "22.5px",
+      "color": "rgb(20, 20, 19)",
+      "background": "rgb(250, 249, 245)"
+    },
+    {
+      "selector": "h1",
+      "text": "Give Claude more",
+      "font": "anthropicSerif, \"anthropicSerif Fallback\", Georgia, serif",
+      "size": "72px",
+      "weight": "500",
+      "line": "79.2px",
+      "color": "rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "h2",
+      "text": "Put Claude to work",
+      "font": "anthropicSerif, \"anthropicSerif Fallback\", Georgia, serif",
+      "size": "52px",
+      "weight": "500",
+      "line": "62.4px",
+      "color": "rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "h3",
+      "text": "See what Claude can do",
+      "font": "anthropicSerif, \"anthropicSerif Fallback\", Georgia, serif",
+      "size": "36px",
+      "weight": "500",
+      "line": "46.8px",
+      "color": "rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "main p",
+      "text": "Campaign readout",
+      "font": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "size": "12px",
+      "weight": "400",
+      "line": "18px",
+      "color": "rgb(94, 93, 89)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "article p"
+    },
+    {
+      "selector": "nav a",
+      "text": "Login",
+      "font": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "size": "15px",
+      "weight": "400",
+      "line": "24px",
+      "color": "rgb(48, 48, 46)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "button",
+      "text": "",
+      "font": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "size": "12px",
+      "weight": "500",
+      "line": "12px",
+      "color": "rgb(94, 93, 89)",
+      "background": "rgb(250, 249, 245)"
+    },
+    {
+      "selector": "code"
+    },
+    {
+      "selector": "pre"
+    }
+  ],
+  "fontUsage": {
+    "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif": {
+      "count": 209,
+      "examples": [
+        "Skip to main content",
+        "Latest news",
+        "A new app and proactive way to work with Claude, now in research "
+      ]
+    },
+    "anthropicSerif, \"anthropicSerif Fallback\"": {
+      "count": 15,
+      "examples": [
+        "Introducing Claude Duet",
+        "Get it done",
+        "Access tools"
+      ]
+    },
+    "anthropicSerif, \"anthropicSerif Fallback\", Georgia, serif": {
+      "count": 33,
+      "examples": [
+        "Give",
+        "Claude",
+        "more"
+      ]
+    },
+    "anthropicSans, \"anthropicSans Fallback\"": {
+      "count": 81,
+      "examples": [
+        "Quick answers or long tasks",
+        "Parallel tasks",
+        "Frontier intelligence"
+      ]
+    }
+  },
+  "loadedFonts": [
+    {
+      "family": "anthropicSans",
+      "weight": "normal"
+    },
+    {
+      "family": "anthropicSans Fallback",
+      "weight": "normal"
+    },
+    {
+      "family": "anthropicSerif",
+      "weight": "normal"
+    },
+    {
+      "family": "anthropicSerif Fallback",
+      "weight": "normal"
+    }
+  ],
+  "fontFaces": [
+    "@font-face { font-family: anthropicSans; src: url(\"../media/AnthropicSans_Roman_Web-s.p.050e7498.woff2\") format(\"woff2\"); font-display: swap; font-style: normal; }",
+    "@font-face { font-family: anthropicSans; src: url(\"../media/AnthropicSans_Italic_Web-s.p.6550bf15.woff2\") format(\"woff2\"); font-display: swap; font-style: italic; }",
+    "@font-face { font-family: \"anthropicSans Fallback\"; src: local(\"Arial\"); ascent-override: 92.99%; descent-override: 24.13%; line-gap-override: 0%; size-adjust: 106.73%; }",
+    "@font-face { font-family: anthropicSerif; src: url(\"../media/AnthropicSerif_Roman_Web-s.p.c28786b4.woff2\") format(\"woff2\"); font-display: swap; font-style: normal; }",
+    "@font-face { font-family: anthropicSerif; src: url(\"../media/AnthropicSerif_Italic_Web-s.p.43888cc6.woff2\") format(\"woff2\"); font-display: swap; font-style: italic; }",
+    "@font-face { font-family: \"anthropicSerif Fallback\"; src: local(\"Arial\"); ascent-override: 96.05%; descent-override: 24.92%; line-gap-override: 0%; size-adjust: 103.33%; }",
+    "@font-face { font-family: anthropicMono; src: url(\"../media/AnthropicMono_Roman_Web-s.p.80d4607c.woff2\") format(\"woff2\"); font-display: swap; font-style: normal; }",
+    "@font-face { font-family: anthropicMono; src: url(\"../media/AnthropicMono_Italic_Web-s.p.39343088.woff2\") format(\"woff2\"); font-display: swap; font-style: italic; }",
+    "@font-face { font-family: \"anthropicMono Fallback\"; src: local(\"Arial\"); ascent-override: 75.48%; descent-override: 19.58%; line-gap-override: 0%; size-adjust: 131.49%; }"
+  ],
+  "stylesheets": [
+    "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+    "https://claude.com/_next/static/chunks/044a9095e2dd38bf.css",
+    "https://claude.com/_next/static/chunks/4b691daeedbdd0cc.css",
+    "https://claude.com/_next/static/chunks/de7037d2d838a752.css",
+    "https://claude.com/_next/static/chunks/a3bb285b326a08b6.css",
+    "https://claude.com/_next/static/chunks/829c4caacb85fa66.css",
+    "https://claude.com/_next/static/chunks/50322d515bcd56c8.css"
+  ],
+  "headings": [
+    "Give Claude more",
+    "Put Claude to work",
+    "Change the way you work",
+    "See what Claude can do",
+    "Get it done",
+    "Access tools",
+    "Make it yours",
+    "Stay in control",
+    "Work where you want",
+    "Don’t start over",
+    "FAQ",
+    "Don’t know where to start? Ask Claude.",
+    "Products",
+    "Capabilities",
+    "Extensions",
+    "Models",
+    "Enterprise",
+    "Departments",
+    "Industries",
+    "Programs",
+    "Developers",
+    "Platform",
+    "Resources",
+    "Help and security",
+    "Company",
+    "Terms and policies"
+  ],
+  "links": [
+    {
+      "text": "Try Claude",
+      "url": "https://claude.ai/redirect/claudedotcom.v1.a0cfbe59-ed8b-47e5-86cf-7fa89af9ba81"
+    },
+    {
+      "text": "Download for Windows",
+      "url": "https://claude.ai/redirect/claudedotcom.v1.a0cfbe59-ed8b-47e5-86cf-7fa89af9ba81/api/desktop/win32/x64/setup/latest/redirect"
+    },
+    {
+      "text": "Windows (arm64)",
+      "url": "https://claude.ai/redirect/claudedotcom.v1.a0cfbe59-ed8b-47e5-86cf-7fa89af9ba81/api/desktop/win32/arm64/setup/latest/redirect"
+    },
+    {
+      "text": "See all capabilities",
+      "url": "https://claude.com/product/overview#library"
+    },
+    {
+      "text": "Quick answers or long tasks",
+      "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork"
+    },
+    {
+      "text": "Parallel tasks",
+      "url": "https://claude.com/product/cowork"
+    },
+    {
+      "text": "Scheduled tasks",
+      "url": "https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork"
+    },
+    {
+      "text": "Voice",
+      "url": "https://support.claude.com/en/articles/11101966-use-voice-mode"
+    },
+    {
+      "text": "Finished, editable work",
+      "url": "https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude"
+    },
+    {
+      "text": "Artifacts",
+      "url": "https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them"
+    },
+    {
+      "text": "Interactive visuals",
+      "url": "https://support.claude.com/en/articles/13641943-visual-and-interactive-content"
+    },
+    {
+      "text": "Connectors",
+      "url": "https://claude.com/marketplace/connectors-plugins"
+    },
+    {
+      "text": "Files and folders",
+      "url": "https://academy.claude.com/use-cases/organize-files-by-whats-in-them"
+    },
+    {
+      "text": "Browser use",
+      "url": "https://claude.com/claude-in-chrome"
+    },
+    {
+      "text": "Computer use",
+      "url": "https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork"
+    },
+    {
+      "text": "Skills",
+      "url": "https://claude.com/skills"
+    },
+    {
+      "text": "Plugins",
+      "url": "https://claude.com/marketplace/plugins"
+    },
+    {
+      "text": "Custom connectors and MCPs",
+      "url": "https://claude.com/marketplace/connectors-plugins"
+    },
+    {
+      "text": "Permissions control",
+      "url": "https://support.claude.com/en/articles/13364135-use-claude-cowork-safely"
+    },
+    {
+      "text": "Access controls",
+      "url": "https://support.claude.com/en/articles/13730515-manage-claude-s-tool-access"
+    }
+  ],
+  "elements": {
+    "tabs": 48,
+    "accordions": 20,
+    "inputs": 0,
+    "videos": 18
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 1000,
+    "dpr": 1
+  },
+  "pageSize": {
+    "width": 1440,
+    "height": 12011
+  },
+  "documentVisible": true,
+  "reducedMotion": false,
+  "colors": {
+    "bodyBackground": "rgb(250, 249, 245)",
+    "bodyColor": "rgb(20, 20, 19)"
+  },
+  "measurements": [
+    {
+      "selector": "h1",
+      "text": "Give Claude more",
+      "fontFamily": "anthropicSerif, \"anthropicSerif Fallback\", Georgia, serif",
+      "fontSize": "72px",
+      "lineHeight": "79.2px",
+      "fontWeight": "500",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(20, 20, 19)",
+      "width": 607,
+      "height": 79
+    },
+    {
+      "selector": "h1 span",
+      "text": "Give",
+      "fontFamily": "anthropicSerif, \"anthropicSerif Fallback\", Georgia, serif",
+      "fontSize": "72px",
+      "lineHeight": "79.2px",
+      "fontWeight": "500",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(20, 20, 19)",
+      "width": 159,
+      "height": 79
+    },
+    {
+      "selector": "main p",
+      "text": "Campaign readout",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "fontSize": "12px",
+      "lineHeight": "18px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid rgb(94, 93, 89)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(94, 93, 89)",
+      "width": 104,
+      "height": 36
+    },
+    {
+      "selector": "main button",
+      "text": "",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "fontSize": "20px",
+      "lineHeight": "23px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px none rgb(0, 0, 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "width": 411,
+      "height": 230
+    },
+    {
+      "selector": "button",
+      "text": "",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "fontSize": "12px",
+      "lineHeight": "12px",
+      "fontWeight": "500",
+      "borderRadius": "8px",
+      "padding": "4px",
+      "border": "0px none rgb(94, 93, 89)",
+      "background": "rgb(250, 249, 245)",
+      "color": "rgb(94, 93, 89)",
+      "width": 28,
+      "height": 28
+    },
+    {
+      "selector": "[role=tab]"
+    },
+    {
+      "selector": "pre"
+    },
+    {
+      "selector": "code"
+    },
+    {
+      "selector": "main a",
+      "text": "Try Claude",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "fontSize": "15px",
+      "lineHeight": "15px",
+      "fontWeight": "500",
+      "borderRadius": "8px",
+      "padding": "8px 12px",
+      "border": "0px none rgb(250, 249, 245)",
+      "background": "rgb(20, 20, 19)",
+      "color": "rgb(250, 249, 245)",
+      "width": 100,
+      "height": 36
+    }
+  ],
+  "fontResources": [
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicMono_Italic_Web-s.p.39343088.woff2",
+      "duration": 4474
+    },
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicSans_Italic_Web-s.p.6550bf15.woff2",
+      "duration": 4473
+    },
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicMono_Roman_Web-s.p.80d4607c.woff2",
+      "duration": 4473
+    },
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicSerif_Italic_Web-s.p.43888cc6.woff2",
+      "duration": 6435
+    },
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicSerif_Roman_Web-s.p.c28786b4.woff2",
+      "duration": 7922
+    },
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicSans_Roman_Web-s.p.050e7498.woff2",
+      "duration": 7923
+    }
+  ],
+  "fontRuleSources": [
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "anthropicSans",
+      "src": "url(\"../media/AnthropicSans_Roman_Web-s.p.050e7498.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "anthropicSans",
+      "src": "url(\"../media/AnthropicSans_Italic_Web-s.p.6550bf15.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "\"anthropicSans Fallback\"",
+      "src": "local(\"Arial\")",
+      "weight": "",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "anthropicSerif",
+      "src": "url(\"../media/AnthropicSerif_Roman_Web-s.p.c28786b4.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "anthropicSerif",
+      "src": "url(\"../media/AnthropicSerif_Italic_Web-s.p.43888cc6.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "\"anthropicSerif Fallback\"",
+      "src": "local(\"Arial\")",
+      "weight": "",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "anthropicMono",
+      "src": "url(\"../media/AnthropicMono_Roman_Web-s.p.80d4607c.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "anthropicMono",
+      "src": "url(\"../media/AnthropicMono_Italic_Web-s.p.39343088.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "\"anthropicMono Fallback\"",
+      "src": "local(\"Arial\")",
+      "weight": "",
+      "style": ""
+    }
+  ],
+  "renderedFonts": [
+    {
+      "selector": "h1",
+      "fonts": [
+        {
+          "familyName": "Anthropic Serif Web Text Light",
+          "postScriptName": "AnthropicSerifWebWeb-Text-Medium-Display-Light",
+          "isCustomFont": true,
+          "glyphCount": 2
+        }
+      ]
+    },
+    {
+      "selector": "h1 span",
+      "fonts": [
+        {
+          "familyName": "Anthropic Serif Web Text Light",
+          "postScriptName": "AnthropicSerifWebWeb-Text-Medium-Display-Light",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    },
+    {
+      "selector": "main p",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Web Text",
+          "postScriptName": "AnthropicSansWebWeb-Display-Light",
+          "isCustomFont": true,
+          "glyphCount": 15
+        }
+      ]
+    },
+    {
+      "selector": "article p",
+      "fonts": []
+    },
+    {
+      "selector": "nav a",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Web Text",
+          "postScriptName": "AnthropicSansWebWeb-Display-Light",
+          "isCustomFont": true,
+          "glyphCount": 6
+        }
+      ]
+    },
+    {
+      "selector": "button",
+      "fonts": []
+    }
+  ],
+  "id": "S02",
+  "name": "Claude 产品介绍",
+  "slug": "claude-product",
+  "checkedAt": "2026-11-02T20:13:33.943556+08:00",
+  "dateLocal": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "screenshot": "assets/screenshots/claude-product.png",
+  "captureMethod": "Playwright Chromium browser screenshot, no image edits",
+  "captureIssues": []
+}

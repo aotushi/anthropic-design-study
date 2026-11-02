@@ -1,0 +1,1129 @@
+{
+  "url": "https://code.claude.com/docs/en/overview",
+  "title": "Overview - Claude Code Docs",
+  "samples": [
+    {
+      "selector": "body",
+      "text": "Documentation Index\n\nFetch the complete documentation index at: /docs/llms.txt\n\nUse this f",
+      "font": "\"Anthropic Sans\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "size": "16px",
+      "weight": "400",
+      "line": "24px",
+      "color": "rgb(0, 0, 0)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "h1",
+      "text": "Overview",
+      "font": "\"Anthropic Serif Display\", Georgia, \"Times New Roman\", Times, serif",
+      "size": "36px",
+      "weight": "400",
+      "line": "40px",
+      "color": "rgb(23, 23, 23)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "h2",
+      "text": "Documentation Index",
+      "font": "\"Anthropic Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif",
+      "size": "16px",
+      "weight": "400",
+      "line": "24px",
+      "color": "rgb(0, 0, 0)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "h3",
+      "text": "Getting started",
+      "font": "\"Anthropic Sans\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "size": "14px",
+      "weight": "600",
+      "line": "24px",
+      "color": "rgb(23, 23, 23)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "main p",
+      "text": "Claude Code is an agentic coding tool that reads your codebase, edits files, runs commands",
+      "font": "\"Anthropic Sans\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "size": "16px",
+      "weight": "400",
+      "line": "26.4px",
+      "color": "rgb(62, 62, 62)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "article p"
+    },
+    {
+      "selector": "nav a",
+      "text": "Claude Developer Platform",
+      "font": "\"Anthropic Sans\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "size": "14px",
+      "weight": "500",
+      "line": "20px",
+      "color": "rgb(80, 80, 80)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "button",
+      "text": "",
+      "font": "\"Anthropic Sans\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "size": "16px",
+      "weight": "400",
+      "line": "24px",
+      "color": "rgb(115, 114, 108)",
+      "background": "rgb(250, 249, 245)"
+    },
+    {
+      "selector": "code",
+      "text": "curl -fsSL https://claude.ai/install.sh | bash\n",
+      "font": "\"Paper Mono\", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "size": "14px",
+      "weight": "400",
+      "line": "24px",
+      "color": "rgb(31, 35, 40)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "pre",
+      "text": "curl -fsSL https://claude.ai/install.sh | bash\n",
+      "font": "\"Paper Mono\", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "size": "14px",
+      "weight": "400",
+      "line": "24px",
+      "color": "rgb(31, 35, 40)",
+      "background": "rgba(0, 0, 0, 0)"
+    }
+  ],
+  "fontUsage": {
+    "\"Anthropic Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif": {
+      "count": 1,
+      "examples": [
+        "Documentation Index"
+      ]
+    },
+    "\"Anthropic Sans\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif": {
+      "count": 243,
+      "examples": [
+        "Fetch the complete documentation index at: /docs/llms.txt",
+        "/docs/llms.txt",
+        "Use this file to discover all available pages before exploring fu"
+      ]
+    },
+    "\"Anthropic Serif Display\", Georgia, \"Times New Roman\", Times, serif": {
+      "count": 10,
+      "examples": [
+        "On this page",
+        "Overview",
+        "​"
+      ]
+    },
+    "\"Paper Mono\", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace": {
+      "count": 69,
+      "examples": [
+        "curl",
+        "-fsSL",
+        "https://claude.ai/install.sh"
+      ]
+    }
+  },
+  "loadedFonts": [
+    {
+      "family": "Paper Mono",
+      "weight": "100 800"
+    },
+    {
+      "family": "Anthropic Sans",
+      "weight": "400"
+    },
+    {
+      "family": "Anthropic Sans",
+      "weight": "500"
+    },
+    {
+      "family": "Anthropic Sans",
+      "weight": "600"
+    },
+    {
+      "family": "Anthropic Serif Display",
+      "weight": "400"
+    },
+    {
+      "family": "Anthropic Serif Display",
+      "weight": "600"
+    },
+    {
+      "family": "Anthropic Sans",
+      "weight": "400"
+    },
+    {
+      "family": "Anthropic Sans",
+      "weight": "500"
+    },
+    {
+      "family": "Anthropic Sans",
+      "weight": "600"
+    },
+    {
+      "family": "Anthropic Serif Display",
+      "weight": "400"
+    },
+    {
+      "family": "Anthropic Serif Display",
+      "weight": "600"
+    }
+  ],
+  "fontFaces": [
+    "@font-face { font-family: Inter; font-style: normal; font-weight: 100 900; font-display: swap; src: url(\"/docs/_mintlify/assets/fonts/inter/Inter-latin.woff2\") format(\"woff2\"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }",
+    "@font-face { font-family: Inter; font-style: normal; font-weight: 100 900; font-display: swap; src: url(\"/docs/_mintlify/assets/fonts/inter/Inter-latin-ext.woff2\") format(\"woff2\"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }",
+    "@font-face { font-family: Inter; font-style: normal; font-weight: 100 900; font-display: swap; src: url(\"/docs/_mintlify/assets/fonts/inter/Inter-vietnamese.woff2\") format(\"woff2\"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }",
+    "@font-face { font-family: Inter; font-style: normal; font-weight: 100 900; font-display: swap; src: url(\"/docs/_mintlify/assets/fonts/inter/Inter-cyrillic.woff2\") format(\"woff2\"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }",
+    "@font-face { font-family: Inter; font-style: normal; font-weight: 100 900; font-display: swap; src: url(\"/docs/_mintlify/assets/fonts/inter/Inter-cyrillic-ext.woff2\") format(\"woff2\"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }",
+    "@font-face { font-family: Inter; font-style: normal; font-weight: 100 900; font-display: swap; src: url(\"/docs/_mintlify/assets/fonts/inter/Inter-greek.woff2\") format(\"woff2\"); unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF; }",
+    "@font-face { font-family: Inter; font-style: normal; font-weight: 100 900; font-display: swap; src: url(\"/docs/_mintlify/assets/fonts/inter/Inter-greek-ext.woff2\") format(\"woff2\"); unicode-range: U+1F00-1FFF; }",
+    "@font-face { font-family: \"Paper Mono\"; src: url(\"/docs/_mintlify/assets/fonts/PaperMono-Variable.woff2\") format(\"woff2\"); font-weight: 100 800; font-display: swap; }",
+    "@font-face { font-family: Inter; font-style: italic; font-weight: 100 900; font-display: swap; src: url(\"/docs/_mintlify/assets/fonts/inter/Inter-italic-cyrillic-ext.woff2\") format(\"woff2\"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }",
+    "@font-face { font-family: Inter; font-style: italic; font-weight: 100 900; font-display: swap; src: url(\"/docs/_mintlify/assets/fonts/inter/Inter-italic-cyrillic.woff2\") format(\"woff2\"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }",
+    "@font-face { font-family: Inter; font-style: italic; font-weight: 100 900; font-display: swap; src: url(\"/docs/_mintlify/assets/fonts/inter/Inter-italic-greek-ext.woff2\") format(\"woff2\"); unicode-range: U+1F00-1FFF; }",
+    "@font-face { font-family: Inter; font-style: italic; font-weight: 100 900; font-display: swap; src: url(\"/docs/_mintlify/assets/fonts/inter/Inter-italic-greek.woff2\") format(\"woff2\"); unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF; }",
+    "@font-face { font-family: Inter; font-style: italic; font-weight: 100 900; font-display: swap; src: url(\"/docs/_mintlify/assets/fonts/inter/Inter-italic-vietnamese.woff2\") format(\"woff2\"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }",
+    "@font-face { font-family: Inter; font-style: italic; font-weight: 100 900; font-display: swap; src: url(\"/docs/_mintlify/assets/fonts/inter/Inter-italic-latin-ext.woff2\") format(\"woff2\"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }",
+    "@font-face { font-family: Inter; font-style: italic; font-weight: 100 900; font-display: swap; src: url(\"/docs/_mintlify/assets/fonts/inter/Inter-italic-latin.woff2\") format(\"woff2\"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }",
+    "@font-face { font-family: \"Anthropic Sans\"; src: url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-Regular-Static.otf\") format(\"opentype\"); font-weight: 400; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Sans\"; src: url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-RegularItalic-Static.otf\") format(\"opentype\"); font-weight: 400; font-style: italic; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Sans\"; src: url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-Medium-Static.otf\") format(\"opentype\"); font-weight: 500; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Sans\"; src: url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-MediumItalic-Static.otf\") format(\"opentype\"); font-weight: 500; font-style: italic; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Sans\"; src: url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-Semibold-Static.otf\") format(\"opentype\"); font-weight: 600; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Sans\"; src: url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-SemiboldItalic-Static.otf\") format(\"opentype\"); font-weight: 600; font-style: italic; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Sans\"; src: url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-Bold-Static.otf\") format(\"opentype\"); font-weight: 700; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Sans\"; src: url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-BoldItalic-Static.otf\") format(\"opentype\"); font-weight: 700; font-style: italic; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Serif Display\"; src: url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Display-Regular-Static.otf\") format(\"opentype\"); font-weight: 400; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Serif Display\"; src: url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Display-RegularItalic-Static.otf\") format(\"opentype\"); font-weight: 400; font-style: italic; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Serif Display\"; src: url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Display-Medium-Static.otf\") format(\"opentype\"); font-weight: 500; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Serif Display\"; src: url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Display-Semibold-Static.otf\") format(\"opentype\"); font-weight: 600; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Serif Display\"; src: url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Display-Bold-Static.otf\") format(\"opentype\"); font-weight: 700; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Serif\"; src: url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-Regular-Static.otf\") format(\"opentype\"); font-weight: 400; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Serif\"; src: url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-RegularItalic-Static.otf\") format(\"opentype\"); font-weight: 400; font-style: italic; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Serif\"; src: url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-Medium-Static.otf\") format(\"opentype\"); font-weight: 500; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Serif\"; src: url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-MediumItalic-Static.otf\") format(\"opentype\"); font-weight: 500; font-style: italic; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Serif\"; src: url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-Semibold-Static.otf\") format(\"opentype\"); font-weight: 600; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Serif\"; src: url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-SemiboldItalic-Static.otf\") format(\"opentype\"); font-weight: 600; font-style: italic; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Serif\"; src: url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-Bold-Static.otf\") format(\"opentype\"); font-weight: 700; font-style: normal; font-display: swap; }"
+  ],
+  "stylesheets": [
+    "https://code.claude.com/docs/_mintlify/assets/index-BSPJDRoU.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+    "https://code.claude.com/docs/_mintlify/assets/katex-DET2o0Vg.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+    "https://fonts.googleapis.com/css2?family=Anthropic+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap",
+    "https://fonts.googleapis.com/css2?family=Anthropic+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+  ],
+  "headings": [
+    "Documentation Index",
+    "Getting started",
+    "Core concepts",
+    "Use Claude Code",
+    "Platforms and integrations",
+    "Code review and pull requests",
+    "On this page",
+    "Overview",
+    "​\nGet started",
+    "​\nWhat you can do",
+    "​\nUse Claude Code everywhere",
+    "​\nNext steps"
+  ],
+  "links": [
+    {
+      "text": "Get started",
+      "url": "https://code.claude.com/docs/en/overview#get-started"
+    },
+    {
+      "text": "What you can do",
+      "url": "https://code.claude.com/docs/en/overview#what-you-can-do"
+    },
+    {
+      "text": "Use Claude Code everywhere",
+      "url": "https://code.claude.com/docs/en/overview#use-claude-code-everywhere"
+    },
+    {
+      "text": "Next steps",
+      "url": "https://code.claude.com/docs/en/overview#next-steps"
+    },
+    {
+      "text": "​",
+      "url": "https://code.claude.com/docs/en/overview#get-started"
+    },
+    {
+      "text": "Claude subscription",
+      "url": "https://claude.com/pricing?utm_source=claude_code&utm_medium=docs&utm_content=overview_pricing"
+    },
+    {
+      "text": "Anthropic Console",
+      "url": "https://platform.claude.com/"
+    },
+    {
+      "text": "third-party providers",
+      "url": "https://code.claude.com/docs/en/third-party-integrations"
+    },
+    {
+      "text": "terminal guide",
+      "url": "https://code.claude.com/docs/en/terminal-guide"
+    },
+    {
+      "text": "Fix your PATH",
+      "url": "https://code.claude.com/docs/en/troubleshoot-install#command-not-found-claude-after-installation"
+    },
+    {
+      "text": "Troubleshoot installation",
+      "url": "https://code.claude.com/docs/en/troubleshoot-install#find-your-error"
+    },
+    {
+      "text": "Git for Windows",
+      "url": "https://git-scm.com/downloads/win"
+    },
+    {
+      "text": "apt, dnf, or apk",
+      "url": "https://code.claude.com/docs/en/setup#install-with-linux-package-managers"
+    },
+    {
+      "text": "Continue with the Quickstart →",
+      "url": "https://code.claude.com/docs/en/quickstart"
+    },
+    {
+      "text": "advanced setup",
+      "url": "https://code.claude.com/docs/en/setup"
+    },
+    {
+      "text": "installation troubleshooting",
+      "url": "https://code.claude.com/docs/en/troubleshoot-install"
+    },
+    {
+      "text": "​",
+      "url": "https://code.claude.com/docs/en/overview#what-you-can-do"
+    },
+    {
+      "text": "​",
+      "url": "https://code.claude.com/docs/en/overview#use-claude-code-everywhere"
+    },
+    {
+      "text": "surface",
+      "url": "https://code.claude.com/docs/en/glossary#surface"
+    },
+    {
+      "text": "Terminal",
+      "url": "https://code.claude.com/docs/en/quickstart"
+    }
+  ],
+  "elements": {
+    "tabs": 8,
+    "accordions": 35,
+    "inputs": 1,
+    "videos": 0
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 1000,
+    "dpr": 1
+  },
+  "pageSize": {
+    "width": 1440,
+    "height": 5068
+  },
+  "documentVisible": true,
+  "reducedMotion": false,
+  "colors": {
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(0, 0, 0)"
+  },
+  "measurements": [
+    {
+      "selector": "h1",
+      "text": "Overview",
+      "fontFamily": "\"Anthropic Serif Display\", Georgia, \"Times New Roman\", Times, serif",
+      "fontSize": "36px",
+      "lineHeight": "40px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid rgb(238, 238, 238)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(23, 23, 23)",
+      "width": 165,
+      "height": 40
+    },
+    {
+      "selector": "h1 span"
+    },
+    {
+      "selector": "main p",
+      "text": "Claude Code is an agentic coding tool that reads your codeba",
+      "fontFamily": "\"Anthropic Sans\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "26.4px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid rgb(238, 238, 238)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(62, 62, 62)",
+      "width": 689,
+      "height": 79
+    },
+    {
+      "selector": "main button",
+      "text": "On this page",
+      "fontFamily": "\"Anthropic Serif Display\", Georgia, \"Times New Roman\", Times, serif",
+      "fontSize": "14px",
+      "lineHeight": "24px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid rgb(238, 238, 238)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(62, 62, 62)",
+      "width": 101,
+      "height": 24
+    },
+    {
+      "selector": "button",
+      "text": "",
+      "fontFamily": "\"Anthropic Sans\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": "400",
+      "borderRadius": "9999px",
+      "padding": "0px",
+      "border": "1px solid rgba(31, 30, 29, 0.15)",
+      "background": "rgb(250, 249, 245)",
+      "color": "rgb(115, 114, 108)",
+      "width": 28,
+      "height": 28
+    },
+    {
+      "selector": "[role=tab]",
+      "text": "Terminal",
+      "fontFamily": "\"Anthropic Sans\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "28px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid rgb(238, 238, 238)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(62, 62, 62)",
+      "width": 57,
+      "height": 46
+    },
+    {
+      "selector": "pre",
+      "text": "curl -fsSL https://claude.ai/install.sh | bash\n",
+      "fontFamily": "\"Paper Mono\", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "fontSize": "14px",
+      "lineHeight": "24px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid rgb(238, 238, 238)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(31, 35, 40)",
+      "width": 655,
+      "height": 24
+    },
+    {
+      "selector": "code",
+      "text": "curl -fsSL https://claude.ai/install.sh | bash\n",
+      "fontFamily": "\"Paper Mono\", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "fontSize": "14px",
+      "lineHeight": "24px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "0px 163px 0px 0px",
+      "border": "0px solid rgb(238, 238, 238)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(31, 35, 40)",
+      "width": 655,
+      "height": 24
+    },
+    {
+      "selector": "main a",
+      "text": "Get started",
+      "fontFamily": "\"Anthropic Sans\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "24px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "4px 0px",
+      "border": "0px solid rgb(238, 238, 238)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(14, 14, 14)",
+      "width": 264,
+      "height": 32
+    }
+  ],
+  "fontResources": [
+    {
+      "url": "https://assets.claude.ai/Fonts/AnthropicSans-Text-Regular-Static.otf",
+      "duration": 1432
+    },
+    {
+      "url": "https://assets.claude.ai/Fonts/AnthropicSans-Text-Medium-Static.otf",
+      "duration": 1397
+    },
+    {
+      "url": "https://assets.claude.ai/Fonts/AnthropicSans-Text-Semibold-Static.otf",
+      "duration": 1397
+    },
+    {
+      "url": "https://assets.claude.ai/Fonts/AnthropicSerif-Display-Regular-Static.otf",
+      "duration": 937
+    },
+    {
+      "url": "https://assets.claude.ai/Fonts/AnthropicSerif-Display-Semibold-Static.otf",
+      "duration": 907
+    },
+    {
+      "url": "https://code.claude.com/docs/_mintlify/assets/fonts/PaperMono-Variable.woff2",
+      "duration": 881
+    }
+  ],
+  "fontRuleSources": [
+    {
+      "stylesheet": null,
+      "family": "Inter",
+      "src": "url(\"/docs/_mintlify/assets/fonts/inter/Inter-latin.woff2\") format(\"woff2\")",
+      "weight": "100 900",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "Inter",
+      "src": "url(\"/docs/_mintlify/assets/fonts/inter/Inter-latin-ext.woff2\") format(\"woff2\")",
+      "weight": "100 900",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "Inter",
+      "src": "url(\"/docs/_mintlify/assets/fonts/inter/Inter-vietnamese.woff2\") format(\"woff2\")",
+      "weight": "100 900",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "Inter",
+      "src": "url(\"/docs/_mintlify/assets/fonts/inter/Inter-cyrillic.woff2\") format(\"woff2\")",
+      "weight": "100 900",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "Inter",
+      "src": "url(\"/docs/_mintlify/assets/fonts/inter/Inter-cyrillic-ext.woff2\") format(\"woff2\")",
+      "weight": "100 900",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "Inter",
+      "src": "url(\"/docs/_mintlify/assets/fonts/inter/Inter-greek.woff2\") format(\"woff2\")",
+      "weight": "100 900",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "Inter",
+      "src": "url(\"/docs/_mintlify/assets/fonts/inter/Inter-greek-ext.woff2\") format(\"woff2\")",
+      "weight": "100 900",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Paper Mono\"",
+      "src": "url(\"/docs/_mintlify/assets/fonts/PaperMono-Variable.woff2\") format(\"woff2\")",
+      "weight": "100 800",
+      "style": ""
+    },
+    {
+      "stylesheet": null,
+      "family": "Inter",
+      "src": "url(\"/docs/_mintlify/assets/fonts/inter/Inter-italic-cyrillic-ext.woff2\") format(\"woff2\")",
+      "weight": "100 900",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "Inter",
+      "src": "url(\"/docs/_mintlify/assets/fonts/inter/Inter-italic-cyrillic.woff2\") format(\"woff2\")",
+      "weight": "100 900",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "Inter",
+      "src": "url(\"/docs/_mintlify/assets/fonts/inter/Inter-italic-greek-ext.woff2\") format(\"woff2\")",
+      "weight": "100 900",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "Inter",
+      "src": "url(\"/docs/_mintlify/assets/fonts/inter/Inter-italic-greek.woff2\") format(\"woff2\")",
+      "weight": "100 900",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "Inter",
+      "src": "url(\"/docs/_mintlify/assets/fonts/inter/Inter-italic-vietnamese.woff2\") format(\"woff2\")",
+      "weight": "100 900",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "Inter",
+      "src": "url(\"/docs/_mintlify/assets/fonts/inter/Inter-italic-latin-ext.woff2\") format(\"woff2\")",
+      "weight": "100 900",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "Inter",
+      "src": "url(\"/docs/_mintlify/assets/fonts/inter/Inter-italic-latin.woff2\") format(\"woff2\")",
+      "weight": "100 900",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Sans\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-Regular-Static.otf\") format(\"opentype\")",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Sans\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-RegularItalic-Static.otf\") format(\"opentype\")",
+      "weight": "400",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Sans\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-Medium-Static.otf\") format(\"opentype\")",
+      "weight": "500",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Sans\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-MediumItalic-Static.otf\") format(\"opentype\")",
+      "weight": "500",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Sans\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-Semibold-Static.otf\") format(\"opentype\")",
+      "weight": "600",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Sans\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-SemiboldItalic-Static.otf\") format(\"opentype\")",
+      "weight": "600",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Sans\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-Bold-Static.otf\") format(\"opentype\")",
+      "weight": "700",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Sans\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-BoldItalic-Static.otf\") format(\"opentype\")",
+      "weight": "700",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif Display\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Display-Regular-Static.otf\") format(\"opentype\")",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif Display\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Display-RegularItalic-Static.otf\") format(\"opentype\")",
+      "weight": "400",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif Display\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Display-Medium-Static.otf\") format(\"opentype\")",
+      "weight": "500",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif Display\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Display-Semibold-Static.otf\") format(\"opentype\")",
+      "weight": "600",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif Display\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Display-Bold-Static.otf\") format(\"opentype\")",
+      "weight": "700",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-Regular-Static.otf\") format(\"opentype\")",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-RegularItalic-Static.otf\") format(\"opentype\")",
+      "weight": "400",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-Medium-Static.otf\") format(\"opentype\")",
+      "weight": "500",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-MediumItalic-Static.otf\") format(\"opentype\")",
+      "weight": "500",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-Semibold-Static.otf\") format(\"opentype\")",
+      "weight": "600",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-SemiboldItalic-Static.otf\") format(\"opentype\")",
+      "weight": "600",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-Bold-Static.otf\") format(\"opentype\")",
+      "weight": "700",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-BoldItalic-Static.otf\") format(\"opentype\")",
+      "weight": "700",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://code.claude.com/docs/_mintlify/assets/katex-DET2o0Vg.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+      "family": "KaTeX_AMS",
+      "src": "url(\"fonts/katex/KaTeX_AMS-Regular-BQhdFMY1.woff2?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff2\"), url(\"fonts/katex/KaTeX_AMS-Regular-DMm9YOAa.woff?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff\"), url(\"fonts/katex/KaTeX_AMS-Regular-DRggAlZN.ttf?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"truetype\")",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://code.claude.com/docs/_mintlify/assets/katex-DET2o0Vg.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+      "family": "KaTeX_Caligraphic",
+      "src": "url(\"fonts/katex/KaTeX_Caligraphic-Bold-Dq_IR9rO.woff2?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff2\"), url(\"fonts/katex/KaTeX_Caligraphic-Bold-BEiXGLvX.woff?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff\"), url(\"fonts/katex/KaTeX_Caligraphic-Bold-ATXxdsX0.ttf?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"truetype\")",
+      "weight": "700",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://code.claude.com/docs/_mintlify/assets/katex-DET2o0Vg.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+      "family": "KaTeX_Caligraphic",
+      "src": "url(\"fonts/katex/KaTeX_Caligraphic-Regular-Di6jR-x-.woff2?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff2\"), url(\"fonts/katex/KaTeX_Caligraphic-Regular-CTRA-rTL.woff?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff\"), url(\"fonts/katex/KaTeX_Caligraphic-Regular-wX97UBjC.ttf?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"truetype\")",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://code.claude.com/docs/_mintlify/assets/katex-DET2o0Vg.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+      "family": "KaTeX_Fraktur",
+      "src": "url(\"fonts/katex/KaTeX_Fraktur-Bold-CL6g_b3V.woff2?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff2\"), url(\"fonts/katex/KaTeX_Fraktur-Bold-BsDP51OF.woff?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff\"), url(\"fonts/katex/KaTeX_Fraktur-Bold-BdnERNNW.ttf?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"truetype\")",
+      "weight": "700",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://code.claude.com/docs/_mintlify/assets/katex-DET2o0Vg.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+      "family": "KaTeX_Fraktur",
+      "src": "url(\"fonts/katex/KaTeX_Fraktur-Regular-CTYiF6lA.woff2?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff2\"), url(\"fonts/katex/KaTeX_Fraktur-Regular-Dxdc4cR9.woff?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff\"), url(\"fonts/katex/KaTeX_Fraktur-Regular-CB_wures.ttf?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"truetype\")",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://code.claude.com/docs/_mintlify/assets/katex-DET2o0Vg.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+      "family": "KaTeX_Main",
+      "src": "url(\"fonts/katex/KaTeX_Main-Bold-Cx986IdX.woff2?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff2\"), url(\"fonts/katex/KaTeX_Main-Bold-Jm3AIy58.woff?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff\"), url(\"fonts/katex/KaTeX_Main-Bold-waoOVXN0.ttf?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"truetype\")",
+      "weight": "700",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://code.claude.com/docs/_mintlify/assets/katex-DET2o0Vg.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+      "family": "KaTeX_Main",
+      "src": "url(\"fonts/katex/KaTeX_Main-BoldItalic-DxDJ3AOS.woff2?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff2\"), url(\"fonts/katex/KaTeX_Main-BoldItalic-SpSLRI95.woff?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff\"), url(\"fonts/katex/KaTeX_Main-BoldItalic-DzxPMmG6.ttf?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"truetype\")",
+      "weight": "700",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://code.claude.com/docs/_mintlify/assets/katex-DET2o0Vg.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+      "family": "KaTeX_Main",
+      "src": "url(\"fonts/katex/KaTeX_Main-Italic-NWA7e6Wa.woff2?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff2\"), url(\"fonts/katex/KaTeX_Main-Italic-BMLOBm91.woff?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff\"), url(\"fonts/katex/KaTeX_Main-Italic-3WenGoN9.ttf?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"truetype\")",
+      "weight": "400",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://code.claude.com/docs/_mintlify/assets/katex-DET2o0Vg.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+      "family": "KaTeX_Main",
+      "src": "url(\"fonts/katex/KaTeX_Main-Regular-B22Nviop.woff2?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff2\"), url(\"fonts/katex/KaTeX_Main-Regular-Dr94JaBh.woff?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff\"), url(\"fonts/katex/KaTeX_Main-Regular-ypZvNtVU.ttf?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"truetype\")",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://code.claude.com/docs/_mintlify/assets/katex-DET2o0Vg.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+      "family": "KaTeX_Math",
+      "src": "url(\"fonts/katex/KaTeX_Math-BoldItalic-CZnvNsCZ.woff2?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff2\"), url(\"fonts/katex/KaTeX_Math-BoldItalic-iY-2wyZ7.woff?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff\"), url(\"fonts/katex/KaTeX_Math-BoldItalic-B3XSjfu4.ttf?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"truetype\")",
+      "weight": "700",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://code.claude.com/docs/_mintlify/assets/katex-DET2o0Vg.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+      "family": "KaTeX_Math",
+      "src": "url(\"fonts/katex/KaTeX_Math-Italic-t53AETM-.woff2?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff2\"), url(\"fonts/katex/KaTeX_Math-Italic-DA0__PXp.woff?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff\"), url(\"fonts/katex/KaTeX_Math-Italic-flOr_0UB.ttf?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"truetype\")",
+      "weight": "400",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://code.claude.com/docs/_mintlify/assets/katex-DET2o0Vg.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+      "family": "KaTeX_SansSerif",
+      "src": "url(\"fonts/katex/KaTeX_SansSerif-Bold-D1sUS0GD.woff2?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff2\"), url(\"fonts/katex/KaTeX_SansSerif-Bold-DbIhKOiC.woff?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff\"), url(\"fonts/katex/KaTeX_SansSerif-Bold-CFMepnvq.ttf?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"truetype\")",
+      "weight": "700",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://code.claude.com/docs/_mintlify/assets/katex-DET2o0Vg.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+      "family": "KaTeX_SansSerif",
+      "src": "url(\"fonts/katex/KaTeX_SansSerif-Italic-C3H0VqGB.woff2?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff2\"), url(\"fonts/katex/KaTeX_SansSerif-Italic-DN2j7dab.woff?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff\"), url(\"fonts/katex/KaTeX_SansSerif-Italic-YYjJ1zSn.ttf?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"truetype\")",
+      "weight": "400",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://code.claude.com/docs/_mintlify/assets/katex-DET2o0Vg.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+      "family": "KaTeX_SansSerif",
+      "src": "url(\"fonts/katex/KaTeX_SansSerif-Regular-DDBCnlJ7.woff2?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff2\"), url(\"fonts/katex/KaTeX_SansSerif-Regular-CS6fqUqJ.woff?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff\"), url(\"fonts/katex/KaTeX_SansSerif-Regular-BNo7hRIc.ttf?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"truetype\")",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://code.claude.com/docs/_mintlify/assets/katex-DET2o0Vg.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+      "family": "KaTeX_Script",
+      "src": "url(\"fonts/katex/KaTeX_Script-Regular-D3wIWfF6.woff2?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff2\"), url(\"fonts/katex/KaTeX_Script-Regular-D5yQViql.woff?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff\"), url(\"fonts/katex/KaTeX_Script-Regular-C5JkGWo-.ttf?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"truetype\")",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://code.claude.com/docs/_mintlify/assets/katex-DET2o0Vg.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+      "family": "KaTeX_Size1",
+      "src": "url(\"fonts/katex/KaTeX_Size1-Regular-mCD8mA8B.woff2?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff2\"), url(\"fonts/katex/KaTeX_Size1-Regular-C195tn64.woff?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff\"), url(\"fonts/katex/KaTeX_Size1-Regular-Dbsnue_I.ttf?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"truetype\")",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://code.claude.com/docs/_mintlify/assets/katex-DET2o0Vg.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+      "family": "KaTeX_Size2",
+      "src": "url(\"fonts/katex/KaTeX_Size2-Regular-Dy4dx90m.woff2?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff2\"), url(\"fonts/katex/KaTeX_Size2-Regular-oD1tc_U0.woff?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff\"), url(\"fonts/katex/KaTeX_Size2-Regular-B7gKUWhC.ttf?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"truetype\")",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://code.claude.com/docs/_mintlify/assets/katex-DET2o0Vg.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+      "family": "KaTeX_Size3",
+      "src": "url(\"fonts/katex/KaTeX_Size3-Regular-gV2CO0n9.woff2?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff2\"), url(\"fonts/katex/KaTeX_Size3-Regular-CTq5MqoE.woff?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff\"), url(\"fonts/katex/KaTeX_Size3-Regular-DgpXs0kz.ttf?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"truetype\")",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://code.claude.com/docs/_mintlify/assets/katex-DET2o0Vg.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+      "family": "KaTeX_Size4",
+      "src": "url(\"fonts/katex/KaTeX_Size4-Regular-Dl5lxZxV.woff2?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff2\"), url(\"fonts/katex/KaTeX_Size4-Regular-BF-4gkZK.woff?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff\"), url(\"fonts/katex/KaTeX_Size4-Regular-DWFBv043.ttf?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"truetype\")",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://code.claude.com/docs/_mintlify/assets/katex-DET2o0Vg.css?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC",
+      "family": "KaTeX_Typewriter",
+      "src": "url(\"fonts/katex/KaTeX_Typewriter-Regular-CO6r4hn1.woff2?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff2\"), url(\"fonts/katex/KaTeX_Typewriter-Regular-C0xS9mPB.woff?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"woff\"), url(\"fonts/katex/KaTeX_Typewriter-Regular-D3Ib7_Hf.ttf?dpl=dpl_6cCEiK8XNNvaLBBkWzcBhdE9QfLC\") format(\"truetype\")",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Sans\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-Regular-Static.otf\") format(\"opentype\")",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Sans\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-RegularItalic-Static.otf\") format(\"opentype\")",
+      "weight": "400",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Sans\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-Medium-Static.otf\") format(\"opentype\")",
+      "weight": "500",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Sans\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-MediumItalic-Static.otf\") format(\"opentype\")",
+      "weight": "500",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Sans\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-Semibold-Static.otf\") format(\"opentype\")",
+      "weight": "600",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Sans\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-SemiboldItalic-Static.otf\") format(\"opentype\")",
+      "weight": "600",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Sans\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-Bold-Static.otf\") format(\"opentype\")",
+      "weight": "700",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Sans\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSans-Text-BoldItalic-Static.otf\") format(\"opentype\")",
+      "weight": "700",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif Display\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Display-Regular-Static.otf\") format(\"opentype\")",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif Display\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Display-RegularItalic-Static.otf\") format(\"opentype\")",
+      "weight": "400",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif Display\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Display-Medium-Static.otf\") format(\"opentype\")",
+      "weight": "500",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif Display\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Display-Semibold-Static.otf\") format(\"opentype\")",
+      "weight": "600",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif Display\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Display-Bold-Static.otf\") format(\"opentype\")",
+      "weight": "700",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-Regular-Static.otf\") format(\"opentype\")",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-RegularItalic-Static.otf\") format(\"opentype\")",
+      "weight": "400",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-Medium-Static.otf\") format(\"opentype\")",
+      "weight": "500",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-MediumItalic-Static.otf\") format(\"opentype\")",
+      "weight": "500",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-Semibold-Static.otf\") format(\"opentype\")",
+      "weight": "600",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-SemiboldItalic-Static.otf\") format(\"opentype\")",
+      "weight": "600",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-Bold-Static.otf\") format(\"opentype\")",
+      "weight": "700",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "\"Anthropic Serif\"",
+      "src": "url(\"https://assets.claude.ai/Fonts/AnthropicSerif-Text-BoldItalic-Static.otf\") format(\"opentype\")",
+      "weight": "700",
+      "style": "italic"
+    }
+  ],
+  "renderedFonts": [
+    {
+      "selector": "h1",
+      "fonts": [
+        {
+          "familyName": "Anthropic Serif Display",
+          "postScriptName": "AnthropicSerifDisplay-Regular",
+          "isCustomFont": true,
+          "glyphCount": 8
+        }
+      ]
+    },
+    {
+      "selector": "main p",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Text",
+          "postScriptName": "AnthropicSansText-Regular",
+          "isCustomFont": true,
+          "glyphCount": 191
+        }
+      ]
+    },
+    {
+      "selector": "nav a",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Text Medium",
+          "postScriptName": "AnthropicSansText-Medium",
+          "isCustomFont": true,
+          "glyphCount": 25
+        }
+      ]
+    },
+    {
+      "selector": "button",
+      "fonts": []
+    },
+    {
+      "selector": "code",
+      "fonts": []
+    },
+    {
+      "selector": "pre",
+      "fonts": []
+    },
+    {
+      "selector": "pre span",
+      "fonts": [
+        {
+          "familyName": "Paper Mono",
+          "postScriptName": "PaperMono",
+          "isCustomFont": true,
+          "glyphCount": 46
+        }
+      ]
+    },
+    {
+      "selector": "pre span span",
+      "fonts": [
+        {
+          "familyName": "Paper Mono",
+          "postScriptName": "PaperMono",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    },
+    {
+      "selector": "code span",
+      "fonts": [
+        {
+          "familyName": "Paper Mono",
+          "postScriptName": "PaperMono",
+          "isCustomFont": true,
+          "glyphCount": 46
+        }
+      ]
+    },
+    {
+      "selector": "code span span",
+      "fonts": [
+        {
+          "familyName": "Paper Mono",
+          "postScriptName": "PaperMono",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    }
+  ],
+  "id": "S07",
+  "name": "Claude Code 文档",
+  "slug": "code-docs",
+  "checkedAt": "2026-11-02T20:09:00.170975+08:00",
+  "dateLocal": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "screenshot": "assets/screenshots/code-docs.png",
+  "captureMethod": "Playwright Chromium browser screenshot, no image edits",
+  "captureIssues": []
+}

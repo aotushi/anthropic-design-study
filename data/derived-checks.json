@@ -1,0 +1,121 @@
+{
+  "contrast": [
+    {
+      "source": "S04",
+      "selector": "h1",
+      "foreground": [
+        20,
+        20,
+        19
+      ],
+      "background": [
+        245,
+        244,
+        237
+      ],
+      "basis": "Nearest ancestor with a nontransparent background, excluding overlaid graphics and anti-aliasing.",
+      "backgroundImage": "none",
+      "ratio": 16.71829512986488,
+      "normalTextThreshold4_5": true
+    },
+    {
+      "source": "S04",
+      "selector": "main p",
+      "foreground": [
+        48,
+        48,
+        46
+      ],
+      "background": [
+        245,
+        244,
+        237
+      ],
+      "basis": "Nearest ancestor with a nontransparent background, excluding overlaid graphics and anti-aliasing.",
+      "backgroundImage": "none",
+      "ratio": 11.994179766010127,
+      "normalTextThreshold4_5": true
+    },
+    {
+      "source": "S08",
+      "selector": "h1",
+      "foreground": [
+        11,
+        11,
+        11
+      ],
+      "background": [
+        252,
+        252,
+        251
+      ],
+      "basis": "Nearest ancestor with a nontransparent background, excluding overlaid graphics and anti-aliasing.",
+      "backgroundImage": "none",
+      "ratio": 19.17299545103337,
+      "normalTextThreshold4_5": true
+    },
+    {
+      "source": "S08",
+      "selector": "main p",
+      "foreground": [
+        82,
+        81,
+        78
+      ],
+      "background": [
+        252,
+        252,
+        251
+      ],
+      "basis": "Nearest ancestor with a nontransparent background, excluding overlaid graphics and anti-aliasing.",
+      "backgroundImage": "none",
+      "ratio": 7.731739048466313,
+      "normalTextThreshold4_5": true
+    }
+  ],
+  "responsive": [
+    {
+      "slug": "academy-home",
+      "versions": [
+        {
+          "source": "S05",
+          "viewportWidth": 1440,
+          "documentWidth": 1425,
+          "horizontalDocumentOverflow": false,
+          "headingSize": "48px",
+          "headingLineHeight": "52.8px"
+        },
+        {
+          "source": "S05-M",
+          "viewportWidth": 390,
+          "documentWidth": 375,
+          "horizontalDocumentOverflow": false,
+          "headingSize": "44px",
+          "headingLineHeight": "48.4px"
+        }
+      ]
+    },
+    {
+      "slug": "code-docs",
+      "versions": [
+        {
+          "source": "S07",
+          "viewportWidth": 1440,
+          "documentWidth": 1440,
+          "horizontalDocumentOverflow": false,
+          "headingSize": "36px",
+          "headingLineHeight": "40px"
+        },
+        {
+          "source": "S07-M",
+          "viewportWidth": 390,
+          "documentWidth": 390,
+          "horizontalDocumentOverflow": false,
+          "headingSize": "30px",
+          "headingLineHeight": "36px"
+        }
+      ]
+    }
+  ],
+  "scope": "Four text/background pairs and two narrow viewport samples only; not a whole-site accessibility assessment."
+}

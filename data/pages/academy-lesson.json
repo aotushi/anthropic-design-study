@@ -1,0 +1,479 @@
+{
+  "url": "https://academy.claude.com/courses/ai-fluency-framework-foundations/introduction-to-ai-fluency",
+  "title": "Introduction to AI Fluency · AI Fluency: Framework and foundations · Claude Academy",
+  "samples": [
+    {
+      "selector": "body",
+      "text": "Claude Academy\nExplore\n\nResources\n\n\nSearch\nCtrl\nK\nSign in\n\nClaude Cowork is now just C",
+      "font": "ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", sans-serif",
+      "size": "16px",
+      "weight": "400",
+      "line": "24px",
+      "color": "rgb(0, 0, 0)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "h1",
+      "text": "Introduction to AI Fluency",
+      "font": "anthropic-serif, ui-serif, Georgia, \"Times New Roman\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", serif, ui-serif, Georgia, \"Times New Roman\", serif",
+      "size": "36px",
+      "weight": "400",
+      "line": "54px",
+      "color": "rgb(11, 11, 11)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "h2",
+      "text": "Introduction to AI Fluency\n",
+      "font": "anthropic-serif, ui-serif, Georgia, \"Times New Roman\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", serif, ui-serif, Georgia, \"Times New Roman\", serif",
+      "size": "22px",
+      "weight": "500",
+      "line": "33px",
+      "color": "rgb(11, 11, 11)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "h3",
+      "text": "Putting things into practice",
+      "font": "anthropic-serif, ui-serif, Georgia, \"Times New Roman\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", serif, ui-serif, Georgia, \"Times New Roman\", serif",
+      "size": "15px",
+      "weight": "500",
+      "line": "20px",
+      "color": "rgb(11, 11, 11)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "main p",
+      "text": "Introduction to AI Fluency · 4 min",
+      "font": "anthropic-sans, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", sans-serif, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", sans-serif",
+      "size": "14px",
+      "weight": "500",
+      "line": "20px",
+      "color": "rgb(11, 11, 11)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "article p",
+      "text": "Introduction to AI Fluency · 4 min",
+      "font": "anthropic-sans, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", sans-serif, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", sans-serif",
+      "size": "14px",
+      "weight": "500",
+      "line": "20px",
+      "color": "rgb(11, 11, 11)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "nav a",
+      "text": "\nAcademy",
+      "font": "anthropic-sans, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", sans-serif, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", sans-serif",
+      "size": "14px",
+      "weight": "500",
+      "line": "20px",
+      "color": "rgb(82, 81, 78)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "button",
+      "text": "Explore\n",
+      "font": "anthropic-sans, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", sans-serif, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", sans-serif",
+      "size": "14px",
+      "weight": "400",
+      "line": "20px",
+      "color": "rgb(82, 81, 78)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "code"
+    },
+    {
+      "selector": "pre"
+    }
+  ],
+  "fontUsage": {
+    "anthropic-serif, ui-serif, Georgia, \"Times New Roman\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", serif, ui-serif, Georgia, \"Times New Roman\", serif": {
+      "count": 10,
+      "examples": [
+        "Claude Academy",
+        "Introduction to AI Fluency",
+        "In this lesson"
+      ]
+    },
+    "anthropic-sans, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", sans-serif, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", sans-serif": {
+      "count": 89,
+      "examples": [
+        "Explore",
+        "Resources",
+        "Search"
+      ]
+    },
+    "Anthropicons-Variable": {
+      "count": 25,
+      "examples": [
+        "",
+        "",
+        ""
+      ]
+    }
+  },
+  "loadedFonts": [
+    {
+      "family": "Anthropicons-Variable",
+      "weight": "400 700"
+    },
+    {
+      "family": "anthropic-sans",
+      "weight": "300 800"
+    },
+    {
+      "family": "anthropic-sans",
+      "weight": "300 800"
+    },
+    {
+      "family": "anthropic-serif",
+      "weight": "300 800"
+    }
+  ],
+  "fontFaces": [
+    "@font-face { font-family: Anthropicons-Variable; src: url(\"/assets/v1/anthropicons-variable-bzi2goo4.woff2\") format(\"woff2-variations\"); font-weight: 400 700; font-display: block; }",
+    "@font-face { font-family: anthropic-sans; src: url(\"/assets/v1/AnthropicSans-Roman-Variable-lulux2n8.woff2\") format(\"woff2\"); font-weight: 300 800; font-style: normal; font-display: swap; font-feature-settings: \"dlig\" 0; }",
+    "@font-face { font-family: anthropic-sans; src: url(\"/assets/v1/AnthropicSans-Italic-Variable-ifsfij2h.woff2\") format(\"woff2\"); font-weight: 300 800; font-style: italic; font-display: swap; font-feature-settings: \"dlig\" 0; }",
+    "@font-face { font-family: anthropic-serif; src: url(\"/assets/v1/AnthropicSerif-Roman-Variable-dh27ithb.woff2\") format(\"woff2\"); font-weight: 300 800; font-style: normal; font-display: swap; font-feature-settings: \"dlig\" 0; }",
+    "@font-face { font-family: anthropic-serif; src: url(\"/assets/v1/AnthropicSerif-Italic-Variable-nb3mlvk5.woff2\") format(\"woff2\"); font-weight: 300 800; font-style: italic; font-display: swap; font-feature-settings: \"dlig\" 0; }",
+    "@font-face { font-family: anthropic-mono; src: url(\"/assets/v1/AnthropicMono-Roman-Web-it4skm4g.woff2\") format(\"woff2\"); font-weight: 300 800; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: anthropic-mono; src: url(\"/assets/v1/AnthropicMono-Italic-Web-jdrx3zx4.woff2\") format(\"woff2\"); font-weight: 300 800; font-style: italic; font-display: swap; }"
+  ],
+  "stylesheets": [
+    "https://academy.claude.com/assets/v1/Icon-h0imsu2z.css",
+    "https://academy.claude.com/assets/v1/index-nz82gdqd.css"
+  ],
+  "headings": [
+    "Introduction to AI Fluency",
+    "Introduction to AI Fluency\n",
+    "Key takeaways\n",
+    "Exercises\n",
+    "Putting things into practice",
+    "Reflection\n",
+    "What’s next\n"
+  ],
+  "links": [
+    {
+      "text": "\nAcademy",
+      "url": "https://academy.claude.com/"
+    },
+    {
+      "text": "Courses",
+      "url": "https://academy.claude.com/courses"
+    },
+    {
+      "text": "AI Fluency: Framework and foundations",
+      "url": "https://academy.claude.com/courses/ai-fluency-framework-foundations"
+    },
+    {
+      "text": "Sign in",
+      "url": "https://academy.claude.com/login?returnTo=%2Fcourses%2Fai-fluency-framework-foundations%2Fintroduction-to-ai-fluency"
+    },
+    {
+      "text": "",
+      "url": "https://academy.claude.com/courses/ai-fluency-framework-foundations/introduction-to-ai-fluency#introduction-to-ai-fluency"
+    },
+    {
+      "text": "Watch on YouTube\n",
+      "url": "https://www.youtube.com/watch?v=JpGtOfSgR-c"
+    },
+    {
+      "text": "",
+      "url": "https://academy.claude.com/courses/ai-fluency-framework-foundations/introduction-to-ai-fluency#key-takeaways"
+    },
+    {
+      "text": "",
+      "url": "https://academy.claude.com/courses/ai-fluency-framework-foundations/introduction-to-ai-fluency#exercises"
+    },
+    {
+      "text": "claude.ai",
+      "url": "https://claude.ai/"
+    },
+    {
+      "text": "",
+      "url": "https://academy.claude.com/courses/ai-fluency-framework-foundations/introduction-to-ai-fluency#reflection"
+    },
+    {
+      "text": "",
+      "url": "https://academy.claude.com/courses/ai-fluency-framework-foundations/introduction-to-ai-fluency#whats-next"
+    },
+    {
+      "text": "\nNext lesson\nWhy do we need AI Fluency?",
+      "url": "https://academy.claude.com/courses/ai-fluency-framework-foundations/why-do-we-need-ai-fluency"
+    },
+    {
+      "text": "Introduction to AI Fluency",
+      "url": "https://academy.claude.com/courses/ai-fluency-framework-foundations/introduction-to-ai-fluency"
+    },
+    {
+      "text": "Why do we need AI Fluency?",
+      "url": "https://academy.claude.com/courses/ai-fluency-framework-foundations/why-do-we-need-ai-fluency"
+    },
+    {
+      "text": "The 4D Framework",
+      "url": "https://academy.claude.com/courses/ai-fluency-framework-foundations/the-4d-framework"
+    },
+    {
+      "text": "Generative AI fundamentals",
+      "url": "https://academy.claude.com/courses/ai-fluency-framework-foundations/generative-ai-fundamentals"
+    },
+    {
+      "text": "Capabilities & limitations",
+      "url": "https://academy.claude.com/courses/ai-fluency-framework-foundations/capabilities-limitations"
+    },
+    {
+      "text": "A closer look at Delegation",
+      "url": "https://academy.claude.com/courses/ai-fluency-framework-foundations/a-closer-look-at-delegation"
+    },
+    {
+      "text": "Project planning and Delegation",
+      "url": "https://academy.claude.com/courses/ai-fluency-framework-foundations/project-planning-and-delegation"
+    },
+    {
+      "text": "A closer look at Description",
+      "url": "https://academy.claude.com/courses/ai-fluency-framework-foundations/a-closer-look-at-description"
+    }
+  ],
+  "elements": {
+    "tabs": 0,
+    "accordions": 9,
+    "inputs": 2,
+    "videos": 1
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 1000,
+    "dpr": 1
+  },
+  "pageSize": {
+    "width": 1425,
+    "height": 2999
+  },
+  "documentVisible": true,
+  "reducedMotion": false,
+  "colors": {
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(0, 0, 0)"
+  },
+  "measurements": [
+    {
+      "selector": "h1",
+      "text": "Introduction to AI Fluency",
+      "fontFamily": "anthropic-serif, ui-serif, Georgia, \"Times New Roman\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", serif, ui-serif, Georgia, \"Times New Roman\", serif",
+      "fontSize": "36px",
+      "lineHeight": "54px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid color(srgb 0.0431373 0.0431373 0.0431373 / 0.1)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(11, 11, 11)",
+      "width": 768,
+      "height": 54
+    },
+    {
+      "selector": "h1 span"
+    },
+    {
+      "selector": "main p",
+      "text": "Introduction to AI Fluency · 4 min",
+      "fontFamily": "anthropic-sans, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", sans-serif, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "20px",
+      "fontWeight": "500",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid color(srgb 0.0431373 0.0431373 0.0431373 / 0.1)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(11, 11, 11)",
+      "width": 219,
+      "height": 20
+    },
+    {
+      "selector": "main button",
+      "text": "Not now",
+      "fontFamily": "anthropic-sans, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", sans-serif, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "20px",
+      "fontWeight": "400",
+      "borderRadius": "8px",
+      "padding": "0px 12px",
+      "border": "0px solid color(srgb 0.0431373 0.0431373 0.0431373 / 0.1)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(11, 11, 11)",
+      "width": 79,
+      "height": 32
+    },
+    {
+      "selector": "button",
+      "text": "Explore\n",
+      "fontFamily": "anthropic-sans, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", sans-serif, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "20px",
+      "fontWeight": "400",
+      "borderRadius": "8px",
+      "padding": "0px 10px",
+      "border": "0px solid color(srgb 0.0431373 0.0431373 0.0431373 / 0.1)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(82, 81, 78)",
+      "width": 91,
+      "height": 32
+    },
+    {
+      "selector": "[role=tab]"
+    },
+    {
+      "selector": "pre"
+    },
+    {
+      "selector": "code"
+    },
+    {
+      "selector": "main a",
+      "text": "\nAcademy",
+      "fontFamily": "anthropic-sans, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", sans-serif, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "20px",
+      "fontWeight": "500",
+      "borderRadius": "8px",
+      "padding": "0px 4px",
+      "border": "0px solid color(srgb 0.0431373 0.0431373 0.0431373 / 0.1)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(82, 81, 78)",
+      "width": 94,
+      "height": 20
+    }
+  ],
+  "fontResources": [],
+  "fontRuleSources": [
+    {
+      "stylesheet": "https://academy.claude.com/assets/v1/Icon-h0imsu2z.css",
+      "family": "Anthropicons-Variable",
+      "src": "url(\"/assets/v1/anthropicons-variable-bzi2goo4.woff2\") format(\"woff2-variations\")",
+      "weight": "400 700",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://academy.claude.com/assets/v1/index-nz82gdqd.css",
+      "family": "anthropic-sans",
+      "src": "url(\"/assets/v1/AnthropicSans-Roman-Variable-lulux2n8.woff2\") format(\"woff2\")",
+      "weight": "300 800",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://academy.claude.com/assets/v1/index-nz82gdqd.css",
+      "family": "anthropic-sans",
+      "src": "url(\"/assets/v1/AnthropicSans-Italic-Variable-ifsfij2h.woff2\") format(\"woff2\")",
+      "weight": "300 800",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://academy.claude.com/assets/v1/index-nz82gdqd.css",
+      "family": "anthropic-serif",
+      "src": "url(\"/assets/v1/AnthropicSerif-Roman-Variable-dh27ithb.woff2\") format(\"woff2\")",
+      "weight": "300 800",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://academy.claude.com/assets/v1/index-nz82gdqd.css",
+      "family": "anthropic-serif",
+      "src": "url(\"/assets/v1/AnthropicSerif-Italic-Variable-nb3mlvk5.woff2\") format(\"woff2\")",
+      "weight": "300 800",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://academy.claude.com/assets/v1/index-nz82gdqd.css",
+      "family": "anthropic-mono",
+      "src": "url(\"/assets/v1/AnthropicMono-Roman-Web-it4skm4g.woff2\") format(\"woff2\")",
+      "weight": "300 800",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://academy.claude.com/assets/v1/index-nz82gdqd.css",
+      "family": "anthropic-mono",
+      "src": "url(\"/assets/v1/AnthropicMono-Italic-Web-jdrx3zx4.woff2\") format(\"woff2\")",
+      "weight": "300 800",
+      "style": "italic"
+    }
+  ],
+  "renderedFonts": [
+    {
+      "selector": "h1",
+      "fonts": [
+        {
+          "familyName": "Anthropic Serif Variable Text",
+          "postScriptName": "AnthropicSerifVariable-Display",
+          "isCustomFont": true,
+          "glyphCount": 26
+        }
+      ]
+    },
+    {
+      "selector": "main p",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Variable Text",
+          "postScriptName": "AnthropicSansVariable-Text-Medium",
+          "isCustomFont": true,
+          "glyphCount": 34
+        }
+      ]
+    },
+    {
+      "selector": "article p",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Variable Text",
+          "postScriptName": "AnthropicSansVariable-Text-Medium",
+          "isCustomFont": true,
+          "glyphCount": 34
+        }
+      ]
+    },
+    {
+      "selector": "nav a",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Variable Text",
+          "postScriptName": "AnthropicSansVariable-Text-Medium",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ]
+    },
+    {
+      "selector": "button",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Variable Text",
+          "postScriptName": "AnthropicSansVariable-Text",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ]
+    },
+    {
+      "selector": "kbd",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Variable Text",
+          "postScriptName": "AnthropicSansVariable-Text",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    }
+  ],
+  "id": "S06",
+  "name": "Academy 课程内页",
+  "slug": "academy-lesson",
+  "checkedAt": "2026-11-02T20:07:54.682858+08:00",
+  "dateLocal": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "screenshot": "assets/screenshots/academy-lesson.png",
+  "captureMethod": "Playwright Chromium browser screenshot, no image edits",
+  "captureIssues": []
+}

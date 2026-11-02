@@ -1,0 +1,550 @@
+{
+  "url": "https://claude.com/pricing",
+  "title": "Plans & pricing | Claude by Anthropic",
+  "samples": [
+    {
+      "selector": "body",
+      "text": "Skip to main content\nProduct\nDevelopers\nEnterprise\nResources\nPricing\nLogin\nContact sales\nT",
+      "font": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "size": "15px",
+      "weight": "400",
+      "line": "22.5px",
+      "color": "rgb(20, 20, 19)",
+      "background": "rgb(250, 249, 245)"
+    },
+    {
+      "selector": "h1",
+      "text": "Pricing",
+      "font": "anthropicSerif, \"anthropicSerif Fallback\", Georgia, serif",
+      "size": "64px",
+      "weight": "500",
+      "line": "70.4px",
+      "color": "rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "h2",
+      "text": "Compare features across plans",
+      "font": "anthropicSerif, \"anthropicSerif Fallback\", Georgia, serif",
+      "size": "52px",
+      "weight": "500",
+      "line": "62.4px",
+      "color": "rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "h3",
+      "text": "Free",
+      "font": "anthropicSerif, \"anthropicSerif Fallback\", Georgia, serif",
+      "size": "32px",
+      "weight": "500",
+      "line": "35.2px",
+      "color": "rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "main p",
+      "text": "Try Claude",
+      "font": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "size": "17px",
+      "weight": "400",
+      "line": "27.2px",
+      "color": "rgb(48, 48, 46)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "article p"
+    },
+    {
+      "selector": "nav a",
+      "text": "Login",
+      "font": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "size": "15px",
+      "weight": "400",
+      "line": "24px",
+      "color": "rgb(48, 48, 46)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "button",
+      "text": "Product",
+      "font": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "size": "15px",
+      "weight": "400",
+      "line": "24px",
+      "color": "rgb(48, 48, 46)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "code"
+    },
+    {
+      "selector": "pre"
+    }
+  ],
+  "fontUsage": {
+    "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif": {
+      "count": 537,
+      "examples": [
+        "Skip to main content",
+        "Product",
+        "Developers"
+      ]
+    },
+    "anthropicSerif, \"anthropicSerif Fallback\", Georgia, serif": {
+      "count": 24,
+      "examples": [
+        "Pricing",
+        "Free",
+        "Pro"
+      ]
+    }
+  },
+  "loadedFonts": [
+    {
+      "family": "anthropicSans",
+      "weight": "normal"
+    },
+    {
+      "family": "anthropicSans Fallback",
+      "weight": "normal"
+    },
+    {
+      "family": "anthropicSerif",
+      "weight": "normal"
+    },
+    {
+      "family": "anthropicSerif Fallback",
+      "weight": "normal"
+    }
+  ],
+  "fontFaces": [
+    "@font-face { font-family: anthropicSans; src: url(\"../media/AnthropicSans_Roman_Web-s.p.050e7498.woff2\") format(\"woff2\"); font-display: swap; font-style: normal; }",
+    "@font-face { font-family: anthropicSans; src: url(\"../media/AnthropicSans_Italic_Web-s.p.6550bf15.woff2\") format(\"woff2\"); font-display: swap; font-style: italic; }",
+    "@font-face { font-family: \"anthropicSans Fallback\"; src: local(\"Arial\"); ascent-override: 92.99%; descent-override: 24.13%; line-gap-override: 0%; size-adjust: 106.73%; }",
+    "@font-face { font-family: anthropicSerif; src: url(\"../media/AnthropicSerif_Roman_Web-s.p.c28786b4.woff2\") format(\"woff2\"); font-display: swap; font-style: normal; }",
+    "@font-face { font-family: anthropicSerif; src: url(\"../media/AnthropicSerif_Italic_Web-s.p.43888cc6.woff2\") format(\"woff2\"); font-display: swap; font-style: italic; }",
+    "@font-face { font-family: \"anthropicSerif Fallback\"; src: local(\"Arial\"); ascent-override: 96.05%; descent-override: 24.92%; line-gap-override: 0%; size-adjust: 103.33%; }",
+    "@font-face { font-family: anthropicMono; src: url(\"../media/AnthropicMono_Roman_Web-s.p.80d4607c.woff2\") format(\"woff2\"); font-display: swap; font-style: normal; }",
+    "@font-face { font-family: anthropicMono; src: url(\"../media/AnthropicMono_Italic_Web-s.p.39343088.woff2\") format(\"woff2\"); font-display: swap; font-style: italic; }",
+    "@font-face { font-family: \"anthropicMono Fallback\"; src: local(\"Arial\"); ascent-override: 75.48%; descent-override: 19.58%; line-gap-override: 0%; size-adjust: 131.49%; }",
+    "@font-face { font-family: \"Anthropic Serif Seam Name\"; src: url(\"../media/AnthropicSerif-SeamName.1791669c.woff2\") format(\"woff2\"); font-weight: 300 800; font-display: swap; }"
+  ],
+  "stylesheets": [
+    "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+    "https://claude.com/_next/static/chunks/044a9095e2dd38bf.css",
+    "https://claude.com/_next/static/chunks/4b691daeedbdd0cc.css",
+    "https://claude.com/_next/static/chunks/a3bb285b326a08b6.css",
+    "https://claude.com/_next/static/chunks/ef7e82ff4128ccad.css",
+    "https://claude.com/_next/static/chunks/8db1119d2e73c3a8.css",
+    "https://claude.com/_next/static/chunks/1039fb33c72cbd1d.css"
+  ],
+  "headings": [
+    "Pricing",
+    "Free",
+    "Pro",
+    "Max",
+    "Ultra",
+    "Compare features across plans",
+    "Features and capabilities",
+    "Models and usage",
+    "Security and administration",
+    "Payment options",
+    "FAQ",
+    "Plans and usage",
+    "Products",
+    "Capabilities",
+    "Extensions",
+    "Models",
+    "Enterprise",
+    "Departments",
+    "Industries",
+    "Programs",
+    "Developers",
+    "Platform",
+    "Resources",
+    "Help and security",
+    "Company",
+    "Terms and policies"
+  ],
+  "links": [
+    {
+      "text": "Try Claude",
+      "url": "https://claude.ai/login?plan=free"
+    },
+    {
+      "text": "Try Claude",
+      "url": "https://claude.ai/login?plan=pro"
+    },
+    {
+      "text": "Try Claude",
+      "url": "https://claude.ai/login?plan=max"
+    },
+    {
+      "text": "Try Claude",
+      "url": "https://claude.ai/upgrade/max?plan=max_20x"
+    },
+    {
+      "text": "Usage limits",
+      "url": "https://support.claude.com/en/articles/11647753-how-do-usage-and-length-limits-work"
+    },
+    {
+      "text": "verified accounts",
+      "url": "https://support.claude.com/en/articles/17728952"
+    },
+    {
+      "text": "Try Claude",
+      "url": "https://claude.ai/"
+    },
+    {
+      "text": "Try Claude",
+      "url": "https://claude.ai/"
+    },
+    {
+      "text": "Try Claude",
+      "url": "https://claude.ai/"
+    },
+    {
+      "text": "Try Claude",
+      "url": "https://claude.ai/"
+    },
+    {
+      "text": "Pro plan",
+      "url": "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+    },
+    {
+      "text": "Max and Ultra",
+      "url": "https://support.claude.com/en/articles/11049741-what-is-the-max-plan"
+    },
+    {
+      "text": "verified accounts",
+      "url": "https://support.claude.com/en/articles/17728952"
+    },
+    {
+      "text": "usage limits",
+      "url": "https://support.claude.com/en/articles/11647753-how-do-usage-and-length-limits-work"
+    },
+    {
+      "text": "verified accounts",
+      "url": "https://support.claude.com/en/articles/17728952"
+    },
+    {
+      "text": "usage credits",
+      "url": "https://support.claude.com/en/articles/12429409-manage-usage-credits-for-paid-claude-plans"
+    },
+    {
+      "text": "Settings > Usage",
+      "url": "https://claude.ai/settings/usage"
+    },
+    {
+      "text": "Claude Code",
+      "url": "https://claude.com/product/claude-code"
+    },
+    {
+      "text": "Console account",
+      "url": "https://platform.claude.com/"
+    },
+    {
+      "text": "Claude Enterprise plan",
+      "url": "https://claude.com/solutions/enterprise"
+    }
+  ],
+  "elements": {
+    "tabs": 7,
+    "accordions": 75,
+    "inputs": 4,
+    "videos": 0
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 1000,
+    "dpr": 1
+  },
+  "pageSize": {
+    "width": 1440,
+    "height": 7966
+  },
+  "documentVisible": true,
+  "reducedMotion": false,
+  "colors": {
+    "bodyBackground": "rgb(250, 249, 245)",
+    "bodyColor": "rgb(20, 20, 19)"
+  },
+  "measurements": [
+    {
+      "selector": "h1",
+      "text": "Pricing",
+      "fontFamily": "anthropicSerif, \"anthropicSerif Fallback\", Georgia, serif",
+      "fontSize": "64px",
+      "lineHeight": "70.4px",
+      "fontWeight": "500",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(20, 20, 19)",
+      "width": 1246,
+      "height": 49
+    },
+    {
+      "selector": "h1 span",
+      "text": "Pricing",
+      "fontFamily": "anthropicSerif, \"anthropicSerif Fallback\", Georgia, serif",
+      "fontSize": "64px",
+      "lineHeight": "70.4px",
+      "fontWeight": "500",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(20, 20, 19)",
+      "width": 218,
+      "height": 70
+    },
+    {
+      "selector": "main p",
+      "text": "Try Claude",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "fontSize": "17px",
+      "lineHeight": "27.2px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid rgb(48, 48, 46)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(48, 48, 46)",
+      "width": 244,
+      "height": 13
+    },
+    {
+      "selector": "main button",
+      "text": "Individual",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "fontSize": "12px",
+      "lineHeight": "19.2px",
+      "fontWeight": "400",
+      "borderRadius": "12px",
+      "padding": "8px 16px",
+      "border": "0px none rgb(20, 20, 19)",
+      "background": "rgb(255, 255, 255)",
+      "color": "rgb(20, 20, 19)",
+      "width": 88,
+      "height": 40
+    },
+    {
+      "selector": "button",
+      "text": "Product",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "fontSize": "15px",
+      "lineHeight": "24px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "8px 8px 8px 12px",
+      "border": "0px none rgb(48, 48, 46)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(48, 48, 46)",
+      "width": 97,
+      "height": 40
+    },
+    {
+      "selector": "[role=tab]",
+      "text": "Individual",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "fontSize": "12px",
+      "lineHeight": "19.2px",
+      "fontWeight": "400",
+      "borderRadius": "12px",
+      "padding": "8px 16px",
+      "border": "0px none rgb(20, 20, 19)",
+      "background": "rgb(255, 255, 255)",
+      "color": "rgb(20, 20, 19)",
+      "width": 88,
+      "height": 40
+    },
+    {
+      "selector": "pre"
+    },
+    {
+      "selector": "code"
+    },
+    {
+      "selector": "main a",
+      "text": "Try Claude",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "fontSize": "17px",
+      "lineHeight": "17px",
+      "fontWeight": "500",
+      "borderRadius": "8px",
+      "padding": "8px 24px",
+      "border": "0px none rgb(250, 249, 245)",
+      "background": "rgb(20, 20, 19)",
+      "color": "rgb(250, 249, 245)",
+      "width": 244,
+      "height": 40
+    }
+  ],
+  "fontResources": [
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicMono_Italic_Web-s.p.39343088.woff2",
+      "duration": 1670
+    },
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicMono_Roman_Web-s.p.80d4607c.woff2",
+      "duration": 1670
+    },
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicSans_Italic_Web-s.p.6550bf15.woff2",
+      "duration": 1691
+    },
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicSans_Roman_Web-s.p.050e7498.woff2",
+      "duration": 1997
+    },
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicSerif_Italic_Web-s.p.43888cc6.woff2",
+      "duration": 2050
+    },
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicSerif_Roman_Web-s.p.c28786b4.woff2",
+      "duration": 2050
+    }
+  ],
+  "fontRuleSources": [
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "anthropicSans",
+      "src": "url(\"../media/AnthropicSans_Roman_Web-s.p.050e7498.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "anthropicSans",
+      "src": "url(\"../media/AnthropicSans_Italic_Web-s.p.6550bf15.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "\"anthropicSans Fallback\"",
+      "src": "local(\"Arial\")",
+      "weight": "",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "anthropicSerif",
+      "src": "url(\"../media/AnthropicSerif_Roman_Web-s.p.c28786b4.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "anthropicSerif",
+      "src": "url(\"../media/AnthropicSerif_Italic_Web-s.p.43888cc6.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "\"anthropicSerif Fallback\"",
+      "src": "local(\"Arial\")",
+      "weight": "",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "anthropicMono",
+      "src": "url(\"../media/AnthropicMono_Roman_Web-s.p.80d4607c.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "anthropicMono",
+      "src": "url(\"../media/AnthropicMono_Italic_Web-s.p.39343088.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "\"anthropicMono Fallback\"",
+      "src": "local(\"Arial\")",
+      "weight": "",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/ef7e82ff4128ccad.css",
+      "family": "\"Anthropic Serif Seam Name\"",
+      "src": "url(\"../media/AnthropicSerif-SeamName.1791669c.woff2\") format(\"woff2\")",
+      "weight": "300 800",
+      "style": ""
+    }
+  ],
+  "renderedFonts": [
+    {
+      "selector": "h1",
+      "fonts": [
+        {
+          "familyName": "Anthropic Serif Web Text Light",
+          "postScriptName": "AnthropicSerifWebWeb-Text-Medium-Display-Light",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ]
+    },
+    {
+      "selector": "h1 span",
+      "fonts": [
+        {
+          "familyName": "Anthropic Serif Web Text Light",
+          "postScriptName": "AnthropicSerifWebWeb-Text-Medium-Display-Light",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ]
+    },
+    {
+      "selector": "main p",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Web Text",
+          "postScriptName": "AnthropicSansWebWeb-Display-Light",
+          "isCustomFont": true,
+          "glyphCount": 10
+        }
+      ]
+    },
+    {
+      "selector": "nav a",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Web Text",
+          "postScriptName": "AnthropicSansWebWeb-Display-Light",
+          "isCustomFont": true,
+          "glyphCount": 6
+        }
+      ]
+    },
+    {
+      "selector": "button",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Web Text",
+          "postScriptName": "AnthropicSansWebWeb-Display-Light",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ]
+    }
+  ],
+  "id": "S03",
+  "name": "Claude 定价",
+  "slug": "claude-pricing",
+  "checkedAt": "2026-11-02T20:07:41.837352+08:00",
+  "dateLocal": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "screenshot": "assets/screenshots/claude-pricing.png",
+  "captureMethod": "Playwright Chromium browser screenshot, no image edits",
+  "captureIssues": []
+}

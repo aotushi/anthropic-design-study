@@ -1,0 +1,398 @@
+{
+  "url": "https://claude.dev/",
+  "title": "claude.dev Blog / technical writing for people building with Claude",
+  "samples": [
+    {
+      "selector": "body",
+      "text": "[H]HOME\n[M]MODS\n[D]DOCS\n[T]TERMINAL\nTry Claude Code\nclaude.dev\n\nSharing tips, tricks, and ",
+      "font": "\"Anthropic Sans\", \"Anthropic Sans Fallback\", \"Anthropic Sans Fallback Roboto\", -apple-system, \"Helvetica Neue\", sans-serif",
+      "size": "18px",
+      "weight": "400",
+      "line": "27px",
+      "color": "rgb(20, 20, 19)",
+      "background": "rgb(250, 249, 245)"
+    },
+    {
+      "selector": "h1",
+      "text": "claude.dev",
+      "font": "\"Anthropic Mono\", \"Anthropic Mono Fallback\", ui-monospace, \"SF Mono\", Menlo, monospace",
+      "size": "31.5px",
+      "weight": "400",
+      "line": "34.65px",
+      "color": "rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "h2",
+      "text": "RESOURCES",
+      "font": "\"Anthropic Mono\", \"Anthropic Mono Fallback\", ui-monospace, \"SF Mono\", Menlo, monospace",
+      "size": "13.5px",
+      "weight": "400",
+      "line": "20.25px",
+      "color": "rgb(123, 122, 114)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "h3"
+    },
+    {
+      "selector": "main p"
+    },
+    {
+      "selector": "article p"
+    },
+    {
+      "selector": "nav a",
+      "text": "",
+      "font": "\"Anthropic Mono\", \"Anthropic Mono Fallback\", ui-monospace, \"SF Mono\", Menlo, monospace",
+      "size": "15.75px",
+      "weight": "400",
+      "line": "23.625px",
+      "color": "rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "button",
+      "text": "Try Claude Code",
+      "font": "\"Anthropic Sans\", \"Anthropic Sans Fallback\", \"Anthropic Sans Fallback Roboto\", -apple-system, \"Helvetica Neue\", sans-serif",
+      "size": "16px",
+      "weight": "400",
+      "line": "16px",
+      "color": "rgb(250, 249, 245)",
+      "background": "rgb(20, 20, 19)"
+    },
+    {
+      "selector": "code"
+    },
+    {
+      "selector": "pre"
+    }
+  ],
+  "fontUsage": {
+    "\"Anthropic Mono\", \"Anthropic Mono Fallback\", ui-monospace, \"SF Mono\", Menlo, monospace": {
+      "count": 76,
+      "examples": [
+        "[H]",
+        "HOME",
+        "[M]"
+      ]
+    },
+    "\"Anthropic Sans\", \"Anthropic Sans Fallback\", \"Anthropic Sans Fallback Roboto\", -apple-system, \"Helvetica Neue\", sans-serif": {
+      "count": 37,
+      "examples": [
+        "Try Claude Code",
+        "Sharing tips, tricks, and POVs from Anthropic’s developers.",
+        "How the Claude Code team does code review"
+      ]
+    }
+  },
+  "loadedFonts": [
+    {
+      "family": "Anthropic Mono",
+      "weight": "300 800"
+    },
+    {
+      "family": "Anthropic Sans",
+      "weight": "300 800"
+    },
+    {
+      "family": "Anthropic Sans Fallback",
+      "weight": "300 500"
+    },
+    {
+      "family": "Anthropic Mono Fallback",
+      "weight": "300 500"
+    }
+  ],
+  "fontFaces": [
+    "@font-face { font-family: \"Anthropic Mono\"; src: url(\"/shared/fonts/AnthropicMono-Roman-Variable.woff2\") format(\"woff2\"); font-weight: 300 800; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Mono\"; src: url(\"/shared/fonts/AnthropicMono-Italic-Variable.woff2\") format(\"woff2\"); font-weight: 300 800; font-style: italic; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Sans\"; src: url(\"/shared/fonts/AnthropicSans-Roman-Variable.woff2\") format(\"woff2\"); font-weight: 300 800; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Sans\"; src: url(\"/shared/fonts/AnthropicSans-Italic-Variable.woff2\") format(\"woff2\"); font-weight: 300 800; font-style: italic; font-display: swap; }",
+    "@font-face { font-family: \"Anthropic Sans Fallback\"; src: local(\"Arial\"), local(\"ArialMT\"), local(\"Liberation Sans\"), local(\"LiberationSans\"); font-weight: 300 500; size-adjust: 104%; ascent-override: 95.2%; descent-override: 25%; line-gap-override: 0%; }",
+    "@font-face { font-family: \"Anthropic Sans Fallback\"; src: local(\"Arial Bold\"), local(\"Arial-BoldMT\"), local(\"Liberation Sans Bold\"), local(\"LiberationSans-Bold\"); font-weight: 600 800; size-adjust: 99.24%; ascent-override: 99.75%; descent-override: 26.2%; line-gap-override: 0%; }",
+    "@font-face { font-family: \"Anthropic Sans Fallback\"; src: local(\"Arial Italic\"), local(\"Arial-ItalicMT\"), local(\"Liberation Sans Italic\"), local(\"LiberationSans-Italic\"); font-weight: 300 500; font-style: italic; size-adjust: 104%; ascent-override: 95.2%; descent-override: 25%; line-gap-override: 0%; }",
+    "@font-face { font-family: \"Anthropic Sans Fallback\"; src: local(\"Arial Bold Italic\"), local(\"Arial-BoldItalicMT\"), local(\"Liberation Sans Bold Italic\"), local(\"LiberationSans-BoldItalic\"); font-weight: 600 800; font-style: italic; size-adjust: 99.22%; ascent-override: 99.78%; descent-override: 26.2%; line-gap-override: 0%; }",
+    "@font-face { font-family: \"Anthropic Sans Fallback Roboto\"; src: local(\"Roboto\"), local(\"Roboto Regular\"), local(\"Roboto-Regular\"); font-weight: 300 500; size-adjust: 103.96%; ascent-override: 95.23%; descent-override: 25.01%; line-gap-override: 0%; }",
+    "@font-face { font-family: \"Anthropic Sans Fallback Roboto\"; src: local(\"Roboto Bold\"), local(\"Roboto-Bold\"); font-weight: 600 800; size-adjust: 105.67%; ascent-override: 93.69%; descent-override: 24.61%; line-gap-override: 0%; }",
+    "@font-face { font-family: \"Anthropic Sans Fallback Roboto\"; src: local(\"Roboto Italic\"), local(\"Roboto-Italic\"); font-weight: 300 500; font-style: italic; size-adjust: 106.99%; ascent-override: 92.53%; descent-override: 24.3%; line-gap-override: 0%; }",
+    "@font-face { font-family: \"Anthropic Sans Fallback Roboto\"; src: local(\"Roboto Bold Italic\"), local(\"Roboto-BoldItalic\"); font-weight: 600 800; font-style: italic; size-adjust: 108.72%; ascent-override: 91.06%; descent-override: 23.91%; line-gap-override: 0%; }",
+    "@font-face { font-family: \"Anthropic Mono Fallback\"; src: local(\"Menlo Regular\"), local(\"Menlo-Regular\"), local(\"DejaVu Sans Mono\"), local(\"DejaVuSansMono\"), local(\"Droid Sans Mono\"), local(\"DroidSansMono\"), local(\"Liberation Mono\"), local(\"LiberationMono\"), local(\"Courier New\"), local(\"CourierNewPSMT\"); font-weight: 300 500; size-adjust: 99.8%; ascent-override: 99%; descent-override: 26%; line-gap-override: 0%; }",
+    "@font-face { font-family: \"Anthropic Mono Fallback\"; src: local(\"Menlo Bold\"), local(\"Menlo-Bold\"), local(\"DejaVu Sans Mono Bold\"), local(\"DejaVuSansMono-Bold\"), local(\"Liberation Mono Bold\"), local(\"LiberationMono-Bold\"), local(\"Courier New Bold\"), local(\"CourierNewPS-BoldMT\"); font-weight: 600 800; size-adjust: 99.8%; ascent-override: 99%; descent-override: 26%; line-gap-override: 0%; }",
+    "@font-face { font-family: \"Anthropic Mono Fallback\"; src: local(\"Menlo Italic\"), local(\"Menlo-Italic\"), local(\"DejaVu Sans Mono Oblique\"), local(\"DejaVuSansMono-Oblique\"), local(\"Liberation Mono Italic\"), local(\"LiberationMono-Italic\"), local(\"Courier New Italic\"), local(\"CourierNewPS-ItalicMT\"); font-weight: 300 500; font-style: italic; size-adjust: 99.8%; ascent-override: 99%; descent-override: 26%; line-gap-override: 0%; }",
+    "@font-face { font-family: \"Anthropic Mono Fallback\"; src: local(\"Menlo Bold Italic\"), local(\"Menlo-BoldItalic\"), local(\"DejaVu Sans Mono Bold Oblique\"), local(\"DejaVuSansMono-BoldOblique\"), local(\"Liberation Mono Bold Italic\"), local(\"LiberationMono-BoldItalic\"), local(\"Courier New Bold Italic\"), local(\"CourierNewPS-BoldItalicMT\"); font-weight: 600 800; font-style: italic; size-adjust: 99.8%; ascent-override: 99%; descent-override: 26%; line-gap-override: 0%; }"
+  ],
+  "stylesheets": [
+    "https://claude.dev/_next/static/chunks/3j1oa6q3t3nnm.css",
+    "https://claude.dev/_next/static/chunks/2utod49x7k5o-.css"
+  ],
+  "headings": [
+    "claude.dev",
+    "RESOURCES",
+    "CONNECT",
+    "GET THE NEWSLETTER"
+  ],
+  "links": [],
+  "elements": {
+    "tabs": 0,
+    "accordions": 2,
+    "inputs": 2,
+    "videos": 1
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 1000,
+    "dpr": 1
+  },
+  "pageSize": {
+    "width": 1425,
+    "height": 2835
+  },
+  "documentVisible": true,
+  "reducedMotion": false,
+  "colors": {
+    "bodyBackground": "rgb(250, 249, 245)",
+    "bodyColor": "rgb(20, 20, 19)"
+  },
+  "measurements": [
+    {
+      "selector": "h1",
+      "text": "claude.dev",
+      "fontFamily": "\"Anthropic Mono\", \"Anthropic Mono Fallback\", ui-monospace, \"SF Mono\", Menlo, monospace",
+      "fontSize": "31.5px",
+      "lineHeight": "34.65px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px none rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(20, 20, 19)",
+      "width": 338,
+      "height": 35
+    },
+    {
+      "selector": "h1 span",
+      "text": "claude.dev",
+      "fontFamily": "\"Anthropic Mono\", \"Anthropic Mono Fallback\", ui-monospace, \"SF Mono\", Menlo, monospace",
+      "fontSize": "31.5px",
+      "lineHeight": "34.65px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px none rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(20, 20, 19)",
+      "width": 189,
+      "height": 35
+    },
+    {
+      "selector": "main p"
+    },
+    {
+      "selector": "main button"
+    },
+    {
+      "selector": "button",
+      "text": "Try Claude Code",
+      "fontFamily": "\"Anthropic Sans\", \"Anthropic Sans Fallback\", \"Anthropic Sans Fallback Roboto\", -apple-system, \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "16px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "8px 12px 8px 16px",
+      "border": "0px none rgb(250, 249, 245)",
+      "background": "rgb(20, 20, 19)",
+      "color": "rgb(250, 249, 245)",
+      "width": 178,
+      "height": 36
+    },
+    {
+      "selector": "[role=tab]"
+    },
+    {
+      "selector": "pre"
+    },
+    {
+      "selector": "code"
+    },
+    {
+      "selector": "main a"
+    }
+  ],
+  "fontResources": [
+    {
+      "url": "https://claude.dev/shared/fonts/AnthropicSans-Roman-Variable.woff2",
+      "duration": 2294
+    },
+    {
+      "url": "https://claude.dev/shared/fonts/AnthropicMono-Roman-Variable.woff2",
+      "duration": 1293
+    },
+    {
+      "url": "https://claude.dev/shared/fonts/AnthropicSans-Italic-Variable.woff2",
+      "duration": 2880
+    }
+  ],
+  "fontRuleSources": [
+    {
+      "stylesheet": "https://claude.dev/_next/static/chunks/3j1oa6q3t3nnm.css",
+      "family": "\"Anthropic Mono\"",
+      "src": "url(\"/shared/fonts/AnthropicMono-Roman-Variable.woff2\") format(\"woff2\")",
+      "weight": "300 800",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://claude.dev/_next/static/chunks/3j1oa6q3t3nnm.css",
+      "family": "\"Anthropic Mono\"",
+      "src": "url(\"/shared/fonts/AnthropicMono-Italic-Variable.woff2\") format(\"woff2\")",
+      "weight": "300 800",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://claude.dev/_next/static/chunks/3j1oa6q3t3nnm.css",
+      "family": "\"Anthropic Sans\"",
+      "src": "url(\"/shared/fonts/AnthropicSans-Roman-Variable.woff2\") format(\"woff2\")",
+      "weight": "300 800",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://claude.dev/_next/static/chunks/3j1oa6q3t3nnm.css",
+      "family": "\"Anthropic Sans\"",
+      "src": "url(\"/shared/fonts/AnthropicSans-Italic-Variable.woff2\") format(\"woff2\")",
+      "weight": "300 800",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://claude.dev/_next/static/chunks/3j1oa6q3t3nnm.css",
+      "family": "\"Anthropic Sans Fallback\"",
+      "src": "local(\"Arial\"), local(\"ArialMT\"), local(\"Liberation Sans\"), local(\"LiberationSans\")",
+      "weight": "300 500",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://claude.dev/_next/static/chunks/3j1oa6q3t3nnm.css",
+      "family": "\"Anthropic Sans Fallback\"",
+      "src": "local(\"Arial Bold\"), local(\"Arial-BoldMT\"), local(\"Liberation Sans Bold\"), local(\"LiberationSans-Bold\")",
+      "weight": "600 800",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://claude.dev/_next/static/chunks/3j1oa6q3t3nnm.css",
+      "family": "\"Anthropic Sans Fallback\"",
+      "src": "local(\"Arial Italic\"), local(\"Arial-ItalicMT\"), local(\"Liberation Sans Italic\"), local(\"LiberationSans-Italic\")",
+      "weight": "300 500",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://claude.dev/_next/static/chunks/3j1oa6q3t3nnm.css",
+      "family": "\"Anthropic Sans Fallback\"",
+      "src": "local(\"Arial Bold Italic\"), local(\"Arial-BoldItalicMT\"), local(\"Liberation Sans Bold Italic\"), local(\"LiberationSans-BoldItalic\")",
+      "weight": "600 800",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://claude.dev/_next/static/chunks/3j1oa6q3t3nnm.css",
+      "family": "\"Anthropic Sans Fallback Roboto\"",
+      "src": "local(\"Roboto\"), local(\"Roboto Regular\"), local(\"Roboto-Regular\")",
+      "weight": "300 500",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://claude.dev/_next/static/chunks/3j1oa6q3t3nnm.css",
+      "family": "\"Anthropic Sans Fallback Roboto\"",
+      "src": "local(\"Roboto Bold\"), local(\"Roboto-Bold\")",
+      "weight": "600 800",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://claude.dev/_next/static/chunks/3j1oa6q3t3nnm.css",
+      "family": "\"Anthropic Sans Fallback Roboto\"",
+      "src": "local(\"Roboto Italic\"), local(\"Roboto-Italic\")",
+      "weight": "300 500",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://claude.dev/_next/static/chunks/3j1oa6q3t3nnm.css",
+      "family": "\"Anthropic Sans Fallback Roboto\"",
+      "src": "local(\"Roboto Bold Italic\"), local(\"Roboto-BoldItalic\")",
+      "weight": "600 800",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://claude.dev/_next/static/chunks/3j1oa6q3t3nnm.css",
+      "family": "\"Anthropic Mono Fallback\"",
+      "src": "local(\"Menlo Regular\"), local(\"Menlo-Regular\"), local(\"DejaVu Sans Mono\"), local(\"DejaVuSansMono\"), local(\"Droid Sans Mono\"), local(\"DroidSansMono\"), local(\"Liberation Mono\"), local(\"LiberationMono\"), local(\"Courier New\"), local(\"CourierNewPSMT\")",
+      "weight": "300 500",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://claude.dev/_next/static/chunks/3j1oa6q3t3nnm.css",
+      "family": "\"Anthropic Mono Fallback\"",
+      "src": "local(\"Menlo Bold\"), local(\"Menlo-Bold\"), local(\"DejaVu Sans Mono Bold\"), local(\"DejaVuSansMono-Bold\"), local(\"Liberation Mono Bold\"), local(\"LiberationMono-Bold\"), local(\"Courier New Bold\"), local(\"CourierNewPS-BoldMT\")",
+      "weight": "600 800",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://claude.dev/_next/static/chunks/3j1oa6q3t3nnm.css",
+      "family": "\"Anthropic Mono Fallback\"",
+      "src": "local(\"Menlo Italic\"), local(\"Menlo-Italic\"), local(\"DejaVu Sans Mono Oblique\"), local(\"DejaVuSansMono-Oblique\"), local(\"Liberation Mono Italic\"), local(\"LiberationMono-Italic\"), local(\"Courier New Italic\"), local(\"CourierNewPS-ItalicMT\")",
+      "weight": "300 500",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://claude.dev/_next/static/chunks/3j1oa6q3t3nnm.css",
+      "family": "\"Anthropic Mono Fallback\"",
+      "src": "local(\"Menlo Bold Italic\"), local(\"Menlo-BoldItalic\"), local(\"DejaVu Sans Mono Bold Oblique\"), local(\"DejaVuSansMono-BoldOblique\"), local(\"Liberation Mono Bold Italic\"), local(\"LiberationMono-BoldItalic\"), local(\"Courier New Bold Italic\"), local(\"CourierNewPS-BoldItalicMT\")",
+      "weight": "600 800",
+      "style": "italic"
+    }
+  ],
+  "renderedFonts": [
+    {
+      "selector": "h1",
+      "fonts": [
+        {
+          "familyName": "Anthropic Mono Web",
+          "postScriptName": "AnthropicMonoWebWeb",
+          "isCustomFont": true,
+          "glyphCount": 10
+        }
+      ]
+    },
+    {
+      "selector": "h1 span",
+      "fonts": [
+        {
+          "familyName": "Anthropic Mono Web",
+          "postScriptName": "AnthropicMonoWebWeb",
+          "isCustomFont": true,
+          "glyphCount": 10
+        }
+      ]
+    },
+    {
+      "selector": "nav a",
+      "fonts": []
+    },
+    {
+      "selector": "button",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Variable Text",
+          "postScriptName": "AnthropicSansVariable-Text",
+          "isCustomFont": true,
+          "glyphCount": 15
+        }
+      ]
+    }
+  ],
+  "id": "S10",
+  "name": "Claude 开发者博客",
+  "slug": "developer-blog",
+  "checkedAt": "2026-11-02T20:08:08.608849+08:00",
+  "dateLocal": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "screenshot": "assets/screenshots/developer-blog.png",
+  "captureMethod": "Playwright Chromium browser screenshot, no image edits",
+  "captureIssues": []
+}

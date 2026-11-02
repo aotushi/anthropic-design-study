@@ -1,0 +1,556 @@
+{
+  "url": "https://claude.com/resources",
+  "title": "Claude Resources | Claude by Anthropic",
+  "samples": [
+    {
+      "selector": "body",
+      "text": "Skip to main content\nProduct\nDevelopers\nEnterprise\nResources\nPricing\nLogin\nContact sales\nT",
+      "font": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "size": "15px",
+      "weight": "400",
+      "line": "22.5px",
+      "color": "rgb(20, 20, 19)",
+      "background": "rgb(250, 249, 245)"
+    },
+    {
+      "selector": "h1",
+      "text": "Claude Resources",
+      "font": "anthropicSerif, \"anthropicSerif Fallback\", Georgia, serif",
+      "size": "72px",
+      "weight": "500",
+      "line": "79.2px",
+      "color": "rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "h2",
+      "text": "The developer newsletter",
+      "font": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "size": "13px",
+      "weight": "600",
+      "line": "20.8px",
+      "color": "rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "h3",
+      "text": "How we made claude.ai 3x faster in two weeks",
+      "font": "anthropicSerif, \"anthropicSerif Fallback\", Georgia, serif",
+      "size": "19px",
+      "weight": "500",
+      "line": "22.8px",
+      "color": "rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "main p",
+      "text": "Explore what’s new, learn the workflows, and evaluate what Claude can do for your team, al",
+      "font": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "size": "23px",
+      "weight": "400",
+      "line": "34.5px",
+      "color": "rgb(48, 48, 46)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "article p"
+    },
+    {
+      "selector": "nav a",
+      "text": "Login",
+      "font": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "size": "15px",
+      "weight": "400",
+      "line": "24px",
+      "color": "rgb(48, 48, 46)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "button",
+      "text": "Product",
+      "font": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "size": "15px",
+      "weight": "400",
+      "line": "24px",
+      "color": "rgb(48, 48, 46)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "code"
+    },
+    {
+      "selector": "pre"
+    }
+  ],
+  "fontUsage": {
+    "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif": {
+      "count": 266,
+      "examples": [
+        "Skip to main content",
+        "Product",
+        "Developers"
+      ]
+    },
+    "anthropicSerif, \"anthropicSerif Fallback\", Georgia, serif": {
+      "count": 39,
+      "examples": [
+        "Claude Resources",
+        "How we made claude.ai 3x faster in two weeks",
+        "How healthcare organizations use Claude Tag"
+      ]
+    }
+  },
+  "loadedFonts": [
+    {
+      "family": "anthropicSans",
+      "weight": "normal"
+    },
+    {
+      "family": "anthropicSans Fallback",
+      "weight": "normal"
+    },
+    {
+      "family": "anthropicSerif",
+      "weight": "normal"
+    }
+  ],
+  "fontFaces": [
+    "@font-face { font-family: anthropicSans; src: url(\"../media/AnthropicSans_Roman_Web-s.p.050e7498.woff2\") format(\"woff2\"); font-display: swap; font-style: normal; }",
+    "@font-face { font-family: anthropicSans; src: url(\"../media/AnthropicSans_Italic_Web-s.p.6550bf15.woff2\") format(\"woff2\"); font-display: swap; font-style: italic; }",
+    "@font-face { font-family: \"anthropicSans Fallback\"; src: local(\"Arial\"); ascent-override: 92.99%; descent-override: 24.13%; line-gap-override: 0%; size-adjust: 106.73%; }",
+    "@font-face { font-family: anthropicSerif; src: url(\"../media/AnthropicSerif_Roman_Web-s.p.c28786b4.woff2\") format(\"woff2\"); font-display: swap; font-style: normal; }",
+    "@font-face { font-family: anthropicSerif; src: url(\"../media/AnthropicSerif_Italic_Web-s.p.43888cc6.woff2\") format(\"woff2\"); font-display: swap; font-style: italic; }",
+    "@font-face { font-family: \"anthropicSerif Fallback\"; src: local(\"Arial\"); ascent-override: 96.05%; descent-override: 24.92%; line-gap-override: 0%; size-adjust: 103.33%; }",
+    "@font-face { font-family: anthropicMono; src: url(\"../media/AnthropicMono_Roman_Web-s.p.80d4607c.woff2\") format(\"woff2\"); font-display: swap; font-style: normal; }",
+    "@font-face { font-family: anthropicMono; src: url(\"../media/AnthropicMono_Italic_Web-s.p.39343088.woff2\") format(\"woff2\"); font-display: swap; font-style: italic; }",
+    "@font-face { font-family: \"anthropicMono Fallback\"; src: local(\"Arial\"); ascent-override: 75.48%; descent-override: 19.58%; line-gap-override: 0%; size-adjust: 131.49%; }"
+  ],
+  "stylesheets": [
+    "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+    "https://claude.com/_next/static/chunks/044a9095e2dd38bf.css",
+    "https://claude.com/_next/static/chunks/4b691daeedbdd0cc.css",
+    "https://claude.com/_next/static/chunks/c7f20b330d0a47b7.css",
+    "https://claude.com/_next/static/chunks/a3bb285b326a08b6.css",
+    "https://claude.com/_next/static/chunks/c01280af83704a73.css",
+    "https://claude.com/_next/static/chunks/ddb9c46d1d9e3c5e.css",
+    "https://claude.com/_next/static/chunks/c93592f9df549de5.css"
+  ],
+  "headings": [
+    "Claude Resources",
+    "How we made claude.ai 3x faster in two weeks",
+    "How healthcare organizations use Claude Tag",
+    "Building effective agent automations",
+    "The AI-native SDLC playbook",
+    "The Claude Code guide for startups",
+    "Building Enterprise Frontier Safeguards with our customers",
+    "Claude Opus 5.5 rebuilds Earthrise in 3D, down to the second",
+    "The developer newsletter",
+    "Product announcements",
+    "Introducing Claude Duet",
+    "Claude Duet Safety, Privacy, and Security",
+    "Build live dashboards and animate explainers with Claude ",
+    "Smart reports, surveys, and pooled group budgets for Claude Enterprise",
+    "IDC brings Quanta into Claude and adopts Claude across the company",
+    "Introducing artifacts for legal work",
+    "Claude for Financial Advisors",
+    "Best practices",
+    "Building agents: When to fold subagents into your main agent loop",
+    "Build Agents with the Claude Platform on Google Cloud",
+    "Claude for Nonprofits: A Staff Guide to Making Claude Useful on Day One",
+    "Unified Claude: What it means for admins",
+    "Register any time",
+    "Manage costs and demonstrate ROI for Claude Code on Google Cloud",
+    "Claude Rearview Roadmap Review: October 2026",
+    "Perspectives",
+    "How Factory is building autonomous software with Claude",
+    "The State of Cybersecurity: What Frontier AI Changes for Security Leaders",
+    "Building agents: When to fold subagents into your main agent loop",
+    "Building secure agents for knowledge work",
+    "Insights",
+    "LLMs are making formal software verification feasible at a much larger scale",
+    "Learn Claude, step by step",
+    "What a task costs on Opus 5.5",
+    "Coding sessions are longer and use more context. Claude Opus 5.5 is built with that in mind."
+  ],
+  "links": [
+    {
+      "text": "Article\nSep 23, 2026\nHow we made claude.ai 3x faster in two ",
+      "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/"
+    },
+    {
+      "text": "Article\nSep 14, 2026\nHow healthcare organizations use Claude",
+      "url": "https://claude.com/resources/articles/how-healthcare-organizations-use-claude-tag"
+    },
+    {
+      "text": "Article\nOct 8, 2026\nBuilding effective agent automations\nCla",
+      "url": "https://claude.dev/blog/building-effective-agent-automations/"
+    },
+    {
+      "text": "Article\nAug 21, 2026\nThe AI-native SDLC playbook\nClaude Ente",
+      "url": "https://claude.com/resources/articles/the-ai-native-sdlc-playbook"
+    },
+    {
+      "text": "Article\nAug 20, 2026\nThe Claude Code guide for startups\nClau",
+      "url": "https://claude.com/resources/articles/claude-code-guide-for-startups"
+    },
+    {
+      "text": "Video\n2 min watch\nBuilding Enterprise Frontier Safeguards wi",
+      "url": "https://www.youtube.com/watch?v=FoteuzPpx7E"
+    },
+    {
+      "text": "Video\n1 min watch\nClaude Opus 5.5 rebuilds Earthrise in 3D, ",
+      "url": "https://www.youtube.com/watch?v=Ov-B6K1EsaI"
+    },
+    {
+      "text": "Product announcements",
+      "url": "https://claude.com/resources#product-announcements"
+    },
+    {
+      "text": "Best practices",
+      "url": "https://claude.com/resources#best-practices"
+    },
+    {
+      "text": "Perspectives",
+      "url": "https://claude.com/resources#perspectives"
+    },
+    {
+      "text": "Insights",
+      "url": "https://claude.com/resources#insights"
+    },
+    {
+      "text": "See more",
+      "url": "https://claude.com/resources/product-announcements"
+    },
+    {
+      "text": "Learn more",
+      "url": "https://claude.com/resources/articles/claude-duet"
+    },
+    {
+      "text": "Article\nOct 23, 2026\nClaude Duet Safety, Privacy, and Securi",
+      "url": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security"
+    },
+    {
+      "text": "Article\nOct 8, 2026\nBuild live dashboards and animate explai",
+      "url": "https://claude.com/resources/articles/dashboards-and-motion"
+    },
+    {
+      "text": "Article\nOct 28, 2026\nSmart reports, surveys, and pooled grou",
+      "url": "https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets"
+    },
+    {
+      "text": "Article\nOct 28, 2026\nIDC brings Quanta into Claude and adopt",
+      "url": "https://claude.com/resources/articles/idc-brings-quanta-into-claude-and-adopts-claude-across-the-company"
+    },
+    {
+      "text": "Article\nOct 28, 2026\nIntroducing artifacts for legal work\n\nC",
+      "url": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work"
+    },
+    {
+      "text": "Article\nOct 27, 2026\nClaude for Financial Advisors\n\nFinancia",
+      "url": "https://claude.com/resources/articles/claude-for-financial-advisors"
+    },
+    {
+      "text": "See more",
+      "url": "https://claude.com/resources/best-practices"
+    }
+  ],
+  "elements": {
+    "tabs": 2,
+    "accordions": 9,
+    "inputs": 1,
+    "videos": 1
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 1000,
+    "dpr": 1
+  },
+  "pageSize": {
+    "width": 1440,
+    "height": 7743
+  },
+  "documentVisible": true,
+  "reducedMotion": false,
+  "colors": {
+    "bodyBackground": "rgb(250, 249, 245)",
+    "bodyColor": "rgb(20, 20, 19)"
+  },
+  "measurements": [
+    {
+      "selector": "h1",
+      "text": "Claude Resources",
+      "fontFamily": "anthropicSerif, \"anthropicSerif Fallback\", Georgia, serif",
+      "fontSize": "72px",
+      "lineHeight": "79.2px",
+      "fontWeight": "500",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(20, 20, 19)",
+      "width": 610,
+      "height": 79
+    },
+    {
+      "selector": "h1 span"
+    },
+    {
+      "selector": "main p",
+      "text": "Explore what’s new, learn the workflows, and evaluate what C",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "fontSize": "23px",
+      "lineHeight": "34.5px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid rgb(48, 48, 46)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(48, 48, 46)",
+      "width": 622,
+      "height": 69
+    },
+    {
+      "selector": "main button",
+      "text": "",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "fontSize": "15px",
+      "lineHeight": "17.25px",
+      "fontWeight": "400",
+      "borderRadius": "12px",
+      "padding": "0px",
+      "border": "1px solid rgb(209, 207, 197)",
+      "background": "rgb(250, 249, 245)",
+      "color": "rgb(20, 20, 19)",
+      "width": 44,
+      "height": 44
+    },
+    {
+      "selector": "button",
+      "text": "Product",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "fontSize": "15px",
+      "lineHeight": "24px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "8px 8px 8px 12px",
+      "border": "0px none rgb(48, 48, 46)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(48, 48, 46)",
+      "width": 97,
+      "height": 40
+    },
+    {
+      "selector": "[role=tab]",
+      "text": "By topic",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "fontSize": "12px",
+      "lineHeight": "12px",
+      "fontWeight": "500",
+      "borderRadius": "8px",
+      "padding": "4px 12px",
+      "border": "0px none rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(20, 20, 19)",
+      "width": 115,
+      "height": 36
+    },
+    {
+      "selector": "pre"
+    },
+    {
+      "selector": "code"
+    },
+    {
+      "selector": "main a",
+      "text": "Article\nSep 23, 2026\nHow we made claude.ai 3x faster in two ",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif",
+      "fontSize": "15px",
+      "lineHeight": "22.5px",
+      "fontWeight": "400",
+      "borderRadius": "16px",
+      "padding": "0px",
+      "border": "1px solid rgb(209, 207, 197)",
+      "background": "rgb(250, 249, 245)",
+      "color": "rgb(20, 20, 19)",
+      "width": 360,
+      "height": 171
+    }
+  ],
+  "effectiveBackgrounds": [
+    {
+      "selector": "h1",
+      "background": "rgb(245, 244, 237)",
+      "backgroundImage": "none",
+      "ancestorTag": "DIV"
+    },
+    {
+      "selector": "main p",
+      "background": "rgb(245, 244, 237)",
+      "backgroundImage": "none",
+      "ancestorTag": "DIV"
+    }
+  ],
+  "fontResources": [
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicMono_Italic_Web-s.p.39343088.woff2",
+      "duration": 2435
+    },
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicMono_Roman_Web-s.p.80d4607c.woff2",
+      "duration": 2553
+    },
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicSans_Italic_Web-s.p.6550bf15.woff2",
+      "duration": 3074
+    },
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicSans_Roman_Web-s.p.050e7498.woff2",
+      "duration": 3439
+    },
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicSerif_Roman_Web-s.p.c28786b4.woff2",
+      "duration": 3739
+    },
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicSerif_Italic_Web-s.p.43888cc6.woff2",
+      "duration": 4464
+    }
+  ],
+  "fontRuleSources": [
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "anthropicSans",
+      "src": "url(\"../media/AnthropicSans_Roman_Web-s.p.050e7498.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "anthropicSans",
+      "src": "url(\"../media/AnthropicSans_Italic_Web-s.p.6550bf15.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "\"anthropicSans Fallback\"",
+      "src": "local(\"Arial\")",
+      "weight": "",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "anthropicSerif",
+      "src": "url(\"../media/AnthropicSerif_Roman_Web-s.p.c28786b4.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "anthropicSerif",
+      "src": "url(\"../media/AnthropicSerif_Italic_Web-s.p.43888cc6.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "\"anthropicSerif Fallback\"",
+      "src": "local(\"Arial\")",
+      "weight": "",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "anthropicMono",
+      "src": "url(\"../media/AnthropicMono_Roman_Web-s.p.80d4607c.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "anthropicMono",
+      "src": "url(\"../media/AnthropicMono_Italic_Web-s.p.39343088.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://claude.com/_next/static/chunks/1dad85dd14ae6013.css",
+      "family": "\"anthropicMono Fallback\"",
+      "src": "local(\"Arial\")",
+      "weight": "",
+      "style": ""
+    }
+  ],
+  "renderedFonts": [
+    {
+      "selector": "h1",
+      "fonts": [
+        {
+          "familyName": "Anthropic Serif Web Text Light",
+          "postScriptName": "AnthropicSerifWebWeb-Text-Medium-Display-Light",
+          "isCustomFont": true,
+          "glyphCount": 16
+        }
+      ]
+    },
+    {
+      "selector": "main p",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Web Text",
+          "postScriptName": "AnthropicSansWebWeb-Display-Light",
+          "isCustomFont": true,
+          "glyphCount": 103
+        }
+      ]
+    },
+    {
+      "selector": "nav a",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Web Text",
+          "postScriptName": "AnthropicSansWebWeb-Display-Light",
+          "isCustomFont": true,
+          "glyphCount": 6
+        }
+      ]
+    },
+    {
+      "selector": "button",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Web Text",
+          "postScriptName": "AnthropicSansWebWeb-Display-Light",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ]
+    },
+    {
+      "selector": "kbd",
+      "fonts": [
+        {
+          "familyName": "Cambria Math",
+          "postScriptName": "CambriaMath",
+          "isCustomFont": false,
+          "glyphCount": 1
+        },
+        {
+          "familyName": "Anthropic Sans Web Text",
+          "postScriptName": "AnthropicSansWebWeb-Display-Light",
+          "isCustomFont": true,
+          "glyphCount": 1
+        }
+      ]
+    }
+  ],
+  "id": "S04",
+  "name": "Claude 资源中心",
+  "slug": "claude-resources",
+  "checkedAt": "2026-11-02T20:17:29.847473+08:00",
+  "dateLocal": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "screenshot": "assets/screenshots/claude-resources.png",
+  "captureMethod": "Playwright Chromium browser screenshot, no image edits",
+  "captureIssues": []
+}

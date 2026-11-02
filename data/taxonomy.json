@@ -1,0 +1,254 @@
+{
+  "basis": "Researcher-defined classification of sampled public pages; not an official component inventory.",
+  "visualDirections": [
+    "温暖的编辑式表达",
+    "克制的知识界面",
+    "复古开发者表达"
+  ],
+  "pagePatterns": [
+    {
+      "name": "公司与品牌官网",
+      "sources": [
+        "S01"
+      ]
+    },
+    {
+      "name": "产品介绍",
+      "sources": [
+        "S02"
+      ]
+    },
+    {
+      "name": "定价比较",
+      "sources": [
+        "S03"
+      ]
+    },
+    {
+      "name": "内容资源库",
+      "sources": [
+        "S04"
+      ]
+    },
+    {
+      "name": "技术文档",
+      "sources": [
+        "S07",
+        "S08"
+      ]
+    },
+    {
+      "name": "课程学习",
+      "sources": [
+        "S05",
+        "S06"
+      ]
+    },
+    {
+      "name": "帮助知识库",
+      "sources": [
+        "S09"
+      ]
+    },
+    {
+      "name": "开发者出版物",
+      "sources": [
+        "S10"
+      ]
+    }
+  ],
+  "componentPatterns": [
+    {
+      "id": "P01",
+      "name": "顶部下拉导航",
+      "group": "导航",
+      "sources": [
+        "S01",
+        "S04"
+      ]
+    },
+    {
+      "id": "P02",
+      "name": "二级分类栏",
+      "group": "导航",
+      "sources": [
+        "S04"
+      ]
+    },
+    {
+      "id": "P03",
+      "name": "面包屑",
+      "group": "导航",
+      "sources": [
+        "S06",
+        "S08"
+      ]
+    },
+    {
+      "id": "P04",
+      "name": "侧边导航与目录",
+      "group": "导航",
+      "sources": [
+        "S06",
+        "S07",
+        "S08"
+      ]
+    },
+    {
+      "id": "P05",
+      "name": "站内搜索",
+      "group": "检索与切换",
+      "sources": [
+        "S04",
+        "S07",
+        "S09"
+      ]
+    },
+    {
+      "id": "P06",
+      "name": "分类筛选",
+      "group": "检索与切换",
+      "sources": [
+        "S10"
+      ]
+    },
+    {
+      "id": "P07",
+      "name": "标签页与分段选择",
+      "group": "检索与切换",
+      "sources": [
+        "S03",
+        "S07",
+        "S08"
+      ]
+    },
+    {
+      "id": "P08",
+      "name": "展开与收起",
+      "group": "检索与切换",
+      "sources": [
+        "S03",
+        "S07"
+      ]
+    },
+    {
+      "id": "P09",
+      "name": "大标题首屏",
+      "group": "内容展示",
+      "sources": [
+        "S01",
+        "S02",
+        "S04"
+      ]
+    },
+    {
+      "id": "P10",
+      "name": "卡片网格",
+      "group": "内容展示",
+      "sources": [
+        "S04",
+        "S05"
+      ]
+    },
+    {
+      "id": "P11",
+      "name": "文章行列表",
+      "group": "内容展示",
+      "sources": [
+        "S10"
+      ]
+    },
+    {
+      "id": "P12",
+      "name": "产品演示区",
+      "group": "内容展示",
+      "sources": [
+        "S02"
+      ]
+    },
+    {
+      "id": "P13",
+      "name": "套餐卡片",
+      "group": "比较与步骤",
+      "sources": [
+        "S03"
+      ]
+    },
+    {
+      "id": "P14",
+      "name": "功能比较表",
+      "group": "比较与步骤",
+      "sources": [
+        "S03"
+      ]
+    },
+    {
+      "id": "P15",
+      "name": "编号步骤",
+      "group": "比较与步骤",
+      "sources": [
+        "S08"
+      ]
+    },
+    {
+      "id": "P16",
+      "name": "下一课或下一步链接",
+      "group": "比较与步骤",
+      "sources": [
+        "S06"
+      ]
+    },
+    {
+      "id": "P17",
+      "name": "视频与文字内容切换",
+      "group": "学习与阅读",
+      "sources": [
+        "S06"
+      ]
+    },
+    {
+      "id": "P18",
+      "name": "重点提示框",
+      "group": "学习与阅读",
+      "sources": [
+        "S06"
+      ]
+    },
+    {
+      "id": "P19",
+      "name": "代码块与复制",
+      "group": "学习与阅读",
+      "sources": [
+        "S07",
+        "S08"
+      ]
+    },
+    {
+      "id": "P20",
+      "name": "课时与位置提示",
+      "group": "学习与阅读",
+      "sources": [
+        "S05",
+        "S06"
+      ]
+    }
+  ],
+  "primaryFontNames": [
+    "Anthropic Sans",
+    "Anthropic Serif",
+    "Anthropic Serif Display",
+    "Anthropic Mono",
+    "Paper Mono"
+  ],
+  "familyGroupingNote": "Four core families only when Anthropic Serif Display is grouped under Anthropic Serif.",
+  "additionalDeclaredFont": {
+    "name": "JetBrains Mono",
+    "source": "S09",
+    "observedFallback": "Consolas",
+    "countedAsPrimary": false
+  },
+  "iconFont": {
+    "name": "Anthropicons-Variable",
+    "countedAsText": false
+  }
+}

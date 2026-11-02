@@ -1,0 +1,587 @@
+{
+  "url": "https://www.anthropic.com/",
+  "title": "Home \\ Anthropic",
+  "samples": [
+    {
+      "selector": "body",
+      "text": "Skip to main content\nNews\nResearch\nPolicy\nCommitments\nCompany\nTry Claude\nAI research and p",
+      "font": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+      "size": "16.6863px",
+      "weight": "400",
+      "line": "25.53px",
+      "color": "rgb(20, 20, 19)",
+      "background": "rgb(250, 249, 245)"
+    },
+    {
+      "selector": "h1",
+      "text": "AI research and products that put safety at the frontier. AI will have a vast impact on th",
+      "font": "anthropicSerif, \"anthropicSerif Fallback\", serif",
+      "size": "40.7843px",
+      "weight": "400",
+      "line": "50.9804px",
+      "color": "rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "h2",
+      "text": "2026 Public Benefit Report",
+      "font": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+      "size": "51.902px",
+      "weight": "600",
+      "line": "56.0541px",
+      "color": "rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "h3",
+      "text": "Introducing Claude Haiku 5.5",
+      "font": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+      "size": "21.3725px",
+      "weight": "700",
+      "line": "26.7157px",
+      "color": "rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "main p",
+      "text": "Anthropic is a Public Benefit Corporation (PBC), a designation that requires us to balance",
+      "font": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+      "size": "16.6863px",
+      "weight": "400",
+      "line": "25.53px",
+      "color": "rgb(94, 93, 89)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "article p",
+      "text": "Anthropic is a Public Benefit Corporation (PBC), a designation that requires us to balance",
+      "font": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+      "size": "16.6863px",
+      "weight": "400",
+      "line": "25.53px",
+      "color": "rgb(94, 93, 89)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "nav a",
+      "text": "News",
+      "font": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+      "size": "13px",
+      "weight": "400",
+      "line": "20.02px",
+      "color": "rgb(61, 61, 58)",
+      "background": "rgb(245, 244, 237)"
+    },
+    {
+      "selector": "button",
+      "text": "Research",
+      "font": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+      "size": "13px",
+      "weight": "400",
+      "line": "20.02px",
+      "color": "rgb(61, 61, 58)",
+      "background": "rgb(245, 244, 237)"
+    },
+    {
+      "selector": "code"
+    },
+    {
+      "selector": "pre"
+    }
+  ],
+  "fontUsage": {
+    "anthropicSans, \"anthropicSans Fallback\", sans-serif": {
+      "count": 67,
+      "examples": [
+        "Skip to main content",
+        "News",
+        "Research"
+      ]
+    },
+    "anthropicSerif, \"anthropicSerif Fallback\", serif": {
+      "count": 1,
+      "examples": [
+        "AI will have a vast impact on the world. Anthropic is a public be"
+      ]
+    }
+  },
+  "loadedFonts": [
+    {
+      "family": "anthropicSans",
+      "weight": "normal"
+    },
+    {
+      "family": "anthropicSans Fallback",
+      "weight": "normal"
+    },
+    {
+      "family": "anthropicSerif",
+      "weight": "normal"
+    },
+    {
+      "family": "anthropicSerif Fallback",
+      "weight": "normal"
+    }
+  ],
+  "fontFaces": [
+    "@font-face { font-family: anthropicSans; src: url(\"../media/AnthropicSans_Roman_Web-s.p.1e3n6bt4oqimz.woff2\") format(\"woff2\"); font-display: swap; font-style: normal; }",
+    "@font-face { font-family: anthropicSans; src: url(\"../media/AnthropicSans_Italic_Web-s.p.212cqpul8-axk.woff2\") format(\"woff2\"); font-display: swap; font-style: italic; }",
+    "@font-face { font-family: \"anthropicSans Fallback\"; src: local(\"Arial\"); ascent-override: 92.99%; descent-override: 24.13%; line-gap-override: 0%; size-adjust: 106.73%; }",
+    "@font-face { font-family: anthropicSerif; src: url(\"../media/AnthropicSerif_Roman_Web-s.p.0twp0vwi-lncj.woff2\") format(\"woff2\"); font-display: swap; font-style: normal; }",
+    "@font-face { font-family: anthropicSerif; src: url(\"../media/AnthropicSerif_Italic_Web-s.p.1fjksu1uimpf3.woff2\") format(\"woff2\"); font-display: swap; font-style: italic; }",
+    "@font-face { font-family: \"anthropicSerif Fallback\"; src: local(\"Arial\"); ascent-override: 96.05%; descent-override: 24.92%; line-gap-override: 0%; size-adjust: 103.33%; }",
+    "@font-face { font-family: anthropicMono; src: url(\"../media/AnthropicMono_Roman_Web-s.p.16xhthj2n-pap.woff2\") format(\"woff2\"); font-display: swap; font-style: normal; }",
+    "@font-face { font-family: anthropicMono; src: url(\"../media/AnthropicMono_Italic_Web-s.p.0x1wr-4z1xgw3.woff2\") format(\"woff2\"); font-display: swap; font-style: italic; }",
+    "@font-face { font-family: \"anthropicMono Fallback\"; src: local(\"Arial\"); ascent-override: 75.48%; descent-override: 19.58%; line-gap-override: 0%; size-adjust: 131.49%; }",
+    "@font-face { font-family: jetBrainsMono; src: url(\"../media/JetBrainsMono_VF-s.p.3-7d89st7id7n.ttf\") format(\"truetype\"); font-display: swap; }",
+    "@font-face { font-family: \"jetBrainsMono Fallback\"; src: local(\"Arial\"); ascent-override: 77.57%; descent-override: 22.82%; line-gap-override: 0%; size-adjust: 131.49%; }",
+    "@font-face { font-display: swap; font-family: Lato; font-style: normal; font-weight: 400; src: url(\"../media/Lato-Regular.3-jmm_z_te0oj.ttf\") format(\"truetype\"); }",
+    "@font-face { font-display: swap; font-family: Lato; font-style: normal; font-weight: 700; src: url(\"../media/Lato-Bold.2vm10rcxoroto.ttf\") format(\"truetype\"); }"
+  ],
+  "stylesheets": [
+    "https://www.anthropic.com/_next/static/chunks/3lfhvsoi4d4vt.css",
+    "https://www.anthropic.com/_next/static/chunks/3_0qx9s-ohsdh.css",
+    "https://www.anthropic.com/_next/static/chunks/0zjrix53pdagy.css",
+    "https://www.anthropic.com/_next/static/chunks/16bfh721-emix.css",
+    "https://www.anthropic.com/_next/static/chunks/20y336fy0c2fa.css",
+    "https://www.anthropic.com/_next/static/chunks/2uzdzei5vni2y.css",
+    "https://www.anthropic.com/_next/static/chunks/2y6g9_1fokilo.css",
+    "https://www.anthropic.com/_next/static/chunks/0hpfgvivairw9.css",
+    "https://www.anthropic.com/_next/static/chunks/35uako10vtsya.css",
+    "https://www.anthropic.com/_next/static/chunks/3o9di1p9cgo-l.css",
+    "https://www.anthropic.com/_next/static/chunks/3h_9qsz5evtuq.css"
+  ],
+  "headings": [
+    "AI research and products that put safety at the frontier. AI will have a vast impact on the world. Anthropic is a public benefit corporation dedicated to securing its benefits and mitigating its risks.",
+    "2026 Public Benefit Report",
+    "Introducing Claude Haiku 5.5",
+    "Introducing Claude Sonnet 5.5",
+    "Introducing Claude Opus 5.5",
+    "Learn more\nLearn more",
+    "The Anthropic Institute",
+    "Claude's Constitution",
+    "Responsible scaling policy",
+    "Core views on AI safety",
+    "Research",
+    "Policy",
+    "Commitments",
+    "Company",
+    "Products",
+    "Models",
+    "Solutions",
+    "Help and security",
+    "Terms and policies",
+    "Our mission",
+    "Log in"
+  ],
+  "links": [
+    {
+      "text": "Learn more",
+      "url": "https://www.anthropic.com/public-benefit-charter"
+    },
+    {
+      "text": "Announcements",
+      "url": "https://www.anthropic.com/news/announcements"
+    },
+    {
+      "text": "Introducing Claude Haiku 5.5",
+      "url": "https://www.anthropic.com/claude-haiku-5-5"
+    },
+    {
+      "text": "Haiku",
+      "url": "https://www.anthropic.com/claude/haiku"
+    },
+    {
+      "text": "View",
+      "url": "https://www.anthropic.com/document/claude-haiku-5-5-system-card"
+    },
+    {
+      "text": "Read announcement",
+      "url": "https://www.anthropic.com/claude-haiku-5-5"
+    },
+    {
+      "text": "Announcements",
+      "url": "https://www.anthropic.com/news/announcements"
+    },
+    {
+      "text": "Introducing Claude Sonnet 5.5",
+      "url": "https://www.anthropic.com/claude-sonnet-5-5"
+    },
+    {
+      "text": "Sonnet",
+      "url": "https://www.anthropic.com/claude/sonnet"
+    },
+    {
+      "text": "View",
+      "url": "https://www.anthropic.com/document/claude-sonnet-5-5-system-card"
+    },
+    {
+      "text": "Read announcement",
+      "url": "https://www.anthropic.com/claude-sonnet-5-5"
+    },
+    {
+      "text": "Announcements",
+      "url": "https://www.anthropic.com/news/announcements"
+    },
+    {
+      "text": "Introducing Claude Opus 5.5",
+      "url": "https://www.anthropic.com/claude-opus-5-5"
+    },
+    {
+      "text": "Opus",
+      "url": "https://www.anthropic.com/claude/opus"
+    },
+    {
+      "text": "View",
+      "url": "https://www.anthropic.com/document/claude-opus-5-5-system-card"
+    },
+    {
+      "text": "Read announcement",
+      "url": "https://www.anthropic.com/claude-opus-5-5"
+    },
+    {
+      "text": "Institute",
+      "url": "https://www.anthropic.com/search?topic=institute"
+    },
+    {
+      "text": "The Anthropic Institute\nOur effort to confront the most sign",
+      "url": "https://www.anthropic.com/institute"
+    },
+    {
+      "text": "Alignment",
+      "url": "https://www.anthropic.com/research/team/alignment"
+    },
+    {
+      "text": "Claude's Constitution\nA detailed description of our vision f",
+      "url": "https://www.anthropic.com/constitution"
+    }
+  ],
+  "elements": {
+    "tabs": 0,
+    "accordions": 23,
+    "inputs": 2,
+    "videos": 0
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 1000,
+    "dpr": 1
+  },
+  "pageSize": {
+    "width": 1425,
+    "height": 3204
+  },
+  "documentVisible": true,
+  "reducedMotion": false,
+  "colors": {
+    "bodyBackground": "rgb(250, 249, 245)",
+    "bodyColor": "rgb(20, 20, 19)"
+  },
+  "measurements": [
+    {
+      "selector": "h1",
+      "text": "AI research and products that put safety at the frontier. AI",
+      "fontFamily": "anthropicSerif, \"anthropicSerif Fallback\", serif",
+      "fontSize": "40.7843px",
+      "lineHeight": "50.9804px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(20, 20, 19)",
+      "width": 1265,
+      "height": 153
+    },
+    {
+      "selector": "h1 span",
+      "text": "AI research and products that put safety at the frontier.",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+      "fontSize": "40.7843px",
+      "lineHeight": "50.9804px",
+      "fontWeight": "600",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid rgb(20, 20, 19)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(20, 20, 19)",
+      "width": 1075,
+      "height": 51
+    },
+    {
+      "selector": "main p",
+      "text": "Anthropic is a Public Benefit Corporation (PBC), a designati",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+      "fontSize": "16.6863px",
+      "lineHeight": "25.53px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid rgb(94, 93, 89)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(94, 93, 89)",
+      "width": 605,
+      "height": 102
+    },
+    {
+      "selector": "main button",
+      "text": "",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+      "fontSize": "16.6863px",
+      "lineHeight": "25.53px",
+      "fontWeight": "400",
+      "borderRadius": "10px",
+      "padding": "0px",
+      "border": "1px solid rgb(232, 230, 220)",
+      "background": "rgb(245, 244, 237)",
+      "color": "rgb(61, 61, 58)",
+      "width": 36,
+      "height": 36
+    },
+    {
+      "selector": "button",
+      "text": "Research",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+      "fontSize": "13px",
+      "lineHeight": "20.02px",
+      "fontWeight": "400",
+      "borderRadius": "999999px",
+      "padding": "8px 12px 8px 16px",
+      "border": "1px solid rgb(232, 230, 220)",
+      "background": "rgb(245, 244, 237)",
+      "color": "rgb(61, 61, 58)",
+      "width": 109,
+      "height": 28
+    },
+    {
+      "selector": "[role=tab]"
+    },
+    {
+      "selector": "pre"
+    },
+    {
+      "selector": "code"
+    },
+    {
+      "selector": "main a",
+      "text": "Learn more",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+      "fontSize": "16.6863px",
+      "lineHeight": "25.53px",
+      "fontWeight": "400",
+      "borderRadius": "10px",
+      "padding": "12px 24px",
+      "border": "1px solid rgb(20, 20, 19)",
+      "background": "rgb(20, 20, 19)",
+      "color": "rgb(250, 249, 245)",
+      "width": 139,
+      "height": 36
+    }
+  ],
+  "fontResources": [
+    {
+      "url": "https://www.anthropic.com/_next/static/media/AnthropicMono_Italic_Web-s.p.0x1wr-4z1xgw3.woff2",
+      "duration": 1826
+    },
+    {
+      "url": "https://www.anthropic.com/_next/static/media/AnthropicMono_Roman_Web-s.p.16xhthj2n-pap.woff2",
+      "duration": 2053
+    },
+    {
+      "url": "https://www.anthropic.com/_next/static/media/AnthropicSans_Italic_Web-s.p.212cqpul8-axk.woff2",
+      "duration": 2492
+    },
+    {
+      "url": "https://www.anthropic.com/_next/static/media/AnthropicSans_Roman_Web-s.p.1e3n6bt4oqimz.woff2",
+      "duration": 2492
+    },
+    {
+      "url": "https://www.anthropic.com/_next/static/media/AnthropicSerif_Italic_Web-s.p.1fjksu1uimpf3.woff2",
+      "duration": 2789
+    },
+    {
+      "url": "https://www.anthropic.com/_next/static/media/JetBrainsMono_VF-s.p.3-7d89st7id7n.ttf",
+      "duration": 2927
+    },
+    {
+      "url": "https://www.anthropic.com/_next/static/media/AnthropicSerif_Roman_Web-s.p.0twp0vwi-lncj.woff2",
+      "duration": 2928
+    }
+  ],
+  "fontRuleSources": [
+    {
+      "stylesheet": "https://www.anthropic.com/_next/static/chunks/3lfhvsoi4d4vt.css",
+      "family": "anthropicSans",
+      "src": "url(\"../media/AnthropicSans_Roman_Web-s.p.1e3n6bt4oqimz.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://www.anthropic.com/_next/static/chunks/3lfhvsoi4d4vt.css",
+      "family": "anthropicSans",
+      "src": "url(\"../media/AnthropicSans_Italic_Web-s.p.212cqpul8-axk.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://www.anthropic.com/_next/static/chunks/3lfhvsoi4d4vt.css",
+      "family": "\"anthropicSans Fallback\"",
+      "src": "local(\"Arial\")",
+      "weight": "",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://www.anthropic.com/_next/static/chunks/3lfhvsoi4d4vt.css",
+      "family": "anthropicSerif",
+      "src": "url(\"../media/AnthropicSerif_Roman_Web-s.p.0twp0vwi-lncj.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://www.anthropic.com/_next/static/chunks/3lfhvsoi4d4vt.css",
+      "family": "anthropicSerif",
+      "src": "url(\"../media/AnthropicSerif_Italic_Web-s.p.1fjksu1uimpf3.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://www.anthropic.com/_next/static/chunks/3lfhvsoi4d4vt.css",
+      "family": "\"anthropicSerif Fallback\"",
+      "src": "local(\"Arial\")",
+      "weight": "",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://www.anthropic.com/_next/static/chunks/3lfhvsoi4d4vt.css",
+      "family": "anthropicMono",
+      "src": "url(\"../media/AnthropicMono_Roman_Web-s.p.16xhthj2n-pap.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://www.anthropic.com/_next/static/chunks/3lfhvsoi4d4vt.css",
+      "family": "anthropicMono",
+      "src": "url(\"../media/AnthropicMono_Italic_Web-s.p.0x1wr-4z1xgw3.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://www.anthropic.com/_next/static/chunks/3lfhvsoi4d4vt.css",
+      "family": "\"anthropicMono Fallback\"",
+      "src": "local(\"Arial\")",
+      "weight": "",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://www.anthropic.com/_next/static/chunks/3lfhvsoi4d4vt.css",
+      "family": "jetBrainsMono",
+      "src": "url(\"../media/JetBrainsMono_VF-s.p.3-7d89st7id7n.ttf\") format(\"truetype\")",
+      "weight": "",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://www.anthropic.com/_next/static/chunks/3lfhvsoi4d4vt.css",
+      "family": "\"jetBrainsMono Fallback\"",
+      "src": "local(\"Arial\")",
+      "weight": "",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://www.anthropic.com/_next/static/chunks/16bfh721-emix.css",
+      "family": "Lato",
+      "src": "url(\"../media/Lato-Regular.3-jmm_z_te0oj.ttf\") format(\"truetype\")",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://www.anthropic.com/_next/static/chunks/16bfh721-emix.css",
+      "family": "Lato",
+      "src": "url(\"../media/Lato-Bold.2vm10rcxoroto.ttf\") format(\"truetype\")",
+      "weight": "700",
+      "style": "normal"
+    }
+  ],
+  "renderedFonts": [
+    {
+      "selector": "h1",
+      "fonts": [
+        {
+          "familyName": "Anthropic Serif Web Text Light",
+          "postScriptName": "AnthropicSerifWebWeb-Display-Light",
+          "isCustomFont": true,
+          "glyphCount": 140
+        },
+        {
+          "familyName": "Anthropic Sans Web Text",
+          "postScriptName": "AnthropicSansWebWeb-Text-Semibold-Display-Light",
+          "isCustomFont": true,
+          "glyphCount": 57
+        }
+      ]
+    },
+    {
+      "selector": "h1 span",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Web Text",
+          "postScriptName": "AnthropicSansWebWeb-Text-Semibold-Display-Light",
+          "isCustomFont": true,
+          "glyphCount": 57
+        }
+      ]
+    },
+    {
+      "selector": "main p",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Web Text",
+          "postScriptName": "AnthropicSansWebWeb-Display-Light",
+          "isCustomFont": true,
+          "glyphCount": 260
+        }
+      ]
+    },
+    {
+      "selector": "article p",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Web Text",
+          "postScriptName": "AnthropicSansWebWeb-Display-Light",
+          "isCustomFont": true,
+          "glyphCount": 260
+        }
+      ]
+    },
+    {
+      "selector": "nav a",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Web Text",
+          "postScriptName": "AnthropicSansWebWeb-Display-Light",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    },
+    {
+      "selector": "button",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Web Text",
+          "postScriptName": "AnthropicSansWebWeb-Display-Light",
+          "isCustomFont": true,
+          "glyphCount": 8
+        }
+      ]
+    }
+  ],
+  "id": "S01",
+  "name": "Anthropic 公司官网",
+  "slug": "anthropic-home",
+  "checkedAt": "2026-11-02T20:09:00.794482+08:00",
+  "dateLocal": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "screenshot": "assets/screenshots/anthropic-home.png",
+  "captureMethod": "Playwright Chromium browser screenshot, no image edits",
+  "captureIssues": []
+}

@@ -1,0 +1,474 @@
+{
+  "url": "https://support.claude.com/en/",
+  "title": "Home | Claude Help Center",
+  "samples": [
+    {
+      "selector": "body",
+      "text": "Skip to main content\nAPI docs\nRelease notes\nHow to get support\nEnglish\nFrançais\nDeutsch\nBa",
+      "font": "AnthropicSans-Regular-Web",
+      "size": "16px",
+      "weight": "400",
+      "line": "25.6px",
+      "color": "rgb(26, 26, 26)",
+      "background": "rgb(250, 249, 245)"
+    },
+    {
+      "selector": "h1",
+      "text": "Search for answers or browse by topic",
+      "font": "AnthropicSerif-Regular-Web",
+      "size": "48px",
+      "weight": "500",
+      "line": "53.76px",
+      "color": "rgb(26, 26, 26)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "h2",
+      "text": "Collections",
+      "font": "AnthropicSerif-Regular-Web",
+      "size": "22px",
+      "weight": "600",
+      "line": "28.6px",
+      "color": "rgb(26, 26, 26)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "h3"
+    },
+    {
+      "selector": "main p",
+      "text": "Get started with Claude across everyday conversations, projects, and files.",
+      "font": "AnthropicSans-Regular-Web",
+      "size": "13px",
+      "weight": "400",
+      "line": "19.5px",
+      "color": "rgb(89, 89, 89)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "article p"
+    },
+    {
+      "selector": "nav a",
+      "text": "API docs",
+      "font": "AnthropicSans-Regular-Web",
+      "size": "14px",
+      "weight": "400",
+      "line": "14px",
+      "color": "color(srgb 0.0824 0.0824 0.0776 / 0.78)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "button",
+      "text": "Search\nCtrl K",
+      "font": "AnthropicSans-Regular-Web",
+      "size": "14px",
+      "weight": "400",
+      "line": "21.7px",
+      "color": "color(srgb 0.0824 0.0824 0.0776 / 0.78)",
+      "background": "color(srgb 0.0824 0.0824 0.0776 / 0.05)"
+    },
+    {
+      "selector": "code"
+    },
+    {
+      "selector": "pre"
+    }
+  ],
+  "fontUsage": {
+    "AnthropicSans-Regular-Web": {
+      "count": 54,
+      "examples": [
+        "Skip to main content",
+        "API docs",
+        "Release notes"
+      ]
+    },
+    "\"JetBrains Mono\", ui-monospace, monospace": {
+      "count": 2,
+      "examples": [
+        "Ctrl K",
+        "Ctrl K"
+      ]
+    },
+    "AnthropicSerif-Regular-Web": {
+      "count": 17,
+      "examples": [
+        "Search for answers or browse by topic",
+        "Collections",
+        "Claude"
+      ]
+    }
+  },
+  "loadedFonts": [
+    {
+      "family": "AnthropicSans-Regular-Web",
+      "weight": "700"
+    }
+  ],
+  "fontFaces": [
+    "@font-face { font-family: AnthropicSerif-Regular-Web; font-display: swap; font-weight: 500; font-style: normal; src: url(\"https://support.claude.com/assets/font/943401\"); }",
+    "@font-face { font-family: AnthropicSerif-Regular-Web; font-display: swap; font-weight: 400; font-style: normal; src: url(\"https://support.claude.com/assets/font/943402\"); }",
+    "@font-face { font-family: AnthropicSerif-Regular-Web; font-display: swap; font-weight: 600; font-style: normal; src: url(\"https://support.claude.com/assets/font/943403\"); }",
+    "@font-face { font-family: AnthropicSans-Regular-Web; font-display: swap; font-weight: 700; font-style: normal; src: url(\"https://support.claude.com/assets/font/943396\"); }",
+    "@font-face { font-family: AnthropicSans-Regular-Web; font-display: swap; font-style: italic; src: url(\"https://support.claude.com/assets/font/938266\"); }",
+    "@font-face { font-family: AnthropicSans-Regular-Web; font-display: swap; font-weight: 500; font-style: normal; src: url(\"https://support.claude.com/assets/font/943398\"); }",
+    "@font-face { font-family: AnthropicSans-Regular-Web; font-display: swap; font-weight: 400; font-style: normal; src: url(\"https://support.claude.com/assets/font/943399\"); }",
+    "@font-face { font-family: AnthropicSans-Regular-Web; font-display: swap; font-weight: 600; font-style: normal; src: url(\"https://support.claude.com/assets/font/943400\"); }"
+  ],
+  "stylesheets": [
+    "https://static.intercomassets.com/_next/static/css/c446e3afe8be430a.css",
+    "https://static.intercomassets.com/_next/static/css/aca6b59773c71079.css",
+    "https://static.intercomassets.com/_next/static/css/4e83f6690a4d1420.css",
+    "https://static.intercomassets.com/_next/static/css/c3ba261aae91eb22.css",
+    "https://static.intercomassets.com/_next/static/css/b116545afd082284.css",
+    "https://static.intercomassets.com/_next/static/css/a36d49340c3b5f22.css"
+  ],
+  "headings": [
+    "Search for answers or browse by topic",
+    "Collections"
+  ],
+  "links": [
+    {
+      "text": "Get started with Claude",
+      "url": "https://support.claude.com/en/articles/8114491-get-started-with-claude"
+    },
+    {
+      "text": "Usage limit best practices",
+      "url": "https://support.claude.com/en/articles/9797557-usage-limit-best-practices"
+    },
+    {
+      "text": "Cancel your Pro, Max, or Ultra subscription",
+      "url": "https://support.claude.com/en/articles/8325617-cancel-your-pro-max-or-ultra-subscription"
+    },
+    {
+      "text": "Log in to your Claude account",
+      "url": "https://support.claude.com/en/articles/13189465-log-in-to-your-claude-account"
+    },
+    {
+      "text": "Release notes",
+      "url": "https://support.claude.com/en/articles/12138966-release-notes"
+    },
+    {
+      "text": "Paid plan billing FAQs",
+      "url": "https://support.claude.com/en/articles/8325618-paid-plan-billing-faqs"
+    },
+    {
+      "text": "Claude",
+      "url": "https://support.claude.com/en/collections/4078531-claude"
+    },
+    {
+      "text": "Pro, Max, and Ultra plans",
+      "url": "https://support.claude.com/en/collections/5953830-pro-max-and-ultra-plans"
+    },
+    {
+      "text": "Team and Enterprise plans",
+      "url": "https://support.claude.com/en/collections/9387370-team-and-enterprise-plans"
+    },
+    {
+      "text": "Identity management (SSO, JIT, SCIM)",
+      "url": "https://support.claude.com/en/collections/17270717-identity-management-sso-jit-scim"
+    },
+    {
+      "text": "Claude Cowork",
+      "url": "https://support.claude.com/en/collections/19667525-claude-cowork"
+    },
+    {
+      "text": "Claude Code",
+      "url": "https://support.claude.com/en/collections/14445694-claude-code"
+    },
+    {
+      "text": "Claude Desktop",
+      "url": "https://support.claude.com/en/collections/16163169-claude-desktop"
+    },
+    {
+      "text": "Claude Mobile apps",
+      "url": "https://support.claude.com/en/collections/9387080-claude-mobile-apps"
+    },
+    {
+      "text": "Claude API and Console",
+      "url": "https://support.claude.com/en/collections/5370014-claude-api-and-console"
+    },
+    {
+      "text": "Connectors",
+      "url": "https://support.claude.com/en/collections/15399129-connectors"
+    },
+    {
+      "text": "Claude in Chrome",
+      "url": "https://support.claude.com/en/collections/18031491-claude-in-chrome"
+    },
+    {
+      "text": "Claude for Education",
+      "url": "https://support.claude.com/en/collections/12630177-claude-for-education"
+    },
+    {
+      "text": "Privacy and legal",
+      "url": "https://support.claude.com/en/collections/4078534-privacy-and-legal"
+    },
+    {
+      "text": "Safeguards",
+      "url": "https://support.claude.com/en/collections/4078535-safeguards"
+    }
+  ],
+  "elements": {
+    "tabs": 0,
+    "accordions": 16,
+    "inputs": 0,
+    "videos": 0
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 1000,
+    "dpr": 1
+  },
+  "pageSize": {
+    "width": 1440,
+    "height": 2206
+  },
+  "documentVisible": true,
+  "reducedMotion": false,
+  "colors": {
+    "bodyBackground": "rgb(250, 249, 245)",
+    "bodyColor": "rgb(26, 26, 26)"
+  },
+  "measurements": [
+    {
+      "selector": "h1",
+      "text": "Search for answers or browse by topic",
+      "fontFamily": "AnthropicSerif-Regular-Web",
+      "fontSize": "48px",
+      "lineHeight": "53.76px",
+      "fontWeight": "500",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid rgb(229, 231, 235)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(26, 26, 26)",
+      "width": 480,
+      "height": 108
+    },
+    {
+      "selector": "h1 span"
+    },
+    {
+      "selector": "main p",
+      "text": "Get started with Claude across everyday conversations, proje",
+      "fontFamily": "AnthropicSans-Regular-Web",
+      "fontSize": "13px",
+      "lineHeight": "19.5px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid rgb(229, 231, 235)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(89, 89, 89)",
+      "width": 211,
+      "height": 39
+    },
+    {
+      "selector": "main button",
+      "text": "Search for articles...\nCtrl K",
+      "fontFamily": "AnthropicSans-Regular-Web",
+      "fontSize": "15px",
+      "lineHeight": "23.25px",
+      "fontWeight": "400",
+      "borderRadius": "12px",
+      "padding": "12px 16px",
+      "border": "1px solid color(srgb 0.101961 0.101961 0.101961 / 0.15)",
+      "background": "rgb(252, 251, 248)",
+      "color": "rgb(89, 89, 89)",
+      "width": 420,
+      "height": 49
+    },
+    {
+      "selector": "button",
+      "text": "Search\nCtrl K",
+      "fontFamily": "AnthropicSans-Regular-Web",
+      "fontSize": "14px",
+      "lineHeight": "21.7px",
+      "fontWeight": "400",
+      "borderRadius": "12px",
+      "padding": "0px 16px",
+      "border": "1px solid color(srgb 0.0824 0.0824 0.0776 / 0.15)",
+      "background": "color(srgb 0.0824 0.0824 0.0776 / 0.05)",
+      "color": "color(srgb 0.0824 0.0824 0.0776 / 0.78)",
+      "width": 140,
+      "height": 30
+    },
+    {
+      "selector": "[role=tab]"
+    },
+    {
+      "selector": "pre"
+    },
+    {
+      "selector": "code"
+    },
+    {
+      "selector": "main a",
+      "text": "Get started with Claude",
+      "fontFamily": "AnthropicSans-Regular-Web",
+      "fontSize": "15px",
+      "lineHeight": "23.25px",
+      "fontWeight": "400",
+      "borderRadius": "12px",
+      "padding": "8px 12px",
+      "border": "0px solid rgb(229, 231, 235)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(26, 26, 26)",
+      "width": 854,
+      "height": 38
+    }
+  ],
+  "fontResources": [
+    {
+      "url": "https://support.claude.com/assets/font/943401",
+      "duration": 453
+    },
+    {
+      "url": "https://support.claude.com/assets/font/943402",
+      "duration": 453
+    },
+    {
+      "url": "https://support.claude.com/assets/font/943403",
+      "duration": 453
+    },
+    {
+      "url": "https://support.claude.com/assets/font/943398",
+      "duration": 1082
+    },
+    {
+      "url": "https://support.claude.com/assets/font/943396",
+      "duration": 1220
+    },
+    {
+      "url": "https://support.claude.com/assets/font/938266",
+      "duration": 1635
+    },
+    {
+      "url": "https://support.claude.com/assets/font/943400",
+      "duration": 744
+    },
+    {
+      "url": "https://support.claude.com/assets/font/943399",
+      "duration": 744
+    }
+  ],
+  "fontRuleSources": [
+    {
+      "stylesheet": null,
+      "family": "AnthropicSerif-Regular-Web",
+      "src": "url(\"https://support.claude.com/assets/font/943401\")",
+      "weight": "500",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "AnthropicSerif-Regular-Web",
+      "src": "url(\"https://support.claude.com/assets/font/943402\")",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "AnthropicSerif-Regular-Web",
+      "src": "url(\"https://support.claude.com/assets/font/943403\")",
+      "weight": "600",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "AnthropicSans-Regular-Web",
+      "src": "url(\"https://support.claude.com/assets/font/943396\")",
+      "weight": "700",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "AnthropicSans-Regular-Web",
+      "src": "url(\"https://support.claude.com/assets/font/938266\")",
+      "weight": "",
+      "style": "italic"
+    },
+    {
+      "stylesheet": null,
+      "family": "AnthropicSans-Regular-Web",
+      "src": "url(\"https://support.claude.com/assets/font/943398\")",
+      "weight": "500",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "AnthropicSans-Regular-Web",
+      "src": "url(\"https://support.claude.com/assets/font/943399\")",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "stylesheet": null,
+      "family": "AnthropicSans-Regular-Web",
+      "src": "url(\"https://support.claude.com/assets/font/943400\")",
+      "weight": "600",
+      "style": "normal"
+    }
+  ],
+  "renderedFonts": [
+    {
+      "selector": "h1",
+      "fonts": [
+        {
+          "familyName": "Times New Roman",
+          "postScriptName": "TimesNewRomanPSMT",
+          "isCustomFont": false,
+          "glyphCount": 36
+        }
+      ]
+    },
+    {
+      "selector": "main p",
+      "fonts": [
+        {
+          "familyName": "Times New Roman",
+          "postScriptName": "TimesNewRomanPSMT",
+          "isCustomFont": false,
+          "glyphCount": 74
+        }
+      ]
+    },
+    {
+      "selector": "nav a",
+      "fonts": [
+        {
+          "familyName": "Times New Roman",
+          "postScriptName": "TimesNewRomanPSMT",
+          "isCustomFont": false,
+          "glyphCount": 8
+        }
+      ]
+    },
+    {
+      "selector": "button",
+      "fonts": []
+    },
+    {
+      "selector": "kbd",
+      "fonts": [
+        {
+          "familyName": "Consolas",
+          "postScriptName": "Consolas",
+          "isCustomFont": false,
+          "glyphCount": 6
+        }
+      ]
+    }
+  ],
+  "id": "S09",
+  "name": "Claude 帮助中心",
+  "slug": "support-home",
+  "checkedAt": "2026-11-02T20:08:12.350226+08:00",
+  "dateLocal": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "screenshot": "assets/screenshots/support-home.png",
+  "captureMethod": "Playwright Chromium browser screenshot, no image edits",
+  "captureIssues": []
+}

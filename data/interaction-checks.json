@@ -1,0 +1,143 @@
+{
+  "checkedAt": "2026-11-02T20:14:10.297909+08:00",
+  "scope": "Public pages; bounded checks, not a full usability or accessibility audit",
+  "checks": [
+    {
+      "name": "pricing_audience_tabs",
+      "status": "passed",
+      "source": "S03",
+      "before": [
+        "Individual",
+        "Plans and usage"
+      ],
+      "after": [
+        "Team & Enterprise",
+        "Plans and usage"
+      ],
+      "screenshot": "assets/screenshots/pricing-team.png"
+    },
+    {
+      "name": "blog_category_filter",
+      "status": "passed",
+      "source": "S10",
+      "before": 10,
+      "filtered": 1,
+      "restored": 10
+    },
+    {
+      "name": "lesson_transcript_switch",
+      "status": "passed",
+      "source": "S06",
+      "selected": "Transcript",
+      "ariaChecked": true,
+      "screenshot": "assets/screenshots/academy-transcript.png"
+    },
+    {
+      "name": "code_example_font_inspection",
+      "status": "passed",
+      "source": "S07",
+      "renderedFonts": [
+        {
+          "selector": "h1",
+          "fonts": [
+            {
+              "familyName": "Anthropic Serif Display",
+              "postScriptName": "AnthropicSerifDisplay-Regular",
+              "isCustomFont": true,
+              "glyphCount": 8
+            }
+          ]
+        },
+        {
+          "selector": "main p",
+          "fonts": [
+            {
+              "familyName": "Anthropic Sans Text",
+              "postScriptName": "AnthropicSansText-Regular",
+              "isCustomFont": true,
+              "glyphCount": 191
+            }
+          ]
+        },
+        {
+          "selector": "nav a",
+          "fonts": [
+            {
+              "familyName": "Anthropic Sans Text Medium",
+              "postScriptName": "AnthropicSansText-Medium",
+              "isCustomFont": true,
+              "glyphCount": 25
+            }
+          ]
+        },
+        {
+          "selector": "button",
+          "fonts": []
+        },
+        {
+          "selector": "code",
+          "fonts": []
+        },
+        {
+          "selector": "pre",
+          "fonts": []
+        },
+        {
+          "selector": "pre span",
+          "fonts": [
+            {
+              "familyName": "Paper Mono",
+              "postScriptName": "PaperMono",
+              "isCustomFont": true,
+              "glyphCount": 46
+            }
+          ]
+        },
+        {
+          "selector": "pre span span",
+          "fonts": [
+            {
+              "familyName": "Paper Mono",
+              "postScriptName": "PaperMono",
+              "isCustomFont": true,
+              "glyphCount": 4
+            }
+          ]
+        },
+        {
+          "selector": "code span",
+          "fonts": [
+            {
+              "familyName": "Paper Mono",
+              "postScriptName": "PaperMono",
+              "isCustomFont": true,
+              "glyphCount": 46
+            }
+          ]
+        },
+        {
+          "selector": "code span span",
+          "fonts": [
+            {
+              "familyName": "Paper Mono",
+              "postScriptName": "PaperMono",
+              "isCustomFont": true,
+              "glyphCount": 4
+            }
+          ]
+        }
+      ],
+      "screenshot": "assets/screenshots/code-example.png"
+    },
+    {
+      "name": "first_keyboard_focus",
+      "status": "passed",
+      "source": "S04",
+      "firstFocus": {
+        "tag": "A",
+        "text": "Skip to main content",
+        "href": "#main-content"
+      }
+    }
+  ]
+}

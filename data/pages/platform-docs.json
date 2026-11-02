@@ -1,0 +1,673 @@
+{
+  "url": "https://platform.claude.com/docs/en/get-started",
+  "title": "Get started with Claude - Claude Platform Docs",
+  "samples": [
+    {
+      "selector": "body",
+      "text": "Claude Platform Docs\nMessages\nManaged Agents\nAdmin\nResources\n\n\nAPI reference\n\nEnglish\n",
+      "font": "anthropicSans, \"anthropicSans Fallback\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, \"Hiragino Sans\", \"PingFang TC\", \"PingFang SC\", \"Apple SD Gothic Neo\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", sans-serif",
+      "size": "14px",
+      "weight": "400",
+      "line": "21px",
+      "color": "rgb(11, 11, 11)",
+      "background": "rgb(252, 252, 251)"
+    },
+    {
+      "selector": "h1",
+      "text": "Get started with Claude",
+      "font": "anthropicSerif, \"anthropicSerif Fallback\", Georgia, \"Arial Hebrew\", \"Noto Sans Hebrew\", \"Times New Roman\", Times, \"Hiragino Sans\", \"Yu Gothic\", Meiryo, \"Noto Sans CJK JP\", \"PingFang TC\", \"Microsoft JhengHei\", \"Noto Sans CJK TC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans CJK KR\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", serif, ui-serif, Georgia, \"Times New Roman\", serif",
+      "size": "26.25px",
+      "weight": "520",
+      "line": "32.8125px",
+      "color": "rgb(11, 11, 11)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "h2",
+      "text": "Prerequisites\n",
+      "font": "anthropicSerif, \"anthropicSerif Fallback\", Georgia, \"Arial Hebrew\", \"Noto Sans Hebrew\", \"Times New Roman\", Times, \"Hiragino Sans\", \"Yu Gothic\", Meiryo, \"Noto Sans CJK JP\", \"PingFang TC\", \"Microsoft JhengHei\", \"Noto Sans CJK TC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans CJK KR\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", serif, ui-serif, Georgia, \"Times New Roman\", serif",
+      "size": "20.625px",
+      "weight": "520",
+      "line": "25.7812px",
+      "color": "rgb(11, 11, 11)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "h3",
+      "text": "Set your API key",
+      "font": "anthropicSerif, \"anthropicSerif Fallback\", Georgia, \"Arial Hebrew\", \"Noto Sans Hebrew\", \"Times New Roman\", Times, \"Hiragino Sans\", \"Yu Gothic\", Meiryo, \"Noto Sans CJK JP\", \"PingFang TC\", \"Microsoft JhengHei\", \"Noto Sans CJK TC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans CJK KR\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", serif, ui-serif, Georgia, \"Times New Roman\", serif",
+      "size": "16.875px",
+      "weight": "520",
+      "line": "21.9375px",
+      "color": "rgb(11, 11, 11)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "main p",
+      "text": "Make your first API call to Claude and build a simple web search assistant.",
+      "font": "anthropicSans, \"anthropicSans Fallback\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, \"Hiragino Sans\", \"PingFang TC\", \"PingFang SC\", \"Apple SD Gothic Neo\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", sans-serif, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", sans-serif",
+      "size": "16.875px",
+      "weight": "400",
+      "line": "25.3125px",
+      "color": "rgb(82, 81, 78)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "article p",
+      "text": "Make your first API call to Claude and build a simple web search assistant.",
+      "font": "anthropicSans, \"anthropicSans Fallback\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, \"Hiragino Sans\", \"PingFang TC\", \"PingFang SC\", \"Apple SD Gothic Neo\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", sans-serif, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", sans-serif",
+      "size": "16.875px",
+      "weight": "400",
+      "line": "25.3125px",
+      "color": "rgb(82, 81, 78)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "nav a",
+      "text": "Messages",
+      "font": "anthropicSans, \"anthropicSans Fallback\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, \"Hiragino Sans\", \"PingFang TC\", \"PingFang SC\", \"Apple SD Gothic Neo\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", sans-serif, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", sans-serif",
+      "size": "14px",
+      "weight": "400",
+      "line": "20px",
+      "color": "rgb(11, 11, 11)",
+      "background": "color(srgb 0.0431373 0.0431373 0.0431373 / 0.1)"
+    },
+    {
+      "selector": "button",
+      "text": "Resources\n",
+      "font": "anthropicSans, \"anthropicSans Fallback\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, \"Hiragino Sans\", \"PingFang TC\", \"PingFang SC\", \"Apple SD Gothic Neo\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", sans-serif, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", sans-serif",
+      "size": "14px",
+      "weight": "400",
+      "line": "20px",
+      "color": "rgb(137, 135, 129)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "code",
+      "text": "ANTHROPIC_API_KEY",
+      "font": "anthropicMono, \"anthropicMono Fallback\", ui-monospace, SFMono-Regular, Menlo, Monaco, monospace, \"SF Mono\", ui-monospace, Menlo, Consolas, monospace",
+      "size": "13.5px",
+      "weight": "400",
+      "line": "13.5px",
+      "color": "rgb(142, 38, 38)",
+      "background": "color(srgb 0.0431373 0.0431373 0.0431373 / 0.05)"
+    },
+    {
+      "selector": "pre",
+      "text": "export ANTHROPIC_API_KEY=\"your-api-key-here\"",
+      "font": "anthropicMono, \"anthropicMono Fallback\", ui-monospace, SFMono-Regular, Menlo, Monaco, monospace, \"SF Mono\", ui-monospace, Menlo, Consolas, monospace",
+      "size": "13px",
+      "weight": "400",
+      "line": "19px",
+      "color": "rgb(82, 81, 78)",
+      "background": "rgba(0, 0, 0, 0)"
+    }
+  ],
+  "fontUsage": {
+    "anthropicSerif, \"anthropicSerif Fallback\", Georgia, \"Arial Hebrew\", \"Noto Sans Hebrew\", \"Times New Roman\", Times, \"Hiragino Sans\", \"Yu Gothic\", Meiryo, \"Noto Sans CJK JP\", \"PingFang TC\", \"Microsoft JhengHei\", \"Noto Sans CJK TC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans CJK KR\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", serif, ui-serif, Georgia, \"Times New Roman\", serif": {
+      "count": 10,
+      "examples": [
+        "Claude Platform Docs",
+        "Get started with Claude",
+        "Prerequisites"
+      ]
+    },
+    "anthropicSans, \"anthropicSans Fallback\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, \"Hiragino Sans\", \"PingFang TC\", \"PingFang SC\", \"Apple SD Gothic Neo\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", sans-serif, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", sans-serif": {
+      "count": 183,
+      "examples": [
+        "Messages",
+        "Managed Agents",
+        "Admin"
+      ]
+    },
+    "Anthropicons-Variable": {
+      "count": 27,
+      "examples": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "anthropicMono, \"anthropicMono Fallback\", ui-monospace, SFMono-Regular, Menlo, Monaco, monospace, \"SF Mono\", ui-monospace, Menlo, Consolas, monospace": {
+      "count": 66,
+      "examples": [
+        "ANTHROPIC_API_KEY",
+        "export",
+        "ANTHROPIC_API_KEY"
+      ]
+    }
+  },
+  "loadedFonts": [
+    {
+      "family": "Anthropicons-Variable",
+      "weight": "400 700"
+    },
+    {
+      "family": "anthropicMono",
+      "weight": "300 800"
+    },
+    {
+      "family": "anthropicMono Fallback",
+      "weight": "normal"
+    },
+    {
+      "family": "anthropicSans",
+      "weight": "300 800"
+    },
+    {
+      "family": "anthropicSans Fallback",
+      "weight": "normal"
+    },
+    {
+      "family": "anthropicSerif",
+      "weight": "300 800"
+    },
+    {
+      "family": "anthropicSerif Fallback",
+      "weight": "normal"
+    }
+  ],
+  "fontFaces": [
+    "@font-face { font-family: Anthropicons-Variable; src: url(\"../media/anthropicons-variable.01q-2r_yq-6kv.woff2\") format(\"woff2-variations\"); font-weight: 400 700; font-display: block; }",
+    "@font-face { font-family: anthropicMono; src: url(\"../media/AnthropicMono_Roman_Web-s.1it2pwgutr6qb.woff2\") format(\"woff2\"); font-display: swap; font-weight: 300 800; font-style: normal; }",
+    "@font-face { font-family: anthropicMono; src: url(\"../media/AnthropicMono_Italic_Web-s.08720h73zn67y.woff2\") format(\"woff2\"); font-display: swap; font-weight: 300 800; font-style: italic; }",
+    "@font-face { font-family: \"anthropicMono Fallback\"; src: local(\"Arial\"); ascent-override: 75.48%; descent-override: 19.58%; line-gap-override: 0%; size-adjust: 131.49%; }",
+    "@font-face { font-family: anthropicSans; src: url(\"../media/AnthropicSans_Roman_Variable-s.p.1xbi9ae2qm606.woff2\") format(\"woff2\"); font-display: swap; font-weight: 300 800; font-style: normal; }",
+    "@font-face { font-family: \"anthropicSans Fallback\"; src: local(\"Arial\"); ascent-override: 92.99%; descent-override: 24.13%; line-gap-override: 0%; size-adjust: 106.73%; }",
+    "@font-face { font-family: anthropicSans; src: url(\"../media/AnthropicSans_Italic_Variable.42x6t4exnaymg.woff2\") format(\"woff2\"); font-display: swap; font-weight: 300 800; font-style: italic; }",
+    "@font-face { font-family: anthropicSerif; src: url(\"../media/AnthropicSerif_Roman_Variable-s.p.1_d8rpzr0vc2p.woff2\") format(\"woff2\"); font-display: swap; font-weight: 300 800; font-style: normal; }",
+    "@font-face { font-family: \"anthropicSerif Fallback\"; src: local(\"Arial\"); ascent-override: 93.6%; descent-override: 24.28%; line-gap-override: 0%; size-adjust: 106.03%; }",
+    "@font-face { font-family: anthropicSerif; src: url(\"../media/AnthropicSerif_Italic_Variable.30dzoafr8vuje.woff2\") format(\"woff2\"); font-display: swap; font-weight: 300 800; font-style: italic; }"
+  ],
+  "stylesheets": [
+    "https://platform.claude.com/_next/static/immutable/chunks/0ies37g-lll3_.css",
+    "https://platform.claude.com/_next/static/immutable/chunks/2u8816wan4pvc.css",
+    "https://platform.claude.com/_next/static/immutable/chunks/1vs9j23-ypcrc.css",
+    "https://platform.claude.com/_next/static/immutable/chunks/1x3i3ak2pzk0h.css",
+    "https://platform.claude.com/_next/static/immutable/chunks/2jzlnggopfomm.css"
+  ],
+  "headings": [
+    "Get started with Claude",
+    "Prerequisites\n",
+    "Call the API\n",
+    "Set your API key",
+    "Create a project and install the SDK",
+    "Create your code",
+    "Run your code",
+    "Next steps\n",
+    "Solutions",
+    "Partners",
+    "Company",
+    "Learn",
+    "Help and security",
+    "Terms and policies"
+  ],
+  "links": [
+    {
+      "text": "Messages",
+      "url": "https://platform.claude.com/docs/en/intro"
+    },
+    {
+      "text": "Claude Console account",
+      "url": "https://platform.claude.com/"
+    },
+    {
+      "text": "API key",
+      "url": "https://platform.claude.com/docs/en/get-api-key"
+    },
+    {
+      "text": "Working with the Messages API",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/working-with-messages"
+    },
+    {
+      "text": "Models overview",
+      "url": "https://platform.claude.com/docs/en/models/overview"
+    },
+    {
+      "text": "Features overview",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/overview"
+    },
+    {
+      "text": "Client SDKs",
+      "url": "https://platform.claude.com/docs/en/cli-sdks-libraries/overview"
+    },
+    {
+      "text": "Authentication",
+      "url": "https://platform.claude.com/docs/en/manage-claude/authentication"
+    },
+    {
+      "text": "Prerequisites",
+      "url": "https://platform.claude.com/docs/en/get-started#prerequisites"
+    },
+    {
+      "text": "Call the API",
+      "url": "https://platform.claude.com/docs/en/get-started#call-the-api"
+    },
+    {
+      "text": "Next steps",
+      "url": "https://platform.claude.com/docs/en/get-started#next-steps"
+    },
+    {
+      "text": "Claude Platform Docs",
+      "url": "https://platform.claude.com/docs/en/home"
+    },
+    {
+      "text": "AI agents",
+      "url": "https://claude.com/solutions/agents"
+    },
+    {
+      "text": "Code modernization",
+      "url": "https://claude.com/solutions/code-modernization"
+    },
+    {
+      "text": "Coding",
+      "url": "https://claude.com/solutions/coding"
+    },
+    {
+      "text": "Customer support",
+      "url": "https://claude.com/solutions/customer-support"
+    },
+    {
+      "text": "Financial services",
+      "url": "https://claude.com/solutions/financial-services"
+    },
+    {
+      "text": "Government",
+      "url": "https://claude.com/solutions/government"
+    },
+    {
+      "text": "Higher education",
+      "url": "https://claude.com/solutions/education"
+    },
+    {
+      "text": "K-12 teachers",
+      "url": "https://claude.com/solutions/teachers"
+    }
+  ],
+  "elements": {
+    "tabs": 9,
+    "accordions": 8,
+    "inputs": 0,
+    "videos": 0
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 1000,
+    "dpr": 1
+  },
+  "pageSize": {
+    "width": 1425,
+    "height": 2793
+  },
+  "documentVisible": true,
+  "reducedMotion": false,
+  "colors": {
+    "bodyBackground": "rgb(252, 252, 251)",
+    "bodyColor": "rgb(11, 11, 11)"
+  },
+  "measurements": [
+    {
+      "selector": "h1",
+      "text": "Get started with Claude",
+      "fontFamily": "anthropicSerif, \"anthropicSerif Fallback\", Georgia, \"Arial Hebrew\", \"Noto Sans Hebrew\", \"Times New Roman\", Times, \"Hiragino Sans\", \"Yu Gothic\", Meiryo, \"Noto Sans CJK JP\", \"PingFang TC\", \"Microsoft JhengHei\", \"Noto Sans CJK TC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans CJK KR\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", serif, ui-serif, Georgia, \"Times New Roman\", serif",
+      "fontSize": "26.25px",
+      "lineHeight": "32.8125px",
+      "fontWeight": "520",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid color(srgb 0.0431373 0.0431373 0.0431373 / 0.1)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(11, 11, 11)",
+      "width": 295,
+      "height": 33
+    },
+    {
+      "selector": "h1 span"
+    },
+    {
+      "selector": "main p",
+      "text": "Make your first API call to Claude and build a simple web se",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, \"Hiragino Sans\", \"PingFang TC\", \"PingFang SC\", \"Apple SD Gothic Neo\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", sans-serif, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", sans-serif",
+      "fontSize": "16.875px",
+      "lineHeight": "25.3125px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid color(srgb 0.0431373 0.0431373 0.0431373 / 0.1)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(82, 81, 78)",
+      "width": 832,
+      "height": 25
+    },
+    {
+      "selector": "main button",
+      "text": "\nCopy page",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, \"Hiragino Sans\", \"PingFang TC\", \"PingFang SC\", \"Apple SD Gothic Neo\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", sans-serif, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "20px",
+      "fontWeight": "400",
+      "borderRadius": "7px 0px 0px 7px",
+      "padding": "0px 10px",
+      "border": "0px solid color(srgb 0.0431373 0.0431373 0.0431373 / 0.1)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(11, 11, 11)",
+      "width": 110,
+      "height": 28
+    },
+    {
+      "selector": "button",
+      "text": "Resources\n",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, \"Hiragino Sans\", \"PingFang TC\", \"PingFang SC\", \"Apple SD Gothic Neo\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", sans-serif, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "20px",
+      "fontWeight": "400",
+      "borderRadius": "3.35544e+07px",
+      "padding": "0px 12px",
+      "border": "0px solid color(srgb 0.0431373 0.0431373 0.0431373 / 0.1)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(137, 135, 129)",
+      "width": 116,
+      "height": 32
+    },
+    {
+      "selector": "[role=tab]",
+      "text": "cURL",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, \"Hiragino Sans\", \"PingFang TC\", \"PingFang SC\", \"Apple SD Gothic Neo\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", sans-serif, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "20px",
+      "fontWeight": "500",
+      "borderRadius": "0px",
+      "padding": "0px 10px",
+      "border": "0px solid color(srgb 0.0431373 0.0431373 0.0431373 / 0.1)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(137, 135, 129)",
+      "width": 56,
+      "height": 28
+    },
+    {
+      "selector": "pre",
+      "text": "export ANTHROPIC_API_KEY=\"your-api-key-here\"",
+      "fontFamily": "anthropicMono, \"anthropicMono Fallback\", ui-monospace, SFMono-Regular, Menlo, Monaco, monospace, \"SF Mono\", ui-monospace, Menlo, Consolas, monospace",
+      "fontSize": "13px",
+      "lineHeight": "19px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid color(srgb 0.0431373 0.0431373 0.0431373 / 0.1)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(82, 81, 78)",
+      "width": 754,
+      "height": 19
+    },
+    {
+      "selector": "code",
+      "text": "ANTHROPIC_API_KEY",
+      "fontFamily": "anthropicMono, \"anthropicMono Fallback\", ui-monospace, SFMono-Regular, Menlo, Monaco, monospace, \"SF Mono\", ui-monospace, Menlo, Consolas, monospace",
+      "fontSize": "13.5px",
+      "lineHeight": "13.5px",
+      "fontWeight": "400",
+      "borderRadius": "5.4px",
+      "padding": "0.84375px 3.375px",
+      "border": "1px solid color(srgb 0.0431373 0.0431373 0.0431373 / 0.1)",
+      "background": "color(srgb 0.0431373 0.0431373 0.0431373 / 0.05)",
+      "color": "rgb(142, 38, 38)",
+      "width": 146,
+      "height": 20
+    },
+    {
+      "selector": "main a",
+      "text": "Messages",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, \"Hiragino Sans\", \"PingFang TC\", \"PingFang SC\", \"Apple SD Gothic Neo\", \"Kohinoor Devanagari\", \"Kohinoor Bangla\", \"Kohinoor Telugu\", \"Tamil Sangam MN\", \"Kohinoor Gujarati\", \"Malayalam Sangam MN\", \"Nirmala UI\", \"Noto Sans Devanagari UI\", \"Noto Sans Devanagari\", \"Noto Sans Bengali UI\", \"Noto Sans Bengali\", \"Noto Sans Telugu UI\", \"Noto Sans Telugu\", \"Noto Sans Tamil UI\", \"Noto Sans Tamil\", \"Noto Sans Gujarati UI\", \"Noto Sans Gujarati\", \"Noto Sans Kannada UI\", \"Noto Sans Kannada\", \"Noto Sans Malayalam UI\", \"Noto Sans Malayalam\", Thonburi, \"Leelawadee UI\", \"Noto Sans Thai UI\", \"Noto Sans Thai\", Kefa, Ebrima, \"Noto Sans Ethiopic\", \"Abyssinica SIL\", sans-serif, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"PingFang SC\", \"PingFang TC\", \"Hiragino Sans\", \"Apple SD Gothic Neo\", sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "20px",
+      "fontWeight": "400",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "border": "0px solid color(srgb 0.0431373 0.0431373 0.0431373 / 0.1)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(137, 135, 129)",
+      "width": 66,
+      "height": 20
+    }
+  ],
+  "effectiveBackgrounds": [
+    {
+      "selector": "h1",
+      "background": "rgb(252, 252, 251)",
+      "backgroundImage": "none",
+      "ancestorTag": "MAIN"
+    },
+    {
+      "selector": "main p",
+      "background": "rgb(252, 252, 251)",
+      "backgroundImage": "none",
+      "ancestorTag": "MAIN"
+    }
+  ],
+  "fontResources": [
+    {
+      "url": "https://platform.claude.com/_next/static/immutable/media/AnthropicSans_Roman_Variable-s.p.1xbi9ae2qm606.woff2",
+      "duration": 3551
+    },
+    {
+      "url": "https://platform.claude.com/_next/static/immutable/media/AnthropicSerif_Roman_Variable-s.p.1_d8rpzr0vc2p.woff2",
+      "duration": 3551
+    },
+    {
+      "url": "https://platform.claude.com/_next/static/immutable/media/anthropicons-variable.01q-2r_yq-6kv.woff2",
+      "duration": 1366
+    },
+    {
+      "url": "https://platform.claude.com/_next/static/immutable/media/AnthropicMono_Roman_Web-s.1it2pwgutr6qb.woff2",
+      "duration": 2293
+    }
+  ],
+  "fontRuleSources": [
+    {
+      "stylesheet": "https://platform.claude.com/_next/static/immutable/chunks/2u8816wan4pvc.css",
+      "family": "Anthropicons-Variable",
+      "src": "url(\"../media/anthropicons-variable.01q-2r_yq-6kv.woff2\") format(\"woff2-variations\")",
+      "weight": "400 700",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://platform.claude.com/_next/static/immutable/chunks/1vs9j23-ypcrc.css",
+      "family": "anthropicMono",
+      "src": "url(\"../media/AnthropicMono_Roman_Web-s.1it2pwgutr6qb.woff2\") format(\"woff2\")",
+      "weight": "300 800",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://platform.claude.com/_next/static/immutable/chunks/1vs9j23-ypcrc.css",
+      "family": "anthropicMono",
+      "src": "url(\"../media/AnthropicMono_Italic_Web-s.08720h73zn67y.woff2\") format(\"woff2\")",
+      "weight": "300 800",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://platform.claude.com/_next/static/immutable/chunks/1vs9j23-ypcrc.css",
+      "family": "\"anthropicMono Fallback\"",
+      "src": "local(\"Arial\")",
+      "weight": "",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://platform.claude.com/_next/static/immutable/chunks/1vs9j23-ypcrc.css",
+      "family": "anthropicSans",
+      "src": "url(\"../media/AnthropicSans_Roman_Variable-s.p.1xbi9ae2qm606.woff2\") format(\"woff2\")",
+      "weight": "300 800",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://platform.claude.com/_next/static/immutable/chunks/1vs9j23-ypcrc.css",
+      "family": "\"anthropicSans Fallback\"",
+      "src": "local(\"Arial\")",
+      "weight": "",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://platform.claude.com/_next/static/immutable/chunks/1vs9j23-ypcrc.css",
+      "family": "anthropicSans",
+      "src": "url(\"../media/AnthropicSans_Italic_Variable.42x6t4exnaymg.woff2\") format(\"woff2\")",
+      "weight": "300 800",
+      "style": "italic"
+    },
+    {
+      "stylesheet": "https://platform.claude.com/_next/static/immutable/chunks/1vs9j23-ypcrc.css",
+      "family": "anthropicSerif",
+      "src": "url(\"../media/AnthropicSerif_Roman_Variable-s.p.1_d8rpzr0vc2p.woff2\") format(\"woff2\")",
+      "weight": "300 800",
+      "style": "normal"
+    },
+    {
+      "stylesheet": "https://platform.claude.com/_next/static/immutable/chunks/1vs9j23-ypcrc.css",
+      "family": "\"anthropicSerif Fallback\"",
+      "src": "local(\"Arial\")",
+      "weight": "",
+      "style": ""
+    },
+    {
+      "stylesheet": "https://platform.claude.com/_next/static/immutable/chunks/1vs9j23-ypcrc.css",
+      "family": "anthropicSerif",
+      "src": "url(\"../media/AnthropicSerif_Italic_Variable.30dzoafr8vuje.woff2\") format(\"woff2\")",
+      "weight": "300 800",
+      "style": "italic"
+    }
+  ],
+  "renderedFonts": [
+    {
+      "selector": "h1",
+      "fonts": [
+        {
+          "familyName": "Anthropic Serif Variable Text",
+          "postScriptName": "AnthropicSerifVariable-Text-Medium",
+          "isCustomFont": true,
+          "glyphCount": 23
+        }
+      ]
+    },
+    {
+      "selector": "main p",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Variable Text",
+          "postScriptName": "AnthropicSansVariable-Text",
+          "isCustomFont": true,
+          "glyphCount": 74
+        }
+      ]
+    },
+    {
+      "selector": "article p",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Variable Text",
+          "postScriptName": "AnthropicSansVariable-Text",
+          "isCustomFont": true,
+          "glyphCount": 74
+        }
+      ]
+    },
+    {
+      "selector": "nav a",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Variable Text",
+          "postScriptName": "AnthropicSansVariable-Text",
+          "isCustomFont": true,
+          "glyphCount": 8
+        }
+      ]
+    },
+    {
+      "selector": "button",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Variable Text",
+          "postScriptName": "AnthropicSansVariable-Text",
+          "isCustomFont": true,
+          "glyphCount": 9
+        }
+      ]
+    },
+    {
+      "selector": "code",
+      "fonts": [
+        {
+          "familyName": "Anthropic Mono Web",
+          "postScriptName": "AnthropicMonoWebWeb",
+          "isCustomFont": true,
+          "glyphCount": 17
+        }
+      ]
+    },
+    {
+      "selector": "pre",
+      "fonts": []
+    },
+    {
+      "selector": "pre span",
+      "fonts": [
+        {
+          "familyName": "Anthropic Mono Web",
+          "postScriptName": "AnthropicMonoWebWeb",
+          "isCustomFont": true,
+          "glyphCount": 44
+        }
+      ]
+    },
+    {
+      "selector": "pre span span",
+      "fonts": [
+        {
+          "familyName": "Anthropic Mono Web",
+          "postScriptName": "AnthropicMonoWebWeb",
+          "isCustomFont": true,
+          "glyphCount": 6
+        }
+      ]
+    },
+    {
+      "selector": "code span",
+      "fonts": [
+        {
+          "familyName": "Anthropic Mono Web",
+          "postScriptName": "AnthropicMonoWebWeb",
+          "isCustomFont": true,
+          "glyphCount": 44
+        }
+      ]
+    },
+    {
+      "selector": "code span span",
+      "fonts": [
+        {
+          "familyName": "Anthropic Mono Web",
+          "postScriptName": "AnthropicMonoWebWeb",
+          "isCustomFont": true,
+          "glyphCount": 6
+        }
+      ]
+    },
+    {
+      "selector": "kbd",
+      "fonts": [
+        {
+          "familyName": "Anthropic Sans Variable Text",
+          "postScriptName": "AnthropicSansVariable-Text",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    }
+  ],
+  "id": "S08",
+  "name": "Claude Platform 文档",
+  "slug": "platform-docs",
+  "checkedAt": "2026-11-02T20:17:31.686641+08:00",
+  "dateLocal": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "screenshot": "assets/screenshots/platform-docs.png",
+  "captureMethod": "Playwright Chromium browser screenshot, no image edits",
+  "captureIssues": []
+}
