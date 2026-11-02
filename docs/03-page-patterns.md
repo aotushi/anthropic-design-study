@@ -1,5 +1,7 @@
 # 03 八类页面模式
 
+**中文** · [English](en/03-page-patterns.md)
+
 [返回总览](../README.md) · [上一章：字体与排版](02-typography.md) · [下一章：组件](04-components.md)
 
 ## 为什么按任务归类

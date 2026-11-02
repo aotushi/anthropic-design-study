@@ -33,7 +33,7 @@ def anchors(text):
 
 
 def main():
-    markdown = [ROOT / "README.md", *sorted((ROOT / "docs").glob("*.md")), ROOT / "NOTICE.md", ROOT / "CONTRIBUTING.md", ROOT / "CHANGELOG.md"]
+    markdown = [ROOT / "README.md", ROOT / "README.en.md", *sorted((ROOT / "docs").rglob("*.md")), ROOT / "NOTICE.md", ROOT / "CONTRIBUTING.md", ROOT / "CHANGELOG.md", ROOT / "web/README.md"]
     references = 0
     for file in markdown:
         text = file.read_text(encoding="utf-8")
@@ -68,8 +68,10 @@ def main():
     check(len(taxonomy["componentPatterns"]) == 20, "Component count differs")
     check(len(taxonomy["primaryFontNames"]) == 5, "Font-name count differs")
     pattern_text = (ROOT / "docs/04-components.md").read_text(encoding="utf-8")
+    english_patterns = (ROOT / "docs/en/04-components.md").read_text(encoding="utf-8")
     for pattern in taxonomy["componentPatterns"]:
         check(len(re.findall(r"\| " + pattern["id"] + r" \|", pattern_text)) == 1, f"Pattern missing or duplicated: {pattern['id']}")
+        check(len(re.findall(r"\| " + pattern["id"] + r" \|", english_patterns)) == 1, f"English pattern missing or duplicated: {pattern['id']}")
         check(set(pattern["sources"]) <= source_ids, f"Unknown source in {pattern['id']}")
     for file in (ROOT / "data/pages").glob("*.json"):
         data = json.loads(file.read_text(encoding="utf-8"))
@@ -87,10 +89,13 @@ def main():
     for page in pages:
         check((ROOT / f"data/pages/{page['slug']}.json").exists(), f"Missing source evidence: {page['id']}")
     screenshots = list((ROOT / "assets/screenshots").glob("*.png"))
-    figures = list((ROOT / "assets/diagrams").glob("*.svg"))
+    figures = list((ROOT / "assets/diagrams").rglob("*.svg"))
     check(len(screenshots) == 15, "Expected 15 screenshots")
-    check(len(figures) == 3, "Expected 3 original figures")
-    check(len(list((ROOT / "docs").glob("*.md"))) == 8, "Expected 8 chapters")
+    check(len(figures) == 6, "Expected 3 original figures in each language")
+    chinese_chapters = {p.name for p in (ROOT / "docs").glob("[0-9][0-9]-*.md")}
+    english_chapters = {p.name for p in (ROOT / "docs/en").glob("[0-9][0-9]-*.md")}
+    check(len(chinese_chapters) == 10, "Expected 10 Chinese chapters")
+    check(english_chapters == chinese_chapters, "Chinese and English chapter lists differ")
     for file in figures:
         try:
             ET.parse(file)

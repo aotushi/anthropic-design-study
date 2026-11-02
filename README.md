@@ -1,13 +1,24 @@
 # Anthropic 与 Claude 网站设计研究
 
-**一份可直接在 GitHub 阅读的中文 UI/UX 图文手册。**
+**中文** · [English](README.en.md) · [阅读 HTML 版](https://aotushi.github.io/anthropic-design-study/html/zh/index.html)
 
-研究 Anthropic 如何用字体、色彩、留白、插画和信息结构，将公司官网、产品介绍、开发文档与课程连接成具有一致识别度的网站体系。这里的 Anthropic 指 Claude 的开发公司。
+**提供中英文文档与 HTML 阅读站点的 UI/UX 图文手册。**
+
+研究 Anthropic 如何用字体、色彩、留白、插画和信息结构，将公司官网、产品介绍、开发文档与课程连接成具有一致识别度的网站体系。10 个章节结合截图、测量、对照表与页面拆解，展示设计细节怎样服务于阅读任务。这里的 Anthropic 指 Claude 的开发公司。
 
 ![研究总览：编辑式品牌表达、知识阅读布局与开发者风格三种方向](assets/diagrams/design-map.svg)
 
 > **观察日期：2026-11-02 · 范围：7 个官方站点、10 个代表页面。**
 > 另收录 Academy 与 Claude Code 文档的 390 × 844 窄屏样本。完整范围与统计口径见[方法与证据](docs/07-methodology-and-sources.md)。
+
+## 选择阅读形式
+
+| 形式 | 适合做什么 | 入口 |
+|---|---|---|
+| HTML 手册 | 章节导航、搜索、图片放大与打印阅读 | [中文](https://aotushi.github.io/anthropic-design-study/html/zh/index.html) · [English](https://aotushi.github.io/anthropic-design-study/html/en/index.html) |
+| 交互对照 | 页面并排比较、字号图表与模式筛选 | [浏览图像与数据](https://aotushi.github.io/anthropic-design-study/html/zh/explore.html) |
+| GitHub 文档 | 阅读原文、查看证据与追踪修改 | 下方章节目录 |
+| 离线 HTML | 下载后直接阅读与搜索 | [下载仓库 ZIP](https://github.com/aotushi/anthropic-design-study/archive/refs/heads/main.zip)，打开 `html/zh/index.html` |
 
 ## 从这里开始
 
@@ -21,6 +32,8 @@
 | 直接对照真实网页 | [06 截图图库](docs/06-gallery.md) |
 | 查阅来源、统计口径与验证范围 | [07 方法与证据](docs/07-methodology-and-sources.md) |
 | 将研究转化为自己的设计 | [08 应用指南](docs/08-application-guide.md) |
+| 看清页面各区域如何配合 | [09 页面拆解](docs/09-page-anatomy.md) |
+| 比较不同站点的共同点与变化 | [10 跨站设计矩阵](docs/10-cross-site-matrix.md) |
 
 ## 核心发现
 
@@ -59,14 +72,16 @@
 <details>
 <summary>查看仓库结构与维护方式</summary>
 
-- `docs/`：分章节的图文手册。
+- `docs/` 与 `docs/en/`：中英文图文手册。
+- `html/`：可在线阅读或下载打开的 HTML 版本。
 - `assets/screenshots/`：浏览器采集的网页截图。
-- `assets/diagrams/`：本项目原创的结构与色彩示意图。
+- `assets/diagrams/`：3 张原创结构与色彩示意图，分别提供中英文版本。
 - `data/pages/`：页面字体、颜色、尺寸和采集环境记录。
 - `data/sample-manifest.json`：样本范围。
-- `scripts/`：重新采集、验证本地链接与证据的工具。
+- `web/`：HTML 版共享样式、交互与[构建说明](web/README.md)。
+- `scripts/`：采集、构建与验证工具。
 
-运行 `python scripts/validate.py` 检查文档链接、图片、样本记录与目录完整性。重新采集需要 Python、Playwright 和浏览器，具体步骤见[维护说明](docs/07-methodology-and-sources.md#如何更新研究)。
+修改后运行 `python scripts/build_html.py`、`python scripts/validate.py` 和 `python scripts/validate_html.py`，更新 HTML 并检查引用与证据。重新采集需要 Python、Playwright 和浏览器，具体步骤见[维护说明](docs/07-methodology-and-sources.md#如何更新研究)。
 
 </details>
 

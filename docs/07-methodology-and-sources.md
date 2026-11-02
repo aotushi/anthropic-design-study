@@ -1,5 +1,7 @@
 # 07 方法与证据
 
+**中文** · [English](en/07-methodology-and-sources.md)
+
 [返回总览](../README.md) · [查看截图图库](06-gallery.md)
 
 ## 范围和时间
@@ -75,9 +77,11 @@
 2. 在仓库根目录运行 `python scripts/capture.py --channel chrome` 更新桌面样本。
 3. 运行 `python scripts/capture.py --mobile --ids S05 S07 --channel chrome` 更新两个窄屏样本。
 4. 运行 `python scripts/check-interactions.py` 重新记录本手册覆盖的交互。
-5. 逐张检查截图完整性与加载状态，核对实际字体，再修改对应正文。
-6. 运行 `python scripts/validate.py` 检查结构和引用；最后更新观察日期与变化记录。
+5. 逐张检查截图完整性与加载状态，核对实际字体，再同步修改中英文正文。
+6. 运行 `python scripts/analyze.py`、`python scripts/build_html.py`、`python scripts/validate.py` 和 `python scripts/validate_html.py`；证据变化时更新观察日期与变化记录。
 
 更新会覆盖对应的证据文件；请在独立分支中执行。网站改版可能使采集步骤不再适用，需要先调整定位方式，再解释新结果。
+
+HTML 版的构建与交互维护见[构建说明](../web/README.md)。
 
 [继续：应用指南](08-application-guide.md)

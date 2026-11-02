@@ -1,5 +1,7 @@
 # 01 视觉语言
 
+**中文** · [English](en/01-visual-language.md)
+
 [返回总览](../README.md) · [下一章：字体与排版](02-typography.md)
 
 ## 统一感来自哪些地方
