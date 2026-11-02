@@ -2,7 +2,7 @@
 
 [返回总览](../README.md) · [上一章：UX 与响应式](05-ux-and-responsive.md) · [下一章：方法与证据](07-methodology-and-sources.md)
 
-所有截图采集于 **2026-11-02**。桌面视口为 **1440 × 1000**，窄屏为 **390 × 844**。点击条目展开，再点击图片查看原始大小。截图未经重绘、修图或拼接；不同页面的加载和动画状态见各图说明。
+所有截图采集于 **2026-11-02**。桌面视口为 **1440 × 1000**，窄屏为 **390 × 844**。点击条目展开，再点击图片查看原始大小。加载与动画状态标注在对应图注中。
 
 ## 十个代表页面
 
@@ -11,7 +11,7 @@
 
 ![Anthropic 公司官网的桌面截图](../assets/screenshots/anthropic-home.png)
 
-主张段落混合 Sans 与 Serif。下方为动态展示区域的一帧，内容不保证与后续访问一致。
+主张段落混合 Sans 与 Serif，下方展示动态内容的一帧。
 
 [原站](https://www.anthropic.com/) · [测量记录](../data/pages/anthropic-home.json)
 
@@ -22,7 +22,7 @@
 
 ![Claude 产品介绍的桌面截图](../assets/screenshots/claude-product.png)
 
-动态首屏中的主标题、主要动作和场景图像。未访问对话页面。
+动态首屏中的主标题、主要动作和场景图像共同介绍产品用途。
 
 [原站](https://claude.com/product/overview) · [测量记录](../data/pages/claude-product.json)
 
@@ -33,7 +33,7 @@
 
 ![Claude 定价的桌面截图](../assets/screenshots/claude-pricing.png)
 
-Individual 默认状态；价格只作为界面内容展示，不构成当前价格说明。
+Individual 默认状态，套餐名称、价格、说明和主要动作按列组织。
 
 [原站](https://claude.com/pricing) · [测量记录](../data/pages/claude-pricing.json)
 
@@ -66,7 +66,7 @@ Individual 默认状态；价格只作为界面内容展示，不构成当前价
 
 ![Academy 课程内页的桌面截图](../assets/screenshots/academy-lesson.png)
 
-课程目标、课时与目录。视频区域在本次采集时可能尚未加载。
+课程目标、课时与目录。采集时视频区域尚未显示内容。
 
 [原站](https://academy.claude.com/courses/ai-fluency-framework-foundations/introduction-to-ai-fluency) · [测量记录](../data/pages/academy-lesson.json)
 
@@ -99,7 +99,7 @@ Individual 默认状态；价格只作为界面内容展示，不构成当前价
 
 ![Claude 帮助中心的桌面截图](../assets/screenshots/support-home.png)
 
-本次字体资源未正常用于抽样文字，实际发生系统字体回退。本图仅用于布局分析。
+搜索与主题集合构成主要布局。采集时标题和正文回退到 Times New Roman，快捷键回退到 Consolas；字体记录见[字体章节](02-typography.md#声明加载与实际渲染)。
 
 [原站](https://support.claude.com/en/) · [测量记录](../data/pages/support-home.json)
 
@@ -123,7 +123,7 @@ Individual 默认状态；价格只作为界面内容展示，不构成当前价
 
 ![Academy 窄屏首页](../assets/screenshots/academy-home-mobile.png)
 
-单列入口、标题换行与紧凑导航。桌面浏览器缩窄视口，并非真实手机测试。
+390px 宽的桌面浏览器视口下，内容入口改为单列，标题换行，导航收缩。
 
 [核验记录](../data/pages/academy-home-mobile.json)
 
@@ -145,7 +145,7 @@ Individual 默认状态；价格只作为界面内容展示，不构成当前价
 
 ![定价切换到 Team & Enterprise](../assets/screenshots/pricing-team.png)
 
-实际选择对应标签后的公开页面，没有进入购买流程。
+选中的标签与下方 Team、Enterprise 套餐相对应。
 
 [核验记录](../data/interaction-checks.json)
 
@@ -167,7 +167,7 @@ Individual 默认状态；价格只作为界面内容展示，不构成当前价
 
 ![Code Docs 代码区](../assets/screenshots/code-example.png)
 
-滚动到命令示例，核对 Paper Mono 的实际渲染。没有执行命令。
+命令示例使用 Paper Mono，复制入口与安装方式切换贴近代码内容。
 
 [核验记录](../data/interaction-checks.json)
 
@@ -181,6 +181,6 @@ Individual 默认状态；价格只作为界面内容展示，不构成当前价
 
 ![三种空间分配方式](../assets/diagrams/layout-archetypes.svg)
 
-示意图由本项目绘制，用于解释研究结论，不是 Anthropic 官方素材，也不是品牌字体的字样样张。
+三张原创示意图分别整理视觉方向、样本色值与空间分配，便于与上方截图对照阅读。
 
 [下一章：方法与证据](07-methodology-and-sources.md)
