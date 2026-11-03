@@ -107,6 +107,20 @@ def main():
         check(item["status"] == "passed", f"Interaction needs qualification: {item['name']}")
         if item.get("screenshot"):
             check((ROOT / item["screenshot"]).is_file(), f"Missing interaction screenshot: {item['name']}")
+    academy = json.loads((ROOT / "data/academy-interactions.json").read_text(encoding="utf-8"))
+    check(len(academy["checks"]) == 9, "Expected nine Academy interaction observations")
+    check(sum(item["decision"] != "omit" for item in academy["checks"]) == 8, "Expected eight selected Academy patterns")
+    for item in academy["checks"]:
+        check(item["source"] in academy["sources"], f"Unknown Academy source: {item['id']}")
+    for source in academy["sources"].values():
+        check(urlsplit(source).hostname == "academy.claude.com", "Academy follow-up source outside the specified domain")
+    for capture in academy["captures"]:
+        path = ROOT / capture["path"]
+        check(path.is_file(), f"Missing Academy capture: {path.name}")
+        if path.is_file():
+            content = path.read_bytes()
+            check(content.startswith(b"\x89PNG\r\n\x1a\n"), f"Invalid Academy PNG: {path.name}")
+            check(struct.unpack(">II", content[16:24]) == (capture["width"], capture["height"]), f"Academy capture dimensions differ: {path.name}")
     for file in [*markdown, *ROOT.glob("data/**/*.json"), *ROOT.glob("scripts/*")]:
         if not file.is_file():
             continue
@@ -116,7 +130,7 @@ def main():
     if errors:
         print("FAILED\n" + "\n".join(errors))
         sys.exit(1)
-    print(f"PASS: {len(markdown)} Markdown files, {references} local references, {len(pages)} source pages, {len(screenshots)} screenshots, {len(figures)} SVG figures, 20 patterns, 5 bounded interaction checks.")
+    print(f"PASS: {len(markdown)} Markdown files, {references} local references, {len(pages)} original source pages, {len(screenshots)} original + {len(academy['captures'])} Academy screenshots, {len(figures)} SVG figures, 20 component patterns, 5 original + 9 Academy interaction checks.")
 
 
 if __name__ == "__main__":

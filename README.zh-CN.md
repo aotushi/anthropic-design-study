@@ -15,12 +15,14 @@
 
 | 形式 | 适合做什么 | 入口 |
 |---|---|---|
-| HTML 手册 | Anthropic 文档式布局、章节与页内导航、搜索、复制、图片放大与打印 | [中文](https://aotushi.github.io/anthropic-design-study/html/zh/index.html) · [English](https://aotushi.github.io/anthropic-design-study/html/en/index.html) |
+| HTML 手册 | Academy 风格的主题卡片、章节筛选、深浅主题、课程式阅读、搜索、图片放大与打印 | [中文](https://aotushi.github.io/anthropic-design-study/html/zh/index.html) · [English](https://aotushi.github.io/anthropic-design-study/html/en/index.html) |
 | 交互对照 | 页面并排比较、字号图表与模式筛选 | [浏览图像与数据](https://aotushi.github.io/anthropic-design-study/html/zh/explore.html) |
 | GitHub 文档 | 阅读原文、查看证据与追踪修改 | 下方章节目录 |
 | 离线 HTML | 下载后直接阅读与搜索 | [下载仓库 ZIP](https://github.com/aotushi/anthropic-design-study/archive/refs/heads/main.zip)，打开 `html/zh/index.html` |
 
 ## 从这里开始
+
+HTML 版现在以 **Claude Academy** 为主要参照。[交互研究](docs/05-ux-and-responsive.md#academy-交互研究)列举 9 类交互，采用或转化其中 8 类，并结合 4 张新增原站截图解释选择。可以悬停主题插画、筛选章节库、切换深浅主题，或在页面截图与分析之间切换。
 
 | 你想了解什么 | 阅读入口 |
 |---|---|
@@ -75,6 +77,7 @@
 - `docs/` 与 `docs/en/`：中英文图文手册。
 - `html/`：可在线阅读或下载打开的 HTML 版本。
 - `assets/screenshots/`：浏览器采集的网页截图。
+- `assets/academy-interactions/`：2026-11-03 Academy 交互研究的 4 张追加截图。
 - `assets/diagrams/`：3 张原创结构与色彩示意图，分别提供中英文版本。
 - `data/pages/`：页面字体、颜色、尺寸和采集环境记录。
 - `data/sample-manifest.json`：样本范围。

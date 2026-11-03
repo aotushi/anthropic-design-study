@@ -1,0 +1,20 @@
+{
+  "en": {
+    "browseMenu": "Explore", "resourcesMenu": "Resources", "darkTheme": "Switch to dark theme", "lightTheme": "Switch to light theme",
+    "hubTitle": "Explore the design behind Claude", "hubIntro": "A visual guide to Anthropic’s websites. Follow a topic, compare real pages, and see how typography, layout, and interaction work together.",
+    "choosePath": "Choose your starting point", "browseChapters": "Browse all chapters", "pathsTitle": "What would you like to explore?", "pathsIntro": "Choose a topic to find the chapters that fit your interest.",
+    "topicLabels": ["Design foundations", "Patterns & experience", "Research & application"],
+    "topicDescriptions": ["Understand the colors, fonts, and visual choices that connect the sites.", "See how layouts, components, and interaction support the reader’s task.", "Examine the screenshots and evidence, then apply what you learn."],
+    "allChapters": "All chapters", "chapterUnit": "chapters", "chapterUnitSingular": "chapter", "chapterWord": "Chapter", "chapterSearch": "Find a chapter", "clearFilters": "Clear filters", "noChapters": "No chapters match. Try another topic or search term.",
+    "chooseChapter": "Choose a chapter", "imageView": "Screenshot", "analysisView": "Analysis", "compareView": "Choose a comparison view", "interactionNotes": "Academy interaction review", "interactionIntro": "See which Academy interactions were observed and how they are used in this handbook.", "relatedChapters": "Related chapters"
+  },
+  "zh": {
+    "browseMenu": "探索", "resourcesMenu": "资料", "darkTheme": "切换深色主题", "lightTheme": "切换浅色主题",
+    "hubTitle": "探索 Claude 背后的网站设计", "hubIntro": "从一个感兴趣的主题开始，对照真实页面，理解 Anthropic 如何将字体、布局与交互组织成完整的阅读体验。",
+    "choosePath": "选择阅读方向", "browseChapters": "浏览全部章节", "pathsTitle": "你想从哪里开始？", "pathsIntro": "选择一个方向，找到适合自己的阅读章节。",
+    "topicLabels": ["设计基础", "模式与体验", "研究与应用"],
+    "topicDescriptions": ["从色彩、字体与视觉表达，理解网站之间的一致性。", "观察布局、组件与交互如何支持读者完成任务。", "查看截图与证据，再把观察转化为自己的设计选择。"],
+    "allChapters": "全部章节", "chapterUnit": "个章节", "chapterUnitSingular": "个章节", "chapterWord": "章节", "chapterSearch": "查找章节", "clearFilters": "清除筛选", "noChapters": "没有找到匹配的章节，试试其他主题或关键词。",
+    "chooseChapter": "选择章节", "imageView": "页面截图", "analysisView": "设计分析", "compareView": "选择对照视图", "interactionNotes": "Academy 交互研究", "interactionIntro": "查看实际观察到的 Academy 交互，以及它们在这份手册中的采用方式。", "relatedChapters": "相关章节"
+  }
+}

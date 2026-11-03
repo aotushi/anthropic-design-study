@@ -14,12 +14,14 @@ Explore how typography, color, space, imagery, and information structure connect
 
 | Format | Best for | Entry |
 |---|---|---|
-| HTML handbook | Anthropic-style documentation layout, section navigation, search, copy, images, and print | [English](https://aotushi.github.io/anthropic-design-study/html/en/index.html) · [中文](https://aotushi.github.io/anthropic-design-study/html/zh/index.html) |
+| HTML handbook | Academy-inspired topic cards, chapter filters, light/dark themes, lesson-style reading, search, images, and print | [English](https://aotushi.github.io/anthropic-design-study/html/en/index.html) · [中文](https://aotushi.github.io/anthropic-design-study/html/zh/index.html) |
 | Interactive explorer | Side-by-side pages, measured heading sizes, filtered patterns | [Explore the evidence](https://aotushi.github.io/anthropic-design-study/html/en/explore.html) |
 | GitHub documents | Reading source text, following records, reviewing changes | The chapter list below |
 | Downloaded HTML | Reading and searching without a server | [Download repository ZIP](https://github.com/aotushi/anthropic-design-study/archive/refs/heads/main.zip), then open `html/en/index.html` |
 
 ## Chapters
+
+The browser edition now takes its lead from **Claude Academy**. Its [interaction review](docs/en/05-ux-and-responsive.md#academy-interactions) examines nine patterns, adopts or adapts eight, and explains the choices with four additional source screenshots. Hover the topic artwork, filter the chapter library, switch themes, or compare a page's screenshot with its analysis.
 
 | Question | Chapter |
 |---|---|
@@ -72,6 +74,7 @@ The handbook connects **design analysis → original screenshots → browser mea
 - `docs/` and `docs/en/`: the two language editions.
 - `html/`: generated HTML, readable online or from a downloaded repository.
 - `assets/screenshots/`: 15 original browser captures.
+- `assets/academy-interactions/`: four additional captures from the 2026-11-03 Academy interaction review.
 - `assets/diagrams/`: three explanatory diagrams in both languages.
 - `data/`: samples, fonts, dimensions, colors, taxonomy, and interaction evidence.
 - `web/`: shared styles, browser interactions, and the [build guide](web/README.md).

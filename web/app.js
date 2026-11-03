@@ -29,6 +29,7 @@
   window.matchMedia('(min-width: 921px)').addEventListener('change', event => { if (event.matches) setMenu(false); });
 
   function openDialog(dialog, origin) {
+    document.dispatchEvent(new Event('study-dialog-open'));
     setMenu(false);
     dialogOrigins.set(dialog, origin || document.activeElement);
     dialog.showModal();
@@ -118,7 +119,7 @@
     if (!document.body.classList.contains('menu-open')) return;
     if (event.key === 'Escape') { setMenu(false, true); return; }
     if (event.key === 'Tab') {
-      const items = [...document.querySelectorAll('.site-header a, .site-header button, #chapter-nav a')]
+      const items = [...document.querySelectorAll('.site-header a, .site-header button, .site-header summary, #chapter-nav a')]
         .filter(item => item.getClientRects().length && getComputedStyle(item).visibility !== 'hidden');
       const first = items[0], last = items[items.length - 1];
       if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
@@ -184,7 +185,7 @@
   let originalDetails = [];
   let originalCards = [];
   window.addEventListener('beforeprint', () => {
-    originalDetails = [...document.querySelectorAll('details')].map(item => [item, item.open]);
+    originalDetails = [...document.querySelectorAll('main details')].map(item => [item, item.open]);
     originalDetails.forEach(([item]) => { item.open = true; });
     originalCards = [...document.querySelectorAll('[data-pattern-group]')].map(item => [item, item.hidden]);
     originalCards.forEach(([item]) => { item.hidden = false; });
@@ -195,8 +196,8 @@
   });
   document.querySelector('[data-print]').addEventListener('click', () => window.print());
 
-  const tocLinks = [...document.querySelectorAll('.page-toc a, .inline-toc a')];
-  const sections = [...document.querySelectorAll('.page-toc a')]
+  const tocLinks = [...document.querySelectorAll('.section-toc a, .inline-toc a')];
+  const sections = [...document.querySelectorAll('.section-toc a')]
     .map(link => document.getElementById(decodeURIComponent(link.hash.slice(1)))).filter(Boolean);
   let currentSection;
   let scheduled = false;

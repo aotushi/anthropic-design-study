@@ -10,6 +10,8 @@ Observation date: **2026-11-02, Asia/Shanghai**. The sample contains 10 represen
 
 The scope includes public company, product, official learning, and documentation pages. It excludes the Claude conversation interface, signed-in pages, third-party tutorials, other language editions, and historical versions. Capture tools block access to `claude.ai`.
 
+An **Academy interaction follow-up on 2026-11-03** adds nine inspected patterns and four original captures from its homepage, catalog, guided start, and lesson. It records card scaling and timing, menus, search, filtering, theme switching, and lesson controls. See the [bilingual analysis](05-ux-and-responsive.md#academy-interactions) and [action record](../../data/academy-interactions.json). These additional states are kept separately from the original ten-page sample, its 15 captures, and its classification counts.
+
 ## Source index
 
 | ID | Sample | Source | Measurements |
@@ -55,6 +57,8 @@ This handbook is an independent design analysis of public pages. Visual names an
 Font families can have static and variable versions and aliases with different capitalization or separators. The study groups identifiable families while retaining original names. Icon fonts, fallback fonts, and individual weights are separate from core text-family counts.
 
 ## Verification coverage and capture states
+
+The table describes the original 2026-11-02 sample. The Academy follow-up above adds bounded interaction checks; its record specifies each action and result.
 
 | Area | Checked | Not yet verified |
 |---|---|---|

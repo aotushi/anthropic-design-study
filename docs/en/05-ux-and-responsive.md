@@ -34,6 +34,54 @@ These results come from actions on public pages. See [interaction-checks.json](.
 
 This lesson offers video and text as two learning formats. Text and chapter navigation remain available while the video resource is not ready.
 
+## Academy interactions
+
+**Nine interaction patterns were examined on 2026-11-03; eight inform this handbook.** The strongest reference is [Claude Academy](https://academy.claude.com/): readers can see which cards are actionable, narrow a collection, choose a learning path, and keep their place inside a lesson. The follow-up used public pages in a fresh browser session, at 1440 × 1000 and 390 × 844. [Action and measurement record](../../data/academy-interactions.json)
+
+| Pattern | What happened on Academy | Decision for this handbook |
+|---|---|---|
+| **1. Card hover** | On sampled product and course cards, the inner artwork scales to **1.04** over **300ms**, with an ease-out curve; a subtle overlay appears. The text and outer frame stay in place. | **Adopt.** Topic and chapter illustrations respond to hover and keyboard focus. Keep the title stable so the card remains easy to read. |
+| **2. Grouped menus** | Hovering Explore opens a three-column menu; Escape closes it. Resources has a smaller dropdown. | **Adopt.** Explore groups the chapters by subject; Resources gathers the overview, comparison page, and evidence. Click and keyboard access accompany hover. |
+| **3. Global search** | The header search opens an overlay. A “Claude Code” query displayed six result options in the inspected state. | **Retain and refine.** Search the handbook's sections in a dialog, with arrow-key navigation and Escape to return to the trigger. |
+| **4. Collection filtering** | In [All resources](https://academy.claude.com/all), selecting Courses and searching “Claude Code” changed the cards, count, and address to `?kind=course&q=Claude+Code`. The inspected course count changed from 28 to 12 results. | **Adapt.** Four topic tabs and a chapter search update the cards, result count, and shareable address. Include a clear action and a useful empty state. |
+| **5. Guided entry** | In [Get started](https://academy.claude.com/start), choosing Claude Code advances to a choice between learning to use it and rolling it out to a team. | **Simplify.** Three illustrated starting points lead directly to matching chapters. A ten-chapter collection needs only one choice. |
+| **6. Theme switching** | The header theme control changes the page from light surfaces to dark surfaces. | **Adopt.** Provide light and dark reading modes, remember the choice in the browser, and keep source screenshots in their original colors. |
+| **7. Content format switch** | In the [AI Fluency lesson](https://academy.claude.com/courses/ai-fluency-framework-foundations/introduction-to-ai-fluency), Summary and Transcript form a radio group. Selecting Transcript changes both the selected state and the text. | **Adapt.** The comparison page switches each sample between Screenshot and Analysis. This gives the same page two useful reading views. |
+| **8. Lesson orientation** | The lesson shows its position within the course, a chapter selector, section links, and a next-lesson entrance. At 390px, the chapter control opens a sheet containing the course list. | **Adapt.** Articles show the current chapter and a desktop chapter selector alongside section links. The mobile chapter drawer and previous/next links retain orientation in a narrow layout. |
+| **9. Load more** | In the resource catalog, clicking Load more increased rendered resource cards from **24 to 48**. | **Omit.** Ten chapters fit in one collection. Filtering is useful; an additional reveal step is unnecessary. |
+
+### Menus and visible feedback
+
+![Academy's Explore menu expanded into three grouped columns above the homepage](../../assets/academy-interactions/explore-menu.png)
+
+*Academy interaction capture A1 · [Homepage](https://academy.claude.com/) · 1440 × 1000 · 2026-11-03. The expanded panel groups routes into separate columns while the page stays visible behind it.*
+
+Card movement is deliberately small. Enlarging the illustration supplies a clear response without moving the heading or changing the card's footprint. In this handbook, the same response is available on keyboard focus, and the illustration stays still when the reader requests reduced motion. Menus use a short entrance transition; the selected topic has an underline; filtered cards make a brief, restrained entrance.
+
+### A collection that explains its current state
+
+![Academy's course catalog filtered by Claude Code, showing the selected category, query, result count, and matching cards](../../assets/academy-interactions/filtered-search.png)
+
+*Academy interaction capture A2 · [Filtered catalog](https://academy.claude.com/all?kind=course&q=Claude+Code) · 1440 × 1000 · 2026-11-03.*
+
+The selected category, visible query, count, and cards describe the same state. This is more useful than an animated tab alone. The handbook carries that relationship into its chapter library: readers can copy a filtered address, refresh it, go back to a previous topic, or change language while keeping the filter. Clearing the controls restores all ten chapters.
+
+### A reading surface with a second theme
+
+![Academy homepage in dark mode, with dark surfaces, light text, and colored product illustrations](../../assets/academy-interactions/home-dark.png)
+
+*Academy interaction capture A3 · [Homepage](https://academy.claude.com/) · 1440 × 1000 · 2026-11-03.*
+
+Changing theme affects the reading surface, controls, and text hierarchy. Research images remain source material: the handbook displays their captured colors in both themes so that color comparisons continue to make sense.
+
+### Course navigation on a narrow screen
+
+<img src="../../assets/academy-interactions/mobile-outline-open.png" width="390" alt="Academy's mobile course contents sheet open over the lesson, with the current lesson and grouped lesson links">
+
+*Academy interaction capture A4 · [AI Fluency lesson](https://academy.claude.com/courses/ai-fluency-framework-foundations/introduction-to-ai-fluency) · 390 × 844 · 2026-11-03.*
+
+The course list becomes an explicit overlay instead of compressing the reading column. The handbook uses its chapter drawer for the same job. On a wide screen, a compact chapter selector sits next to the article; section links below it track the current reading position. The next-chapter link keeps sequential reading available at the end of the page.
+
 ## Desktop and narrow viewports
 
 <table>

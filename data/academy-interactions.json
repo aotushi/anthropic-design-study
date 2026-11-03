@@ -1,0 +1,81 @@
+{
+  "observedDate": "2026-11-03",
+  "timezone": "Asia/Shanghai",
+  "scope": "Follow-up interaction audit; separate from the 2026-11-02 ten-page sample and its taxonomy.",
+  "environment": {
+    "browser": "Chrome with Playwright 1.58.0",
+    "session": "Fresh anonymous browser context",
+    "desktop": {"width": 1440, "height": 1000},
+    "narrow": {"width": 390, "height": 844},
+    "deviceScaleFactor": 1,
+    "excludedHost": "claude.ai"
+  },
+  "sources": {
+    "home": "https://academy.claude.com/",
+    "catalog": "https://academy.claude.com/all",
+    "start": "https://academy.claude.com/start",
+    "lesson": "https://academy.claude.com/courses/ai-fluency-framework-foundations/introduction-to-ai-fluency"
+  },
+  "checks": [
+    {
+      "id": "A01", "pattern": "Card hover", "source": "home",
+      "action": "Hover a product card and a course card; inspect computed style changes on their descendants.",
+      "result": {"artworkScale": 1.04, "declaredDurationMs": 300, "declaredEasing": "ease-out", "overlayOpacityBefore": 0, "overlayOpacityAfter": 1, "outerCardAndTextMove": false},
+      "decision": "adopt", "application": "Topic and chapter artwork responds to hover and keyboard focus; reduced-motion mode removes scaling."
+    },
+    {
+      "id": "A02", "pattern": "Grouped navigation", "source": "home",
+      "action": "Hover Explore, inspect the expanded panel, press Escape; open Resources.",
+      "result": {"exploreExpanded": true, "exploreColumns": 3, "expandedAfterEscape": false, "resourcesPanel": "Compact dropdown"},
+      "decision": "adopt", "application": "Grouped chapter menu and compact resource menu, with pointer and keyboard controls."
+    },
+    {
+      "id": "A03", "pattern": "Global search", "source": "home",
+      "action": "Open the public header search and enter Claude Code.",
+      "result": {"presentation": "Dialog", "visibleResultOptions": 6, "query": "Claude Code"},
+      "decision": "retain", "application": "Local section search with keyboard selection and focus restoration."
+    },
+    {
+      "id": "A04", "pattern": "Collection filtering", "source": "catalog",
+      "action": "Select Courses, then enter Claude Code in Search resources.",
+      "result": {"courseCountBeforeQuery": 28, "countAfterQuery": 12, "urlAfterQuery": "https://academy.claude.com/all?kind=course&q=Claude+Code", "selectedCategory": "Courses"},
+      "decision": "adapt", "application": "Topic tabs and bilingual chapter search update the visible collection, count, and URL."
+    },
+    {
+      "id": "A05", "pattern": "Guided entry", "source": "start",
+      "action": "Choose Claude Code.",
+      "result": {"url": "https://academy.claude.com/start?product=code", "nextChoices": ["Learn everyday use", "Roll out to a team"], "destinations": ["/products/code", "/products/code/setup"]},
+      "decision": "adapt", "application": "Three starting-point cards lead directly to filtered chapter groups."
+    },
+    {
+      "id": "A06", "pattern": "Theme switch", "source": "home",
+      "action": "Use the header button to switch from light to dark.",
+      "result": {"visibleChange": "Dark page and header surfaces with light text", "nextButtonLabel": "Switch to light theme"},
+      "decision": "adopt", "application": "Light and dark themes with stored preference; captured source images keep their original colors."
+    },
+    {
+      "id": "A07", "pattern": "Content format switch", "source": "lesson",
+      "action": "Select Transcript after the lesson controls finish loading.",
+      "result": {"controlType": "Radio group", "transcriptChecked": true, "visibleContent": "Transcript text replaces the summary"},
+      "decision": "adapt", "application": "Each comparison sample switches between Screenshot and Analysis."
+    },
+    {
+      "id": "A08", "pattern": "Lesson orientation", "source": "lesson",
+      "action": "Inspect the desktop chapter selector, then open the visible Show course lessons control at 390px.",
+      "result": {"currentLesson": "1 of 14", "desktop": "Chapter selector above section links", "mobileExpanded": true, "mobilePresentation": "Course contents sheet", "sequentialNavigation": "Next lesson link"},
+      "decision": "adapt", "application": "Desktop chapter selector, section tracking, mobile chapter drawer, previous and next chapter links."
+    },
+    {
+      "id": "A09", "pattern": "Load more", "source": "catalog",
+      "action": "Click Load more after the catalog controls finish loading; wait for the card count to update.",
+      "result": {"renderedResourceCardsBefore": 24, "renderedResourceCardsAfter": 48},
+      "decision": "omit", "application": "All ten handbook chapters are available immediately."
+    }
+  ],
+  "captures": [
+    {"id": "A1", "source": "home", "state": "Explore menu expanded", "path": "assets/academy-interactions/explore-menu.png", "width": 1440, "height": 1000},
+    {"id": "A2", "source": "catalog", "state": "Courses selected and Claude Code query applied", "path": "assets/academy-interactions/filtered-search.png", "width": 1440, "height": 1000},
+    {"id": "A3", "source": "home", "state": "Dark theme", "path": "assets/academy-interactions/home-dark.png", "width": 1440, "height": 1000},
+    {"id": "A4", "source": "lesson", "state": "Mobile course contents sheet expanded", "path": "assets/academy-interactions/mobile-outline-open.png", "width": 390, "height": 844}
+  ]
+}

@@ -46,7 +46,7 @@ COPY = {
         "typeChart": "The heading changes with the task", "typeIntro": "Seven measured main headings at a 1440 × 1000 desktop viewport. Bar lengths represent CSS font size.",
         "catalog": "Twenty patterns, five jobs", "catalogIntro": "Filter the recorded patterns by the task they support. Source labels link to the sampled pages.",
         "groups": ["Navigation", "Retrieval & switching", "Presentation", "Comparison & steps", "Learning & reading"],
-        "about": "About this study", "aboutText": "10 chapters · 15 screenshots · Chinese & English",
+        "about": "About this study", "aboutText": "10 chapters · Chinese & English",
         "footer": "An illustrated study of public websites.", "methods": "Methods & sources", "download": "Download for offline reading",
         "colorTitle": "A small palette, distinct roles", "colorText": "Measured page backgrounds and text colors. Select a swatch to copy its value.", "copied": "Copied", "copyFailed": "Select and copy the color value.",
         "colorNames": ["Site background", "Site text", "Resource description", "Docs background", "Docs text", "Docs description"],
@@ -76,12 +76,16 @@ COPY = {
         "typeChart": "标题比例随任务变化", "typeIntro": "七个主标题在 1440 × 1000 桌面视口下的实测字号，条形长度表示 CSS 像素值。",
         "catalog": "二十种模式，五类任务", "catalogIntro": "按任务筛选已记录的模式，来源编号链接到对应样本。",
         "groups": ["导航", "检索与切换", "内容展示", "比较与步骤", "学习与阅读"],
-        "about": "关于本研究", "aboutText": "10 个章节 · 15 张截图 · 中英文双语",
+        "about": "关于本研究", "aboutText": "10 个章节 · 中英文双语",
         "footer": "一份关于公开网站的图文设计研究。", "methods": "方法与来源", "download": "下载离线阅读",
         "colorTitle": "少量色彩，清晰分工", "colorText": "页面背景与文字的实测色值。选择色块可复制对应值。", "copied": "已复制", "copyFailed": "请选中色值并复制。",
         "colorNames": ["官网背景", "官网文字", "资源说明", "文档背景", "文档文字", "文档说明"],
     },
 }
+
+ACADEMY_COPY = json.loads((ROOT / 'web/academy.json').read_text(encoding='utf-8'))
+for language, values in ACADEMY_COPY.items():
+    COPY[language].update(values)
 
 
 def esc(value):
@@ -191,7 +195,11 @@ def render_chapter(lang, chapter):
         alt = html.unescape(re.search(r'alt="([^"]*)"', tag)[1])
         path = (destination.parent / unquote(urlsplit(src).path)).resolve()
         width, height = image_dimensions(path)
-        return figure(src, alt, lang, width, height)
+        enhanced = figure(src, alt, lang, width, height)
+        display_width = re.search(r'\bwidth="(\d+)"', tag)
+        if display_width:
+            enhanced = enhanced.replace('class="figure-button"', f'class="figure-button" style="max-width: {int(display_width[1])}px"', 1)
+        return enhanced
 
     rendered = re.sub(r"<img\b[^>]*>", enhance_image, rendered)
     def heading_link(match):
@@ -212,6 +220,22 @@ def nav_link(slug, title, current, number=""):
 
 
 NAV_GROUPS = [CHAPTERS[:2], CHAPTERS[2:5], CHAPTERS[5:8], CHAPTERS[8:]]
+TOPICS = ['foundations', 'experience', 'research']
+
+
+def chapter_topic(chapter):
+    index = CHAPTERS.index(chapter)
+    return 0 if index < 2 else 1 if index < 5 else 2
+
+
+def topic_art(topic):
+    backgrounds = ['#edcdbd', '#c5d7d0', '#cfccdf']
+    drawings = [
+        '<path d="M116 118h91M118 61v61M204 61v61" opacity=".4"/><text x="126" y="112" font-family="Georgia,serif" font-size="59" fill="#25241f" stroke="none">Aa</text><path d="m111 66 7-6 7 6m72 50 7 6 7-6"/>',
+        '<rect x="104" y="53" width="112" height="78" rx="5" fill="#fcfcf8"/><path d="M104 70h112M134 70v61M144 83h59M144 92h38M113 82h13M113 91h13M113 100h13"/><rect x="144" y="105" width="24" height="16" rx="2"/><rect x="177" y="105" width="26" height="16" rx="2"/><circle cx="113" cy="62" r="1"/><circle cx="121" cy="62" r="1"/>',
+        '<rect x="110" y="48" width="75" height="88" rx="5" fill="#fcfcf8"/><path d="M124 65h46M124 75h35M124 116h29"/><circle cx="181" cy="102" r="24" fill="#e4dfef"/><path d="m199 121 17 18M167 106l10-11 8 5 9-14"/><circle cx="177" cy="95" r="2" fill="#25241f"/>'
+    ]
+    return f'<svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="320" height="180" fill="{backgrounds[topic]}"/><path d="m161 27 44 13 26 38-8 43-34 29-47 2-39-27-11-43 22-38Z" fill="#ffffff70"/><g fill="none" stroke="#25241f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">{drawings[topic]}</g></svg>'
 
 
 def article_header(lang, title, summary, section, copy_page=False):
@@ -227,12 +251,16 @@ def shell(lang, slug, title, content, headings=(), chapter=None):
     other = "zh" if lang == "en" else "en"
     chapter_nav = "".join('<div class="nav-group"><p class="nav-label">' + copy["navGroups"][i] + '</p>' + ''.join(nav_link(c["slug"], c[lang], slug, f'{CHAPTERS.index(c) + 1:02}') for c in group) + '</div>' for i, group in enumerate(NAV_GROUPS))
     toc_links = "".join(f'<a class="toc-{tag}" href="#{esc(anchor)}">{esc(text)}</a>' for tag, text, anchor in headings)
-    toc = f'<aside class="page-toc"><nav aria-label="{copy["contents"]}"><p class="toc-label">{copy["contents"]}</p>{toc_links}</nav></aside>' if headings else ""
+    chapter_switcher = ''
+    if chapter:
+        switch_links = ''.join(nav_link(c['slug'], c[lang], slug, f'{i+1:02}') for i,c in enumerate(CHAPTERS))
+        chapter_switcher = f'<details class="chapter-switcher"><summary><span><small>{copy["chapterWord"]} {CHAPTERS.index(chapter)+1} / 10</small><strong>{esc(chapter[lang])}</strong></span><span aria-hidden="true">⌄</span></summary><nav class="nav-group" aria-label="{copy["chooseChapter"]}">{switch_links}</nav></details>'
+    toc = f'<aside class="page-toc">{chapter_switcher}<nav class="section-toc" aria-label="{copy["contents"]}"><p class="toc-label">{copy["contents"]}</p>{toc_links}</nav></aside>' if headings else ""
     if headings:
         section_links = "".join(f'<a href="#{esc(anchor)}">{esc(text)}</a>' for tag, text, anchor in headings if tag == "h2")
         inline_toc = f'<details class="inline-toc"><summary>{copy["contents"]}</summary><div>{section_links}</div></details>'
         content = content.replace('</header>', '</header>' + inline_toc, 1)
-    body_class = "chapter-page" if chapter else "overview-page"
+    body_class = "chapter-page" if chapter else "academy-home" if slug == "index" else "overview-page"
     lang_label = "中文" if other == "zh" else "English"
     pager = ""
     if chapter:
@@ -246,24 +274,27 @@ def shell(lang, slug, title, content, headings=(), chapter=None):
             else:
                 items.append(f'<a href="index.html"><small>{label}</small><span>{copy["home"]}</span></a>')
         pager = '<nav class="chapter-pager" aria-label="Chapter navigation">' + "".join(items) + "</nav>"
-    js_copy = json.dumps({k: copy[k] for k in ["noResults", "results", "patterns", "copied", "copyFailed", "enlarge", "copyPage", "pageCopied", "pageCopyFailed", "viewSource"]}, ensure_ascii=False).replace("<", "\\u003c")
+    js_copy = json.dumps({k: copy[k] for k in ["noResults", "results", "patterns", "copied", "copyFailed", "enlarge", "copyPage", "pageCopied", "pageCopyFailed", "viewSource", "darkTheme", "lightTheme", "chapterUnit", "chapterUnitSingular"]}, ensure_ascii=False).replace("<", "\\u003c")
     page_source = ''
     if chapter:
         markdown = json.dumps(source_file(lang, chapter).read_text(encoding='utf-8'), ensure_ascii=False).replace('<', '\\u003c')
         page_source = f'<script id="page-source" type="application/json">{markdown}</script>'
-    primary_nav = ''.join(f'<a href="{target}.html"{" aria-current=\"true\"" if active else ""}>{copy[label]}</a>' for target, label, active in [('index', 'handbook', slug != 'explore' and slug != '07-methodology-and-sources'), ('explore', 'compareNav', slug == 'explore'), ('07-methodology-and-sources', 'sourcesNav', slug == '07-methodology-and-sources')])
+    menu_groups = ''.join(f'<div><p>{esc(copy["topicLabels"][i])}</p>' + ''.join(f'<a href="{c["slug"]}.html">{esc(c[lang])}</a>' for c in CHAPTERS if chapter_topic(c)==i) + '</div>' for i in range(3))
+    resource_links = ''.join(f'<a href="{target}.html">{esc(label)}</a>' for target,label in [('index',copy['home']),('explore',copy['explore']),('06-gallery',CHAPTERS[5][lang]),('07-methodology-and-sources',copy['methods'])])
+    primary_nav = f'<details class="header-disclosure"><summary>{copy["browseMenu"]}<span aria-hidden="true">⌄</span></summary><div class="nav-popover mega-menu">{menu_groups}</div></details><details class="header-disclosure"><summary>{copy["resourcesMenu"]}<span aria-hidden="true">⌄</span></summary><div class="nav-popover resource-menu">{resource_links}</div></details>'
     description = chapter["summary"][lang] if chapter else copy["heroText"]
     return f'''<!doctype html>
 <html lang="{"zh-CN" if lang == "zh" else "en"}">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="{esc(description)}"><meta name="color-scheme" content="light">
+<meta name="description" content="{esc(description)}"><meta name="color-scheme" content="light dark">
 <title>{esc(title)} · {esc(copy["title"])}</title>
 <link rel="icon" type="image/svg+xml" href="../shared/favicon.svg">
 <link rel="stylesheet" href="../shared/style.css">
+<link rel="stylesheet" href="../shared/academy.css">
 <link rel="alternate" hreflang="{other}" href="../{other}/{slug}.html">
-<script>document.documentElement.classList.add('js');window.STUDY_COPY={js_copy};</script>
+<script>document.documentElement.classList.add('js');window.STUDY_COPY={js_copy};try{{let theme=localStorage.getItem('anthropic-study-theme');document.documentElement.dataset.theme=theme==='dark'||theme==='light'?theme:matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';}}catch{{document.documentElement.dataset.theme='light';}}</script>
 {page_source}
-<script src="../shared/search-{lang}.js" defer></script><script src="../shared/app.js" defer></script>
+<script src="../shared/search-{lang}.js" defer></script><script src="../shared/app.js" defer></script><script src="../shared/academy.js" defer></script>
 </head><body class="{body_class}" data-language="{lang}">
 <a class="skip-link" href="#main">{copy["skip"]}</a>
 <header class="site-header">
@@ -272,6 +303,7 @@ def shell(lang, slug, title, content, headings=(), chapter=None):
 <div class="header-actions"><button class="menu-toggle" type="button" aria-label="{copy["menu"]}" aria-controls="chapter-nav" aria-expanded="false"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14"/></svg><span>{copy["menu"]}</span></button>
 <button class="search-trigger" type="button" aria-label="{copy["search"]}" data-open-search><svg class="search-icon" width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg><span>{copy["search"]}</span><kbd>Ctrl K</kbd></button>
 <a class="language-switch" lang="{"zh-CN" if other == "zh" else "en"}" href="../{other}/{slug}.html">{lang_label}</a>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="{copy["darkTheme"]}" title="{copy["darkTheme"]}"><svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 15.5A8.7 8.7 0 0 1 8.5 4 8.8 8.8 0 1 0 20 15.5Z"/></svg><svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/></svg></button>
 <a class="github-link" href="{REPO}">GitHub ↗</a></div>
 </header>
 <nav id="chapter-nav" class="chapter-nav" aria-label="{copy["chapters"]}">
@@ -294,14 +326,21 @@ def home(lang):
     for i, slug in enumerate(["claude-resources", "platform-docs", "developer-blog"]):
         sample = next(p for p in MANIFEST["pages"] if p["slug"] == slug)
         voices.append(f'<article class="voice"><div class="voice-image">{figure("../../assets/screenshots/" + slug + ".png", CONTENT["pages"][sample["id"]][lang],lang)}</div><h3>{copy["directions"][i]}</h3><p>{copy["directionText"][i]}</p><a href="{sample["url"]}">{sample["id"]} · {copy["source"]} ↗</a></article>')
-    chapters = "".join(f'<a class="chapter-entry" href="{c["slug"]}.html"><span class="entry-number">{i + 1:02}</span><div><h3>{esc(c[lang])}</h3><p>{esc(c["summary"][lang])}</p></div><span aria-hidden="true">↗</span></a>' for i, c in enumerate(CHAPTERS))
-    html_content = article_header(lang, copy["heroTitle"], copy["heroText"], copy["home"])
-    html_content += f'''<section class="home-section" id="findings"><div class="section-heading"><h2>{copy["findings"]}</h2><p>{copy["scope"]}</p></div><div class="study-counts">{stats}</div><p class="scope-note">{copy["date"]}: {DATE} · <a href="07-methodology-and-sources.html">{copy["methods"]}</a></p><div class="intro-actions"><a class="primary-link" href="01-visual-language.html">{copy["read"]} <span aria-hidden="true">→</span></a><a class="text-link" href="explore.html">{copy["explore"]} <span aria-hidden="true">→</span></a></div></section>
+    paths = ''.join(f'<a class="path-card" href="?topic={topic}#chapters" data-path-topic="{topic}"><div class="card-art">{topic_art(i)}</div><div class="card-copy"><h3>{copy["topicLabels"][i]}</h3><p>{copy["topicDescriptions"][i]}</p><span class="card-meta">{sum(chapter_topic(c)==i for c in CHAPTERS)} {copy["chapterUnit"]}<span aria-hidden="true">→</span></span></div></a>' for i,topic in enumerate(TOPICS))
+    chapters = []
+    for i,c in enumerate(CHAPTERS):
+        group = chapter_topic(c)
+        search_text = ' '.join([c['en'],c['zh'],c['summary']['en'],c['summary']['zh']])
+        chapters.append(f'<a class="catalog-card" href="{c["slug"]}.html" data-chapter-topic="{TOPICS[group]}" data-chapter-search="{esc(search_text)}"><div class="card-art">{topic_art(group)}</div><div class="card-copy"><span class="card-meta">{copy["chapterWord"]} {i+1:02} · {copy["topicLabels"][group]}</span><h3>{esc(c[lang])}</h3><p>{esc(c["summary"][lang])}</p><span class="card-arrow" aria-hidden="true">→</span></div></a>')
+    tabs = ''.join(f'<button type="button" role="tab" id="topic-{topic}" aria-selected="{str(i==0).lower()}" aria-controls="chapter-grid" tabindex="{0 if i==0 else -1}" data-topic-filter="{topic}">{esc(label)}</button>' for i,(topic,label) in enumerate(zip(['all',*TOPICS],[copy['allChapters'],*copy['topicLabels']])))
+    review_anchor = 'academy-interactions' if lang == 'en' else 'academy-交互研究'
+    html_content = f'''<header class="academy-hero"><div class="hero-inner"><p class="hero-kicker">{copy["handbook"]} · Anthropic &amp; Claude</p><h1>{copy["hubTitle"]}</h1><p>{copy["hubIntro"]}</p><div class="intro-actions"><a class="primary-link" href="#paths">{copy["choosePath"]}</a><a class="secondary-link" href="#chapters">{copy["browseChapters"]}</a></div></div></header>
+<div class="home-content"><section class="home-section" id="paths"><div class="section-heading"><h2>{copy["pathsTitle"]}</h2><p>{copy["pathsIntro"]}</p></div><div class="path-grid">{paths}</div></section>
+<section class="home-section" id="chapters"><div class="section-heading"><h2>{copy["chapters"]}</h2><p>{copy["chapterIntro"]}</p></div><div class="catalog-tools"><div class="topic-tabs" role="tablist" aria-label="{copy["browseChapters"]}">{tabs}</div><div class="catalog-search"><label for="chapter-search">{copy["chapterSearch"]}</label><input id="chapter-search" type="search" placeholder="{copy["searchHint"]}"><button type="button" data-clear-chapters>{copy["clearFilters"]}</button></div></div><p id="chapter-count" role="status">10 {copy["chapterUnit"]}</p><div id="chapter-grid" class="chapter-catalog" role="tabpanel" aria-labelledby="topic-all" tabindex="-1">{"".join(chapters)}</div><div class="catalog-empty" hidden><p>{copy["noChapters"]}</p><button type="button" class="secondary-link" data-clear-chapters>{copy["clearFilters"]}</button></div></section>
 <section class="home-section" id="visual-directions"><div class="section-heading"><h2>{copy["voices"]}</h2><p>{copy["voicesIntro"]}</p></div><div class="voices">{"".join(voices)}</div></section>
-<section class="home-section" id="chapters"><div class="section-heading"><h2>{copy["chapters"]}</h2><p>{copy["chapterIntro"]}</p></div><div class="chapter-index">{chapters}</div></section>
-<section class="explore-banner" id="compare"><div><h2>{copy["explore"]}</h2><p>{copy["compareIntro"]}</p></div><a class="text-link" href="explore.html">{copy["explore"]} →</a></section>'''
-    headings = [("h2",copy["findings"],"findings"),("h2",copy["voices"],"visual-directions"),("h2",copy["chapters"],"chapters"),("h2",copy["explore"],"compare")]
-    return shell(lang, "index", copy["home"], html_content, headings)
+<section class="home-section" id="findings"><div class="section-heading"><h2>{copy["findings"]}</h2><p>{copy["scope"]}</p></div><div class="study-counts">{stats}</div><p class="scope-note">{copy["date"]}: {DATE} · <a href="07-methodology-and-sources.html">{copy["methods"]}</a></p></section>
+<div class="hub-links"><section class="explore-banner" id="compare"><h2>{copy["explore"]}</h2><p>{copy["compareIntro"]}</p><a class="text-link" href="explore.html">{copy["explore"]} →</a></section><section class="explore-banner"><h2>{copy["interactionNotes"]}</h2><p>{copy["interactionIntro"]}</p><a class="text-link" href="05-ux-and-responsive.html#{review_anchor}">{copy["interactionNotes"]} →</a></section></div></div>'''
+    return shell(lang, "index", copy["home"], html_content)
 
 
 def pattern_rows(lang):
@@ -322,8 +361,9 @@ def comparison_panel(lang, side, selected):
         profile = CONTENT["pages"][p["id"]]
         hidden = " hidden" if p["id"] != selected else ""
         note = f'<p class="capture-note">{esc(profile["note"][lang])}</p>' if "note" in profile else ""
-        panels.append(f'<div class="compare-sample" data-sample="{p["id"]}"{hidden}>{figure("../../assets/screenshots/" + p["slug"] + ".png",profile[lang],lang)}<dl><dt>{copy["task"]}</dt><dd>{esc(profile["task"][lang])}</dd><dt>{copy["structure"]}</dt><dd>{esc(profile["structure"][lang])}</dd><dt>{copy["fonts"]}</dt><dd class="font-names">{esc(profile["fonts"])}</dd></dl>{note}<div class="evidence-links"><a href="{p["url"]}">{p["id"]} · {copy["source"]} ↗</a><a href="../../data/pages/{p["slug"]}.json">{copy["record"]} ↗</a></div></div>')
-    return f'<section class="compare-panel"><label for="compare-{side}">{copy[side]}</label><select id="compare-{side}" data-compare>{options}</select>{"".join(panels)}</section>'
+        panels.append(f'<div class="compare-sample" data-sample="{p["id"]}"{hidden}><div class="compare-content"><div class="compare-media">{figure("../../assets/screenshots/" + p["slug"] + ".png",profile[lang],lang)}</div><dl class="compare-analysis"><dt>{copy["task"]}</dt><dd>{esc(profile["task"][lang])}</dd><dt>{copy["structure"]}</dt><dd>{esc(profile["structure"][lang])}</dd><dt>{copy["fonts"]}</dt><dd class="font-names">{esc(profile["fonts"])}</dd></dl></div>{note}<div class="evidence-links"><a href="{p["url"]}">{p["id"]} · {copy["source"]} ↗</a><a href="../../data/pages/{p["slug"]}.json">{copy["record"]} ↗</a></div></div>')
+    view_switch = f'<fieldset class="view-switch"><legend class="sr-only">{copy["compareView"]} · {copy[side]}</legend><label><input type="radio" name="view-{side}" value="image" data-compare-view checked><span>{copy["imageView"]}</span></label><label><input type="radio" name="view-{side}" value="analysis" data-compare-view><span>{copy["analysisView"]}</span></label></fieldset>'
+    return f'<section class="compare-panel" data-view="image"><label for="compare-{side}">{copy[side]}</label><select id="compare-{side}" data-compare>{options}</select>{view_switch}{"".join(panels)}</section>'
 
 
 def explorer(lang):
@@ -377,7 +417,7 @@ def main():
             write(html_file(lang, chapter["slug"]), shell(lang, chapter["slug"], chapter[lang], article, headings, chapter))
         search_json = json.dumps(search, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
         write(OUT / "shared" / f"search-{lang}.js", "window.STUDY_SEARCH=" + search_json + ";\n")
-    for name in ["style.css", "app.js", "favicon.svg"]:
+    for name in ["style.css", "app.js", "academy.css", "academy.js", "favicon.svg"]:
         write(OUT / "shared" / name, (ROOT / "web" / name).read_text(encoding="utf-8"))
     redirect = '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url={target}"><title>Anthropic &amp; Claude Design Study</title><p><a href="{target}">Read in English</a> · <a href="{chinese}">中文</a></p></html>\n'
     write(ROOT / "index.html", redirect.format(target="html/en/index.html", chinese="html/zh/index.html"))

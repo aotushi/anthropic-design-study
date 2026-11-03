@@ -2,26 +2,32 @@
 
 The Chinese and English chapters are the content source. `scripts/build_html.py` renders both editions into `html/`, adds navigation and search, and builds an interactive evidence explorer from the recorded samples and pattern taxonomy.
 
-The reading interface follows the documentation layout of [Claude Platform Docs](https://platform.claude.com/docs/en/get-started) and [Claude Code Docs](https://code.claude.com/docs/en/overview), reviewed in a browser on 2026-11-03. It uses a compact header, grouped chapter navigation, an article column, and an adjacent section index. The overview uses the same document structure as the chapters.
+The primary interface reference is [Claude Academy](https://academy.claude.com/), inspected on 2026-11-03. Its public homepage, catalog, guided start, and lesson provide the examples documented in [the interaction review](../docs/en/05-ux-and-responsive.md#academy-interactions). The overview is a learning hub; articles follow a lesson layout with adjacent chapter and section navigation. Earlier work on copy controls and section links also draws on Claude Platform Docs and Claude Code Docs.
 
-- Desktop: a persistent grouped sidebar, a bounded reading column, and a sticky section index from 1240px. Below that width the section index becomes an expandable contents list.
+- Desktop: grouped header menus, an 800px article column, and a 252px chapter selector and section index from 1240px. Below that width the section index becomes an expandable contents list.
 - Narrow screens: a collapsible chapter menu, single-column content, and horizontally scrollable tables.
-- Interaction: language links keep the current chapter; search finds chapter sections; headings have direct links; the contents list follows the reading position; chapter copy buttons copy the Markdown source. Figures open in a keyboard-accessible dialog; the explorer compares pages and filters patterns.
+- Browsing: three illustrated topic cards lead to a filterable chapter library. Search and topic choices update the result count and URL, survive refresh, and remain selected across language changes. All ten chapters are immediately available.
+- Reading: language links keep the current chapter; search finds chapter sections; headings have direct links; the contents list follows the reading position; chapter copy buttons copy the Markdown source. Figures open in a keyboard-accessible dialog. Each comparison sample switches between its screenshot and analysis; the explorer also filters component patterns.
+- Themes: a header control switches between light and dark, stores the reader's choice locally, and uses the system preference initially. Source screenshots retain their captured colors.
 - Print: navigation and controls are removed, expandable gallery items are opened, and content is laid out for paper.
 
 ## Visual foundations
 
 | Element | Implemented choice | Reference relationship |
 |---|---|---|
-| Surfaces | `#FCFCFB` page, `#FFFFFF` media, `#F3F3F0` supporting surfaces | Platform Docs' measured page background; subtle separation between controls and content |
-| Text | `#171717` headings, `#3E3E3E` body, `#62615B` secondary text | Dark headings and restrained secondary text, as seen in Code Docs |
-| Layout | 60px header, 248px sidebar, article up to 832px, 200px section index | The three-column documentation structure; sizes adapted for this bilingual study |
-| Typography | 32px page heading, 24px section heading, 15px article text; 28px page headings on mobile | Compact serif heading hierarchy with sans-serif reading text |
+| Surfaces | `#FAFAF8` page, `#FCFCFB` cards, `#EEEDE9` hero; dark page `#181917` | Academy's neutral reading surfaces, with a separate hero panel and colored artwork |
+| Text | `#141413` headings, `#41413D` body, `#67665F` secondary text; light text in dark mode | Clear heading, reading, and metadata levels |
+| Layout | 60px header; 1080px overview content; 800px article, 64px gap, 252px section rail | Academy's broad catalog and lesson-with-outline arrangements, adapted to the handbook |
+| Typography | 48px overview heading, 36px chapter heading, 24px section heading, 15px article text; 30px chapter headings on mobile | Serif display and section headings with sans-serif reading text |
 | Fonts | Georgia / Times New Roman headings; system sans-serif body and CJK fallbacks; system monospace code | Local substitutes retain the typographic roles. The study's screenshots show the observed Anthropic fonts |
-| Components | Neutral selected navigation, 6–8px control corners, thin borders, horizontal table rules, understated hover states | Documentation controls and content take visual priority |
-| Motion and input | Reduced-motion support, visible keyboard focus, 44px mobile controls, menu and dialog focus management | Reading and navigation remain usable across input methods |
+| Components | 16px topic and chapter cards, 14px menus, 6–8px controls, category underlines, radio-based view switch | Academy's rounded learning cards and visible selected states |
+| Artwork | Three original inline SVG illustrations: typography, page layout, and research | Pastel learning-card imagery; separate from original source captures |
+| Motion and input | Artwork scales to 1.04 over 300ms with ease-out; menu entrance 160ms; card filtering 180ms with short staggering | The artwork response follows measured Academy behavior; other timings are implementation choices |
+| Accessibility | Reduced-motion mode, visible keyboard focus, 44px mobile controls, menu and dialog focus management | Pointer effects have keyboard equivalents; reading and search also work offline |
 
 No external font service or runtime network request is needed for reading, section search, or copying a chapter. Original screenshots and measurement records remain the research evidence; interface changes do not change the observation date of those samples.
+
+`web/style.css` and `web/app.js` supply the document and evidence components. `web/academy.css`, `web/academy.js`, and `web/academy.json` supply the Academy layout, browsing behavior, and bilingual labels. With JavaScript disabled, chapters and navigation links remain readable and both comparison views appear together.
 
 ## Build and verify
 

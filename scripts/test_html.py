@@ -3,6 +3,7 @@ import argparse
 import asyncio
 import functools
 import json
+import re
 import threading
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -44,7 +45,7 @@ async def check_document_controls(page, context, base):
         source = ROOT / "docs" / ("en" if lang == "en" else "") / "02-typography.md"
         copied = await page.evaluate("navigator.clipboard.readText()")
         assert copied.replace("\r\n", "\n") == source.read_text(encoding="utf-8")
-        section = page.locator(".page-toc a").nth(1)
+        section = page.locator(".section-toc a").nth(1)
         anchor = await section.get_attribute("href")
         await section.click()
         await expect(section).to_have_attribute("aria-current", "location")
@@ -58,6 +59,146 @@ async def check_document_controls(page, context, base):
     await expect(page.locator("#page-copy-status")).to_be_visible()
     assert await page.locator("#page-copy-status a").evaluate("link => link.href") == f"{base}/docs/02-typography.md"
     await page.evaluate("delete navigator.clipboard.writeText")
+
+
+async def check_academy_controls(page, context, base):
+    await page.goto(f"{base}/html/en/index.html")
+    menus = page.locator(".header-disclosure")
+    await menus.first.locator("summary").hover()
+    await expect(menus.first).to_have_attribute("open", "")
+    await expect(menus.first.locator("a")).to_have_count(10)
+    await check_layout(page)
+    await page.screenshot(path=str(SCREENSHOTS / "en-grouped-menu.png"), animations="disabled")
+    await page.keyboard.press("Escape")
+    await expect(menus.first).not_to_have_attribute("open", "")
+    await expect(menus.first.locator("summary")).to_be_focused()
+    await page.keyboard.press("ArrowDown")
+    await expect(menus.first.locator("a").first).to_be_focused()
+    await page.keyboard.press("Escape")
+    await menus.last.locator("summary").hover()
+    await expect(menus.last).to_have_attribute("open", "")
+    await page.locator("main h1").click()
+    await expect(menus.last).not_to_have_attribute("open", "")
+
+    art = page.locator(".path-card .card-art svg").first
+    await page.locator(".path-card").first.hover()
+    await expect(art).to_have_css("transform", "matrix(1.04, 0, 0, 1.04, 0, 0)")
+    await page.emulate_media(reduced_motion="reduce")
+    await expect(art).to_have_css("transform", "none")
+    await page.emulate_media(reduced_motion="no-preference")
+
+    cards = page.locator(".catalog-card:visible")
+    await expect(cards).to_have_count(10)
+    for topic, count in [("foundations", 2), ("experience", 3), ("research", 5), ("all", 10)]:
+        tab = page.locator(f'[data-topic-filter="{topic}"]')
+        await tab.click()
+        await expect(tab).to_have_attribute("aria-selected", "true")
+        await expect(cards).to_have_count(count)
+        await expect(page.locator("#chapter-count")).to_have_text(f"{count} chapters")
+    await page.locator('[data-topic-filter="all"]').press("ArrowRight")
+    await expect(cards).to_have_count(2)
+    await expect(page.locator('[data-topic-filter="foundations"]')).to_be_focused()
+    await page.locator("#chapter-search").fill("字体与排版")
+    await expect(cards).to_have_count(1)
+    await expect(page.locator("#chapter-count")).to_have_text("1 chapter")
+    assert await page.evaluate("new URL(location.href).searchParams.get('q')") == "字体与排版"
+    await page.reload()
+    await expect(cards).to_have_count(1)
+    await page.locator(".language-switch").click()
+    await page.wait_for_url(re.compile(r"/zh/index\.html\?"))
+    await expect(cards).to_have_count(1)
+    await expect(page.locator("#chapter-search")).to_have_value("字体与排版")
+    await page.locator(".language-switch").click()
+    await page.wait_for_url(re.compile(r"/en/index\.html\?"))
+    await page.locator("#chapter-search").fill("no-such-chapter-3298")
+    await expect(cards).to_have_count(0)
+    await expect(page.locator(".catalog-empty")).to_be_visible()
+    await page.locator(".catalog-empty [data-clear-chapters]").click()
+    await expect(cards).to_have_count(10)
+    await expect(page.locator("#chapter-search")).to_be_focused()
+
+    await page.locator('[data-path-topic="experience"]').click()
+    await expect(cards).to_have_count(3)
+    await expect(page.locator('[data-topic-filter="experience"]')).to_be_focused()
+    assert await page.evaluate("location.hash") == "#chapters"
+    await page.locator('[data-topic-filter="research"]').click()
+    await page.go_back()
+    await expect(cards).to_have_count(3)
+    await expect(page.locator('[data-topic-filter="experience"]')).to_have_attribute("aria-selected", "true")
+    await page.evaluate("window.dispatchEvent(new Event('beforeprint'))")
+    await expect(cards).to_have_count(10)
+    await page.evaluate("window.dispatchEvent(new Event('afterprint'))")
+    await expect(cards).to_have_count(3)
+    await page.locator('[data-topic-filter="experience"]').press("Home")
+    await expect(cards).to_have_count(10)
+    await page.locator('[data-topic-filter="all"]').press("End")
+    await expect(cards).to_have_count(5)
+
+    await page.goto(f"{base}/html/en/index.html")
+    await page.locator("[data-theme-toggle]").click()
+    await expect(page.locator("html")).to_have_attribute("data-theme", "dark")
+    await expect(page.locator("[data-theme-toggle]")).to_have_attribute("aria-label", "Switch to light theme")
+    await page.reload()
+    await expect(page.locator("html")).to_have_attribute("data-theme", "dark")
+    for lang in ["en", "zh"]:
+        for slug in ["index", "02-typography", "explore"]:
+            await page.goto(f"{base}/html/{lang}/{slug}.html")
+            await expect(page.locator("html")).to_have_attribute("data-theme", "dark")
+            await check_layout(page)
+            await page.screenshot(path=str(SCREENSHOTS / f"{lang}-{slug}-dark.png"), animations="disabled")
+    await page.locator("[data-theme-toggle]").click()
+    await expect(page.locator("html")).to_have_attribute("data-theme", "light")
+
+    await page.goto(f"{base}/html/en/02-typography.html")
+    selector = page.locator(".chapter-switcher")
+    await selector.locator("summary").click()
+    await expect(selector.locator("a")).to_have_count(10)
+    await expect(selector.locator('[aria-current="page"]')).to_have_text(re.compile("Typography"))
+    await selector.locator("a").first.focus()
+    await page.keyboard.press("Escape")
+    await expect(selector).not_to_have_attribute("open", "")
+    await expect(selector.locator("summary")).to_be_focused()
+    await page.keyboard.press("Enter")
+    await selector.locator('a[href="10-cross-site-matrix.html"]').click()
+    await page.wait_for_url("**/10-cross-site-matrix.html")
+    await expect(page.locator("main h1")).to_have_text("Cross-site matrix")
+
+    await page.goto(f"{base}/html/en/explore.html")
+    panel = page.locator(".compare-panel").first
+    active = panel.locator(".compare-sample:not([hidden])")
+    await expect(active.locator(".compare-media")).to_be_visible()
+    await expect(active.locator(".compare-analysis")).not_to_be_visible()
+    await panel.locator('label:has(input[value="analysis"])').click()
+    await expect(active.locator(".compare-analysis")).to_be_visible()
+    await expect(active.locator(".compare-media")).not_to_be_visible()
+    await page.locator("#compare-left").select_option("S07")
+    await expect(active.locator(".compare-analysis")).to_contain_text("Paper Mono")
+    await panel.locator('input[value="analysis"]').focus()
+    await page.keyboard.press("ArrowLeft")
+    await expect(active.locator(".compare-media")).to_be_visible()
+
+    await page.set_viewport_size({"width": 390, "height": 844})
+    await page.goto(f"{base}/html/zh/index.html")
+    await page.locator('[data-path-topic="foundations"]').click()
+    await expect(cards).to_have_count(2)
+    await page.wait_for_function("document.querySelector('#chapters').getBoundingClientRect().top < 100")
+    await check_layout(page)
+    await page.locator("[data-theme-toggle]").click()
+    await page.screenshot(path=str(SCREENSHOTS / "zh-library-mobile-dark.png"), animations="disabled")
+    await page.locator("[data-theme-toggle]").click()
+    await page.set_viewport_size({"width": 1440, "height": 1050})
+
+    no_js = await context.browser.new_context(java_script_enabled=False, viewport={"width": 1440, "height": 1050})
+    plain = await no_js.new_page()
+    await plain.goto(f"{base}/html/en/index.html")
+    await expect(plain.locator(".catalog-card:visible")).to_have_count(10)
+    await plain.locator(".header-disclosure summary").first.click()
+    await expect(plain.locator(".mega-menu")).to_be_visible()
+    await plain.goto(f"{base}/html/en/explore.html")
+    first_sample = plain.locator(".compare-sample:not([hidden])").first
+    await expect(first_sample.locator(".compare-media")).to_be_visible()
+    await expect(first_sample.locator(".compare-analysis")).to_be_visible()
+    await no_js.close()
 
 
 async def run(base, channel):
@@ -82,6 +223,7 @@ async def run(base, channel):
                 if file.stem in {"index", "explore", "02-typography"}:
                     await page.screenshot(path=str(SCREENSHOTS / f"{lang}-{file.stem}-desktop.png"))
 
+        await check_academy_controls(page, context, base)
         await check_document_controls(page, context, base)
         await page.goto(f"{base}/html/en/02-typography.html")
         await page.locator(".language-switch").click()
@@ -121,12 +263,12 @@ async def run(base, channel):
         await page.keyboard.press("Escape")
         await expect(figure).to_be_focused()
         await page.evaluate("window.dispatchEvent(new Event('beforeprint'))")
-        assert await page.locator("details:not([open])").count() == 0
+        assert await page.locator("main details:not([open])").count() == 0
         await page.emulate_media(media="print")
         await expect(page.locator(".site-header")).not_to_be_visible()
         await page.emulate_media(media="screen", reduced_motion="reduce")
         await page.evaluate("window.dispatchEvent(new Event('afterprint'))")
-        assert await page.locator("details:not([open])").count() > 0
+        assert await page.locator("main details:not([open])").count() > 0
         assert await page.evaluate("getComputedStyle(document.documentElement).scrollBehavior") == "auto"
 
         await page.goto(f"{base}/html/en/explore.html")
@@ -147,13 +289,15 @@ async def run(base, channel):
         await expect(page.locator("#copy-status")).to_have_text("Copied: #FAF9F5")
         assert await page.evaluate("navigator.clipboard.readText()") == "#FAF9F5"
 
-        for width in [375, 390, 768, 1024, 1239, 1240]:
+        for width in [375, 390, 768, 920, 921, 1024, 1239, 1240]:
             await page.set_viewport_size({"width": width, "height": 844})
             for lang in ["en", "zh"]:
-                for slug in ["index", "02-typography", "09-page-anatomy", "explore"]:
+                for slug in ["index", "02-typography", "05-ux-and-responsive", "09-page-anatomy", "explore"]:
                     await page.goto(f"{base}/html/{lang}/{slug}.html")
                     await check_layout(page)
-                    if width >= 1240:
+                    if slug == "index":
+                        await expect(page.locator("#chapter-grid")).to_be_visible()
+                    elif width >= 1240:
                         await expect(page.locator(".page-toc")).to_be_visible()
                         await expect(page.locator(".inline-toc")).not_to_be_visible()
                     else:
@@ -189,13 +333,15 @@ async def run(base, channel):
         await offline.locator("#study-search").fill("Paper Mono")
         await expect(offline.locator(".search-result").first).to_be_visible()
         await offline.keyboard.press("Escape")
+        await offline.locator('[data-path-topic="foundations"]').click()
+        await expect(offline.locator(".catalog-card:visible")).to_have_count(2)
         await offline.locator(".language-switch").click()
-        await offline.wait_for_url("**/zh/index.html")
+        await offline.wait_for_url(re.compile(r"/zh/index\.html"))
         await check_layout(offline)
         assert not remote_requests, remote_requests
         assert not failures, failures
         await browser.close()
-    print(json.dumps({"pagesChecked": len(visited), "widths": [1440, 1240, 1239, 1024, 768, 390, 375], "interactions": "passed", "copyAndSectionNavigation": "passed", "offline": "passed", "consoleErrors": failures}, ensure_ascii=False))
+    print(json.dumps({"pagesChecked": len(visited), "widths": [1440, 1240, 1239, 1024, 921, 920, 768, 390, 375], "interactions": "passed", "academyMenusFiltersThemesViews": "passed", "copyAndSectionNavigation": "passed", "offline": "passed", "noJavaScriptReading": "passed", "consoleErrors": failures}, ensure_ascii=False))
 
 
 def main():
